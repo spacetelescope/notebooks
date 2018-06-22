@@ -22,3 +22,15 @@ These notebooks are also under continuous integration to ensure that astronomers
 ## TODO
 
 Make sure what is said above is true. This project follows the principle of [README driven development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html), i.e. we have written the README describing the future we would like to see for this project.
+
+
+## Contributing
+
+If you want to suggest changes to this content do the following:
+
+0. Take a look at the contributing guide
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
