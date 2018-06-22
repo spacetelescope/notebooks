@@ -11,6 +11,7 @@ These notebooks are also under continuous integration to ensure that astronomers
   - TESS
     - [TESS API Demo](MAST/TESS/tess_api_demo.ipynb)
     - [TESS TIC API Demo (no astroquery)](MAST/TESS/tess_tic_api_demo.ipynb)
+    - [TESS TIC Search for Dwarf Stars around HD 209458](MAST/TESS/tess_tic_search_for_dwarf_stars_around_hd_209458.ipynb)
 - HST
   - ACS
   - COS
