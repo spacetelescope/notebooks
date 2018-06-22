@@ -7,7 +7,7 @@ These notebooks are also under continuous integration to ensure that astronomers
 ## Contents
 
 - [MAST](https://archive.stsci.edu/)
-  - [API examples]()
+  - [API Functionality Demo](https://github.com/spacetelescope/notebooks/blob/master/MAST/AstroqueryFunctionalityDemo.ipynb)
 - HST
   - ACS
   - COS
