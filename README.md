@@ -10,6 +10,7 @@ These notebooks are also under continuous integration to ensure that astronomers
   - [API Functionality Demo](MAST/astroquery_functionality_demo.ipynb)
   - TESS
     - [TESS API Demo](MAST/TESS/tess_api_demo.ipynb)
+    - [TESS TIC API Demo (no astroquery)](MAST/TESS/tess_tic_api_demo.ipynb)
 - HST
   - ACS
   - COS
