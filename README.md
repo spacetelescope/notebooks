@@ -9,9 +9,9 @@ These notebooks are also under continuous integration<sup>\*</sup> to ensure tha
 - [MAST](https://archive.stsci.edu/)
   - [API Functionality Demo](MAST/astroquery_functionality_demo.ipynb)
   - Kepler/K2
-    - [Kepler Lightcurves](MAST/Kepler/kepler_lightcurve.ipynb)
-    - [Kepler Target Pixel Files (TPF)](MAST/Kepler/kepler_tpf.ipynb)
-    - [Kepler Full Frame Images (FFI)](MAST/Kepler/kepler_ffi.ipynb)
+    - [Kepler Lightcurves](MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb)
+    - [Kepler Target Pixel Files (TPF)](MAST/Kepler/Kepler_TPF/kepler_tpf.ipynb)
+    - [Kepler Full Frame Images (FFI)](MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb)
   - TESS
     - [TESS API Demo](MAST/TESS/tess_api_demo.ipynb)
     - [TESS TIC API Demo (no astroquery)](MAST/TESS/tess_tic_api_demo.ipynb)
