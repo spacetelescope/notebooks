@@ -16,6 +16,8 @@ These notebooks are also under continuous integration<sup>\*</sup> to ensure tha
     - [TESS API Demo](MAST/TESS/tess_api_demo.ipynb)
     - [TESS TIC API Demo (no astroquery)](MAST/TESS/tess_tic_api_demo.ipynb)
     - [TESS TIC Search for Dwarf Stars Around HD 209458](MAST/TESS/tess_tic_search_for_dwarf_stars_around_hd_209458.ipynb)
+  - Hubble Source Catalog
+    - [TAP HSC Functionality Demo] (MAST/HSC/TAP HSC functionality demo.ipynb)
 - HST
   - ACS
   - COS
