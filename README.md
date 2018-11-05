@@ -1,5 +1,7 @@
 # Notebooks
 
+NOTE: this is a work-in-progress re-write of the layout of this repo.  If you are seeing this message and aren't sure whhy probably you are on the wrong branch - try master...
+
 This repository contains a curated set of Jupyter notebooks related to the work that we do at STScI. These notebooks follow a consistent<sup>\*</sup> [style guide]( https://github.com/spacetelescope/style-guides/issues/2) in terms of layout/structure, coding conventions etc.
 
 These notebooks are also under continuous integration<sup>\*</sup> to ensure that astronomers using these notebooks have a high level of confidence that they will work.
