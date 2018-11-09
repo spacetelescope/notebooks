@@ -1,0 +1,7 @@
+name: ci_helpers
+channels:
+- defaults
+dependencies:
+- python=3.5
+- numpy
+- matplotlib

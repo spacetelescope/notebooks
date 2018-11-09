@@ -1,0 +1,27 @@
+language: python
+
+env:
+  global:
+    - CONDA_CHANNELS='astropy-ci-extras astropy'
+    - CONDA_DEPENDENCIES="astropy astroquery matplotlib jupyter"
+    - PYTHON_VERSION=3.6
+
+jobs:
+  include:
+    - name: run/convert notebooks
+      script: python convert.py
+    - name: check notebooks
+      script: python -m "nbpages.check_nbs" --commit-range="${TRAVIS_COMMIT_RANGE/.../..}"  # see https://github.com/travis-ci/travis-ci/issues/4596 for why this bit in TRAVIS_COMMIT_RANGE is necessary
+    - stage: deploy
+      if: type != "pull_request" AND branch = "master"
+      script: python convert.py
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep-history: true
+
+install:
+    - git clone git://github.com/astropy/ci-helpers.git
+    - source ci-helpers/travis/setup_conda.sh
+    - pip install git+https://github.com/eteq/nbpages.git#egg=nbpages
