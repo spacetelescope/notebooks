@@ -8,6 +8,9 @@ These notebooks are also under continuous integration to ensure that astronomers
 
 This repository holds the notebooks themselves, but in a harder-to-read unexecuted form. If you want to view the notebooks online, you should view [the rendered version](https://spacetelescope.github.io/notebooks).
 
+### Building Locally
+
+Alternatively, if you would like to execute the notebooks and view them locally, you can clone this repo and do ``python convert.py``. This requires the [nbpages](https://github.com/eteq/nbpages) python package, which you can most easily install by doing ``pip install -e git+https://github.com/eteq/nbpages.git#egg=nbpages``.
 
 ## Contributing
 
