@@ -15,4 +15,3 @@ Alternatively, if you would like to execute the notebooks and view them locally,
 ## Contributing
 
 If you want to suggest changes to this content (or new content!), check out the [contributing guide](CONTRIBUTING.md).
-
