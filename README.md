@@ -6,7 +6,23 @@ These notebooks are also under continuous integration to ensure that astronomers
 
 ## Contents
 
-This repository holds the notebooks themselves, but in a harder-to-read unexecuted form. If you want to view the notebooks online, you should view [the rendered version](https://spacetelescope.github.io/notebooks).
+This repository holds the notebooks themselves, but in a harder-to-read unexecuted form. If you want to view the notebooks online, you should view [the rendered versions](https://spacetelescope.github.io/notebooks).  At present this includes:
+
+* MAST
+  * Kepler
+    * [Kepler Lightcurve](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.html)
+    * [Kepler TPF](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.html)
+  * TESS
+    * [Beginner: Read and Plot A TESS Data Validation Timeseries File](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.html)
+    * [Beginner: Read and Display a TESS Full Frame Image](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.html)
+    * [Beginner: Read and Plot A TESS Light Curve File](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_lc/beginner_how_to_use_lc.html)
+    * [Beginner: Read and Display A TESS Target Pixel File](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.html)
+    * [Beginner: Search The TESS Input Catalog Centered On HD 209458](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.html)
+    * [Beginnner: A Tour of the Contents of the TESS 2-minute Cadence Data](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.html)
+    * [Intermediate: Search and Download GI Program Light Curves](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.html)
+    * [Intermediate: Cutout of the TESS FFIs using Astrocut and Astroquery](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.html)
+    * [Intermediate: Create TESS FFI Cutout using Python Requests](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.html)
+
 
 ### Building Locally
 
