@@ -18,7 +18,7 @@ if args.exclude is None:
         with open('exclude_notebooks') as f:
             for line in f:
                 if line.strip() != '':
-                    to_exclude.append(line.strip().split('#')[0])
+                    to_exclude.append(line.split('#')[0].strip())
 
     if to_exclude:
         args.exclude = ','.join(to_exclude)
