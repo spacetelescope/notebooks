@@ -19,8 +19,8 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
     * [Beginner: Read and Display A TESS Target Pixel File](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.html)
     * [Beginner: Search The TESS Input Catalog Centered On HD 209458](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.html)
     * [Beginnner: A Tour of the Contents of the TESS 2-minute Cadence Data](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.html)
+    * [Beginner: Cutout of the TESS FFIs using Astrocut and Astroquery](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.html)
     * [Intermediate: Search and Download GI Program Light Curves](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.html)
-    * [Intermediate: Cutout of the TESS FFIs using Astrocut and Astroquery](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.html)
     * [Intermediate: Create TESS FFI Cutout using Python Requests](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.html)
 
 
