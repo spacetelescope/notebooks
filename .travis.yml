@@ -2,8 +2,8 @@ language: python
 
 env:
   global:
-    - CONDA_CHANNELS='astropy-ci-extras astropy'
-    - CONDA_DEPENDENCIES="astropy matplotlib jupyter pandas"
+    - CONDA_CHANNELS='astropy-ci-extras astropy http://ssb.stsci.edu/astroconda'
+    - CONDA_DEPENDENCIES="astropy matplotlib jupyter pandas drizzlepac"
     - PYTHON_VERSION=3.6
 
 jobs:
