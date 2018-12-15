@@ -1,0 +1,2 @@
+astroquery=0.3.8
+crds=7.2.4
