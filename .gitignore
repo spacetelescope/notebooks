@@ -1,1 +1,6 @@
 **/*.ipynb_checkpoints/
+*.fits
+*.fits.gz
+*.zip
+*.tar
+*.tar.gz

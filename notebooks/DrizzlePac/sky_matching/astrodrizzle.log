@@ -1,0 +1,2564 @@
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 05:10:39.272 (08/01/2019)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 29 2018, 19:04:46) 
+[INFO    ] numpy Version -> 1.15.4 
+[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] ==== Processing Step  Initialization  started at  05:10:39.277 (08/01/2019)
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: f160w_localmin_drz.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[INFO    ] Reading in MDRIZSKY of 1.206720857224329
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[INFO    ] Reading in MDRIZSKY of 1.198163899001049
+[INFO    ] Reading in MDRIZSKY of 1.219885887944978
+[INFO    ] Reading in MDRIZSKY of 1.213649411867139
+[INFO    ] Reading in MDRIZSKY of 0.7812672359640168
+[INFO    ] Reading in MDRIZSKY of 0.7682213224546781
+[INFO    ] Reading in MDRIZSKY of 1.187172317391058
+[INFO    ] Reading in MDRIZSKY of 1.166670582423796
+[INFO    ] Reading in MDRIZSKY of 1.174908413257794
+[INFO    ] Reading in MDRIZSKY of 1.166037218374175
+[INFO    ] Reading in MDRIZSKY of 0.7933694112409325
+[INFO    ] Reading in MDRIZSKY of 0.8016282763928285
+[INFO    ] Reading in MDRIZSKY of 1.317681298920099
+[INFO    ] Reading in MDRIZSKY of 1.305274610614905
+[INFO    ] Reading in MDRIZSKY of 1.137891703449973
+[INFO    ] Reading in MDRIZSKY of 1.141605637064632
+[INFO    ] Reading in MDRIZSKY of 0.7804558305738218
+[INFO    ] Reading in MDRIZSKY of 0.7762439583946621
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51etq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53kxq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53l9q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54bgq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54blq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56huq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56i2q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57adq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57aiq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58sqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58svq_flt.fits[DQ,1]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] ********************************************************************************
+[INFO    ] *
+[INFO    ] *  Estimated memory usage:  up to 132 Mb.
+[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Output image file:       ~ 124 Mb. 
+[INFO    ] *  Cores available:         1
+[INFO    ] *
+[INFO    ] ********************************************************************************
+[INFO    ] ==== Processing Step  Initialization  finished at  05:10:42.993 (08/01/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	*flt.fits
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	None
+[INFO    ] 	output :	f160w_localmin
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  05:10:43.001 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
+[INFO    ] ==== Processing Step  Static Mask  finished at  05:10:43.494 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  05:10:43.498 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	localmin
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2019-01-08 05:10:43.890264
+[INFO    ]       Version 0.9.15 (2018-07-03 21:07:36 -0400)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50clq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50clq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50cqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50cqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51eoq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51eoq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51etq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51etq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53kxq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53kxq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53l9q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53l9q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54bgq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54bgq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54blq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54blq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56huq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56huq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56i2q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56i2q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57adq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57adq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57aiq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57aiq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58sqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58sqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58svq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58svq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50clq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50cqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51eoq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51etq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53kxq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53l9q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54bgq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54blq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56huq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56i2q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57adq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57aiq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58sqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58svq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing sky values requested image extensions (detector chips):  -----
+[INFO    ] 
+[INFO    ]    *   Image:   'ibxl50clq_flt.fits['SCI',1]'  --  SKY = 69.9235605406945 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.15011   NEW MDRIZSKY = 1.15011
+[INFO    ]    *   Image:   'ibxl50cqq_flt.fits['SCI',1]'  --  SKY = 70.67062332640509 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16239   NEW MDRIZSKY = 1.16239
+[INFO    ]    *   Image:   'ibxl51eoq_flt.fits['SCI',1]'  --  SKY = 71.35692207750664 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.17368   NEW MDRIZSKY = 1.17368
+[INFO    ]    *   Image:   'ibxl51etq_flt.fits['SCI',1]'  --  SKY = 71.17767397350484 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.17073   NEW MDRIZSKY = 1.17073
+[INFO    ]    *   Image:   'ibxl52k0q_flt.fits['SCI',1]'  --  SKY = 48.71939114770598 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.80134   NEW MDRIZSKY = 0.80134
+[INFO    ]    *   Image:   'ibxl52k5q_flt.fits['SCI',1]'  --  SKY = 48.404630694335985 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]    *   Image:   'ibxl53kxq_flt.fits['SCI',1]'  --  SKY = 73.10053242509048 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.20236   NEW MDRIZSKY = 1.20236
+[INFO    ]    *   Image:   'ibxl53l9q_flt.fits['SCI',1]'  --  SKY = 71.95290825283726 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.18349   NEW MDRIZSKY = 1.18349
+[INFO    ]    *   Image:   'ibxl54bgq_flt.fits['SCI',1]'  --  SKY = 71.12075117677064 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.1698   NEW MDRIZSKY = 1.1698
+[INFO    ]    *   Image:   'ibxl54blq_flt.fits['SCI',1]'  --  SKY = 70.72288590435905 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16325   NEW MDRIZSKY = 1.16325
+[INFO    ]    *   Image:   'ibxl55f0q_flt.fits['SCI',1]'  --  SKY = 61.18630986101965 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.0064   NEW MDRIZSKY = 1.0064
+[INFO    ]    *   Image:   'ibxl55f5q_flt.fits['SCI',1]'  --  SKY = 61.36312276516118 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.0093   NEW MDRIZSKY = 1.0093
+[INFO    ]    *   Image:   'ibxl56huq_flt.fits['SCI',1]'  --  SKY = 82.88080964492433 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.36323   NEW MDRIZSKY = 1.36323
+[INFO    ]    *   Image:   'ibxl56i2q_flt.fits['SCI',1]'  --  SKY = 82.80455744929911 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.36197   NEW MDRIZSKY = 1.36197
+[INFO    ]    *   Image:   'ibxl57adq_flt.fits['SCI',1]'  --  SKY = 68.88088913384846 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.13296   NEW MDRIZSKY = 1.13296
+[INFO    ]    *   Image:   'ibxl57aiq_flt.fits['SCI',1]'  --  SKY = 68.07999828455944 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.11978   NEW MDRIZSKY = 1.11978
+[INFO    ]    *   Image:   'ibxl58sqq_flt.fits['SCI',1]'  --  SKY = 48.94119002069512 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.804988   NEW MDRIZSKY = 0.804988
+[INFO    ]    *   Image:   'ibxl58svq_flt.fits['SCI',1]'  --  SKY = 48.60068602594495 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.799387   NEW MDRIZSKY = 0.799387
+[INFO    ] ***** skymatch ended on 2019-01-08 05:10:45.112543
+[INFO    ] TOTAL RUN TIME: 0:00:01.222279
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  05:10:45.446 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  05:10:45.449 (08/01/2019)
+[INFO    ] Single drizzle step not performed.
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  05:10:45.451 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  05:10:45.454 (08/01/2019)
+[INFO    ] Median combination step not performed.
+[INFO    ] ==== Processing Step  Blot  started at  05:10:45.456 (08/01/2019)
+[INFO    ] Blot step not performed.
+[INFO    ] ==== Processing Step  Blot  finished at  05:10:45.458 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  05:10:45.46 (08/01/2019)
+[INFO    ] Cosmic-ray identification (driz_cr) step not performed.
+[INFO    ] ==== Processing Step  Final Drizzle  started at  05:10:45.463 (08/01/2019)
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	64
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.150107 to ibxl50clq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.162395 to ibxl50cqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.173683 to ibxl51eoq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.170735 to ibxl51etq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.801340 to ibxl52k0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl52k5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.202362 to ibxl53kxq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.183486 to ibxl53l9q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.169799 to ibxl54bgq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.163254 to ibxl54blq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.006396 to ibxl55f0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.009305 to ibxl55f5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.363229 to ibxl56huq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.361975 to ibxl56i2q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.132957 to ibxl57adq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.119784 to ibxl57aiq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.804988 to ibxl58sqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.799387 to ibxl58svq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Generating simple FITS output: f160w_localmin_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_localmin_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_localmin_drz_wht.fits
+[INFO    ] Writing out image to disk: f160w_localmin_drz_ctx.fits
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  05:10:53.8 (08/01/2019)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 05:10:53.887 (08/01/2019).
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          3.7161 sec.
+[INFO    ]             Static Mask          0.4927 sec.
+[INFO    ]            Subtract Sky          1.9477 sec.
+[INFO    ]        Separate Drizzle          0.0020 sec.
+[INFO    ]           Create Median          0.0000 sec.
+[INFO    ]                    Blot          0.0021 sec.
+[INFO    ]                 Driz_CR          0.0000 sec.
+[INFO    ]           Final Drizzle          8.4196 sec.
+[INFO    ]    ====================          ====================
+[INFO    ]                   Total          14.5803 sec.
+[INFO    ] Trailer file written to:  astrodrizzle.log
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 05:10:54.314 (08/01/2019)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 29 2018, 19:04:46) 
+[INFO    ] numpy Version -> 1.15.4 
+[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] ==== Processing Step  Initialization  started at  05:10:54.320 (08/01/2019)
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: f160w_match_drz.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[INFO    ] Reading in MDRIZSKY of 1.150107145309448
+[INFO    ] Reading in MDRIZSKY of 1.162394881248474
+[INFO    ] Reading in MDRIZSKY of 1.173683166503906
+[INFO    ] Reading in MDRIZSKY of 1.170734882354736
+[INFO    ] Reading in MDRIZSKY of 0.8013396263122559
+[INFO    ] Reading in MDRIZSKY of 0.7961624264717102
+[INFO    ] Reading in MDRIZSKY of 1.202362179756165
+[INFO    ] Reading in MDRIZSKY of 1.183485984802246
+[INFO    ] Reading in MDRIZSKY of 1.169798612594604
+[INFO    ] Reading in MDRIZSKY of 1.163254499435425
+[INFO    ] Reading in MDRIZSKY of 1.006396293640137
+[INFO    ] Reading in MDRIZSKY of 1.009304523468018
+[INFO    ] Reading in MDRIZSKY of 1.363228797912598
+[INFO    ] Reading in MDRIZSKY of 1.361974596977234
+[INFO    ] Reading in MDRIZSKY of 1.132957220077515
+[INFO    ] Reading in MDRIZSKY of 1.119784116744995
+[INFO    ] Reading in MDRIZSKY of 0.8049877882003784
+[INFO    ] Reading in MDRIZSKY of 0.7993871569633484
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51etq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53kxq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53l9q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54bgq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54blq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56huq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56i2q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57adq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57aiq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58sqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58svq_flt.fits[DQ,1]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] ********************************************************************************
+[INFO    ] *
+[INFO    ] *  Estimated memory usage:  up to 132 Mb.
+[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Output image file:       ~ 124 Mb. 
+[INFO    ] *  Cores available:         1
+[INFO    ] *
+[INFO    ] ********************************************************************************
+[INFO    ] ==== Processing Step  Initialization  finished at  05:10:57.924 (08/01/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	*flt.fits
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	None
+[INFO    ] 	output :	f160w_match
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  05:10:57.932 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
+[INFO    ] ==== Processing Step  Static Mask  finished at  05:10:58.419 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  05:10:58.421 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	match
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2019-01-08 05:10:58.863462
+[INFO    ]       Version 0.9.15 (2018-07-03 21:07:36 -0400)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50clq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50clq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50cqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50cqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51eoq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51eoq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51etq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51etq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53kxq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53kxq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53l9q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53l9q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54bgq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54bgq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54blq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54blq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56huq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56huq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56i2q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56i2q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57adq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57adq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57aiq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57aiq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58sqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58sqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58svq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58svq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50clq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50cqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51eoq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51etq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53kxq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53l9q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54bgq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54blq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56huq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56i2q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57adq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57aiq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58sqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58svq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing differences in sky values in overlapping regions:  -----
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl50clq_flt.fits['SCI',1]' SKY = 1.42799 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0234876
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl50cqq_flt.fits['SCI',1]' SKY = 1.21064 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199127
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl51eoq_flt.fits['SCI',1]' SKY = 2.23302 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0367289
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl51etq_flt.fits['SCI',1]' SKY = 1.58808 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0261208
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl52k0q_flt.fits['SCI',1]' SKY = 2.01916 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0332113
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl52k5q_flt.fits['SCI',1]' SKY = 1.30746 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0215052
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl53kxq_flt.fits['SCI',1]' SKY = 2.44749 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0402565
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl53l9q_flt.fits['SCI',1]' SKY = 1.21319 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199546
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl54bgq_flt.fits['SCI',1]' SKY = 1.32109 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0217294
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl54blq_flt.fits['SCI',1]' SKY = 1.00421 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0165172
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl55f0q_flt.fits['SCI',1]' SKY = 1.01427 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0166828
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl55f5q_flt.fits['SCI',1]' SKY = 1.02785 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0169062
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl56huq_flt.fits['SCI',1]' SKY = 1.5223 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0250388
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl56i2q_flt.fits['SCI',1]' SKY = 1.22492 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0201475
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl57adq_flt.fits['SCI',1]' SKY = 0.418017 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00687557
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl57aiq_flt.fits['SCI',1]' SKY = 0.358272 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00589288
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl58sqq_flt.fits['SCI',1]' SKY = 0.101303 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00166623
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl58svq_flt.fits['SCI',1]' SKY = 0 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0
+[INFO    ] 
+[INFO    ] ***** skymatch ended on 2019-01-08 05:11:11.361217
+[INFO    ] TOTAL RUN TIME: 0:00:12.497755
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  05:11:11.687 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  05:11:11.690 (08/01/2019)
+[INFO    ] Single drizzle step not performed.
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  05:11:11.692 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  05:11:11.694 (08/01/2019)
+[INFO    ] Median combination step not performed.
+[INFO    ] ==== Processing Step  Blot  started at  05:11:11.696 (08/01/2019)
+[INFO    ] Blot step not performed.
+[INFO    ] ==== Processing Step  Blot  finished at  05:11:11.697 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  05:11:11.700 (08/01/2019)
+[INFO    ] Cosmic-ray identification (driz_cr) step not performed.
+[INFO    ] ==== Processing Step  Final Drizzle  started at  05:11:11.701 (08/01/2019)
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	64
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.023488 to ibxl50clq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.019913 to ibxl50cqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.036729 to ibxl51eoq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.026121 to ibxl51etq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.033211 to ibxl52k0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.021505 to ibxl52k5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.040257 to ibxl53kxq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.019955 to ibxl53l9q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.021729 to ibxl54bgq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.016517 to ibxl54blq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.016683 to ibxl55f0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.016906 to ibxl55f5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.025039 to ibxl56huq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.020148 to ibxl56i2q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.006876 to ibxl57adq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.005893 to ibxl57aiq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.001666 to ibxl58sqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.000000 to ibxl58svq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Generating simple FITS output: f160w_match_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_match_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_match_drz_wht.fits
+[INFO    ] Writing out image to disk: f160w_match_drz_ctx.fits
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  05:11:20.15 (08/01/2019)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 05:11:20.158 (08/01/2019).
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          3.6039 sec.
+[INFO    ]             Static Mask          0.4868 sec.
+[INFO    ]            Subtract Sky          13.2657 sec.
+[INFO    ]        Separate Drizzle          0.0017 sec.
+[INFO    ]           Create Median          0.0000 sec.
+[INFO    ]                    Blot          0.0019 sec.
+[INFO    ]                 Driz_CR          0.0000 sec.
+[INFO    ]           Final Drizzle          8.4519 sec.
+[INFO    ]    ====================          ====================
+[INFO    ]                   Total          25.8118 sec.
+[INFO    ] Trailer file written to:  astrodrizzle.log
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 05:11:20.600 (08/01/2019)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 29 2018, 19:04:46) 
+[INFO    ] numpy Version -> 1.15.4 
+[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] ==== Processing Step  Initialization  started at  05:11:20.605 (08/01/2019)
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: f160w_globalmin_match_drz.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[INFO    ] Reading in MDRIZSKY of 0.02348762492308485
+[INFO    ] Reading in MDRIZSKY of 0.01991267788732925
+[INFO    ] Reading in MDRIZSKY of 0.03672887680026273
+[INFO    ] Reading in MDRIZSKY of 0.02612076006049756
+[INFO    ] Reading in MDRIZSKY of 0.03321128408059772
+[INFO    ] Reading in MDRIZSKY of 0.0215052478970888
+[INFO    ] Reading in MDRIZSKY of 0.04025653367969503
+[INFO    ] Reading in MDRIZSKY of 0.01995461203045289
+[INFO    ] Reading in MDRIZSKY of 0.02172937889712476
+[INFO    ] Reading in MDRIZSKY of 0.01651723438275512
+[INFO    ] Reading in MDRIZSKY of 0.01668276110382939
+[INFO    ] Reading in MDRIZSKY of 0.01690616522261839
+[INFO    ] Reading in MDRIZSKY of 0.02503881270865222
+[INFO    ] Reading in MDRIZSKY of 0.02014752006169938
+[INFO    ] Reading in MDRIZSKY of 0.006875565754529988
+[INFO    ] Reading in MDRIZSKY of 0.00589288154685392
+[INFO    ] Reading in MDRIZSKY of 0.001666234986391268
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51etq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53kxq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53l9q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54bgq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54blq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56huq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56i2q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57adq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57aiq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58sqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58svq_flt.fits[DQ,1]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] ********************************************************************************
+[INFO    ] *
+[INFO    ] *  Estimated memory usage:  up to 132 Mb.
+[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Output image file:       ~ 124 Mb. 
+[INFO    ] *  Cores available:         1
+[INFO    ] *
+[INFO    ] ********************************************************************************
+[INFO    ] ==== Processing Step  Initialization  finished at  05:11:24.223 (08/01/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	*flt.fits
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	None
+[INFO    ] 	output :	f160w_globalmin_match
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  05:11:24.232 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
+[INFO    ] ==== Processing Step  Static Mask  finished at  05:11:24.720 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  05:11:24.72 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	globalmin+match
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2019-01-08 05:11:25.172801
+[INFO    ]       Version 0.9.15 (2018-07-03 21:07:36 -0400)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50clq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50clq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50cqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50cqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51eoq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51eoq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51etq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51etq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53kxq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53kxq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53l9q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53l9q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54bgq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54bgq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54blq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54blq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56huq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56huq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56i2q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56i2q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57adq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57adq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57aiq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57aiq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58sqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58sqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58svq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58svq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50clq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50cqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51eoq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51etq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53kxq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53l9q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54bgq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54blq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56huq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56i2q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57adq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57aiq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58sqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58svq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing differences in sky values in overlapping regions:  -----
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl50clq_flt.fits['SCI',1]' SKY = 1.42799 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0234876
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl50cqq_flt.fits['SCI',1]' SKY = 1.21064 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199127
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl51eoq_flt.fits['SCI',1]' SKY = 2.23302 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0367289
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl51etq_flt.fits['SCI',1]' SKY = 1.58808 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0261208
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl52k0q_flt.fits['SCI',1]' SKY = 2.01916 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0332113
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl52k5q_flt.fits['SCI',1]' SKY = 1.30746 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0215052
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl53kxq_flt.fits['SCI',1]' SKY = 2.44749 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0402565
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl53l9q_flt.fits['SCI',1]' SKY = 1.21319 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199546
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl54bgq_flt.fits['SCI',1]' SKY = 1.32109 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0217294
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl54blq_flt.fits['SCI',1]' SKY = 1.00421 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0165172
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl55f0q_flt.fits['SCI',1]' SKY = 1.01427 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0166828
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl55f5q_flt.fits['SCI',1]' SKY = 1.02785 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0169062
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl56huq_flt.fits['SCI',1]' SKY = 1.5223 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0250388
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl56i2q_flt.fits['SCI',1]' SKY = 1.22492 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0201475
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl57adq_flt.fits['SCI',1]' SKY = 0.418017 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00687557
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl57aiq_flt.fits['SCI',1]' SKY = 0.358272 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00589288
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl58sqq_flt.fits['SCI',1]' SKY = 0.101303 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00166623
+[INFO    ] 
+[INFO    ]    *   Image 'ibxl58svq_flt.fits['SCI',1]' SKY = 0 [brightness units]
+[INFO    ]        Updating sky of image extension(s) [data units]:
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0
+[INFO    ] 
+[INFO    ] -----  Computing "global" sky on requested image extensions (detector chips):  -----
+[INFO    ] 
+[INFO    ]    "Global" sky value: 46.700230374281645 (brightness units)
+[INFO    ] 
+[INFO    ]     Final (match+global) sky [image units] for:
+[INFO    ]     # ibxl50clq_flt.fits['SCI',1]:   0.791615967154743
+[INFO    ]     # ibxl50cqq_flt.fits['SCI',1]:   0.7880410201189874
+[INFO    ]     # ibxl51eoq_flt.fits['SCI',1]:   0.8048572190319209
+[INFO    ]     # ibxl51etq_flt.fits['SCI',1]:   0.7942491022921557
+[INFO    ]     # ibxl52k0q_flt.fits['SCI',1]:   0.8013396263122559
+[INFO    ]     # ibxl52k5q_flt.fits['SCI',1]:   0.789633590128747
+[INFO    ]     # ibxl53kxq_flt.fits['SCI',1]:   0.8083848759113532
+[INFO    ]     # ibxl53l9q_flt.fits['SCI',1]:   0.7880829542621111
+[INFO    ]     # ibxl54bgq_flt.fits['SCI',1]:   0.7898577211287829
+[INFO    ]     # ibxl54blq_flt.fits['SCI',1]:   0.7846455766144133
+[INFO    ]     # ibxl55f0q_flt.fits['SCI',1]:   0.7848111033354875
+[INFO    ]     # ibxl55f5q_flt.fits['SCI',1]:   0.7850345074542765
+[INFO    ]     # ibxl56huq_flt.fits['SCI',1]:   0.7931671549403104
+[INFO    ]     # ibxl56i2q_flt.fits['SCI',1]:   0.7882758622933576
+[INFO    ]     # ibxl57adq_flt.fits['SCI',1]:   0.7750039079861881
+[INFO    ]     # ibxl57aiq_flt.fits['SCI',1]:   0.7740212237785121
+[INFO    ]     # ibxl58sqq_flt.fits['SCI',1]:   0.7697945772180494
+[INFO    ]     # ibxl58svq_flt.fits['SCI',1]:   0.7681283422316582
+[INFO    ] 
+[INFO    ] ***** skymatch ended on 2019-01-08 05:11:38.251444
+[INFO    ] TOTAL RUN TIME: 0:00:13.078643
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  05:11:38.577 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  05:11:38.580 (08/01/2019)
+[INFO    ] Single drizzle step not performed.
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  05:11:38.581 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  05:11:38.584 (08/01/2019)
+[INFO    ] Median combination step not performed.
+[INFO    ] ==== Processing Step  Blot  started at  05:11:38.58 (08/01/2019)
+[INFO    ] Blot step not performed.
+[INFO    ] ==== Processing Step  Blot  finished at  05:11:38.587 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  05:11:38.589 (08/01/2019)
+[INFO    ] Cosmic-ray identification (driz_cr) step not performed.
+[INFO    ] ==== Processing Step  Final Drizzle  started at  05:11:38.591 (08/01/2019)
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	64
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.791616 to ibxl50clq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.788041 to ibxl50cqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.804857 to ibxl51eoq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.794249 to ibxl51etq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.801340 to ibxl52k0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.789634 to ibxl52k5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.808385 to ibxl53kxq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.788083 to ibxl53l9q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.789858 to ibxl54bgq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.784646 to ibxl54blq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.784811 to ibxl55f0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.785035 to ibxl55f5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.793167 to ibxl56huq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.788276 to ibxl56i2q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.775004 to ibxl57adq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.774021 to ibxl57aiq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.769795 to ibxl58sqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.768128 to ibxl58svq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Generating simple FITS output: f160w_globalmin_match_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_globalmin_match_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_globalmin_match_drz_wht.fits
+[INFO    ] Writing out image to disk: f160w_globalmin_match_drz_ctx.fits
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  05:11:47.030 (08/01/2019)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 05:11:47.035 (08/01/2019).
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          3.6174 sec.
+[INFO    ]             Static Mask          0.4876 sec.
+[INFO    ]            Subtract Sky          13.8548 sec.
+[INFO    ]        Separate Drizzle          0.0016 sec.
+[INFO    ]           Create Median          0.0000 sec.
+[INFO    ]                    Blot          0.0018 sec.
+[INFO    ]                 Driz_CR          0.0000 sec.
+[INFO    ]           Final Drizzle          8.4394 sec.
+[INFO    ]    ====================          ====================
+[INFO    ]                   Total          26.4025 sec.
+[INFO    ] Trailer file written to:  astrodrizzle.log
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 05:11:47.49 (08/01/2019)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 29 2018, 19:04:46) 
+[INFO    ] numpy Version -> 1.15.4 
+[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] ==== Processing Step  Initialization  started at  05:11:47.498 (08/01/2019)
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: f160w_globalmin_drz.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[INFO    ] Reading in MDRIZSKY of 0.791615967154743
+[INFO    ] Reading in MDRIZSKY of 0.7880410201189874
+[INFO    ] Reading in MDRIZSKY of 0.8048572190319209
+[INFO    ] Reading in MDRIZSKY of 0.7942491022921557
+[INFO    ] Reading in MDRIZSKY of 0.8013396263122559
+[INFO    ] Reading in MDRIZSKY of 0.789633590128747
+[INFO    ] Reading in MDRIZSKY of 0.8083848759113532
+[INFO    ] Reading in MDRIZSKY of 0.7880829542621111
+[INFO    ] Reading in MDRIZSKY of 0.7898577211287829
+[INFO    ] Reading in MDRIZSKY of 0.7846455766144133
+[INFO    ] Reading in MDRIZSKY of 0.7848111033354875
+[INFO    ] Reading in MDRIZSKY of 0.7850345074542765
+[INFO    ] Reading in MDRIZSKY of 0.7931671549403104
+[INFO    ] Reading in MDRIZSKY of 0.7882758622933576
+[INFO    ] Reading in MDRIZSKY of 0.7750039079861881
+[INFO    ] Reading in MDRIZSKY of 0.7740212237785121
+[INFO    ] Reading in MDRIZSKY of 0.7697945772180494
+[INFO    ] Reading in MDRIZSKY of 0.7681283422316582
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51etq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl52k5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53kxq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl53l9q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54bgq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl54blq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f0q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl55f5q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56huq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl56i2q_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57adq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl57aiq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58sqq_flt.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in ibxl58svq_flt.fits[DQ,1]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] ********************************************************************************
+[INFO    ] *
+[INFO    ] *  Estimated memory usage:  up to 132 Mb.
+[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Output image file:       ~ 124 Mb. 
+[INFO    ] *  Cores available:         1
+[INFO    ] *
+[INFO    ] ********************************************************************************
+[INFO    ] ==== Processing Step  Initialization  finished at  05:11:51.113 (08/01/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	*flt.fits
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	None
+[INFO    ] 	output :	f160w_globalmin
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  05:11:51.121 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
+[INFO    ] ==== Processing Step  Static Mask  finished at  05:11:51.59 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  05:11:51.596 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	globalmin
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2019-01-08 05:11:52.044818
+[INFO    ]       Version 0.9.15 (2018-07-03 21:07:36 -0400)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50clq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50clq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl50cqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl50cqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51eoq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51eoq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl51etq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl51etq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl52k5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl52k5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53kxq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53kxq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl53l9q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl53l9q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54bgq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54bgq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl54blq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl54blq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f0q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f0q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl55f5q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl55f5q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56huq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56huq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl56i2q_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl56i2q_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57adq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57adq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl57aiq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl57aiq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58sqq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58sqq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'ibxl58svq_flt.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: ibxl58svq_skymatch_mask_sci1.fits[0]
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50clq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl50cqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51eoq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl51etq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl52k5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53kxq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl53l9q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54bgq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl54blq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f0q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl55f5q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56huq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl56i2q_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57adq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl57aiq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58sqq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ]    *   Image: ibxl58svq_flt.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNT-RATE
+[INFO    ]              Conversion factor (data->brightness):  60.797431635711504
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing "global" sky on requested image extensions (detector chips):  -----
+[INFO    ] 
+[INFO    ]     "Global" sky value: 48.404630694335985 (brightness units)
+[INFO    ] 
+[INFO    ]     Computed sky change (data units) for image ibxl50clq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl50cqq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl51eoq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl51etq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl52k0q_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl52k5q_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl53kxq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl53l9q_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl54bgq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl54blq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl55f0q_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl55f5q_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl56huq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl56i2q_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl57adq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl57aiq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl58sqq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]     Computed sky change (data units) for image ibxl58svq_flt.fits['SCI',1]:
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ] ***** skymatch ended on 2019-01-08 05:11:53.254121
+[INFO    ] TOTAL RUN TIME: 0:00:01.209303
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  05:11:53.575 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  05:11:53.579 (08/01/2019)
+[INFO    ] Single drizzle step not performed.
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  05:11:53.581 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  05:11:53.583 (08/01/2019)
+[INFO    ] Median combination step not performed.
+[INFO    ] ==== Processing Step  Blot  started at  05:11:53.585 (08/01/2019)
+[INFO    ] Blot step not performed.
+[INFO    ] ==== Processing Step  Blot  finished at  05:11:53.586 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  05:11:53.588 (08/01/2019)
+[INFO    ] Cosmic-ray identification (driz_cr) step not performed.
+[INFO    ] ==== Processing Step  Final Drizzle  started at  05:11:53.589 (08/01/2019)
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	64
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 85.25353484431402  -2.451813772112619  
+[INFO    ] CRPIX : 1621.3887398779339  1674.8092115603197  
+[INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
+[INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
+[INFO    ] NAXIS : 3243  3348
+[INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl50clq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl50cqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl51eoq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl51etq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl52k0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl52k5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl53kxq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl53l9q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl54bgq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl54blq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl55f0q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl55f5q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl56huq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl56i2q_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl57adq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl57aiq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl58sqq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796162 to ibxl58svq_flt.fits[sci,1]
+[WARNING ] No CR mask file found! Input DQ array not updated.
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Generating simple FITS output: f160w_globalmin_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_globalmin_drz_sci.fits
+[INFO    ] Writing out image to disk: f160w_globalmin_drz_wht.fits
+[INFO    ] Writing out image to disk: f160w_globalmin_drz_ctx.fits
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  05:12:02.059 (08/01/2019)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 05:12:02.064 (08/01/2019).
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          3.6144 sec.
+[INFO    ]             Static Mask          0.4722 sec.
+[INFO    ]            Subtract Sky          1.9795 sec.
+[INFO    ]        Separate Drizzle          0.0021 sec.
+[INFO    ]           Create Median          0.0000 sec.
+[INFO    ]                    Blot          0.0014 sec.
+[INFO    ]                 Driz_CR          0.0000 sec.
+[INFO    ]           Final Drizzle          8.4697 sec.
+[INFO    ]    ====================          ====================
+[INFO    ]                   Total          14.5392 sec.
+[INFO    ] Trailer file written to:  astrodrizzle.log

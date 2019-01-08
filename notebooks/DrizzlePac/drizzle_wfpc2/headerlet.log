@@ -1,0 +1,90 @@
+INFO: Tue Jan  8 05:06:51 2019: Starting create_headerlet with arguments:
+	 {'filename': [<astropy.io.fits.hdu.image.PrimaryHDU object at 0x1c1c2432b0>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c321da0>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c67fe80>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c689940>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c3b51d0>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c3bef98>]}
+create_headerlet DEBUG: Data extensions from which to create headerlet:
+	 [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet DEBUG: sciext in create_headerlet is [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet INFO: Setting wcsname from header[WCSNAME] to IDC_ta81040lu
+create_headerlet INFO: Setting destim to rootname of the science file
+create_headerlet INFO: 
+                Using default value for HDRNAME of "IDC_ta81040lu" derived from WCSNAME.
+                
+create_headerlet INFO: Setting hdrname to IDC_ta81040lu from header[WCSNAME]
+_create_primary_HDU INFO: Setting sipname value to ua060502m_ta81040lu
+_create_primary_HDU INFO: Setting npolfile value to NOMODEL
+_create_primary_HDU INFO: Setting d2imfile value to ua060502m_c0mm
+_create_primary_HDU INFO: Setting distname to ua060502m_ta81040lu-NOMODEL-ua060502m_c0mm
+INFO: Tue Jan  8 05:06:52 2019: Starting create_headerlet with arguments:
+	 {'filename': [<astropy.io.fits.hdu.image.PrimaryHDU object at 0x1c1c301160>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c3a9978>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c65b588>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c6ae080>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c3bed30>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c6a5390>]}
+create_headerlet DEBUG: Data extensions from which to create headerlet:
+	 [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet DEBUG: sciext in create_headerlet is [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet INFO: Setting wcsname from header[WCSNAME] to IDC_ta81040lu
+create_headerlet INFO: Setting destim to rootname of the science file
+create_headerlet INFO: 
+                Using default value for HDRNAME of "IDC_ta81040lu" derived from WCSNAME.
+                
+create_headerlet INFO: Setting hdrname to IDC_ta81040lu from header[WCSNAME]
+_create_primary_HDU INFO: Setting sipname value to ua060504m_ta81040lu
+_create_primary_HDU INFO: Setting npolfile value to NOMODEL
+_create_primary_HDU INFO: Setting d2imfile value to ua060504m_c0mm
+_create_primary_HDU INFO: Setting distname to ua060504m_ta81040lu-NOMODEL-ua060504m_c0mm
+INFO: Tue Jan  8 05:06:53 2019: Starting create_headerlet with arguments:
+	 {'filename': [<astropy.io.fits.hdu.image.PrimaryHDU object at 0x10635c630>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c3a9908>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c302780>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c68b630>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c69f828>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c6a1dd8>]}
+create_headerlet DEBUG: Data extensions from which to create headerlet:
+	 [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet DEBUG: sciext in create_headerlet is [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet INFO: Setting wcsname from header[WCSNAME] to IDC_ta81040lu
+create_headerlet INFO: Setting destim to rootname of the science file
+create_headerlet INFO: 
+                Using default value for HDRNAME of "IDC_ta81040lu" derived from WCSNAME.
+                
+create_headerlet INFO: Setting hdrname to IDC_ta81040lu from header[WCSNAME]
+_create_primary_HDU INFO: Setting sipname value to ua060506m_ta81040lu
+_create_primary_HDU INFO: Setting npolfile value to NOMODEL
+_create_primary_HDU INFO: Setting d2imfile value to ua060506m_c0mm
+_create_primary_HDU INFO: Setting distname to ua060506m_ta81040lu-NOMODEL-ua060506m_c0mm
+INFO: Tue Jan  8 05:06:54 2019: Starting create_headerlet with arguments:
+	 {'filename': [<astropy.io.fits.hdu.image.PrimaryHDU object at 0x1c1c3be7f0>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c69bbe0>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c68cb00>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c243240>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c253a20>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c22ed30>]}
+create_headerlet DEBUG: Data extensions from which to create headerlet:
+	 [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet DEBUG: sciext in create_headerlet is [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet INFO: Setting wcsname from header[WCSNAME] to IDC_ta81040lu
+create_headerlet INFO: Setting destim to rootname of the science file
+create_headerlet INFO: 
+                Using default value for HDRNAME of "IDC_ta81040lu" derived from WCSNAME.
+                
+create_headerlet INFO: Setting hdrname to IDC_ta81040lu from header[WCSNAME]
+_create_primary_HDU INFO: Setting sipname value to ua060508m_ta81040lu
+_create_primary_HDU INFO: Setting npolfile value to NOMODEL
+_create_primary_HDU INFO: Setting d2imfile value to ua060508m_c0mm
+_create_primary_HDU INFO: Setting distname to ua060508m_ta81040lu-NOMODEL-ua060508m_c0mm
+INFO: Tue Jan  8 05:06:55 2019: Starting create_headerlet with arguments:
+	 {'filename': [<astropy.io.fits.hdu.image.PrimaryHDU object at 0x10635c390>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c3bee10>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c274c50>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c229e80>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c6a5518>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c6a67f0>]}
+create_headerlet DEBUG: Data extensions from which to create headerlet:
+	 [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet DEBUG: sciext in create_headerlet is [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet INFO: Setting wcsname from header[WCSNAME] to IDC_ta81040lu
+create_headerlet INFO: Setting destim to rootname of the science file
+create_headerlet INFO: 
+                Using default value for HDRNAME of "IDC_ta81040lu" derived from WCSNAME.
+                
+create_headerlet INFO: Setting hdrname to IDC_ta81040lu from header[WCSNAME]
+_create_primary_HDU INFO: Setting sipname value to ua06050am_ta81040lu
+_create_primary_HDU INFO: Setting npolfile value to NOMODEL
+_create_primary_HDU INFO: Setting d2imfile value to ua06050am_c0mm
+_create_primary_HDU INFO: Setting distname to ua06050am_ta81040lu-NOMODEL-ua06050am_c0mm
+INFO: Tue Jan  8 05:06:55 2019: Starting create_headerlet with arguments:
+	 {'filename': [<astropy.io.fits.hdu.image.PrimaryHDU object at 0x1c1c3b57f0>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c690780>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c67f550>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c39b908>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c6a62e8>, <astropy.io.fits.hdu.image.ImageHDU object at 0x1c1c68a198>]}
+create_headerlet DEBUG: Data extensions from which to create headerlet:
+	 [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet DEBUG: sciext in create_headerlet is [('SCI', 1), ('SCI', 2), ('SCI', 3), ('SCI', 4)]
+create_headerlet INFO: Setting wcsname from header[WCSNAME] to IDC_ta81040lu
+create_headerlet INFO: Setting destim to rootname of the science file
+create_headerlet INFO: 
+                Using default value for HDRNAME of "IDC_ta81040lu" derived from WCSNAME.
+                
+create_headerlet INFO: Setting hdrname to IDC_ta81040lu from header[WCSNAME]
+_create_primary_HDU INFO: Setting sipname value to ua06050cm_ta81040lu
+_create_primary_HDU INFO: Setting npolfile value to NOMODEL
+_create_primary_HDU INFO: Setting d2imfile value to ua06050cm_c0mm
+_create_primary_HDU INFO: Setting distname to ua06050cm_ta81040lu-NOMODEL-ua06050cm_c0mm

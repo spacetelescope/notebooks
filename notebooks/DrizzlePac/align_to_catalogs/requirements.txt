@@ -1,0 +1,3 @@
+astroquery >= 0.3.7
+ccdproc >= 1.3.0
+
