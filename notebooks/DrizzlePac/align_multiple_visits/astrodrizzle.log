@@ -1,0 +1,480 @@
+[INFO    ] Setting up logfile :  astrodrizzle.log
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 06:10:51.9 (08/01/2019)
+[INFO    ] 
+[INFO    ] Version Information
+[INFO    ] --------------------
+[INFO    ] Python Version [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
+[INFO    ] 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:55:02) 
+[INFO    ] numpy Version -> 1.15.4 
+[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] ==== Processing Step  Initialization  started at  06:10:51.962 (08/01/2019)
+[INFO    ] Executing serially
+[INFO    ] Setting up output name: f606w_combined_drc.fits
+[INFO    ] -Creating imageObject List as input for processing steps.
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[INFO    ] Reading in MDRIZSKY of 31.99899673461914
+[INFO    ] Reading in MDRIZSKY of 31.99899673461914
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[INFO    ] Reading in MDRIZSKY of 30.26339721679687
+[INFO    ] Reading in MDRIZSKY of 30.26339721679687
+[INFO    ] Reading in MDRIZSKY of 44.91743087768555
+[INFO    ] Reading in MDRIZSKY of 44.91743087768555
+[INFO    ] Reset bit values of 4096 to a value of 0 in j9irw3fwq_flc.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in j9irw3fwq_flc.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in j9irw4b1q_flc.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in j9irw4b1q_flc.fits[DQ,2]
+[INFO    ] Reset bit values of 4096 to a value of 0 in j9irw5kaq_flc.fits[DQ,1]
+[INFO    ] Reset bit values of 4096 to a value of 0 in j9irw5kaq_flc.fits[DQ,2]
+[INFO    ] -Creating output WCS.
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 5.660320326463573  -72.0688817945315  
+[INFO    ] CRPIX : 2729.5  2958.0  
+[INFO    ] CD1_1 CD1_2  : 7.565158164041661e-06  -1.1647730101652213e-05  
+[INFO    ] CD2_1 CD2_2  : -1.1647730101652213e-05  -7.565158164041661e-06  
+[INFO    ] NAXIS : 5459  5916
+[INFO    ] ********************************************************************************
+[INFO    ] *
+[INFO    ] *  Estimated memory usage:  up to 2601 Mb.
+[INFO    ] *  Output image size:       5459 X 5916 pixels. 
+[INFO    ] *  Output image file:       ~ 369 Mb. 
+[INFO    ] *  Cores available:         6
+[INFO    ] *
+[INFO    ] ********************************************************************************
+[INFO    ] ==== Processing Step  Initialization  finished at  06:10:53.675 (08/01/2019)
+[INFO    ] 
+[INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
+[INFO    ] 	build :	True
+[INFO    ] 	coeffs :	True
+[INFO    ] 	context :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	group :	
+[INFO    ] 	in_memory :	False
+[INFO    ] 	input :	['j9irw3fwq_flc.fits', 'j9irw4b1q_flc.fits', 'j9irw5kaq_flc.fits']
+[INFO    ] 	mdriztab :	False
+[INFO    ] 	num_cores :	None
+[INFO    ] 	output :	f606w_combined
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	resetbits :	4096
+[INFO    ] 	runfile :	astrodrizzle.log
+[INFO    ] 	stepsize :	10
+[INFO    ] 	updatewcs :	False
+[INFO    ] 	wcskey :	
+[INFO    ] ==== Processing Step  Static Mask  started at  06:10:53.683 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Static Mask Step:
+[INFO    ] 	static :	True
+[INFO    ] 	static_sig :	4.0
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 31.581122;   rms = 43.616795;   static_sig = 4.00
+[INFO    ]   mode = 28.347710;   rms = 26.715811;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 31.350260;   rms = 46.306313;   static_sig = 4.00
+[INFO    ]   mode = 28.091238;   rms = 25.783632;   static_sig = 4.00
+[INFO    ] Computing static mask:
+
+[INFO    ]   mode = 43.469596;   rms = 43.507801;   static_sig = 4.00
+[INFO    ]   mode = 41.370675;   rms = 32.013336;   static_sig = 4.00
+[INFO    ] Saving static mask to disk: ./ACSWFC_2048x4096_1_staticMask.fits
+[INFO    ] Saving static mask to disk: ./ACSWFC_2048x4096_2_staticMask.fits
+[INFO    ] ==== Processing Step  Static Mask  finished at  06:10:55.021 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Subtract Sky  started at  06:10:55.024 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
+[INFO    ] 	sky_bits :	0
+[INFO    ] 	skyclip :	5
+[INFO    ] 	skyfile :	
+[INFO    ] 	skylower :	None
+[INFO    ] 	skylsigma :	4.0
+[INFO    ] 	skymask_cat :	
+[INFO    ] 	skymethod :	localmin
+[INFO    ] 	skystat :	median
+[INFO    ] 	skysub :	True
+[INFO    ] 	skyupper :	None
+[INFO    ] 	skyuser :	
+[INFO    ] 	skyusigma :	4.0
+[INFO    ] 	skywidth :	0.1
+[INFO    ] 	use_static :	True
+[INFO    ] ***** skymatch started on 2019-01-08 06:10:55.445320
+[INFO    ]       Version 0.9.15 (2018-07-03 21:07:36 -0400)
+[INFO    ] 
+[INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
+[INFO    ] 
+[INFO    ] NOTE: Computed sky values WILL NOT be subtracted from image data ('subtractsky'=False).
+[INFO    ] 'MDRIZSKY' header keyword will represent sky value *computed* from data.
+[INFO    ] 
+[INFO    ] -----  User specified keywords:  -----
+[INFO    ]        Sky Value Keyword:  'MDRIZSKY'
+[INFO    ]        Data Units Keyword: 'BUNIT'
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Input file list:  -----
+[INFO    ] 
+[INFO    ]    **  Input image: 'j9irw3fwq_flc.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: j9irw3fwq_skymatch_mask_sci1.fits[0]
+[INFO    ]        EXT: 'SCI',2;	MASK: j9irw3fwq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'j9irw4b1q_flc.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: j9irw4b1q_skymatch_mask_sci1.fits[0]
+[INFO    ]        EXT: 'SCI',2;	MASK: j9irw4b1q_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ]    **  Input image: 'j9irw5kaq_flc.fits'
+[INFO    ]        EXT: 'SCI',1;	MASK: j9irw5kaq_skymatch_mask_sci1.fits[0]
+[INFO    ]        EXT: 'SCI',2;	MASK: j9irw5kaq_skymatch_mask_sci2.fits[0]
+[INFO    ] 
+[INFO    ] -----  Sky statistics parameters:  -----
+[INFO    ]        statistics function: 'median'
+[INFO    ]        lower = None
+[INFO    ]        upper = None
+[INFO    ]        nclip = 5
+[INFO    ]        lsigma = 4.0
+[INFO    ]        usigma = 4.0
+[INFO    ]        binwidth = 0.1
+[INFO    ] 
+[INFO    ] -----  Data->Brightness conversion parameters for input files:  -----
+[INFO    ] 
+[INFO    ]    *   Image: j9irw3fwq_flc.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 339.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  1.1799410029498523
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 339.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  1.1799410029498523
+[INFO    ] 
+[INFO    ]    *   Image: j9irw4b1q_flc.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 339.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  1.1799410029498523
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 339.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  1.1799410029498523
+[INFO    ] 
+[INFO    ]    *   Image: j9irw5kaq_flc.fits
+[INFO    ]        EXT = 'SCI',1
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 339.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  1.1799410029498523
+[INFO    ]        EXT = 'SCI',2
+[INFO    ]              Data units type: COUNTS
+[INFO    ]              EXPTIME: 339.0 [s]
+[INFO    ]              Conversion factor (data->brightness):  1.1799410029498523
+[INFO    ] 
+[INFO    ] 
+[INFO    ] -----  Computing sky values requested image extensions (detector chips):  -----
+[INFO    ] 
+[INFO    ]    *   Image:   'j9irw3fwq_flc.fits['SCI',1,2]'  --  SKY = 37.75692154875898 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 31.999   NEW MDRIZSKY = 31.999
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 31.999   NEW MDRIZSKY = 31.999
+[INFO    ]    *   Image:   'j9irw4b1q_flc.fits['SCI',1,2]'  --  SKY = 35.70903676801022 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 30.2634   NEW MDRIZSKY = 30.2634
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 30.2634   NEW MDRIZSKY = 30.2634
+[INFO    ]    *   Image:   'j9irw5kaq_flc.fits['SCI',1,2]'  --  SKY = 52.99996345092412 (brightness units)
+[INFO    ]        Sky change (data units):
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 44.9175   NEW MDRIZSKY = 44.9175
+[INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = 44.9175   NEW MDRIZSKY = 44.9175
+[INFO    ] ***** skymatch ended on 2019-01-08 06:10:57.796789
+[INFO    ] TOTAL RUN TIME: 0:00:02.351469
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  06:10:58.229 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  06:10:58.23 (08/01/2019)
+[INFO    ] Interpreted paramDict with single=True as:
+{'build': True, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 80, 'compress': False, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
+[INFO    ] 	bits :	80
+[INFO    ] 	build :	False
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	compress :	False
+[INFO    ] 	crbit :	None
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	turbo
+[INFO    ] 	num_cores :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	electrons
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	None
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel turbo
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 5.660320326463573  -72.0688817945315  
+[INFO    ] CRPIX : 2729.5  2958.0  
+[INFO    ] CD1_1 CD1_2  : 7.565158164041661e-06  -1.1647730101652213e-05  
+[INFO    ] CD2_1 CD2_2  : -1.1647730101652213e-05  -7.565158164041661e-06  
+[INFO    ] NAXIS : 5459  5916
+[INFO    ] Executing 3 parallel workers
+[INFO    ] -Drizzle input: j9irw3fwq_flc.fits[sci,1]
+[INFO    ] -Drizzle input: j9irw4b1q_flc.fits[sci,1]
+[INFO    ] -Drizzle input: j9irw5kaq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 31.998991 to j9irw3fwq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 30.263409 to j9irw4b1q_flc.fits[sci,1]
+[INFO    ] Applying sky value of 44.917469 to j9irw5kaq_flc.fits[sci,1]
+[INFO    ] Writing out mask file: j9irw3fwq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: j9irw4b1q_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: j9irw5kaq_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzle input: j9irw3fwq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 31.998991 to j9irw3fwq_flc.fits[sci,2]
+[INFO    ] Writing out mask file: j9irw3fwq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: j9irw4b1q_flc.fits[sci,2]
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] Applying sky value of 30.263409 to j9irw4b1q_flc.fits[sci,2]
+[INFO    ] -Drizzle input: j9irw5kaq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 44.917469 to j9irw5kaq_flc.fits[sci,2]
+[INFO    ] Writing out mask file: j9irw4b1q_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] Writing out mask file: j9irw5kaq_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: j9irw3fwq_single_sci.fits
+[INFO    ] Writing out image to disk: j9irw3fwq_single_sci.fits
+[INFO    ] Writing out image to disk: j9irw3fwq_single_wht.fits
+[INFO    ] -Generating simple FITS output: j9irw4b1q_single_sci.fits
+[INFO    ] -Generating simple FITS output: j9irw5kaq_single_sci.fits
+[INFO    ] Writing out image to disk: j9irw4b1q_single_sci.fits
+[INFO    ] Writing out image to disk: j9irw5kaq_single_sci.fits
+[INFO    ] Writing out image to disk: j9irw4b1q_single_wht.fits
+[INFO    ] Writing out image to disk: j9irw5kaq_single_wht.fits
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  06:11:02.470 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Create Median  started at  06:11:02.479 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Create Median Step:
+[INFO    ] 	combine_bufsize :	None
+[INFO    ] 	combine_grow :	1
+[INFO    ] 	combine_hthresh :	None
+[INFO    ] 	combine_lthresh :	None
+[INFO    ] 	combine_maskpt :	0.3
+[INFO    ] 	combine_nhigh :	0
+[INFO    ] 	combine_nlow :	0
+[INFO    ] 	combine_nsigma :	4 3
+[INFO    ] 	combine_type :	minmed
+[INFO    ] 	compress :	False
+[INFO    ] 	median :	True
+[INFO    ] 	median_newmasks :	True
+[INFO    ] 	proc_unit :	native
+[INFO    ] reference sky value for image 'j9irw3fwq_flc.fits' is 31.998991012573242
+[INFO    ] reference sky value for image 'j9irw4b1q_flc.fits' is 30.26340866088867
+[INFO    ] reference sky value for image 'j9irw5kaq_flc.fits' is 44.9174690246582
+[INFO    ] Saving output median image to: 'f606w_combined_med.fits'
+[INFO    ] ==== Processing Step  Create Median  finished at  06:11:19.575 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Blot  started at  06:11:19.578 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Blot Step:
+[INFO    ] 	blot_addsky :	True
+[INFO    ] 	blot_interp :	poly5
+[INFO    ] 	blot_sinscl :	1.0
+[INFO    ] 	blot_skyval :	0.0
+[INFO    ] 	coeffs :	True
+[INFO    ]     Blot: creating blotted image:  j9irw3fwq_flc.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 31.998991 to blotted image j9irw3fwq_flc.fits[sci,1]
+[INFO    ] -Generating simple FITS output: j9irw3fwq_sci1_blt.fits
+[INFO    ] Writing out image to disk: j9irw3fwq_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  j9irw3fwq_flc.fits[sci,2]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 31.998991 to blotted image j9irw3fwq_flc.fits[sci,2]
+[INFO    ] -Generating simple FITS output: j9irw3fwq_sci2_blt.fits
+[INFO    ] Writing out image to disk: j9irw3fwq_sci2_blt.fits
+[INFO    ]     Blot: creating blotted image:  j9irw4b1q_flc.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 30.263409 to blotted image j9irw4b1q_flc.fits[sci,1]
+[INFO    ] -Generating simple FITS output: j9irw4b1q_sci1_blt.fits
+[INFO    ] Writing out image to disk: j9irw4b1q_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  j9irw4b1q_flc.fits[sci,2]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 30.263409 to blotted image j9irw4b1q_flc.fits[sci,2]
+[INFO    ] -Generating simple FITS output: j9irw4b1q_sci2_blt.fits
+[INFO    ] Writing out image to disk: j9irw4b1q_sci2_blt.fits
+[INFO    ]     Blot: creating blotted image:  j9irw5kaq_flc.fits[sci,1]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 44.917469 to blotted image j9irw5kaq_flc.fits[sci,1]
+[INFO    ] -Generating simple FITS output: j9irw5kaq_sci1_blt.fits
+[INFO    ] Writing out image to disk: j9irw5kaq_sci1_blt.fits
+[INFO    ]     Blot: creating blotted image:  j9irw5kaq_flc.fits[sci,2]
+[INFO    ] Using default C-based coordinate transformation...
+[INFO    ] Applying sky value of 44.917469 to blotted image j9irw5kaq_flc.fits[sci,2]
+[INFO    ] -Generating simple FITS output: j9irw5kaq_sci2_blt.fits
+[INFO    ] Writing out image to disk: j9irw5kaq_sci2_blt.fits
+[INFO    ] ==== Processing Step  Blot  finished at  06:11:29.650 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Driz_CR  started at  06:11:29.653 (08/01/2019)
+[INFO    ] USER INPUT PARAMETERS for Driz_CR Step:
+[INFO    ] 	crbit :	4096
+[INFO    ] 	driz_cr :	True
+[INFO    ] 	driz_cr_corr :	True
+[INFO    ] 	driz_cr_ctegrow :	0
+[INFO    ] 	driz_cr_grow :	1
+[INFO    ] 	driz_cr_scale :	1.2 0.7
+[INFO    ] 	driz_cr_snr :	3.5 3.0
+[INFO    ] 	inmemory :	False
+[INFO    ] Executing 3 parallel workers
+[INFO    ] Creating output :  j9irw3fwq_sci1_crmask.fits
+[INFO    ] Creating output :  j9irw5kaq_sci1_crmask.fits
+[INFO    ] Creating output :  j9irw4b1q_sci1_crmask.fits
+[INFO    ] Creating output :  j9irw5kaq_sci2_crmask.fits
+[INFO    ] Creating output :  j9irw4b1q_sci2_crmask.fits
+[INFO    ] Creating output :  j9irw3fwq_sci2_crmask.fits
+[INFO    ] Created CR corrected file:  j9irw5kaq_crclean.fits
+[INFO    ] Created CR corrected file:  j9irw4b1q_crclean.fits
+[INFO    ] Created CR corrected file:  j9irw3fwq_crclean.fits
+[INFO    ] ==== Processing Step  Driz_CR  finished at  06:11:35.891 (08/01/2019)
+[INFO    ] 
+[INFO    ] ==== Processing Step  Final Drizzle  started at  06:11:35.90 (08/01/2019)
+[INFO    ] Interpreted paramDict with single=False as:
+{'build': True, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 80, 'units': 'cps'}
+[INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
+[INFO    ] 	bits :	80
+[INFO    ] 	build :	True
+[INFO    ] 	clean :	False
+[INFO    ] 	coeffs :	True
+[INFO    ] 	crbit :	4096
+[INFO    ] 	fillval :	None
+[INFO    ] 	kernel :	square
+[INFO    ] 	maskval :	None
+[INFO    ] 	pixfrac :	1.0
+[INFO    ] 	proc_unit :	native
+[INFO    ] 	stepsize :	10
+[INFO    ] 	units :	cps
+[INFO    ] 	wcskey :	
+[INFO    ] 	wht_type :	EXP
+[INFO    ] 	wt_scl :	exptime
+[INFO    ]   **Using sub-sampling value of 10 for kernel square
+[INFO    ] Running Drizzle to create output frame with WCS of: 
+[INFO    ] WCS Keywords
+[INFO    ] 
+[INFO    ] Number of WCS axes: 2
+[INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
+[INFO    ] CRVAL : 5.660320326463573  -72.0688817945315  
+[INFO    ] CRPIX : 2729.5  2958.0  
+[INFO    ] CD1_1 CD1_2  : 7.565158164041661e-06  -1.1647730101652213e-05  
+[INFO    ] CD2_1 CD2_2  : -1.1647730101652213e-05  -7.565158164041661e-06  
+[INFO    ] NAXIS : 5459  5916
+[INFO    ] -Drizzle input: j9irw3fwq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 31.998991 to j9irw3fwq_flc.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: j9irw3fwq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: j9irw3fwq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 31.998991 to j9irw3fwq_flc.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: j9irw3fwq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: j9irw4b1q_flc.fits[sci,1]
+[INFO    ] Applying sky value of 30.263409 to j9irw4b1q_flc.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: j9irw4b1q_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: j9irw4b1q_flc.fits[sci,2]
+[INFO    ] Applying sky value of 30.263409 to j9irw4b1q_flc.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: j9irw4b1q_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: j9irw5kaq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 44.917469 to j9irw5kaq_flc.fits[sci,1]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
+[INFO    ] Writing out mask file: j9irw5kaq_sci1_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Drizzle input: j9irw5kaq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 44.917469 to j9irw5kaq_flc.fits[sci,2]
+[INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
+[INFO    ] Writing out mask file: j9irw5kaq_sci2_final_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = square
+
+[INFO    ] -Generating multi-extension output file:  f606w_combined_drc.fits
+[INFO    ] Deleted all instances of WCS with key A in extensions [1]
+[INFO    ] Deleted all instances of WCS with key B in extensions [1]
+[INFO    ] Writing out to disk: f606w_combined_drc.fits
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  06:11:55.160 (08/01/2019)
+[INFO    ] 
+[INFO    ] 
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 06:11:55.165 (08/01/2019).
+[INFO    ] 
+[INFO    ] 
+[INFO    ]    --------------------          --------------------
+[INFO    ]                    Step          Elapsed time
+[INFO    ]    --------------------          --------------------
+[INFO    ] 
+[INFO    ]          Initialization          1.7129 sec.
+[INFO    ]             Static Mask          1.3381 sec.
+[INFO    ]            Subtract Sky          3.2053 sec.
+[INFO    ]        Separate Drizzle          4.2381 sec.
+[INFO    ]           Create Median          17.0956 sec.
+[INFO    ]                    Blot          10.0717 sec.
+[INFO    ]                 Driz_CR          6.2383 sec.
+[INFO    ]           Final Drizzle          19.2579 sec.
+[INFO    ]    ====================          ====================
+[INFO    ]                   Total          63.1580 sec.
+[INFO    ] Trailer file written to:  astrodrizzle.log

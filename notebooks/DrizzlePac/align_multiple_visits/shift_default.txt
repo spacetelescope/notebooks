@@ -1,0 +1,7 @@
+# frame: output
+# refimage: shifts_wcs.fits[wcs]
+# form: delta
+# units: pixels
+j9irw3fwq_flc.fits    0.000000  0.000000    0.000000     1.000000   0.000000  0.000000
+j9irw4b1q_flc.fits    10.979958  -10.000526    359.999578     1.000002   0.738241  0.738679
+j9irw5kaq_flc.fits    -10.998677  -16.005929    359.999754     0.999996   0.733163  0.751888
