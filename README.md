@@ -1,5 +1,7 @@
 # Notebooks
 
+[![Build Status](https://travis-ci.org/spacetelescope/notebooks.svg?branch=master)](https://travis-ci.org/spacetelescope/notebooks)
+
 This repository contains a curated set of Jupyter notebooks related to the work that we do at STScI. These notebooks follow a consistent [style guide](https://github.com/spacetelescope/style-guides/blob/master/guides/jupyter-notebooks.md) in terms of layout/structure, coding conventions etc.
 
 These notebooks are also under continuous integration to ensure that astronomers using these notebooks have a high level of confidence that they will work.
