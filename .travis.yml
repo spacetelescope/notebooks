@@ -4,6 +4,7 @@ env:
   global:
     - CONDA_CHANNELS='astropy-ci-extras astropy http://ssb.stsci.edu/astroconda'
     - CONDA_DEPENDENCIES="astropy scipy astroquery matplotlib jupyter pandas drizzlepac crds ccdproc acstools photutils regions pyregion"
+    - PIP_DEPENDENCIES="k2flix"
     - PYTHON_VERSION=3.6
 
 jobs:
