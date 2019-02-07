@@ -3,6 +3,7 @@
 
 # These owners will be the default owners for everything in the repo.
 *       @eteq etollerud@stsci.edu
+*       @brechmos-stsci crjones@stsci.edu
 notebooks/MAST/* @ceb8 cbrasseur@stsci.edu
 
 # Order is important. The last matching pattern has the most precedence.
