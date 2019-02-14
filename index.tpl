@@ -16,7 +16,7 @@
       {{ group[0]['output_file_path'].split("/")[1] }}
       {% for page in group %}
         {% set pre = page['output_file_path'].split("/")[2] + " | " if "_" not in page['output_file_path'].split("/")[2] else "" %}
-        <li class="list-group-item"><a href="{{ page['output_file_path'] }}">{{ pre + page['name'] + "   |    " + page['title'] }}</a></li>
+        <li class="list-group-item"><a href="{{ page['output_file_path'] }}">{{ pre + page['title'] }}</a></li>
       {% endfor %}
     </ul>
   </li>
