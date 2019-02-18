@@ -1,2 +1,0 @@
-k2flix
-git+https://github.com/eteq/nbpages.git

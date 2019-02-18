@@ -1,93 +1,93 @@
-# Python CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-python/ for more details
-#
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  notebook-executor:
     docker:
-      # specify the version you desire here
-      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      #- image: circleci/python:3.6.1
       - image: continuumio/miniconda3
-        #astroconda/python:3.6.1
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
-
     working_directory: ~/repo
 
+jobs:
+  build_and_check:
+    executor: notebook-executor
     steps:
+
       - checkout
 
       - restore_cache:
-          key: v3-miniconda-{{ .Branch }}
-
-      - run:
-          name: install miniconda
-          command: |
-            pwd
-           ./.circleci/install_conda.sh
-
-      - save_cache:
-          key: v3-miniconda-{{ .Branch }}
-          paths:
-            - /home/circleci/miniconda
+          keys:
+            - v1-env-{{ checksum "environment.yml" }}
+            - v1-env-
 
       - run:
           name: Setup Environment
           command: |
-            source ~/miniconda/bin/activate root
-            conda create --name notebooks_env --use-local
-            conda install -n notebooks_env astropy scipy astroquery matplotlib jupyter pandas drizzlepac crds ccdproc acstools photutils regions pyregion
-            conda activate notebooks_env
-            pwd
-            echo 'done settin up env'
+            ./.circleci/setup_env.sh
+
+      - save_cache:
+          key: v1-env-{{ checksum "environment.yml" }}
+          paths:
+            - /opt/conda
 
       - run:
-          name: run/convert notebooks
+          name: Run/convert notebooks
           command: |
-            echo 'convertin nbs'
-            pwd
-            python ../convert.py
-          name: check nbs
+            conda info --envs
+            source activate notebooks_env
+            conda info --envs
+            python ./convert.py
+
+      - run:
+          name: Check notebooks
           command: |
-            python -m "nbpages.check_nbs"
+            COMMIT_RANGE=$(echo "${CIRCLE_COMPARE_URL}" | cut -d/ -f7)
+            if [[ $COMMIT_RANGE != *"..."* ]]; then
+              COMMIT_RANGE="${COMMIT_RANGE}...${COMMIT_RANGE}"
+            fi
+            source activate notebooks_env
+            conda info --envs
+            python -m "nbpages.check_nbs" --commit-range=${COMMIT_RANGE}
+  deploy:
+    executor: notebook-executor
+    environment:
+      - DEPLOY_BRANCH: gh-pages
+    steps:
+      - add_ssh_keys
+
+      # clone gh-pages branch, copy over files from build, commit and push
+      # export and sources are needed before script because CircleCI does not support
+      # interpolation when setting environment variables
+      # i.e. can't set environment vars to other environment vars (for use in script)
+      # see https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-shell-command
+      - deploy:
+          name: Deploy
+          command: |
+            if [[ -z ${CIRCLE_PULL_REQUEST} ]]; then
+              echo "export WORKSPACE=${CIRCLE_WORKING_DIRECTORY}" >> $BASH_ENV
+              echo "export REPO_URL=${CIRCLE_REPOSITORY_URL}" >> $BASH_ENV
+              source $BASH_ENV
+              git config --global user.email $GH_EMAIL
+              git config --global user.name $GH_NAME
+              ./gh_pages_deploy.sh
+            else
+              echo "PR, not deploying..."
+              echo "${CIRCLE_PULL_REQUEST}"
+              echo "${CIRCLE_PULL_NUMBER}"
+            fi
+
+      - store_artifacts:
+          path: /out/notebooks
 
 
+workflows:
+  version: 2.1
 
-      # Download and cache dependencies
-      # - restore_cache:
-      #     keys:
-      #       - v1-dependencies-{{ checksum "requirements.txt" }}
-      #       # fallback to using the latest cache if no exact match is found
-      #       - v1-dependencies-
-      #
-      # - run:
-      #     name: install dependencies
-      #     command: |
-      #       python3 -m venv venv
-      #       . venv/bin/activate
-      #       pip install -r requirements.txt
-      #
-      # - save_cache:
-      #     paths:
-      #       - ./venv
-      #     key: v1-dependencies-{{ checksum "requirements.txt" }}
-
-      # run tests!
-      # this example uses Django's built-in test-runner
-      # other common Python testing frameworks include pytest and nose
-      # https://pytest.org
-      # https://nose.readthedocs.io
-      # - run:
-      #     name: run tests
-      #     command: |
-      #       . venv/bin/activate
-      #       python manage.py test
-      #
-      # - store_artifacts:
-      #     path: test-reports
-      #     destination: test-reports
+  build-deploy:
+    jobs:
+      - build_and_check
+      - deploy:
+          requires:
+            - build_and_check
+          filters:
+            branches:
+              only:
+                - master
