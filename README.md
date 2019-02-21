@@ -9,8 +9,20 @@ These notebooks are also under continuous integration to ensure that astronomers
 ## Contents
 
 This repository holds the notebooks themselves, but in a harder-to-read unexecuted form. If you want to view the notebooks online, you should view [the rendered versions](https://spacetelescope.github.io/notebooks).  At present this includes:
-
+* DrizzlePac
+  * [Initialization](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/Initialization/Initialization.html)
+  * [Aligning HST images to an absolute reference catalog](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.html)
+  * [Aligning HST Mosaics](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/align_mosaics/align_mosaics.html)
+  * [Optimizing Image Alignment for Multiple HST Visits](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/align_multiple_visits/align_multiple_visits.html)
+  * [Aligning Deep Exposures of Sparse Fields](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.html)
+  * [Drizzling WFPC2 Images to use a Single Zeropoint](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.html)
+  * [Satellite Trail Masking Techniques](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/mask_satellite/mask_satellite.html)
+  * [Optimizing the Image Sampling](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.html)
+  * [Sky Matching](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/sky_matching/sky_matching.html)
+  * [Using DS9 Regions to Include and Exclude Sources in HST Image Alignment with TWEAKREG](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.html)
 * MAST
+  * Hubble Source Catalog
+    * [MAST Table Access Protocol Hubble Source Catalog Demo](https://spacetelescope.github.io/notebooks/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.html)
   * Kepler
     * [Kepler Lightcurve](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.html)
     * [Kepler TPF](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.html)
