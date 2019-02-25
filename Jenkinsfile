@@ -1,4 +1,3 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent { docker { image 'continuumio/miniconda3' } }
     stages {
