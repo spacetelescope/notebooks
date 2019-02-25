@@ -44,7 +44,7 @@ bc.test_cmds = [
 ]
 
 utils.run([bc])
-
+}
 }
 //pipeline {
 //    agent { docker { image 'continuumio/miniconda3' } }
