@@ -24,7 +24,7 @@ if (utils.scm_checkout()) return
 
 node {
 if (!utils.condaPresent()) {
-utils.installConda('4.5.12', './miniconda/')
+utils.installConda('4.5.12', '/miniconda3/')
 
 bc = new BuildConfig()
 bc.nodetype = 'linux'
