@@ -24,7 +24,7 @@ if (utils.scm_checkout()) return
 
 node {
 if (!utils.condaPresent()) {
-utils.installConda('4.5.12', './')
+utils.installConda('4.5.12')
 
 bc = new BuildConfig()
 bc.nodetype = 'linux'
