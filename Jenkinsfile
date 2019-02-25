@@ -22,6 +22,9 @@ def conda_channels = [
 
 if (utils.scm_checkout()) return
 
+if (!utils.condaPresent()) {
+utils.installConda('4.5.12', './')
+
 bc = new BuildConfig()
 bc.nodetype = 'linux'
 bc.name = 'build'
@@ -40,7 +43,7 @@ bc.test_cmds = [
 ]
 
 utils.run([bc])
-
+}
 //pipeline {
 //    agent { docker { image 'continuumio/miniconda3' } }
 //    stages {
