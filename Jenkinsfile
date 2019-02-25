@@ -1,5 +1,4 @@
 def conda_packages = [
-    "python=3.6",
     "astropy",
     "scipy",
     "astroquery",
@@ -16,10 +15,10 @@ def conda_packages = [
 ]
 
 def conda_channels = [
+  "defaults",
   "astropy-ci-extras",
   "astropy",
   "http://ssb.stsci.edu/astroconda",
-  "defaults"
 ]
 
 if (utils.scm_checkout()) return
