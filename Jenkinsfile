@@ -34,7 +34,9 @@ bc.build_cmds = [
  "pip install git+https://github.com/eteq/nbpages.git",
  "pip install astroquery --pre",
  "pip install astroquery --upgrade",
- "export PYTHONIOENCODING=utf8",
+ "LANG=en_US.UTF-8",
+ "export LANG",
+ "echo $LANG",
  "python convert.py",
 ]
 bc.test_cmds = [
