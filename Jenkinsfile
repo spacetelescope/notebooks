@@ -42,7 +42,7 @@ bc.test_cmds = [
   'python -m "nbpages.check_nbs"'
 ]
 
-utils.run([bc], concurrent=False)
+utils.run([bc])
 
 //pipeline {
 //    agent { docker { image 'continuumio/miniconda3' } }
