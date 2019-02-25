@@ -27,8 +27,8 @@ if (utils.scm_checkout()) return
 bc = new BuildConfig()
 bc.nodetype = 'linux'
 bc.name = 'build'
-bc.conda_channels = conda_channels
-bc.conda_packages = conda_packages
+//bc.conda_channels = conda_channels
+//bc.conda_packages = conda_packages
 bc.build_cmds = [
   "conda env create -f environment.yml",
   "with_env -n notebooks python convert.py",
