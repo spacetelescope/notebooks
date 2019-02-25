@@ -24,7 +24,7 @@ if (utils.scm_checkout()) return
 
 node {
 if (!utils.condaPresent()) {
-utils.installConda('4.5.12')
+utils.installConda()
 
 bc = new BuildConfig()
 bc.nodetype = 'linux'
@@ -44,7 +44,7 @@ bc.test_cmds = [
 ]
 
 utils.run([bc])
-}
+
 }
 //pipeline {
 //    agent { docker { image 'continuumio/miniconda3' } }
