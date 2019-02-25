@@ -20,6 +20,8 @@ def conda_channels = [
   "http://ssb.stsci.edu/astroconda"
 ]
 
+if (utils.scm_checkout()) return
+
 bc = new BuildConfig()
 bc.nodetype = 'linux'
 bc.name = 'build'
