@@ -1,4 +1,5 @@
 def conda_packages = [
+    "python=3.6",
     "astropy",
     "scipy",
     "astroquery",
@@ -17,12 +18,11 @@ def conda_packages = [
 def conda_channels = [
   "astropy-ci-extras",
   "astropy",
-  "http://ssb.stsci.edu/astroconda"
+  "http://ssb.stsci.edu/astroconda",
+  "defaults"
 ]
 
 if (utils.scm_checkout()) return
-
-
 
 bc = new BuildConfig()
 bc.nodetype = 'linux'
@@ -43,15 +43,3 @@ bc.test_cmds = [
 ]
 
 utils.run([bc])
-
-//pipeline {
-//    agent { docker { image 'continuumio/miniconda3' } }
-//    stages {
-//        stage('build') {
-//            steps {
-//                sh 'echo "test"'
-//                sh 'ls'
-//            }
-//        }
-//    }
-//}
