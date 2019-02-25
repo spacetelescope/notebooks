@@ -36,7 +36,7 @@ bc.build_cmds = [
  "pip install astroquery --upgrade",
  "LANG=en_US.UTF-8",
  "export LANG",
- "echo $LANG",
+ "echo \$LANG",
  "python convert.py",
 ]
 bc.test_cmds = [
