@@ -11,7 +11,8 @@ def conda_packages = [
     "acstools",
     "photutils",
     "regions",
-    "pyregion"
+    "pyregion",
+    "numpy"
 ]
 
 def conda_channels = [
