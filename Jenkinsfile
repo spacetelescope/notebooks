@@ -25,22 +25,19 @@ if (utils.scm_checkout()) return
 bc = new BuildConfig()
 bc.nodetype = 'linux'
 bc.name = 'build'
-bc.conda_channels = conda_channels
-bc.conda_packages = conda_packages
+//bc.conda_channels = conda_channels
+//bc.conda_packages = conda_packages
 bc.build_cmds = [
-//  "conda env create -f environment.yml",
-//  "with_env -n notebooks python convert.py",
- "pip install k2flix",
- "pip install git+https://github.com/eteq/nbpages.git",
- "pip install astroquery --pre",
- "pip install astroquery --upgrade",
- "LANG=en_US.UTF-8",
- "export LANG",
- "echo \$LANG",
- "python convert.py",
+  "conda env create -f environment.yml",
+  "with_env -n notebooks python convert.py",
+// "pip install k2flix",
+// "pip install git+https://github.com/eteq/nbpages.git",
+// "pip install astroquery --pre",
+// "pip install astroquery --upgrade",
+ "with_env python convert.py",
 ]
 bc.test_cmds = [
-  'python -m "nbpages.check_nbs"'
+  'with_env -n notebooks python -m "nbpages.check_nbs"'
 ]
 
 utils.run([bc])
