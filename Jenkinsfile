@@ -12,10 +12,11 @@ def conda_packages = [
     "photutils",
     "regions",
     "pyregion",
-    "numpy"
+    "numpy=1.15"
 ]
 
 def conda_channels = [
+  "defaults"
   "astropy-ci-extras",
   "astropy",
   "http://ssb.stsci.edu/astroconda",
