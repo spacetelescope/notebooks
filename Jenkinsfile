@@ -28,7 +28,7 @@ bc = new BuildConfig()
 bc.nodetype = 'linux'
 bc.name = 'build'
 bc.conda_channels = conda_channels
-bc.conda_packages = conda_packages + ["python=3.6"]
+bc.conda_packages = conda_packages
 bc.build_cmds = [
   "pip install k2flix ${pip_install_args}",
   "pip install git+https://github.com/eteq/nbpages.git ${pip_install_args}",
