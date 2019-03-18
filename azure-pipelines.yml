@@ -1,0 +1,79 @@
+name: notebooks
+
+trigger:
+  branches:
+    include:
+      - master # branch names which will trigger a build
+    exclude:
+      - gh-pages # branch names which will not
+
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - master
+
+jobs:
+- job: Convert
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+  - bash: echo "##vso[task.prependpath]/usr/share/miniconda/bin"
+    displayName: Add conda to PATH
+
+  - script: |
+      conda env update -f environment.yml
+    displayName: Create Conda environment
+
+  - bash: |
+      source activate notebooks_env
+      conda env list
+      python convert.py
+    displayName: 'Convert/Execute Notebooks'
+
+  - task: PublishPipelineArtifact@0
+    inputs:
+      artifactName: notebooks
+      pathtoPublish: '$(System.DefaultWorkingDirectory)'
+
+- job: Check
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  steps:
+  - bash: echo "##vso[task.prependpath]/usr/share/miniconda/bin"
+    displayName: Add conda to PATH
+
+  - script: |
+      conda env update -f environment.yml
+    displayName: Create Conda environment
+
+  - bash: |
+      source activate notebooks_env
+      conda env list
+      python -m "nbpages.check_nbs"
+    displayName: 'Check Notebooks'
+
+- job: Deploy
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    WORKSPACE: '$(System.ArtifactsDirectory)/notebooks'
+  dependsOn: Convert
+  condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), ne(variables['Build.SourceBranch'], 'refs/heads/masterj'))
+  steps:
+  - checkout: self
+    persistCredentials: true
+    clean: true
+
+  - task: DownloadPipelineArtifact@1
+    displayName: 'Download Pipeline Artifacts'
+    inputs:
+      artifactName: notebooks
+      # itemPattern: '**/*.html' # edit files to add to commit here or .artifactignore
+      downloadPath: '$(System.ArtifactsDirectory)'
+
+  - bash: |
+      git config --global user.email 'azure@test.com'
+      git config --global user.name 'azure'
+      bash ./gh_pages_deploy.sh
+    displayName: 'Config Git and Deploy'

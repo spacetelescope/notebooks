@@ -1,0 +1,11 @@
+**/*.ipynb_checkpoints/
+*.fits
+*.fits.gz
+*.zip
+*.tar
+*.tar.gz
+reference_files
+*.coo
+*.log
+*.match
+*.list
