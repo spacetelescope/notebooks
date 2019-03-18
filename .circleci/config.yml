@@ -46,11 +46,23 @@ jobs:
             source activate notebooks_env
             conda info --envs
             python -m "nbpages.check_nbs" --commit-range=${COMMIT_RANGE}
+
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - repo
+
+      - store_artifacts:
+          path: ~/repo
+
   deploy:
     executor: notebook-executor
     environment:
       - DEPLOY_BRANCH: gh-pages
     steps:
+      - attach_workspace:
+          at: ~/
+
       - add_ssh_keys
 
       # clone gh-pages branch, copy over files from build, commit and push
@@ -73,9 +85,6 @@ jobs:
               echo "${CIRCLE_PULL_REQUEST}"
               echo "${CIRCLE_PULL_NUMBER}"
             fi
-
-      - store_artifacts:
-          path: /out/notebooks
 
 
 workflows:
