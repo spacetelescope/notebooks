@@ -84,6 +84,8 @@ jobs:
               source $BASH_ENV
               git config --global user.email $GH_EMAIL
               git config --global user.name $GH_NAME
+              echo "Host * " >> ~/.ssh/config
+              echo "  StrictHostKeyChecking no" >> ~/.ssh/config
               ./gh_pages_deploy.sh
             else
               echo "PR, not deploying..."
