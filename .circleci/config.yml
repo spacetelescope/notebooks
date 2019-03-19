@@ -55,6 +55,11 @@ jobs:
       - store_artifacts:
           path: ~/repo
 
+      - run:
+          name: "Built notebooks are available at:"
+          command: NB_URL="${CIRCLE_BUILD_URL}/artifacts/${CIRCLE_NODE_INDEX}/${CIRCLE_WORKING_DIRECTORY/#\~/$HOME}/index.html"; echo $NB_URL
+
+
   deploy:
     executor: notebook-executor
     environment:
