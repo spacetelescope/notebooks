@@ -1,0 +1,27 @@
+name: notebooks_env
+
+channels:
+  - astropy
+  - astropy-ci-extras
+  - http://ssb.stsci.edu/astroconda
+  - defaults
+
+dependencies:
+  - numpy=1.15.4
+  - astropy
+  - scipy
+  - astroquery
+  - matplotlib
+  - jupyter
+  - pandas
+  - drizzlepac
+  - crds
+  - ccdproc
+  - acstools
+  - photutils
+  - regions
+  - pyregion
+
+  - pip:
+    - k2flix
+    - git+https://github.com/eteq/nbpages.git
