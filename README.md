@@ -38,9 +38,39 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
     * [Intermediate: Create TESS FFI Cutout using Python Requests](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.html)
 
 
-### Building Locally
+## Building Locally
+
+Python 3 is required for use of these notebooks.
 
 Alternatively, if you would like to execute the notebooks and view them locally, you can clone this repo and do ``python convert.py``. This requires the [nbpages](https://github.com/eteq/nbpages) python package, which you can most easily install by doing ``pip install -e git+https://github.com/eteq/nbpages.git#egg=nbpages``.
+
+Below are instructions for using conda to to create an environment with everything needed to run locally.
+
+### Building Locally with Conda
+
+To quickly create an environment with everything needed to run and convert, please first install Conda or Miniconda to your machine using [Conda Installation Instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+Once you have Conda installed, complete the following from a command line:
+
+```bash
+git clone https://github.com/spacetelescope/notebooks
+cd notebooks
+conda env create -f environment.yml
+conda activate notebooks_env
+python convert.py
+```
+
+Doing so will clone this repo, create and activate a conda envrionment with all needed dependencies, and convert the notebooks to html.
+
+After converting, you can access the converted HTML of the notebooks in each notebook directory. These can be opened in any web browser.
+
+If you would like to view the notebooks in Jupyter, from the command line in the notebooks directory use:
+
+```bash
+jupyter notebook
+```
+
+Your web browser will open a new page and you can navigate the notebook directories and click the a notebook file (ends in .ipynb) to open.
 
 ## Contributing
 
