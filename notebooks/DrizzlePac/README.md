@@ -1,4 +1,4 @@
-# DrizzlePac Jupyter Notbook Tutorials
+# DrizzlePac Jupyter Notebook Tutorials
 
 
 Improved drizzling tutorials are now available as Jupyter Notebooks and compatible with the latest STScI distributed software as part of AstroConda. Prior drizzling examples were written for the DrizzlePac Handbook in 2012, just after MultiDrizzle was replaced, and supplemental examples were posted to the DrizzlePac Webpage in 2015 to support enhanced features in DrizzlePac 2.0. The new interactive notebooks consolidate information from these prior examples to form a more cohesive set, and any references to outdated software, such as PyRAF, have been removed and replaced with python functionality.

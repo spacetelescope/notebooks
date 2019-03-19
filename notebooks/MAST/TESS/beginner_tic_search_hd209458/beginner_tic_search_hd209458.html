@@ -13089,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13342,7 +13342,7 @@ Number of objects classified as &#39;GIANT&#39; within 0.200000 deg of HD 209458
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">where_closest</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">catalogTIC</span><span class="p">[</span><span class="s1">&#39;dstArcSec&#39;</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Closest TIC ID to </span><span class="si">%s</span><span class="s2">: TIC </span><span class="si">%s</span><span class="s2">, separation of </span><span class="si">%f</span><span class="s2"> deg. and a TESS mag. of </span><span class="si">%f</span><span class="s2">&quot;</span><span class="o">%</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Closest TIC ID to </span><span class="si">%s</span><span class="s2">: TIC </span><span class="si">%s</span><span class="s2">, separation of </span><span class="si">%f</span><span class="s2"> arcsec. and a TESS mag. of </span><span class="si">%f</span><span class="s2">&quot;</span><span class="o">%</span>
       <span class="p">(</span><span class="n">target_name</span><span class="p">,</span> <span class="n">catalogTIC</span><span class="p">[</span><span class="s1">&#39;ID&#39;</span><span class="p">][</span><span class="n">where_closest</span><span class="p">],</span> <span class="n">catalogTIC</span><span class="p">[</span><span class="s1">&#39;dstArcSec&#39;</span><span class="p">][</span><span class="n">where_closest</span><span class="p">],</span>
       <span class="n">catalogTIC</span><span class="p">[</span><span class="s1">&#39;Tmag&#39;</span><span class="p">][</span><span class="n">where_closest</span><span class="p">]))</span>
 </pre></div>
@@ -13361,7 +13361,7 @@ Number of objects classified as &#39;GIANT&#39; within 0.200000 deg of HD 209458
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Closest TIC ID to HD 209458: TIC 420814525, separation of 0.173474 deg. and a TESS mag. of 7.105000
+<pre>Closest TIC ID to HD 209458: TIC 420814525, separation of 0.173474 arcsec. and a TESS mag. of 7.105000
 </pre>
 </div>
 </div>

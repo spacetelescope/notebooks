@@ -1,12 +1,12 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 05:30:40.963 (08/01/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:02:50.746 (19/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
-[INFO    ] 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:55:02) 
+[INFO    ] Python Version [GCC 7.3.0]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
 [INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
@@ -56,26 +56,26 @@
 [INFO    ] 	writecat :	True
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
-[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
 Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
 Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 05:30:41.151 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 14:02:50.895 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 05:30:42.049 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:02:51.888 (19/03/2019)
 [INFO    ]      Found 10294 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 05:30:42.193 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 14:02:52.019 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 05:30:43.047 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:02:53.001 (19/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 20796
 [INFO    ] 
@@ -85,14 +85,14 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 05:31:07.516 (08/01/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:03:15.461 (19/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
-[INFO    ] 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:55:02) 
+[INFO    ] Python Version [GCC 7.3.0]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
 [INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
@@ -145,16 +145,16 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 05:31:07.661 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 14:03:15.595 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[WARNING ] /Users/etollerud/miniconda3/envs/st-nbs/lib/python3.6/site-packages/stregion/ds9_region_parser.py:118: UserWarning: Failed to parse : select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/stregion/ds9_region_parser.py:118: UserWarning: Failed to parse : select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
   warnings.warn("Failed to parse : " + l)
 
-[INFO    ] ###Source finding finished at: 05:31:09.52 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:17.855 (19/03/2019)
 [INFO    ]      Found 10233 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 05:31:09.649 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 14:03:17.984 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 05:31:10.651 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:19.104 (19/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 20735
 [INFO    ] 
@@ -164,14 +164,14 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 05:31:22.116 (08/01/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:03:29.712 (19/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
-[INFO    ] 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:55:02) 
+[INFO    ] Python Version [GCC 7.3.0]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
 [INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
@@ -224,13 +224,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 05:31:22.261 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 14:03:29.851 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 05:31:23.332 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:31.190 (19/03/2019)
 [INFO    ]      Found 63 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 05:31:23.413 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 14:03:31.262 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 05:31:24.618 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:32.8 (19/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 10565
 [INFO    ] 
@@ -240,14 +240,14 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 05:31:25.18 (08/01/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:03:33.671 (19/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
-[INFO    ] 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:55:02) 
+[INFO    ] Python Version [GCC 7.3.0]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
 [INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
@@ -300,13 +300,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 05:31:25.335 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 14:03:33.866 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 05:31:26.411 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:35.155 (19/03/2019)
 [INFO    ]      Found 51 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 05:31:26.479 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 14:03:35.227 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 05:31:27.285 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:36.27 (19/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 10553
 [INFO    ] 
@@ -316,14 +316,14 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 05:31:27.835 (08/01/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:03:37.130 (19/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
-[INFO    ] 3.6.6 | packaged by conda-forge | (default, Jul 26 2018, 09:55:02) 
+[INFO    ] Python Version [GCC 7.3.0]
+[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
 [INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.1 
+[INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
@@ -376,13 +376,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 05:31:27.991 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 14:03:37.335 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 05:31:29.011 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:38.70 (19/03/2019)
 [INFO    ]      Found 58 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 05:31:29.078 (08/01/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 14:03:38.785 (19/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 05:31:29.858 (08/01/2019)
+[INFO    ] ###Source finding finished at: 14:03:39.828 (19/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 10560
 [INFO    ] 
@@ -391,3 +391,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
+[ERROR   ] Invalid alias: The name clear can't be aliased because it is another magic command.
+[ERROR   ] Invalid alias: The name more can't be aliased because it is another magic command.
+[ERROR   ] Invalid alias: The name less can't be aliased because it is another magic command.
+[ERROR   ] Invalid alias: The name man can't be aliased because it is another magic command.
