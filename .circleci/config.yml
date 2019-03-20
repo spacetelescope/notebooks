@@ -16,7 +16,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-env-{{ checksum "environment.yml" }}
-            - v1-env-
 
       - run:
           name: Setup Environment
