@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:22:13.246 (19/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:30:48.22 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -74,46 +74,46 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 14:22:13.514 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 06:30:48.419 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 14:22:14.429 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:49.322 (20/03/2019)
 [INFO    ]      Found 8449 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 14:22:14.553 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 06:30:49.47 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 14:22:15.528 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:50.380 (20/03/2019)
 [INFO    ]      Found 8582 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 17031
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 14:22:15.901 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 06:30:50.740 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 14:22:16.730 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:51.509 (20/03/2019)
 [INFO    ]      Found 6124 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 14:22:16.894 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 06:30:51.65 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 14:22:17.70 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:52.409 (20/03/2019)
 [INFO    ]      Found 6070 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 12194
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 14:22:18.138 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 06:30:52.835 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 14:22:18.97 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:53.555 (20/03/2019)
 [INFO    ]      Found 4621 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 14:22:19.068 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 06:30:53.646 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 14:22:19.965 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:54.463 (20/03/2019)
 [INFO    ]      Found 4713 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 9334
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 14:22:20.367 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 06:30:54.856 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 14:22:21.204 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:55.696 (20/03/2019)
 [INFO    ]      Found 4884 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 14:22:21.302 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 06:30:55.790 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 14:22:22.186 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:30:56.679 (20/03/2019)
 [INFO    ]      Found 5267 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 10151
 [INFO    ] 
@@ -389,7 +389,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out shiftfile : shift814_flc_test1.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:22:26.156 (19/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:31:00.427 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -464,46 +464,46 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 14:22:26.318 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 06:31:00.579 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 14:22:27.347 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:01.544 (20/03/2019)
 [INFO    ]      Found 2697 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 14:22:27.431 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 06:31:01.625 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 14:22:28.549 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:02.598 (20/03/2019)
 [INFO    ]      Found 2634 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 5331
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 14:22:28.861 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 06:31:02.902 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 14:22:29.845 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:03.798 (20/03/2019)
 [INFO    ]      Found 1841 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 14:22:29.927 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 06:31:03.878 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 14:22:30.897 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:04.79 (20/03/2019)
 [INFO    ]      Found 1847 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 3688
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 14:22:31.152 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 06:31:05.042 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 14:22:32.13 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:05.906 (20/03/2019)
 [INFO    ]      Found 1350 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 14:22:32.21 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 06:31:05.982 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 14:22:33.118 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:06.884 (20/03/2019)
 [INFO    ]      Found 1396 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 2746
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 14:22:33.38 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 06:31:07.140 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 14:22:34.310 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:08.006 (20/03/2019)
 [INFO    ]      Found 1475 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 14:22:34.391 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 06:31:08.082 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 14:22:35.365 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:09.045 (20/03/2019)
 [INFO    ]      Found 1557 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 3032
 [INFO    ] 
@@ -767,7 +767,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out shiftfile : shift814_flc_test2.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:22:38.244 (19/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:31:11.746 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -842,46 +842,46 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 14:22:38.466 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 06:31:11.924 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 14:22:39.439 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:12.811 (20/03/2019)
 [INFO    ]      Found 1087 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 14:22:39.544 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 06:31:12.905 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 14:22:40.532 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:13.791 (20/03/2019)
 [INFO    ]      Found 954 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 2041
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 14:22:40.793 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 06:31:14.031 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 14:22:41.698 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:14.951 (20/03/2019)
 [INFO    ]      Found 755 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 14:22:41.796 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 06:31:15.041 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 14:22:42.703 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:15.902 (20/03/2019)
 [INFO    ]      Found 704 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 1459
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 14:22:43.060 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 06:31:16.239 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 14:22:43.998 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:17.099 (20/03/2019)
 [INFO    ]      Found 628 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 14:22:44.097 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 06:31:17.191 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 14:22:45.00 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:18.077 (20/03/2019)
 [INFO    ]      Found 539 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 1167
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 14:22:45.236 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 06:31:18. (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 14:22:46.158 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:19.187 (20/03/2019)
 [INFO    ]      Found 618 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 14:22:46.257 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 06:31:19.278 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 14:22:47.201 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:20.160 (20/03/2019)
 [INFO    ]      Found 605 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 1223
 [INFO    ] 
@@ -1145,7 +1145,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out shiftfile : shift814_flc_test3.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:22:49.951 (19/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:31:22.726 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -1220,46 +1220,46 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 14:22:50.408 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 06:31:23.148 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 14:22:51.308 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:24.100 (20/03/2019)
 [INFO    ]      Found 1087 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 14:22:51.409 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 06:31:24.194 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 14:22:52.297 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:25.090 (20/03/2019)
 [INFO    ]      Found 954 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 2041
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 14:22:52.607 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 06:31:25.386 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 14:22:53.534 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:26.283 (20/03/2019)
 [INFO    ]      Found 755 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 14:22:53.637 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 06:31:26.376 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 14:22:54.599 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:27.280 (20/03/2019)
 [INFO    ]      Found 704 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 1459
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 14:22:54.900 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 06:31:27.570 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 14:22:55.803 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:28.470 (20/03/2019)
 [INFO    ]      Found 628 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 14:22:55.901 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 06:31:28.562 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 14:22:56.794 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:29.443 (20/03/2019)
 [INFO    ]      Found 539 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 1167
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 14:22:57.06 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 06:31:29.698 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 14:22:57.997 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:30.582 (20/03/2019)
 [INFO    ]      Found 618 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 14:22:58.095 (19/03/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 06:31:30.673 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 14:22:59.009 (19/03/2019)
+[INFO    ] ###Source finding finished at: 06:31:31.609 (20/03/2019)
 [INFO    ]      Found 605 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 1223
 [INFO    ] 
