@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:16:01.769 (20/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 20:25:09.954 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -69,13 +69,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 06:16:01.900 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 20:25:10.082 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 06:16:02.862 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:11.04 (20/03/2019)
 [INFO    ]      Found 10294 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 06:16:02.989 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 20:25:11.173 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 06:16:03.885 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:12.093 (20/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 20796
 [INFO    ] 
@@ -85,7 +85,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:16:25.69 (20/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 20:25:34.475 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -145,16 +145,16 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 06:16:25.823 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 20:25:34.607 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/stregion/ds9_region_parser.py:118: UserWarning: Failed to parse : select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
   warnings.warn("Failed to parse : " + l)
 
-[INFO    ] ###Source finding finished at: 06:16:27.886 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:36.671 (20/03/2019)
 [INFO    ]      Found 10233 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 06:16:28.01 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 20:25:36.794 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 06:16:29.059 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:37.895 (20/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 20735
 [INFO    ] 
@@ -164,7 +164,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:16:39.19 (20/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 20:25:48.378 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -224,13 +224,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 06:16:39.325 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 20:25:48.51 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 06:16:40.537 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:49.796 (20/03/2019)
 [INFO    ]      Found 63 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 06:16:40.606 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 20:25:49.893 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 06:16:41.926 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:51.298 (20/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 10565
 [INFO    ] 
@@ -240,7 +240,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:16:42.644 (20/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 20:25:52.028 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -300,13 +300,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 06:16:42.849 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 20:25:52.158 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 06:16:44.118 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:53.417 (20/03/2019)
 [INFO    ]      Found 51 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 06:16:44.187 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 20:25:53.485 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 06:16:45.085 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:54.47 (20/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 10553
 [INFO    ] 
@@ -316,7 +316,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [WARNING ] Fewer than two images available for alignment. Quitting...
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 06:16:45.740 (20/03/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 20:25:55.224 (20/03/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -376,13 +376,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'jcdua3f4q_flc.fits':
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 06:16:45.867 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 1) started at: 20:25:55.355 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 16.933767
-[INFO    ] ###Source finding finished at: 06:16:47.085 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:56.661 (20/03/2019)
 [INFO    ]      Found 58 objects.
-[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 06:16:47.152 (20/03/2019)
+[INFO    ]   #  Source finding for 'jcdua3f4q_flc.fits', EXT=('SCI', 2) started at: 20:25:56.728 (20/03/2019)
 [INFO    ]    Finding sources using sky sigma = 17.012593
-[INFO    ] ###Source finding finished at: 06:16:48.012 (20/03/2019)
+[INFO    ] ###Source finding finished at: 20:25:57.700 (20/03/2019)
 [INFO    ]      Found 10502 objects.
 [INFO    ] ===  FINAL number of objects in image 'jcdua3f4q_flc.fits': 10560
 [INFO    ] 
