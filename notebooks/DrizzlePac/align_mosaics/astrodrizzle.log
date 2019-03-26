@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 19:31:15.18 (21/03/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 14:42:52.999 (26/03/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -8,7 +8,7 @@
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  19:31:15.190 (21/03/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  14:42:53.005 (26/03/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f160w_drz.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
@@ -79,7 +79,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] *  Cores available:         1
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  19:31:17.084 (21/03/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  14:42:55.1 (26/03/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -98,7 +98,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  19:31:17.092 (21/03/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  14:42:55.177 (26/03/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
@@ -127,9 +127,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
 [INFO    ]   mode =  5.829114;   rms = 1.974843;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  19:31:17.413 (21/03/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  14:42:55.781 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  19:31:17.416 (21/03/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  14:42:55.801 (26/03/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -145,7 +145,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-03-21 19:31:17.686914
+[INFO    ] ***** skymatch started on 2019-03-26 14:42:56.108765
 [INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
@@ -270,23 +270,23 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]        Updating sky of image extension(s) [data units]:
 [INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0879255
 [INFO    ] 
-[INFO    ] ***** skymatch ended on 2019-03-21 19:31:22.725028
-[INFO    ] TOTAL RUN TIME: 0:00:05.038114
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  19:31:22.95 (21/03/2019)
+[INFO    ] ***** skymatch ended on 2019-03-26 14:43:02.356026
+[INFO    ] TOTAL RUN TIME: 0:00:06.247261
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  14:43:02.660 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  19:31:22.960 (21/03/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  14:43:02.663 (26/03/2019)
 [INFO    ] Single drizzle step not performed.
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  19:31:22.961 (21/03/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:43:02.665 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  19:31:22.963 (21/03/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  14:43:02.668 (26/03/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  19:31:22.965 (21/03/2019)
+[INFO    ] ==== Processing Step  Blot  started at  14:43:02.670 (26/03/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  19:31:22.966 (21/03/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  14:43:02.672 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  19:31:22.968 (21/03/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  14:43:02.6 (26/03/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  19:31:22.969 (21/03/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  14:43:02.677 (26/03/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -383,26 +383,26 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Generating simple FITS output: f160w_drz_sci.fits
 [INFO    ] Writing out image to disk: f160w_drz_sci.fits
 [INFO    ] Writing out image to disk: f160w_drz_wht.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  19:31:29.146 (21/03/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:43:09.521 (26/03/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 19:31:29.150 (21/03/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 14:43:09.526 (26/03/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          1.8941 sec.
-[INFO    ]             Static Mask          0.3211 sec.
-[INFO    ]            Subtract Sky          5.5420 sec.
-[INFO    ]        Separate Drizzle          0.0014 sec.
+[INFO    ]          Initialization          2.1577 sec.
+[INFO    ]             Static Mask          0.6035 sec.
+[INFO    ]            Subtract Sky          6.8585 sec.
+[INFO    ]        Separate Drizzle          0.0024 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0014 sec.
+[INFO    ]                    Blot          0.0022 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          6.1769 sec.
+[INFO    ]           Final Drizzle          6.8448 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          13.9368 sec.
+[INFO    ]                   Total          16.4690 sec.
 [INFO    ] Removing intermediate files for ick901hzq_flt.fits
 [INFO    ] Removing intermediate files for ick901i7q_flt.fits
 [INFO    ] Removing intermediate files for ick902n9q_flt.fits
@@ -413,7 +413,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Removing intermediate files for ick904ogq_flt.fits
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 19:32:16.00 (21/03/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 14:44:05.453 (26/03/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -422,7 +422,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  19:32:16.009 (21/03/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  14:44:05.468 (26/03/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f657n_drc.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
@@ -493,7 +493,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] *  Cores available:         1
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  19:32:19.762 (21/03/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  14:44:09.217 (26/03/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -512,7 +512,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  19:32:19.770 (21/03/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  14:44:09.228 (26/03/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
@@ -566,9 +566,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]   mode = 149.455210;   rms = 42.451820;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3UVIS_2051x4096_1_staticMask.fits
 [INFO    ] Saving static mask to disk: ./WFC3UVIS_2051x4096_2_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  19:32:27.196 (21/03/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  14:44:17.248 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  19:32:27.198 (21/03/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  14:44:17.251 (26/03/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -644,21 +644,21 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Setting  MDRIZSKY = 2.784643205076933
 [INFO    ] Updating keyword MDRIZSKY in ick908ptq_flc.fits[SCI,2]
 [INFO    ] Setting  MDRIZSKY = 2.784643205076933
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  19:32:28.583 (21/03/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  14:44:18.668 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  19:32:28.585 (21/03/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  14:44:18.670 (26/03/2019)
 [INFO    ] Single drizzle step not performed.
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  19:32:28.587 (21/03/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:44:18.671 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  19:32:28.590 (21/03/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  14:44:18.673 (26/03/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  19:32:28.592 (21/03/2019)
+[INFO    ] ==== Processing Step  Blot  started at  14:44:18.675 (26/03/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  19:32:28.59 (21/03/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  14:44:18.677 (26/03/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  19:32:28.596 (21/03/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  14:44:18.679 (26/03/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  19:32:28.599 (21/03/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  14:44:18.681 (26/03/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 80, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -907,26 +907,26 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Generating simple FITS output: f657n_drc_sci.fits
 [INFO    ] Writing out image to disk: f657n_drc_sci.fits
 [INFO    ] Writing out image to disk: f657n_drc_wht.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  19:33:42.740 (21/03/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:45:36.39 (26/03/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 19:33:42.745 (21/03/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 14:45:36.400 (26/03/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          3.7528 sec.
-[INFO    ]             Static Mask          7.4257 sec.
-[INFO    ]            Subtract Sky          1.3852 sec.
-[INFO    ]        Separate Drizzle          0.0021 sec.
+[INFO    ]          Initialization          3.7489 sec.
+[INFO    ]             Static Mask          8.0192 sec.
+[INFO    ]            Subtract Sky          1.4175 sec.
+[INFO    ]        Separate Drizzle          0.0013 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0019 sec.
+[INFO    ]                    Blot          0.0015 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          74.1408 sec.
+[INFO    ]           Final Drizzle          77.7164 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          86.7084 sec.
+[INFO    ]                   Total          90.9048 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [ERROR   ] Invalid alias: The name clear can't be aliased because it is another magic command.
 [ERROR   ] Invalid alias: The name more can't be aliased because it is another magic command.

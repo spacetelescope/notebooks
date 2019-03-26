@@ -1,12 +1,12 @@
-[INFO:] ***** drizzlepac.photeq started on 2019-03-21 19:35:05.387869
+[INFO:] ***** drizzlepac.photeq started on 2019-03-26 14:54:50.874313
 [INFO:]       Version 0.2 (06-Nov-2015)
 [INFO:] 
 [INFO:] PRIMARY PHOTOMETRIC KEYWORD: PHOTFLAM
 [INFO:] SECONDARY PHOTOMETRIC KEYWORD(S): PHOTFNU
-[INFO:] REFERENCE VALUE FROM FILE: 'ua060504m_c0m.fits[3]'
+[INFO:] REFERENCE VALUE FROM FILE: 'ua060506m_c0m.fits[3]'
 [INFO:] REFERENCE 'PHOTFLAM' VALUE IS: 2.449067e-18
 [INFO:] 
-[INFO:] Processing file 'ua060504m_c0m.fits'
+[INFO:] Processing file 'ua060506m_c0m.fits'
 [INFO:]    * EXT: ('SCI', 1)
 [INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.507987e-18)
 [INFO:]      - Computed conversion factor for data: 1.0240581413248393
@@ -17,6 +17,24 @@
 [INFO:]      - Data have been multiplied by 1.0036789520254041
 [INFO:]    * EXT: ('SCI', 3) - This is the "reference" extension.
 [INFO:]           Nothing to do. Skipping this extension...
+[INFO:]    * EXT: ('SCI', 4)
+[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.498411e-18)
+[INFO:]      - Computed conversion factor for data: 1.0201480808814134
+[INFO:]      - Data have been multiplied by 1.0201480808814134
+[INFO:] 
+[INFO:] Processing file 'ua06050cm_c0m.fits'
+[INFO:]    * EXT: ('SCI', 1)
+[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.507987e-18)
+[INFO:]      - Computed conversion factor for data: 1.0240581413248393
+[INFO:]      - Data have been multiplied by 1.0240581413248393
+[INFO:]    * EXT: ('SCI', 2)
+[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.458077e-18)
+[INFO:]      - Computed conversion factor for data: 1.0036789520254041
+[INFO:]      - Data have been multiplied by 1.0036789520254041
+[INFO:]    * EXT: ('SCI', 3)
+[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.449067e-18)
+[INFO:]      - Computed conversion factor for data: 1.0
+[INFO:]      - Data have been multiplied by 1.0
 [INFO:]    * EXT: ('SCI', 4)
 [INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.498411e-18)
 [INFO:]      - Computed conversion factor for data: 1.0201480808814134
@@ -40,7 +58,7 @@
 [INFO:]      - Computed conversion factor for data: 1.0201480808814134
 [INFO:]      - Data have been multiplied by 1.0201480808814134
 [INFO:] 
-[INFO:] Processing file 'ua06050cm_c0m.fits'
+[INFO:] Processing file 'ua060504m_c0m.fits'
 [INFO:]    * EXT: ('SCI', 1)
 [INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.507987e-18)
 [INFO:]      - Computed conversion factor for data: 1.0240581413248393
@@ -94,26 +112,8 @@
 [INFO:]      - Computed conversion factor for data: 1.0201480808814134
 [INFO:]      - Data have been multiplied by 1.0201480808814134
 [INFO:] 
-[INFO:] Processing file 'ua060506m_c0m.fits'
-[INFO:]    * EXT: ('SCI', 1)
-[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.507987e-18)
-[INFO:]      - Computed conversion factor for data: 1.0240581413248393
-[INFO:]      - Data have been multiplied by 1.0240581413248393
-[INFO:]    * EXT: ('SCI', 2)
-[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.458077e-18)
-[INFO:]      - Computed conversion factor for data: 1.0036789520254041
-[INFO:]      - Data have been multiplied by 1.0036789520254041
-[INFO:]    * EXT: ('SCI', 3)
-[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.449067e-18)
-[INFO:]      - Computed conversion factor for data: 1.0
-[INFO:]      - Data have been multiplied by 1.0
-[INFO:]    * EXT: ('SCI', 4)
-[INFO:]      - Setting PHOTFLAM to 2.449067e-18 (old value was 2.498411e-18)
-[INFO:]      - Computed conversion factor for data: 1.0201480808814134
-[INFO:]      - Data have been multiplied by 1.0201480808814134
-[INFO:] 
 [INFO:] Done.
-[INFO:] ***** drizzlepac.photeq started on 2019-03-21 19:36:11.461164
+[INFO:] ***** drizzlepac.photeq started on 2019-03-26 14:55:56.038578
 [INFO:]       Version 0.2 (06-Nov-2015)
 [INFO:] 
 [INFO:] PRIMARY PHOTOMETRIC KEYWORD: PHOTFLAM
