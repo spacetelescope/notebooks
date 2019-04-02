@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 18:33:41.687 (02/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 20:35:40.89 (02/04/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -8,7 +8,7 @@
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  18:33:41.688 (02/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  20:35:40.897 (02/04/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: final_drz.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
@@ -65,10 +65,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.31866186555936  -0.8646699844009542  
-[INFO    ] CRPIX : 777.7568185110108  767.6957940734234  
-[INFO    ] CD1_1 CD1_2  : 5.4139087269362675e-06  -2.7131790149948595e-05  
-[INFO    ] CD2_1 CD2_2  : -2.7131790149948595e-05  -5.4139087269362675e-06  
+[INFO    ] CRVAL : 323.31866709205593  -0.8646686960932206  
+[INFO    ] CRPIX : 777.7568185110108  767.4671344271145  
+[INFO    ] CD1_1 CD1_2  : 5.413908726981324e-06  -2.7131790149939603e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790149939603e-05  -5.413908726981324e-06  
 [INFO    ] NAXIS : 1554  1534
 [INFO    ] ********************************************************************************
 [INFO    ] *
@@ -78,7 +78,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] *  Cores available:         24
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  18:33:44.515 (02/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  20:35:43.69 (02/04/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -97,7 +97,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  18:33:44.516 (02/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  20:35:43.695 (02/04/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
@@ -141,9 +141,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Saving static mask to disk: ./WFPC2WF2_800x800_2_staticMask.fits
 [INFO    ] Saving static mask to disk: ./WFPC2WF3_800x800_3_staticMask.fits
 [INFO    ] Saving static mask to disk: ./WFPC2WF4_800x800_4_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  18:33:45.236 (02/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  20:35:45.372 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  18:33:45.237 (02/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  20:35:45.374 (02/04/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -159,7 +159,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-04-02 18:33:46.153455
+[INFO    ] ***** skymatch started on 2019-04-02 20:35:46.378516
 [INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
@@ -368,11 +368,11 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]       - EXT = 'SCI',2   delta(MDRIZSKY) = -1.04032   NEW MDRIZSKY = -1.04032
 [INFO    ]       - EXT = 'SCI',3   delta(MDRIZSKY) = -1.03991   NEW MDRIZSKY = -1.03991
 [INFO    ]       - EXT = 'SCI',4   delta(MDRIZSKY) = -1.04091   NEW MDRIZSKY = -1.04091
-[INFO    ] ***** skymatch ended on 2019-04-02 18:33:47.958398
-[INFO    ] TOTAL RUN TIME: 0:00:01.804943
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  18:33:48.21 (02/04/2019)
+[INFO    ] ***** skymatch ended on 2019-04-02 20:35:48.482926
+[INFO    ] TOTAL RUN TIME: 0:00:02.104410
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  20:35:48.778 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  18:33:48.212 (02/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  20:35:48.780 (02/04/2019)
 [INFO    ] Interpreted paramDict with single=True as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 1032, 'compress': False, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
@@ -398,10 +398,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.31866186555936  -0.8646699844009542  
-[INFO    ] CRPIX : 777.7568185110108  767.6957940734234  
-[INFO    ] CD1_1 CD1_2  : 5.4139087269362675e-06  -2.7131790149948595e-05  
-[INFO    ] CD2_1 CD2_2  : -2.7131790149948595e-05  -5.4139087269362675e-06  
+[INFO    ] CRVAL : 323.31866709205593  -0.8646686960932206  
+[INFO    ] CRPIX : 777.7568185110108  767.4671344271145  
+[INFO    ] CD1_1 CD1_2  : 5.413908726981324e-06  -2.7131790149939603e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790149939603e-05  -5.413908726981324e-06  
 [INFO    ] NAXIS : 1554  1534
 [INFO    ] Executing 6 parallel workers
 [INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,1]
@@ -412,27 +412,11 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Applying sky value of -0.362681 to ua060502m_c0m.fits[sci,1]
 [INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,1]
 [INFO    ] Applying sky value of -0.398020 to ua060504m_c0m.fits[sci,1]
-[INFO    ] Applying sky value of -0.409930 to ua060508m_c0m.fits[sci,1]
 [INFO    ] Applying sky value of -0.358812 to ua060506m_c0m.fits[sci,1]
-[INFO    ] Applying sky value of -0.217461 to ua06050cm_c0m.fits[sci,1]
+[INFO    ] Applying sky value of -0.409930 to ua060508m_c0m.fits[sci,1]
 [INFO    ] Applying sky value of -0.373830 to ua06050am_c0m.fits[sci,1]
+[INFO    ] Applying sky value of -0.217461 to ua06050cm_c0m.fits[sci,1]
 [INFO    ] Writing out mask file: ua060502m_c0m_sci1_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,2]
-[INFO    ] Writing out mask file: ua06050am_c0m_sci1_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] Writing out mask file: ua06050cm_c0m_sci1_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] Writing out mask file: ua060508m_c0m_sci1_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
@@ -442,38 +426,44 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,2]
+[INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,2]
 [INFO    ] Writing out mask file: ua060504m_c0m_sci1_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: ua060508m_c0m_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] -Drizzle input: ua060508m_c0m.fits[sci,2]
-[INFO    ] Applying sky value of -1.040323 to ua06050cm_c0m.fits[sci,2]
-[INFO    ] Applying sky value of -1.961087 to ua060508m_c0m.fits[sci,2]
+[INFO    ] Writing out mask file: ua06050cm_c0m_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: ua06050am_c0m_sci1_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzling using kernel = turbo
+
 [INFO    ] -Drizzle input: ua060506m_c0m.fits[sci,2]
 [INFO    ] Applying sky value of -1.735052 to ua060502m_c0m.fits[sci,2]
 [INFO    ] -Drizzle input: ua060504m_c0m.fits[sci,2]
+[INFO    ] -Drizzle input: ua060508m_c0m.fits[sci,2]
 [INFO    ] -Drizzle input: ua06050am_c0m.fits[sci,2]
-[INFO    ] Applying sky value of -1.904112 to ua060504m_c0m.fits[sci,2]
-[INFO    ] Applying sky value of -1.788388 to ua06050am_c0m.fits[sci,2]
 [INFO    ] Applying sky value of -1.716541 to ua060506m_c0m.fits[sci,2]
-[INFO    ] Writing out mask file: ua060502m_c0m_sci2_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] Writing out mask file: ua060508m_c0m_sci2_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
+[INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,2]
+[INFO    ] Applying sky value of -1.904112 to ua060504m_c0m.fits[sci,2]
+[INFO    ] Applying sky value of -1.961087 to ua060508m_c0m.fits[sci,2]
+[INFO    ] Applying sky value of -1.040323 to ua06050cm_c0m.fits[sci,2]
+[INFO    ] Applying sky value of -1.788388 to ua06050am_c0m.fits[sci,2]
 [INFO    ] Writing out mask file: ua060504m_c0m_sci2_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] Writing out mask file: ua06050cm_c0m_sci2_single_mask.fits
+[INFO    ] Writing out mask file: ua060502m_c0m_sci2_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] Writing out mask file: ua06050am_c0m_sci2_single_mask.fits
@@ -483,37 +473,72 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
 [INFO    ] -Drizzling using kernel = turbo
 
-[WARNING ] ! 98 points were outside the output image.
-[INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,3]
 [INFO    ] Writing out mask file: ua060506m_c0m_sci2_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] Applying sky value of -1.734355 to ua060502m_c0m.fits[sci,3]
-[INFO    ] -Drizzle input: ua060508m_c0m.fits[sci,3]
+[INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,3]
 [INFO    ] -Drizzle input: ua06050am_c0m.fits[sci,3]
-[INFO    ] -Drizzle input: ua060504m_c0m.fits[sci,3]
-[INFO    ] Applying sky value of -1.960300 to ua060508m_c0m.fits[sci,3]
-[INFO    ] Applying sky value of -1.787670 to ua06050am_c0m.fits[sci,3]
-[INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,3]
-[INFO    ] Applying sky value of -1.903347 to ua060504m_c0m.fits[sci,3]
 [INFO    ] -Drizzle input: ua060506m_c0m.fits[sci,3]
+[INFO    ] Writing out mask file: ua06050cm_c0m_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: ua060504m_c0m.fits[sci,3]
+[INFO    ] Applying sky value of -1.734355 to ua060502m_c0m.fits[sci,3]
+[INFO    ] -Drizzling using kernel = turbo
+
 [INFO    ] Applying sky value of -1.715852 to ua060506m_c0m.fits[sci,3]
+[INFO    ] Writing out mask file: ua060508m_c0m_sci2_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Applying sky value of -1.787670 to ua06050am_c0m.fits[sci,3]
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] Applying sky value of -1.903347 to ua060504m_c0m.fits[sci,3]
+[INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,3]
+[INFO    ] Applying sky value of -1.039905 to ua06050cm_c0m.fits[sci,3]
 [INFO    ] Writing out mask file: ua060502m_c0m_sci3_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] Applying sky value of -1.039905 to ua06050cm_c0m.fits[sci,3]
-[INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,4]
 [INFO    ] Writing out mask file: ua06050am_c0m_sci3_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
+[INFO    ] Writing out mask file: ua060506m_c0m_sci3_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzle input: ua060508m_c0m.fits[sci,3]
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,4]
 [INFO    ] Applying sky value of -1.736027 to ua060502m_c0m.fits[sci,4]
+[INFO    ] Applying sky value of -1.960300 to ua060508m_c0m.fits[sci,3]
+[INFO    ] -Drizzle input: ua06050am_c0m.fits[sci,4]
+[INFO    ] Applying sky value of -1.789393 to ua06050am_c0m.fits[sci,4]
+[INFO    ] -Drizzle input: ua060506m_c0m.fits[sci,4]
+[INFO    ] Writing out mask file: ua06050cm_c0m_sci3_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] Applying sky value of -1.717506 to ua060506m_c0m.fits[sci,4]
+[INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,4]
 [INFO    ] Writing out mask file: ua060504m_c0m_sci3_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] Writing out mask file: ua06050am_c0m_sci4_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] Applying sky value of -1.040908 to ua06050cm_c0m.fits[sci,4]
+[INFO    ] Writing out mask file: ua060506m_c0m_sci4_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
@@ -523,90 +548,64 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] -Drizzle input: ua06050am_c0m.fits[sci,4]
-[INFO    ] Writing out mask file: ua060506m_c0m_sci3_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] Writing out mask file: ua06050cm_c0m_sci3_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] Applying sky value of -1.789393 to ua06050am_c0m.fits[sci,4]
-[INFO    ] -Drizzle input: ua060504m_c0m.fits[sci,4]
-[INFO    ] -Drizzle input: ua060508m_c0m.fits[sci,4]
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] Applying sky value of -1.905182 to ua060504m_c0m.fits[sci,4]
-[INFO    ] -Drizzle input: ua060506m_c0m.fits[sci,4]
-[INFO    ] Applying sky value of -1.962190 to ua060508m_c0m.fits[sci,4]
-[INFO    ] Applying sky value of -1.717506 to ua060506m_c0m.fits[sci,4]
-[INFO    ] -Drizzle input: ua06050cm_c0m.fits[sci,4]
-[INFO    ] Applying sky value of -1.040908 to ua06050cm_c0m.fits[sci,4]
-[INFO    ] Writing out mask file: ua060506m_c0m_sci4_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] Writing out mask file: ua06050am_c0m_sci4_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] -Drizzling using kernel = turbo
-
 [INFO    ] Writing out mask file: ua060502m_c0m_sci4_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
-[INFO    ] Writing out mask file: ua060508m_c0m_sci4_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
-[INFO    ] Writing out mask file: ua060504m_c0m_sci4_single_mask.fits
-[INFO    ] Using WCSLIB-based coordinate transformation...
-[INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] -Drizzling using kernel = turbo
-
-[INFO    ] -Drizzling using kernel = turbo
-
+[INFO    ] -Generating simple FITS output: ua06050am_c0m_single_sci.fits
+[INFO    ] -Drizzle input: ua060504m_c0m.fits[sci,4]
+[INFO    ] -Drizzle input: ua060508m_c0m.fits[sci,4]
+[INFO    ] Applying sky value of -1.905182 to ua060504m_c0m.fits[sci,4]
+[INFO    ] -Generating simple FITS output: ua060506m_c0m_single_sci.fits
+[INFO    ] Applying sky value of -1.962190 to ua060508m_c0m.fits[sci,4]
 [INFO    ] Writing out mask file: ua06050cm_c0m_sci4_single_mask.fits
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
+[WARNING ] ! 416 points were outside the output image.
 [INFO    ] -Drizzling using kernel = turbo
 
-[WARNING ] ! 424 points were outside the output image.
-[INFO    ] -Generating simple FITS output: ua060506m_c0m_single_sci.fits
-[INFO    ] -Generating simple FITS output: ua060502m_c0m_single_sci.fits
-[INFO    ] -Generating simple FITS output: ua060504m_c0m_single_sci.fits
-[INFO    ] -Generating simple FITS output: ua060508m_c0m_single_sci.fits
-[INFO    ] -Generating simple FITS output: ua06050am_c0m_single_sci.fits
-[INFO    ] Writing out image to disk: ua060506m_c0m_single_sci.fits
-[INFO    ] -Generating simple FITS output: ua06050cm_c0m_single_sci.fits
-[INFO    ] Writing out image to disk: ua060502m_c0m_single_sci.fits
-[INFO    ] Writing out image to disk: ua060504m_c0m_single_sci.fits
-[INFO    ] Deleted all instances of WCS with key A in extensions [0]
-[INFO    ] Writing out image to disk: ua060508m_c0m_single_sci.fits
+[INFO    ] Writing out mask file: ua060504m_c0m_sci4_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
 [INFO    ] Writing out image to disk: ua06050am_c0m_single_sci.fits
-[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: ua060502m_c0m_single_sci.fits
+[INFO    ] Writing out image to disk: ua060506m_c0m_single_sci.fits
+[INFO    ] Writing out mask file: ua060508m_c0m_sci4_single_mask.fits
+[INFO    ] Using WCSLIB-based coordinate transformation...
+[INFO    ] stepsize = 10
+[INFO    ] -Drizzling using kernel = turbo
+
+[INFO    ] -Generating simple FITS output: ua06050cm_c0m_single_sci.fits
 [INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] -Generating simple FITS output: ua060504m_c0m_single_sci.fits
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] Writing out image to disk: ua06050am_c0m_single_wht.fits
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
 [INFO    ] Writing out image to disk: ua060506m_c0m_single_wht.fits
 [INFO    ] Writing out image to disk: ua06050cm_c0m_single_sci.fits
-[INFO    ] Deleted all instances of WCS with key A in extensions [0]
-[INFO    ] Deleted all instances of WCS with key B in extensions [0]
-[INFO    ] Deleted all instances of WCS with key B in extensions [0]
-[INFO    ] Deleted all instances of WCS with key A in extensions [0]
-[INFO    ] Writing out image to disk: ua060502m_c0m_single_wht.fits
-[INFO    ] Deleted all instances of WCS with key A in extensions [0]
-[INFO    ] Writing out image to disk: ua060504m_c0m_single_wht.fits
-[INFO    ] Deleted all instances of WCS with key B in extensions [0]
-[INFO    ] Deleted all instances of WCS with key B in extensions [0]
-[INFO    ] Writing out image to disk: ua060508m_c0m_single_wht.fits
-[INFO    ] Writing out image to disk: ua06050am_c0m_single_wht.fits
+[INFO    ] -Generating simple FITS output: ua060508m_c0m_single_sci.fits
+[INFO    ] Writing out image to disk: ua060502m_c0m_single_sci.fits
 [INFO    ] Deleted all instances of WCS with key A in extensions [0]
 [INFO    ] Deleted all instances of WCS with key B in extensions [0]
 [INFO    ] Writing out image to disk: ua06050cm_c0m_single_wht.fits
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  18:33:52.932 (02/04/2019)
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] Writing out image to disk: ua060504m_c0m_single_sci.fits
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] Writing out image to disk: ua060502m_c0m_single_wht.fits
+[INFO    ] Writing out image to disk: ua060508m_c0m_single_sci.fits
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] Writing out image to disk: ua060504m_c0m_single_wht.fits
+[INFO    ] Deleted all instances of WCS with key A in extensions [0]
+[INFO    ] Deleted all instances of WCS with key B in extensions [0]
+[INFO    ] Writing out image to disk: ua060508m_c0m_single_wht.fits
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  20:35:53.49 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  18:33:52.934 (02/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  20:35:53.494 (02/04/2019)
 [INFO    ] USER INPUT PARAMETERS for Create Median Step:
 [INFO    ] 	combine_bufsize :	None
 [INFO    ] 	combine_grow :	1
@@ -628,9 +627,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] reference sky value for image 'ua06050am_c0m.fits' is -2.661669108867646
 [INFO    ] reference sky value for image 'ua06050cm_c0m.fits' is -1.5483193838596345
 [INFO    ] Saving output median image to: 'final_med.fits'
-[INFO    ] ==== Processing Step  Create Median  finished at  18:33:54.078 (02/04/2019)
+[INFO    ] ==== Processing Step  Create Median  finished at  20:35:54.901 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Blot  started at  18:33:54.079 (02/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  20:35:54.90 (02/04/2019)
 [INFO    ] USER INPUT PARAMETERS for Blot Step:
 [INFO    ] 	blot_addsky :	True
 [INFO    ] 	blot_interp :	poly5
@@ -757,9 +756,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Applying sky value of -1.040908 to blotted image ua06050cm_c0m.fits[sci,4]
 [INFO    ] -Generating simple FITS output: ua06050cm_c0m_sci4_blt.fits
 [INFO    ] Writing out image to disk: ua06050cm_c0m_sci4_blt.fits
-[INFO    ] ==== Processing Step  Blot  finished at  18:34:06.409 (02/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  20:36:08.081 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  18:34:06.411 (02/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  20:36:08.082 (02/04/2019)
 [INFO    ] USER INPUT PARAMETERS for Driz_CR Step:
 [INFO    ] 	crbit :	4096
 [INFO    ] 	driz_cr :	True
@@ -771,32 +770,32 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	inmemory :	False
 [INFO    ] Executing 6 parallel workers
 [INFO    ] Creating output :  ua060502m_c0m_sci1_crmask.fits
-[INFO    ] Creating output :  ua060504m_c0m_sci1_crmask.fits
 [INFO    ] Creating output :  ua06050am_c0m_sci1_crmask.fits
-[INFO    ] Creating output :  ua06050cm_c0m_sci1_crmask.fits
-[INFO    ] Creating output :  ua060506m_c0m_sci1_crmask.fits
-[INFO    ] Creating output :  ua060504m_c0m_sci2_crmask.fits
 [INFO    ] Creating output :  ua060508m_c0m_sci1_crmask.fits
-[INFO    ] Creating output :  ua06050am_c0m_sci2_crmask.fits
+[INFO    ] Creating output :  ua060506m_c0m_sci1_crmask.fits
 [INFO    ] Creating output :  ua060502m_c0m_sci2_crmask.fits
-[INFO    ] Creating output :  ua06050cm_c0m_sci2_crmask.fits
-[INFO    ] Creating output :  ua060506m_c0m_sci2_crmask.fits
-[INFO    ] Creating output :  ua060504m_c0m_sci3_crmask.fits
+[INFO    ] Creating output :  ua06050cm_c0m_sci1_crmask.fits
+[INFO    ] Creating output :  ua060504m_c0m_sci1_crmask.fits
+[INFO    ] Creating output :  ua06050am_c0m_sci2_crmask.fits
 [INFO    ] Creating output :  ua060508m_c0m_sci2_crmask.fits
-[INFO    ] Creating output :  ua06050am_c0m_sci3_crmask.fits
-[INFO    ] Creating output :  ua060506m_c0m_sci3_crmask.fits
-[INFO    ] Creating output :  ua06050cm_c0m_sci3_crmask.fits
+[INFO    ] Creating output :  ua06050cm_c0m_sci2_crmask.fits
+[INFO    ] Creating output :  ua060504m_c0m_sci2_crmask.fits
 [INFO    ] Creating output :  ua060502m_c0m_sci3_crmask.fits
-[INFO    ] Creating output :  ua060504m_c0m_sci4_crmask.fits
+[INFO    ] Creating output :  ua060506m_c0m_sci2_crmask.fits
+[INFO    ] Creating output :  ua06050am_c0m_sci3_crmask.fits
+[INFO    ] Creating output :  ua06050cm_c0m_sci3_crmask.fits
+[INFO    ] Creating output :  ua060506m_c0m_sci3_crmask.fits
 [INFO    ] Creating output :  ua060508m_c0m_sci3_crmask.fits
+[INFO    ] Creating output :  ua060502m_c0m_sci4_crmask.fits
+[INFO    ] Creating output :  ua060504m_c0m_sci3_crmask.fits
 [INFO    ] Creating output :  ua06050am_c0m_sci4_crmask.fits
 [INFO    ] Creating output :  ua060506m_c0m_sci4_crmask.fits
-[INFO    ] Creating output :  ua060502m_c0m_sci4_crmask.fits
-[INFO    ] Creating output :  ua06050cm_c0m_sci4_crmask.fits
 [INFO    ] Creating output :  ua060508m_c0m_sci4_crmask.fits
-[INFO    ] ==== Processing Step  Driz_CR  finished at  18:34:27.851 (02/04/2019)
+[INFO    ] Creating output :  ua06050cm_c0m_sci4_crmask.fits
+[INFO    ] Creating output :  ua060504m_c0m_sci4_crmask.fits
+[INFO    ] ==== Processing Step  Driz_CR  finished at  20:36:29.697 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Final Drizzle  started at  18:34:27.8 (02/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  20:36:29.707 (02/04/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 1032, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -821,10 +820,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.31866186555936  -0.8646699844009542  
-[INFO    ] CRPIX : 777.7568185110108  767.6957940734234  
-[INFO    ] CD1_1 CD1_2  : 5.4139087269362675e-06  -2.7131790149948595e-05  
-[INFO    ] CD2_1 CD2_2  : -2.7131790149948595e-05  -5.4139087269362675e-06  
+[INFO    ] CRVAL : 323.31866709205593  -0.8646686960932206  
+[INFO    ] CRPIX : 777.7568185110108  767.4671344271145  
+[INFO    ] CD1_1 CD1_2  : 5.413908726981324e-06  -2.7131790149939603e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790149939603e-05  -5.413908726981324e-06  
 [INFO    ] NAXIS : 1554  1534
 [INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,1]
 [INFO    ] Applying sky value of -0.362681 to ua060502m_c0m.fits[sci,1]
@@ -842,7 +841,6 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = square
 
-[WARNING ] ! 112 points were outside the output image.
 [INFO    ] -Drizzle input: ua060502m_c0m.fits[sci,3]
 [INFO    ] Applying sky value of -1.734355 to ua060502m_c0m.fits[sci,3]
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 3
@@ -859,7 +857,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = square
 
-[WARNING ] ! 424 points were outside the output image.
+[WARNING ] ! 417 points were outside the output image.
 [INFO    ] -Drizzle input: ua060504m_c0m.fits[sci,1]
 [INFO    ] Applying sky value of -0.398020 to ua060504m_c0m.fits[sci,1]
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
@@ -1028,28 +1026,28 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Deleted all instances of WCS with key A in extensions [0]
 [INFO    ] Deleted all instances of WCS with key B in extensions [0]
 [INFO    ] Writing out image to disk: final_drz_ctx.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  18:34:40.38 (02/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  20:36:42.258 (02/04/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 18:34:40.38 (02/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 20:36:42.260 (02/04/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          2.8263 sec.
-[INFO    ]             Static Mask          0.7195 sec.
-[INFO    ]            Subtract Sky          2.9728 sec.
-[INFO    ]        Separate Drizzle          4.7199 sec.
-[INFO    ]           Create Median          1.1440 sec.
-[INFO    ]                    Blot          12.3299 sec.
-[INFO    ]                 Driz_CR          21.4404 sec.
-[INFO    ]           Final Drizzle          12.5244 sec.
+[INFO    ]          Initialization          2.7954 sec.
+[INFO    ]             Static Mask          1.6771 sec.
+[INFO    ]            Subtract Sky          3.4048 sec.
+[INFO    ]        Separate Drizzle          4.7116 sec.
+[INFO    ]           Create Median          1.4068 sec.
+[INFO    ]                    Blot          13.1788 sec.
+[INFO    ]                 Driz_CR          21.6143 sec.
+[INFO    ]           Final Drizzle          12.5507 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          58.6772 sec.
+[INFO    ]                   Total          61.3394 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
-[INFO    ] ***** drizzlepac.photeq started on 2019-04-02 18:34:42.113574
+[INFO    ] ***** drizzlepac.photeq started on 2019-04-02 20:36:44.252107
 [INFO    ]       Version 0.2 (06-Nov-2015)
 [INFO    ] 
 [INFO    ] PRIMARY PHOTOMETRIC KEYWORD: PHOTFLAM
@@ -1075,7 +1073,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Done.
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 18:34:42.223 (02/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 20:36:44.346 (02/04/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -1084,7 +1082,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  18:34:42.22 (02/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  20:36:44.348 (02/04/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: nonequalized.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
@@ -1095,10 +1093,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.3187833728684  -0.8647514972321785  
+[INFO    ] CRVAL : 323.31858741074285  -0.8645160387379045  
 [INFO    ] CRPIX : 761.5219836230856  751.4609591854982  
-[INFO    ] CD1_1 CD1_2  : 5.413908742123534e-06  -2.713179014691811e-05  
-[INFO    ] CD2_1 CD2_2  : -2.713179014691811e-05  -5.413908742123534e-06  
+[INFO    ] CD1_1 CD1_2  : 5.41390875007535e-06  -2.7131790145331395e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790145331395e-05  -5.41390875007535e-06  
 [INFO    ] NAXIS : 1522  1502
 [INFO    ] ********************************************************************************
 [INFO    ] *
@@ -1108,7 +1106,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] *  Cores available:         4
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  18:34:42.52 (02/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  20:36:44.703 (02/04/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -1127,11 +1125,11 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	1
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  18:34:42.531 (02/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  20:36:44.705 (02/04/2019)
 [INFO    ] Static Mask step not performed.
-[INFO    ] ==== Processing Step  Static Mask  finished at  18:34:42.532 (02/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  20:36:44.705 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  18:34:42.533 (02/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  20:36:44.706 (02/04/2019)
 [INFO    ] Sky Subtraction step not performed.
 [INFO    ] MDRIZSKY keyword not found in the simulation.fits[SCI,1] header.
 [INFO    ]     Adding MDRIZSKY to header with default value of 0.
@@ -1141,9 +1139,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]     Adding MDRIZSKY to header with default value of 0.
 [INFO    ] MDRIZSKY keyword not found in the simulation.fits[SCI,4] header.
 [INFO    ]     Adding MDRIZSKY to header with default value of 0.
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  18:34:42.575 (02/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  20:36:44.752 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  18:34:42.576 (02/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  20:36:44.753 (02/04/2019)
 [INFO    ] Interpreted paramDict with single=True as:
 {'build': False, 'stepsize': 1, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 0, 'compress': False, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
@@ -1169,10 +1167,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.3187833728684  -0.8647514972321785  
+[INFO    ] CRVAL : 323.31858741074285  -0.8645160387379045  
 [INFO    ] CRPIX : 1664.0  1642.0  
-[INFO    ] CD1_1 CD1_2  : 2.4758849162442303e-06  -1.2407891077438035e-05  
-[INFO    ] CD2_1 CD2_2  : -1.2407891077438035e-05  -2.4758849162442303e-06  
+[INFO    ] CD1_1 CD1_2  : 2.4758849198807486e-06  -1.2407891076712397e-05  
+[INFO    ] CD2_1 CD2_2  : -1.2407891076712397e-05  -2.4758849198807486e-06  
 [INFO    ] NAXIS : 3328  3284
 [INFO    ] Executing serially
 [INFO    ] -Drizzle input: simulation.fits[sci,1]
@@ -1195,19 +1193,19 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 1
 [INFO    ] -Drizzling using kernel = turbo
 
-[WARNING ] ! 92 points were outside the output image.
+[WARNING ] ! 52 points were outside the output image.
 [INFO    ] -Generating simple FITS output: simulation_single_sci.fits
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  18:34:45.659 (02/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  20:36:48.003 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  18:34:45.661 (02/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  20:36:48.005 (02/04/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  18:34:45.662 (02/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  20:36:48.006 (02/04/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  18:34:45.662 (02/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  20:36:48.007 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  18:34:45.664 (02/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  20:36:48.008 (02/04/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  18:34:45.665 (02/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  20:36:48.009 (02/04/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 1, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': None, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -1232,10 +1230,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.3187833728684  -0.8647514972321785  
+[INFO    ] CRVAL : 323.31858741074285  -0.8645160387379045  
 [INFO    ] CRPIX : 761.5219836230856  751.4609591854982  
-[INFO    ] CD1_1 CD1_2  : 5.413908742123534e-06  -2.713179014691811e-05  
-[INFO    ] CD2_1 CD2_2  : -2.713179014691811e-05  -5.413908742123534e-06  
+[INFO    ] CD1_1 CD1_2  : 5.41390875007535e-06  -2.7131790145331395e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790145331395e-05  -5.41390875007535e-06  
 [INFO    ] NAXIS : 1522  1502
 [INFO    ] -Drizzle input: simulation.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
@@ -1265,33 +1263,33 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 1
 [INFO    ] -Drizzling using kernel = square
 
-[WARNING ] ! 277 points were outside the output image.
+[WARNING ] ! 267 points were outside the output image.
 [INFO    ] -Generating simple FITS output: nonequalized_sci.fits
 [INFO    ] Writing out image to disk: nonequalized_sci.fits
 [INFO    ] Writing out image to disk: nonequalized_wht.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  18:34:49.649 (02/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  20:36:52.136 (02/04/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 18:34:49.652 (02/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 20:36:52.139 (02/04/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          0.3045 sec.
-[INFO    ]             Static Mask          0.0008 sec.
-[INFO    ]            Subtract Sky          0.0418 sec.
-[INFO    ]        Separate Drizzle          3.0831 sec.
+[INFO    ]          Initialization          0.3551 sec.
+[INFO    ]             Static Mask          0.0006 sec.
+[INFO    ]            Subtract Sky          0.0458 sec.
+[INFO    ]        Separate Drizzle          3.2502 sec.
 [INFO    ]           Create Median          0.0000 sec.
 [INFO    ]                    Blot          0.0006 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          3.9848 sec.
+[INFO    ]           Final Drizzle          4.1273 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          7.4157 sec.
+[INFO    ]                   Total          7.7795 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 18:34:49.691 (02/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 20:36:52.189 (02/04/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -1300,7 +1298,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  18:34:49.692 (02/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  20:36:52.193 (02/04/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: equalized.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
@@ -1311,10 +1309,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.3187833728684  -0.8647514972321785  
+[INFO    ] CRVAL : 323.31858741074285  -0.8645160387379045  
 [INFO    ] CRPIX : 761.5219836230856  751.4609591854982  
-[INFO    ] CD1_1 CD1_2  : 5.413908742123534e-06  -2.713179014691811e-05  
-[INFO    ] CD2_1 CD2_2  : -2.713179014691811e-05  -5.413908742123534e-06  
+[INFO    ] CD1_1 CD1_2  : 5.41390875007535e-06  -2.7131790145331395e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790145331395e-05  -5.41390875007535e-06  
 [INFO    ] NAXIS : 1522  1502
 [INFO    ] ********************************************************************************
 [INFO    ] *
@@ -1324,7 +1322,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] *  Cores available:         4
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  18:34:50.011 (02/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  20:36:52.523 (02/04/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -1343,11 +1341,11 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	1
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  18:34:50.013 (02/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  20:36:52.526 (02/04/2019)
 [INFO    ] Static Mask step not performed.
-[INFO    ] ==== Processing Step  Static Mask  finished at  18:34:50.014 (02/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  20:36:52.526 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  18:34:50.0 (02/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  20:36:52.527 (02/04/2019)
 [INFO    ] Sky Subtraction step not performed.
 [INFO    ] MDRIZSKY keyword not found in the simulation_eq.fits[SCI,1] header.
 [INFO    ]     Adding MDRIZSKY to header with default value of 0.
@@ -1357,9 +1355,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]     Adding MDRIZSKY to header with default value of 0.
 [INFO    ] MDRIZSKY keyword not found in the simulation_eq.fits[SCI,4] header.
 [INFO    ]     Adding MDRIZSKY to header with default value of 0.
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  18:34:50.059 (02/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  20:36:52.572 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  18:34:50.061 (02/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  20:36:52.574 (02/04/2019)
 [INFO    ] Interpreted paramDict with single=True as:
 {'build': False, 'stepsize': 1, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 0, 'compress': False, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
@@ -1385,10 +1383,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.3187833728684  -0.8647514972321785  
+[INFO    ] CRVAL : 323.31858741074285  -0.8645160387379045  
 [INFO    ] CRPIX : 1664.0  1642.0  
-[INFO    ] CD1_1 CD1_2  : 2.4758849162442303e-06  -1.2407891077438035e-05  
-[INFO    ] CD2_1 CD2_2  : -1.2407891077438035e-05  -2.4758849162442303e-06  
+[INFO    ] CD1_1 CD1_2  : 2.4758849198807486e-06  -1.2407891076712397e-05  
+[INFO    ] CD2_1 CD2_2  : -1.2407891076712397e-05  -2.4758849198807486e-06  
 [INFO    ] NAXIS : 3328  3284
 [INFO    ] Executing serially
 [INFO    ] -Drizzle input: simulation_eq.fits[sci,1]
@@ -1411,19 +1409,19 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 1
 [INFO    ] -Drizzling using kernel = turbo
 
-[WARNING ] ! 92 points were outside the output image.
+[WARNING ] ! 52 points were outside the output image.
 [INFO    ] -Generating simple FITS output: simulation_eq_single_sci.fits
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  18:34:52.7 (02/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  20:36:55.340 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  18:34:52.733 (02/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  20:36:55.342 (02/04/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  18:34:52.734 (02/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  20:36:55.343 (02/04/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  18:34:52.734 (02/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  20:36:55.343 (02/04/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  18:34:52.735 (02/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  20:36:55.344 (02/04/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  18:34:52.736 (02/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  20:36:55.345 (02/04/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 1, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': None, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -1448,10 +1446,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 323.3187833728684  -0.8647514972321785  
+[INFO    ] CRVAL : 323.31858741074285  -0.8645160387379045  
 [INFO    ] CRPIX : 761.5219836230856  751.4609591854982  
-[INFO    ] CD1_1 CD1_2  : 5.413908742123534e-06  -2.713179014691811e-05  
-[INFO    ] CD2_1 CD2_2  : -2.713179014691811e-05  -5.413908742123534e-06  
+[INFO    ] CD1_1 CD1_2  : 5.41390875007535e-06  -2.7131790145331395e-05  
+[INFO    ] CD2_1 CD2_2  : -2.7131790145331395e-05  -5.41390875007535e-06  
 [INFO    ] NAXIS : 1522  1502
 [INFO    ] -Drizzle input: simulation_eq.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
@@ -1481,30 +1479,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] stepsize = 1
 [INFO    ] -Drizzling using kernel = square
 
-[WARNING ] ! 277 points were outside the output image.
+[WARNING ] ! 267 points were outside the output image.
 [INFO    ] -Generating simple FITS output: equalized_sci.fits
 [INFO    ] Writing out image to disk: equalized_sci.fits
 [INFO    ] Writing out image to disk: equalized_wht.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  18:34:56.735 (02/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  20:36:59.32 (02/04/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 18:34:56.737 (02/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 20:36:59.329 (02/04/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          0.3186 sec.
-[INFO    ]             Static Mask          0.0008 sec.
-[INFO    ]            Subtract Sky          0.0441 sec.
-[INFO    ]        Separate Drizzle          2.6705 sec.
+[INFO    ]          Initialization          0.3307 sec.
+[INFO    ]             Static Mask          0.0005 sec.
+[INFO    ]            Subtract Sky          0.0453 sec.
+[INFO    ]        Separate Drizzle          2.7660 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0005 sec.
+[INFO    ]                    Blot          0.0006 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          3.9993 sec.
+[INFO    ]           Final Drizzle          3.9816 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          7.0338 sec.
+[INFO    ]                   Total          7.1247 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [ERROR   ] Invalid alias: The name clear can't be aliased because it is another magic command.
 [ERROR   ] Invalid alias: The name more can't be aliased because it is another magic command.
