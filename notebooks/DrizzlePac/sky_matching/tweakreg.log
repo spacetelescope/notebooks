@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 20:37:21.788 (02/04/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:15:02.73 (30/04/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -79,68 +79,68 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'ibxl54030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl54030_drz.fits', EXT=('SCI', 1) started at: 20:37:22.331 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl54030_drz.fits', EXT=('SCI', 1) started at: 14:15:03.224 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.183269
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/drizzlepac/findobj.py:190: RuntimeWarning: invalid value encountered in greater
   tdata=np.where(convdata > threshold, convdata, 0)
 
-[INFO    ] ###Source finding finished at: 20:37:22.479 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:03.316 (30/04/2019)
 [INFO    ]      Found 98 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl54030_drz.fits': 98
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl51030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl51030_drz.fits', EXT=('SCI', 1) started at: 20:37:22.688 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl51030_drz.fits', EXT=('SCI', 1) started at: 14:15:03.525 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.119178
-[INFO    ] ###Source finding finished at: 20:37:22.794 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:03.634 (30/04/2019)
 [INFO    ]      Found 154 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl51030_drz.fits': 154
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl53030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl53030_drz.fits', EXT=('SCI', 1) started at: 20:37:23.010 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl53030_drz.fits', EXT=('SCI', 1) started at: 14:15:03.833 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.070589
-[INFO    ] ###Source finding finished at: 20:37:23.162 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:03.984 (30/04/2019)
 [INFO    ]      Found 130 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl53030_drz.fits': 130
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl55030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl55030_drz.fits', EXT=('SCI', 1) started at: 20:37:23.340 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl55030_drz.fits', EXT=('SCI', 1) started at: 14:15:04.142 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.058994
-[INFO    ] ###Source finding finished at: 20:37:23.464 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:04.286 (30/04/2019)
 [INFO    ]      Found 202 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl55030_drz.fits': 202
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl57030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl57030_drz.fits', EXT=('SCI', 1) started at: 20:37:23.644 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl57030_drz.fits', EXT=('SCI', 1) started at: 14:15:04.44 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.061287
-[INFO    ] ###Source finding finished at: 20:37:23.751 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:04.536 (30/04/2019)
 [INFO    ]      Found 268 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl57030_drz.fits': 268
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl50030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl50030_drz.fits', EXT=('SCI', 1) started at: 20:37:23.918 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl50030_drz.fits', EXT=('SCI', 1) started at: 14:15:04.727 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.252190
-[INFO    ] ###Source finding finished at: 20:37:24.083 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:04.813 (30/04/2019)
 [INFO    ]      Found 126 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl50030_drz.fits': 126
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl52030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl52030_drz.fits', EXT=('SCI', 1) started at: 20:37:24.250 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl52030_drz.fits', EXT=('SCI', 1) started at: 14:15:05.012 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.016099
-[INFO    ] ###Source finding finished at: 20:37:24.397 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:05.178 (30/04/2019)
 [INFO    ]      Found 237 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl52030_drz.fits': 237
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl56030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl56030_drz.fits', EXT=('SCI', 1) started at: 20:37:24.594 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl56030_drz.fits', EXT=('SCI', 1) started at: 14:15:05.330 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.200698
-[INFO    ] ###Source finding finished at: 20:37:24.759 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:05.414 (30/04/2019)
 [INFO    ]      Found 142 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl56030_drz.fits': 142
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl58030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl58030_drz.fits', EXT=('SCI', 1) started at: 20:37:24.921 (02/04/2019)
+[INFO    ]   #  Source finding for 'ibxl58030_drz.fits', EXT=('SCI', 1) started at: 14:15:05.602 (30/04/2019)
 [INFO    ]    Finding sources using sky sigma = 0.010125
-[INFO    ] ###Source finding finished at: 20:37:25.165 (02/04/2019)
+[INFO    ] ###Source finding finished at: 14:15:05.781 (30/04/2019)
 [INFO    ]      Found 428 objects.
 [INFO    ] ===  FINAL number of objects in image 'ibxl58030_drz.fits': 428
 [INFO    ] 
