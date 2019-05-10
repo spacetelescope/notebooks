@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="29" time="1565.868406534195">
+	<testsuite disabled="0" errors="0" failures="0" name="Convert" package="spacetelescope_notebooks" skipped="0" tests="29" time="1565.868406534195">
+		<testcase classname="HSC TAP" file="/root/repo/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.ipynb" name="Convert_Execution" time="122.546055"/>
+		<testcase classname="interm gi query" file="/root/repo/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.ipynb" name="Convert_Execution" time="5.415566"/>
+		<testcase classname="beginner how to use dvt" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.ipynb" name="Convert_Execution" time="3.413099"/>
+		<testcase classname="interm tesscut requests" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb" name="Convert_Execution" time="17.528214"/>
+		<testcase classname="beginner tour lc tp" file="/root/repo/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb" name="Convert_Execution" time="6.516428"/>
+		<testcase classname="beginner tess exomast" file="/root/repo/notebooks/MAST/TESS/beginner_tess_exomast/beginner_tess_exomast.ipynb" name="Convert_Execution" time="6.415701"/>
+		<testcase classname="beginner how to use tp" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.ipynb" name="Convert_Execution" time="4.416695"/>
+		<testcase classname="beginner tic search hd209458" file="/root/repo/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb" name="Convert_Execution" time="3.412026"/>
+		<testcase classname="interm tesscut astroquery" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.ipynb" name="Convert_Execution" time="16.526204"/>
+		<testcase classname="beginner how to use lc" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_lc/beginner_how_to_use_lc.ipynb" name="Convert_Execution" time="3.414799"/>
+		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="5.517793"/>
+		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/K2/K2_FFI/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="8.432551"/>
+		<testcase classname="k2 tpf" file="/root/repo/notebooks/MAST/K2/K2_TPF/k2_tpf.ipynb" name="Convert_Execution" time="4.416840"/>
+		<testcase classname="k2 lightcurve" file="/root/repo/notebooks/MAST/K2/K2_Lightcurve/k2_lightcurve.ipynb" name="Convert_Execution" time="4.415716"/>
+		<testcase classname="PS1 DR2 TAP" file="/root/repo/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.ipynb" name="Convert_Execution" time="183.691892"/>
+		<testcase classname="kepler tpf" file="/root/repo/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.ipynb" name="Convert_Execution" time="8.418200"/>
+		<testcase classname="kepler lightcurve" file="/root/repo/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb" name="Convert_Execution" time="33.442843"/>
+		<testcase classname="kepler dvt" file="/root/repo/notebooks/MAST/Kepler/Kepler_DVT/kepler_dvt.ipynb" name="Convert_Execution" time="3.415591"/>
+		<testcase classname="kepler ffi" file="/root/repo/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb" name="Convert_Execution" time="35.546492"/>
+		<testcase classname="GriddedPSFModel simulation and photometry" file="/root/repo/notebooks/JWST/NIRCam/PSF_phot_01/GriddedPSFModel_simulation_and_photometry.ipynb" name="Convert_Execution" time="26.675891"/>
+		<testcase classname="align to catalogs" file="/root/repo/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb" name="Convert_Execution" time="94.700624"/>
+		<testcase classname="Initialization" file="/root/repo/notebooks/DrizzlePac/Initialization/Initialization.ipynb" name="Convert_Execution" time="35.449329"/>
+		<testcase classname="mask satellite" file="/root/repo/notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb" name="Convert_Execution" time="124.761132"/>
+		<testcase classname="sky matching" file="/root/repo/notebooks/DrizzlePac/sky_matching/sky_matching.ipynb" name="Convert_Execution" time="132.819056"/>
+		<testcase classname="align mosaics" file="/root/repo/notebooks/DrizzlePac/align_mosaics/align_mosaics.ipynb" name="Convert_Execution" time="222.993684"/>
+		<testcase classname="drizzle wfpc2" file="/root/repo/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb" name="Convert_Execution" time="107.714699"/>
+		<testcase classname="align sparse fields" file="/root/repo/notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.ipynb" name="Convert_Execution" time="148.867485"/>
+		<testcase classname="optimize image sampling" file="/root/repo/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb" name="Convert_Execution" time="135.915128"/>
+		<testcase classname="use ds9 regions in tweakreg" file="/root/repo/notebooks/DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.ipynb" name="Convert_Execution" time="59.068674"/>
+	</testsuite>
+</testsuites>

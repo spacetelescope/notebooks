@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 14:15:16.999 (30/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 15:04:41.404 (10/05/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -8,7 +8,7 @@
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  14:15:17.004 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  15:04:41.408 (10/05/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f160w_localmin_drz.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
@@ -24,7 +24,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] Reading in MDRIZSKY of 1.206720857224329
+[INFO    ] Reading in MDRIZSKY of 0.005683985984569359
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
 Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
@@ -37,23 +37,23 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] Reading in MDRIZSKY of 1.198163899001049
-[INFO    ] Reading in MDRIZSKY of 1.219885887944978
-[INFO    ] Reading in MDRIZSKY of 1.213649411867139
-[INFO    ] Reading in MDRIZSKY of 0.7812672359640168
-[INFO    ] Reading in MDRIZSKY of 0.7682213224546781
-[INFO    ] Reading in MDRIZSKY of 1.187172317391058
-[INFO    ] Reading in MDRIZSKY of 1.166670582423796
-[INFO    ] Reading in MDRIZSKY of 1.174908413257794
-[INFO    ] Reading in MDRIZSKY of 1.166037218374175
-[INFO    ] Reading in MDRIZSKY of 0.7933694112409325
-[INFO    ] Reading in MDRIZSKY of 0.8016282763928285
-[INFO    ] Reading in MDRIZSKY of 1.317681298920099
-[INFO    ] Reading in MDRIZSKY of 1.305274610614905
-[INFO    ] Reading in MDRIZSKY of 1.137891703449973
-[INFO    ] Reading in MDRIZSKY of 1.141605637064632
-[INFO    ] Reading in MDRIZSKY of 0.7804558305738218
-[INFO    ] Reading in MDRIZSKY of 0.7762439583946621
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.01014499957535011
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.01285747700708222
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.01433167415871265
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.002829942078735735
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.007051970793741115
+[INFO    ] Reading in MDRIZSKY of 0.002908582860835039
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.0
+[INFO    ] Reading in MDRIZSKY of 0.001675929379968062
+[INFO    ] Reading in MDRIZSKY of 0.001095350556817389
+[INFO    ] Reading in MDRIZSKY of 0.0
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
@@ -77,20 +77,20 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] ********************************************************************************
 [INFO    ] *
-[INFO    ] *  Estimated memory usage:  up to 132 Mb.
-[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Estimated memory usage:  up to 131 Mb.
+[INFO    ] *  Output image size:       3241 X 3344 pixels. 
 [INFO    ] *  Output image file:       ~ 124 Mb. 
 [INFO    ] *  Cores available:         1
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  14:15:20.995 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  15:04:45.877 (10/05/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -109,68 +109,68 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  14:15:21.003 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  15:04:45.887 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ]   mode =  1.209246;   rms = 0.216049;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ]   mode =  1.197809;   rms = 0.195324;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ]   mode =  1.218648;   rms = 0.206520;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ]   mode =  1.218050;   rms = 0.199655;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ]   mode =  0.776681;   rms = 0.199609;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ]   mode =  0.763172;   rms = 0.203367;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ]   mode =  1.185151;   rms = 0.091467;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ]   mode =  1.171142;   rms = 0.095910;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ]   mode =  1.173319;   rms = 0.110799;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ]   mode =  1.165512;   rms = 0.110564;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ]   mode =  0.791136;   rms = 0.313897;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ]   mode =  0.802448;   rms = 0.299563;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ]   mode =  1.316591;   rms = 0.191670;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ]   mode =  1.303690;   rms = 0.199028;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ]   mode =  1.136212;   rms = 0.212368;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ]   mode =  1.146377;   rms = 0.221635;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ]   mode =  0.778128;   rms = 0.213945;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ]   mode =  0.774430;   rms = 0.194110;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  14:15:21.72 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  15:04:46.85 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  14:15:21.724 (30/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  15:04:46.856 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -186,7 +186,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-04-30 14:15:22.197144
+[INFO    ] ***** skymatch started on 2019-05-10 15:04:47.344400
 [INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
@@ -359,77 +359,77 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] -----  Computing sky values requested image extensions (detector chips):  -----
 [INFO    ] 
-[INFO    ]    *   Image:   'ibxl50clq_flt.fits['SCI',1]'  --  SKY = 69.9235605406945 (brightness units)
+[INFO    ]    *   Image:   'ibxl50clq_flt.fits['SCI',1]'  --  SKY = 69.93720780657819 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.15011   NEW MDRIZSKY = 1.15011
-[INFO    ]    *   Image:   'ibxl50cqq_flt.fits['SCI',1]'  --  SKY = 70.67062332640509 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.15033   NEW MDRIZSKY = 1.15033
+[INFO    ]    *   Image:   'ibxl50cqq_flt.fits['SCI',1]'  --  SKY = 70.67867543070503 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16239   NEW MDRIZSKY = 1.16239
-[INFO    ]    *   Image:   'ibxl51eoq_flt.fits['SCI',1]'  --  SKY = 71.35692207750664 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16253   NEW MDRIZSKY = 1.16253
+[INFO    ]    *   Image:   'ibxl51eoq_flt.fits['SCI',1]'  --  SKY = 71.36475675324762 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.17368   NEW MDRIZSKY = 1.17368
-[INFO    ]    *   Image:   'ibxl51etq_flt.fits['SCI',1]'  --  SKY = 71.17767397350484 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.17381   NEW MDRIZSKY = 1.17381
+[INFO    ]    *   Image:   'ibxl51etq_flt.fits['SCI',1]'  --  SKY = 71.18530571592413 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.17073   NEW MDRIZSKY = 1.17073
-[INFO    ]    *   Image:   'ibxl52k0q_flt.fits['SCI',1]'  --  SKY = 48.71939114770598 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.17086   NEW MDRIZSKY = 1.17086
+[INFO    ]    *   Image:   'ibxl52k0q_flt.fits['SCI',1]'  --  SKY = 48.73227741363333 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.80134   NEW MDRIZSKY = 0.80134
-[INFO    ]    *   Image:   'ibxl52k5q_flt.fits['SCI',1]'  --  SKY = 48.404630694335985 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.801552   NEW MDRIZSKY = 0.801552
+[INFO    ]    *   Image:   'ibxl52k5q_flt.fits['SCI',1]'  --  SKY = 48.418694698291006 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
-[INFO    ]    *   Image:   'ibxl53kxq_flt.fits['SCI',1]'  --  SKY = 73.10053242509048 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
+[INFO    ]    *   Image:   'ibxl53kxq_flt.fits['SCI',1]'  --  SKY = 73.115462519472 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.20236   NEW MDRIZSKY = 1.20236
-[INFO    ]    *   Image:   'ibxl53l9q_flt.fits['SCI',1]'  --  SKY = 71.95290825283726 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.20261   NEW MDRIZSKY = 1.20261
+[INFO    ]    *   Image:   'ibxl53l9q_flt.fits['SCI',1]'  --  SKY = 71.96664249014454 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.18349   NEW MDRIZSKY = 1.18349
-[INFO    ]    *   Image:   'ibxl54bgq_flt.fits['SCI',1]'  --  SKY = 71.12075117677064 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.18371   NEW MDRIZSKY = 1.18371
+[INFO    ]    *   Image:   'ibxl54bgq_flt.fits['SCI',1]'  --  SKY = 71.13055720477946 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.1698   NEW MDRIZSKY = 1.1698
-[INFO    ]    *   Image:   'ibxl54blq_flt.fits['SCI',1]'  --  SKY = 70.72288590435905 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16996   NEW MDRIZSKY = 1.16996
+[INFO    ]    *   Image:   'ibxl54blq_flt.fits['SCI',1]'  --  SKY = 70.73079305628634 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16325   NEW MDRIZSKY = 1.16325
-[INFO    ]    *   Image:   'ibxl55f0q_flt.fits['SCI',1]'  --  SKY = 61.18630986101965 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.16338   NEW MDRIZSKY = 1.16338
+[INFO    ]    *   Image:   'ibxl55f0q_flt.fits['SCI',1]'  --  SKY = 61.205298621834984 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.0064   NEW MDRIZSKY = 1.0064
-[INFO    ]    *   Image:   'ibxl55f5q_flt.fits['SCI',1]'  --  SKY = 61.36312276516118 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.00671   NEW MDRIZSKY = 1.00671
+[INFO    ]    *   Image:   'ibxl55f5q_flt.fits['SCI',1]'  --  SKY = 61.379973478480125 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.0093   NEW MDRIZSKY = 1.0093
-[INFO    ]    *   Image:   'ibxl56huq_flt.fits['SCI',1]'  --  SKY = 82.88080964492433 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.00958   NEW MDRIZSKY = 1.00958
+[INFO    ]    *   Image:   'ibxl56huq_flt.fits['SCI',1]'  --  SKY = 82.88270852100587 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.36323   NEW MDRIZSKY = 1.36323
-[INFO    ]    *   Image:   'ibxl56i2q_flt.fits['SCI',1]'  --  SKY = 82.80455744929911 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.36326   NEW MDRIZSKY = 1.36326
+[INFO    ]    *   Image:   'ibxl56i2q_flt.fits['SCI',1]'  --  SKY = 82.80364424935149 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.36197   NEW MDRIZSKY = 1.36197
-[INFO    ]    *   Image:   'ibxl57adq_flt.fits['SCI',1]'  --  SKY = 68.88088913384846 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.36196   NEW MDRIZSKY = 1.36196
+[INFO    ]    *   Image:   'ibxl57adq_flt.fits['SCI',1]'  --  SKY = 68.88099060050929 (brightness units)
 [INFO    ]        Sky change (data units):
 [INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.13296   NEW MDRIZSKY = 1.13296
-[INFO    ]    *   Image:   'ibxl57aiq_flt.fits['SCI',1]'  --  SKY = 68.07999828455944 (brightness units)
+[INFO    ]    *   Image:   'ibxl57aiq_flt.fits['SCI',1]'  --  SKY = 68.0795126941111 (brightness units)
 [INFO    ]        Sky change (data units):
 [INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 1.11978   NEW MDRIZSKY = 1.11978
-[INFO    ]    *   Image:   'ibxl58sqq_flt.fits['SCI',1]'  --  SKY = 48.94119002069512 (brightness units)
+[INFO    ]    *   Image:   'ibxl58sqq_flt.fits['SCI',1]'  --  SKY = 48.9500719773284 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.804988   NEW MDRIZSKY = 0.804988
-[INFO    ]    *   Image:   'ibxl58svq_flt.fits['SCI',1]'  --  SKY = 48.60068602594495 (brightness units)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.805134   NEW MDRIZSKY = 0.805134
+[INFO    ]    *   Image:   'ibxl58svq_flt.fits['SCI',1]'  --  SKY = 48.60946651591739 (brightness units)
 [INFO    ]        Sky change (data units):
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.799387   NEW MDRIZSKY = 0.799387
-[INFO    ] ***** skymatch ended on 2019-04-30 14:15:23.995369
-[INFO    ] TOTAL RUN TIME: 0:00:01.798225
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  14:15:24.357 (30/04/2019)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.799532   NEW MDRIZSKY = 0.799532
+[INFO    ] ***** skymatch ended on 2019-05-10 15:04:49.461003
+[INFO    ] TOTAL RUN TIME: 0:00:02.116603
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  15:04:49.859 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  14:15:24.362 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  15:04:49.861 (10/05/2019)
 [INFO    ] Single drizzle step not performed.
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:15:24. (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  15:04:49.863 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  14:15:24.365 (30/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  15:04:49.865 (10/05/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  14:15:24.366 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  15:04:49.867 (10/05/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  14:15:24.367 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  15:04:49.869 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  14:15:24.369 (30/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  15:04:49.87 (10/05/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  14:15:24.370 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  15:04:49.872 (10/05/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -454,13 +454,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.150107 to ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.150332 to ibxl50clq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
@@ -469,7 +469,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.162395 to ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.162527 to ibxl50cqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
@@ -478,7 +478,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.173683 to ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.173812 to ibxl51eoq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
@@ -487,7 +487,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.170735 to ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.170860 to ibxl51etq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
@@ -496,7 +496,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.801340 to ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.801552 to ibxl52k0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
@@ -505,7 +505,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl52k5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
@@ -514,7 +514,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.202362 to ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.202608 to ibxl53kxq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
@@ -523,7 +523,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.183486 to ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.183712 to ibxl53l9q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
@@ -532,7 +532,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.169799 to ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.169960 to ibxl54bgq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
@@ -541,7 +541,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.163254 to ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.163385 to ibxl54blq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
@@ -550,7 +550,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.006396 to ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.006709 to ibxl55f0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
@@ -559,7 +559,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.009305 to ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.009582 to ibxl55f5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
@@ -568,7 +568,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.363229 to ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.363260 to ibxl56huq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
@@ -577,7 +577,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.361975 to ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.361960 to ibxl56i2q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
@@ -586,7 +586,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.132957 to ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.132959 to ibxl57adq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
@@ -595,7 +595,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 1.119784 to ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 1.119776 to ibxl57aiq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
@@ -604,7 +604,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.804988 to ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.805134 to ibxl58sqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
@@ -613,7 +613,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.799387 to ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.799532 to ibxl58svq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
@@ -625,29 +625,29 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out image to disk: f160w_localmin_drz_sci.fits
 [INFO    ] Writing out image to disk: f160w_localmin_drz_wht.fits
 [INFO    ] Writing out image to disk: f160w_localmin_drz_ctx.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:15:34.740 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  15:05:01.409 (10/05/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 14:15:34.743 (30/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 15:05:01.413 (10/05/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          3.9909 sec.
-[INFO    ]             Static Mask          0.7192 sec.
-[INFO    ]            Subtract Sky          2.6332 sec.
-[INFO    ]        Separate Drizzle          0.0015 sec.
+[INFO    ]          Initialization          4.4690 sec.
+[INFO    ]             Static Mask          0.9666 sec.
+[INFO    ]            Subtract Sky          3.0027 sec.
+[INFO    ]        Separate Drizzle          0.0018 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0012 sec.
+[INFO    ]                    Blot          0.0022 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          10.3698 sec.
+[INFO    ]           Final Drizzle          11.5363 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          17.7159 sec.
+[INFO    ]                   Total          19.9788 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 14:15:35.173 (30/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 15:05:01.904 (10/05/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -656,28 +656,28 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  14:15:35.178 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  15:05:01.909 (10/05/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f160w_match_drz.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
-[INFO    ] Reading in MDRIZSKY of 1.150107145309448
-[INFO    ] Reading in MDRIZSKY of 1.162394881248474
-[INFO    ] Reading in MDRIZSKY of 1.173683166503906
-[INFO    ] Reading in MDRIZSKY of 1.170734882354736
-[INFO    ] Reading in MDRIZSKY of 0.8013396263122559
-[INFO    ] Reading in MDRIZSKY of 0.7961624264717102
-[INFO    ] Reading in MDRIZSKY of 1.202362179756165
-[INFO    ] Reading in MDRIZSKY of 1.183485984802246
-[INFO    ] Reading in MDRIZSKY of 1.169798612594604
-[INFO    ] Reading in MDRIZSKY of 1.163254499435425
-[INFO    ] Reading in MDRIZSKY of 1.006396293640137
-[INFO    ] Reading in MDRIZSKY of 1.009304523468018
-[INFO    ] Reading in MDRIZSKY of 1.363228797912598
-[INFO    ] Reading in MDRIZSKY of 1.361974596977234
-[INFO    ] Reading in MDRIZSKY of 1.132957220077515
-[INFO    ] Reading in MDRIZSKY of 1.119784116744995
-[INFO    ] Reading in MDRIZSKY of 0.8049877882003784
-[INFO    ] Reading in MDRIZSKY of 0.7993871569633484
+[INFO    ] Reading in MDRIZSKY of 1.150331616401672
+[INFO    ] Reading in MDRIZSKY of 1.162527322769165
+[INFO    ] Reading in MDRIZSKY of 1.173812031745911
+[INFO    ] Reading in MDRIZSKY of 1.170860409736633
+[INFO    ] Reading in MDRIZSKY of 0.8015515804290771
+[INFO    ] Reading in MDRIZSKY of 0.7963937520980835
+[INFO    ] Reading in MDRIZSKY of 1.202607750892639
+[INFO    ] Reading in MDRIZSKY of 1.183711886405945
+[INFO    ] Reading in MDRIZSKY of 1.169959902763367
+[INFO    ] Reading in MDRIZSKY of 1.163384556770325
+[INFO    ] Reading in MDRIZSKY of 1.00670862197876
+[INFO    ] Reading in MDRIZSKY of 1.009581685066223
+[INFO    ] Reading in MDRIZSKY of 1.36326003074646
+[INFO    ] Reading in MDRIZSKY of 1.36195957660675
+[INFO    ] Reading in MDRIZSKY of 1.132958889007568
+[INFO    ] Reading in MDRIZSKY of 1.119776129722595
+[INFO    ] Reading in MDRIZSKY of 0.8051338791847229
+[INFO    ] Reading in MDRIZSKY of 0.7995315790176392
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
@@ -701,20 +701,20 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] ********************************************************************************
 [INFO    ] *
-[INFO    ] *  Estimated memory usage:  up to 132 Mb.
-[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Estimated memory usage:  up to 131 Mb.
+[INFO    ] *  Output image size:       3241 X 3344 pixels. 
 [INFO    ] *  Output image file:       ~ 124 Mb. 
 [INFO    ] *  Cores available:         1
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  14:15:39.024 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  15:05:06.42 (10/05/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -733,68 +733,68 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  14:15:39.032 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  15:05:06.434 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ]   mode =  1.209246;   rms = 0.216049;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ]   mode =  1.197809;   rms = 0.195324;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ]   mode =  1.218648;   rms = 0.206520;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ]   mode =  1.218050;   rms = 0.199655;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ]   mode =  0.776681;   rms = 0.199609;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ]   mode =  0.763172;   rms = 0.203367;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ]   mode =  1.185151;   rms = 0.091467;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ]   mode =  1.171142;   rms = 0.095910;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ]   mode =  1.173319;   rms = 0.110799;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ]   mode =  1.165512;   rms = 0.110564;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ]   mode =  0.791136;   rms = 0.313897;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ]   mode =  0.802448;   rms = 0.299563;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ]   mode =  1.316591;   rms = 0.191670;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ]   mode =  1.303690;   rms = 0.199028;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ]   mode =  1.136212;   rms = 0.212368;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ]   mode =  1.146377;   rms = 0.221635;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ]   mode =  0.778128;   rms = 0.213945;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ]   mode =  0.774430;   rms = 0.194110;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  14:15:39.818 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  15:05:07.380 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  14:15:39.820 (30/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  15:05:07.383 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -810,7 +810,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-04-30 14:15:40.268302
+[INFO    ] ***** skymatch started on 2019-05-10 15:05:07.952166
 [INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
@@ -983,95 +983,95 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] -----  Computing differences in sky values in overlapping regions:  -----
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl50clq_flt.fits['SCI',1]' SKY = 1.42799 [brightness units]
+[INFO    ]    *   Image 'ibxl50clq_flt.fits['SCI',1]' SKY = 1.58399 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0234876
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0260536
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl50cqq_flt.fits['SCI',1]' SKY = 1.21064 [brightness units]
+[INFO    ]    *   Image 'ibxl50cqq_flt.fits['SCI',1]' SKY = 1.36473 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199127
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0224471
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl51eoq_flt.fits['SCI',1]' SKY = 2.23302 [brightness units]
+[INFO    ]    *   Image 'ibxl51eoq_flt.fits['SCI',1]' SKY = 2.43754 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0367289
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0400928
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl51etq_flt.fits['SCI',1]' SKY = 1.58808 [brightness units]
+[INFO    ]    *   Image 'ibxl51etq_flt.fits['SCI',1]' SKY = 1.78844 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0261208
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0294163
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl52k0q_flt.fits['SCI',1]' SKY = 2.01916 [brightness units]
+[INFO    ]    *   Image 'ibxl52k0q_flt.fits['SCI',1]' SKY = 2.19621 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0332113
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0361235
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl52k5q_flt.fits['SCI',1]' SKY = 1.30746 [brightness units]
+[INFO    ]    *   Image 'ibxl52k5q_flt.fits['SCI',1]' SKY = 1.48494 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0215052
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0244243
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl53kxq_flt.fits['SCI',1]' SKY = 2.44749 [brightness units]
+[INFO    ]    *   Image 'ibxl53kxq_flt.fits['SCI',1]' SKY = 2.61479 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0402565
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0430082
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl53l9q_flt.fits['SCI',1]' SKY = 1.21319 [brightness units]
+[INFO    ]    *   Image 'ibxl53l9q_flt.fits['SCI',1]' SKY = 1.37807 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199546
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0226665
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl54bgq_flt.fits['SCI',1]' SKY = 1.32109 [brightness units]
+[INFO    ]    *   Image 'ibxl54bgq_flt.fits['SCI',1]' SKY = 1.48353 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0217294
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0244013
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl54blq_flt.fits['SCI',1]' SKY = 1.00421 [brightness units]
+[INFO    ]    *   Image 'ibxl54blq_flt.fits['SCI',1]' SKY = 1.16489 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0165172
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0191601
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl55f0q_flt.fits['SCI',1]' SKY = 1.01427 [brightness units]
+[INFO    ]    *   Image 'ibxl55f0q_flt.fits['SCI',1]' SKY = 1.13367 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0166828
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0186466
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl55f5q_flt.fits['SCI',1]' SKY = 1.02785 [brightness units]
+[INFO    ]    *   Image 'ibxl55f5q_flt.fits['SCI',1]' SKY = 1.14236 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0169062
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0187896
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl56huq_flt.fits['SCI',1]' SKY = 1.5223 [brightness units]
+[INFO    ]    *   Image 'ibxl56huq_flt.fits['SCI',1]' SKY = 1.7395 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0250388
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0286113
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl56i2q_flt.fits['SCI',1]' SKY = 1.22492 [brightness units]
+[INFO    ]    *   Image 'ibxl56i2q_flt.fits['SCI',1]' SKY = 1.44111 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0201475
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0237035
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl57adq_flt.fits['SCI',1]' SKY = 0.418017 [brightness units]
+[INFO    ]    *   Image 'ibxl57adq_flt.fits['SCI',1]' SKY = 0.651258 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00687557
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0107119
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl57aiq_flt.fits['SCI',1]' SKY = 0.358272 [brightness units]
+[INFO    ]    *   Image 'ibxl57aiq_flt.fits['SCI',1]' SKY = 0.593427 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00589288
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00976073
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl58sqq_flt.fits['SCI',1]' SKY = 0.101303 [brightness units]
+[INFO    ]    *   Image 'ibxl58sqq_flt.fits['SCI',1]' SKY = 0.100676 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00166623
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00165593
 [INFO    ] 
 [INFO    ]    *   Image 'ibxl58svq_flt.fits['SCI',1]' SKY = 0 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
 [INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0
 [INFO    ] 
-[INFO    ] ***** skymatch ended on 2019-04-30 14:15:53.284518
-[INFO    ] TOTAL RUN TIME: 0:00:13.016216
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  14:15:53.593 (30/04/2019)
+[INFO    ] ***** skymatch ended on 2019-05-10 15:05:21.752885
+[INFO    ] TOTAL RUN TIME: 0:00:13.800719
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  15:05:22.070 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  14:15:53.595 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  15:05:22.072 (10/05/2019)
 [INFO    ] Single drizzle step not performed.
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:15:53.596 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  15:05:22.074 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  14:15:53.598 (30/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  15:05:22.075 (10/05/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  14:15:53.599 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  15:05:22.07 (10/05/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  14:15:53.601 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  15:05:22.078 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  14:15:53.602 (30/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  15:05:22.080 (10/05/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  14:15:53.603 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  15:05:22.081 (10/05/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -1096,13 +1096,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.023488 to ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.026054 to ibxl50clq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
@@ -1111,7 +1111,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.019913 to ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.022447 to ibxl50cqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
@@ -1120,7 +1120,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.036729 to ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.040093 to ibxl51eoq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
@@ -1129,7 +1129,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.026121 to ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.029416 to ibxl51etq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
@@ -1138,7 +1138,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.033211 to ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.036123 to ibxl52k0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
@@ -1147,7 +1147,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.021505 to ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.024424 to ibxl52k5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
@@ -1156,7 +1156,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.040257 to ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.043008 to ibxl53kxq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
@@ -1165,7 +1165,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.019955 to ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.022667 to ibxl53l9q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
@@ -1174,7 +1174,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.021729 to ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.024401 to ibxl54bgq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
@@ -1183,7 +1183,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.016517 to ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.019160 to ibxl54blq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
@@ -1192,7 +1192,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.016683 to ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.018647 to ibxl55f0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
@@ -1201,7 +1201,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.016906 to ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.018790 to ibxl55f5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
@@ -1210,7 +1210,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.025039 to ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.028611 to ibxl56huq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
@@ -1219,7 +1219,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.020148 to ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.023704 to ibxl56i2q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
@@ -1228,7 +1228,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.006876 to ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.010712 to ibxl57adq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
@@ -1237,7 +1237,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.005893 to ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.009761 to ibxl57aiq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
@@ -1246,7 +1246,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.001666 to ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.001656 to ibxl58sqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
@@ -1267,29 +1267,29 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out image to disk: f160w_match_drz_sci.fits
 [INFO    ] Writing out image to disk: f160w_match_drz_wht.fits
 [INFO    ] Writing out image to disk: f160w_match_drz_ctx.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:16:03.629 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  15:05:32.863 (10/05/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 14:16:03.632 (30/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 15:05:32.866 (10/05/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          3.8465 sec.
-[INFO    ]             Static Mask          0.7855 sec.
-[INFO    ]            Subtract Sky          13.7732 sec.
-[INFO    ]        Separate Drizzle          0.0011 sec.
+[INFO    ]          Initialization          4.5109 sec.
+[INFO    ]             Static Mask          0.9460 sec.
+[INFO    ]            Subtract Sky          14.6872 sec.
+[INFO    ]        Separate Drizzle          0.0014 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0013 sec.
+[INFO    ]                    Blot          0.0014 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          10.0263 sec.
+[INFO    ]           Final Drizzle          10.7818 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          28.4338 sec.
+[INFO    ]                   Total          30.9287 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 14:16:04.075 (30/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 15:05:33.334 (10/05/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -1298,27 +1298,27 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  14:16:04.08 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  15:05:33.338 (10/05/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f160w_globalmin_match_drz.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
-[INFO    ] Reading in MDRIZSKY of 0.02348762492308486
-[INFO    ] Reading in MDRIZSKY of 0.01991267788732926
-[INFO    ] Reading in MDRIZSKY of 0.03672887680026272
-[INFO    ] Reading in MDRIZSKY of 0.02612076006049753
-[INFO    ] Reading in MDRIZSKY of 0.03321128408059773
-[INFO    ] Reading in MDRIZSKY of 0.0215052478970888
-[INFO    ] Reading in MDRIZSKY of 0.04025653367969503
-[INFO    ] Reading in MDRIZSKY of 0.01995461203045289
-[INFO    ] Reading in MDRIZSKY of 0.02172937889712476
-[INFO    ] Reading in MDRIZSKY of 0.01651723438275512
-[INFO    ] Reading in MDRIZSKY of 0.0166827611038294
-[INFO    ] Reading in MDRIZSKY of 0.01690616522261843
-[INFO    ] Reading in MDRIZSKY of 0.02503881270865228
-[INFO    ] Reading in MDRIZSKY of 0.02014752006169942
-[INFO    ] Reading in MDRIZSKY of 0.006875565754530021
-[INFO    ] Reading in MDRIZSKY of 0.005892881546853945
-[INFO    ] Reading in MDRIZSKY of 0.001666234986391282
+[INFO    ] Reading in MDRIZSKY of 0.0260536369319928
+[INFO    ] Reading in MDRIZSKY of 0.02244710498996258
+[INFO    ] Reading in MDRIZSKY of 0.04009283633461603
+[INFO    ] Reading in MDRIZSKY of 0.02941630994943635
+[INFO    ] Reading in MDRIZSKY of 0.03612347412584418
+[INFO    ] Reading in MDRIZSKY of 0.024424320484184
+[INFO    ] Reading in MDRIZSKY of 0.04300823103394528
+[INFO    ] Reading in MDRIZSKY of 0.02266652717933124
+[INFO    ] Reading in MDRIZSKY of 0.02440127487709222
+[INFO    ] Reading in MDRIZSKY of 0.01916014953466561
+[INFO    ] Reading in MDRIZSKY of 0.01864662678064847
+[INFO    ] Reading in MDRIZSKY of 0.01878959140305668
+[INFO    ] Reading in MDRIZSKY of 0.02861133490763788
+[INFO    ] Reading in MDRIZSKY of 0.02370354434924129
+[INFO    ] Reading in MDRIZSKY of 0.01071192911458378
+[INFO    ] Reading in MDRIZSKY of 0.009760728838707843
+[INFO    ] Reading in MDRIZSKY of 0.001655933122011753
 [INFO    ] Reading in MDRIZSKY of 0.0
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
@@ -1343,20 +1343,20 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] ********************************************************************************
 [INFO    ] *
-[INFO    ] *  Estimated memory usage:  up to 132 Mb.
-[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Estimated memory usage:  up to 131 Mb.
+[INFO    ] *  Output image size:       3241 X 3344 pixels. 
 [INFO    ] *  Output image file:       ~ 124 Mb. 
 [INFO    ] *  Cores available:         1
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  14:16:07.932 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  15:05:37.507 (10/05/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -1375,68 +1375,68 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  14:16:07.940 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  15:05:37.516 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ]   mode =  1.209246;   rms = 0.216049;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ]   mode =  1.197809;   rms = 0.195324;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ]   mode =  1.218648;   rms = 0.206520;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ]   mode =  1.218050;   rms = 0.199655;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ]   mode =  0.776681;   rms = 0.199609;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ]   mode =  0.763172;   rms = 0.203367;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ]   mode =  1.185151;   rms = 0.091467;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ]   mode =  1.171142;   rms = 0.095910;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ]   mode =  1.173319;   rms = 0.110799;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ]   mode =  1.165512;   rms = 0.110564;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ]   mode =  0.791136;   rms = 0.313897;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ]   mode =  0.802448;   rms = 0.299563;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ]   mode =  1.316591;   rms = 0.191670;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ]   mode =  1.303690;   rms = 0.199028;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ]   mode =  1.136212;   rms = 0.212368;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ]   mode =  1.146377;   rms = 0.221635;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ]   mode =  0.778128;   rms = 0.213945;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ]   mode =  0.774430;   rms = 0.194110;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  14:16:08.694 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  15:05:38.451 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  14:16:08.695 (30/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  15:05:38.453 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -1452,7 +1452,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-04-30 14:16:09.177507
+[INFO    ] ***** skymatch started on 2019-05-10 15:05:38.979524
 [INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
@@ -1625,73 +1625,73 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] -----  Computing differences in sky values in overlapping regions:  -----
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl50clq_flt.fits['SCI',1]' SKY = 1.42799 [brightness units]
+[INFO    ]    *   Image 'ibxl50clq_flt.fits['SCI',1]' SKY = 1.58399 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0234876
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0260536
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl50cqq_flt.fits['SCI',1]' SKY = 1.21064 [brightness units]
+[INFO    ]    *   Image 'ibxl50cqq_flt.fits['SCI',1]' SKY = 1.36473 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199127
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0224471
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl51eoq_flt.fits['SCI',1]' SKY = 2.23302 [brightness units]
+[INFO    ]    *   Image 'ibxl51eoq_flt.fits['SCI',1]' SKY = 2.43754 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0367289
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0400928
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl51etq_flt.fits['SCI',1]' SKY = 1.58808 [brightness units]
+[INFO    ]    *   Image 'ibxl51etq_flt.fits['SCI',1]' SKY = 1.78844 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0261208
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0294163
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl52k0q_flt.fits['SCI',1]' SKY = 2.01916 [brightness units]
+[INFO    ]    *   Image 'ibxl52k0q_flt.fits['SCI',1]' SKY = 2.19621 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0332113
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0361235
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl52k5q_flt.fits['SCI',1]' SKY = 1.30746 [brightness units]
+[INFO    ]    *   Image 'ibxl52k5q_flt.fits['SCI',1]' SKY = 1.48494 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0215052
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0244243
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl53kxq_flt.fits['SCI',1]' SKY = 2.44749 [brightness units]
+[INFO    ]    *   Image 'ibxl53kxq_flt.fits['SCI',1]' SKY = 2.61479 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0402565
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0430082
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl53l9q_flt.fits['SCI',1]' SKY = 1.21319 [brightness units]
+[INFO    ]    *   Image 'ibxl53l9q_flt.fits['SCI',1]' SKY = 1.37807 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0199546
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0226665
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl54bgq_flt.fits['SCI',1]' SKY = 1.32109 [brightness units]
+[INFO    ]    *   Image 'ibxl54bgq_flt.fits['SCI',1]' SKY = 1.48353 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0217294
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0244013
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl54blq_flt.fits['SCI',1]' SKY = 1.00421 [brightness units]
+[INFO    ]    *   Image 'ibxl54blq_flt.fits['SCI',1]' SKY = 1.16489 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0165172
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0191601
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl55f0q_flt.fits['SCI',1]' SKY = 1.01427 [brightness units]
+[INFO    ]    *   Image 'ibxl55f0q_flt.fits['SCI',1]' SKY = 1.13367 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0166828
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0186466
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl55f5q_flt.fits['SCI',1]' SKY = 1.02785 [brightness units]
+[INFO    ]    *   Image 'ibxl55f5q_flt.fits['SCI',1]' SKY = 1.14236 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0169062
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0187896
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl56huq_flt.fits['SCI',1]' SKY = 1.5223 [brightness units]
+[INFO    ]    *   Image 'ibxl56huq_flt.fits['SCI',1]' SKY = 1.7395 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0250388
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0286113
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl56i2q_flt.fits['SCI',1]' SKY = 1.22492 [brightness units]
+[INFO    ]    *   Image 'ibxl56i2q_flt.fits['SCI',1]' SKY = 1.44111 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0201475
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0237035
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl57adq_flt.fits['SCI',1]' SKY = 0.418017 [brightness units]
+[INFO    ]    *   Image 'ibxl57adq_flt.fits['SCI',1]' SKY = 0.651258 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00687557
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.0107119
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl57aiq_flt.fits['SCI',1]' SKY = 0.358272 [brightness units]
+[INFO    ]    *   Image 'ibxl57aiq_flt.fits['SCI',1]' SKY = 0.593427 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00589288
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00976073
 [INFO    ] 
-[INFO    ]    *   Image 'ibxl58sqq_flt.fits['SCI',1]' SKY = 0.101303 [brightness units]
+[INFO    ]    *   Image 'ibxl58sqq_flt.fits['SCI',1]' SKY = 0.100676 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
-[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00166623
+[INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0.00165593
 [INFO    ] 
 [INFO    ]    *   Image 'ibxl58svq_flt.fits['SCI',1]' SKY = 0 [brightness units]
 [INFO    ]        Updating sky of image extension(s) [data units]:
@@ -1699,45 +1699,45 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] -----  Computing "global" sky on requested image extensions (detector chips):  -----
 [INFO    ] 
-[INFO    ]    "Global" sky value: 46.700230374281645 (brightness units)
+[INFO    ]    "Global" sky value: 46.53606296502293 (brightness units)
 [INFO    ] 
 [INFO    ]     Final (match+global) sky [image units] for:
-[INFO    ]     # ibxl50clq_flt.fits['SCI',1]:   0.791615967154743
-[INFO    ]     # ibxl50cqq_flt.fits['SCI',1]:   0.7880410201189875
-[INFO    ]     # ibxl51eoq_flt.fits['SCI',1]:   0.8048572190319209
-[INFO    ]     # ibxl51etq_flt.fits['SCI',1]:   0.7942491022921557
-[INFO    ]     # ibxl52k0q_flt.fits['SCI',1]:   0.8013396263122559
-[INFO    ]     # ibxl52k5q_flt.fits['SCI',1]:   0.789633590128747
-[INFO    ]     # ibxl53kxq_flt.fits['SCI',1]:   0.8083848759113532
-[INFO    ]     # ibxl53l9q_flt.fits['SCI',1]:   0.7880829542621111
-[INFO    ]     # ibxl54bgq_flt.fits['SCI',1]:   0.7898577211287829
-[INFO    ]     # ibxl54blq_flt.fits['SCI',1]:   0.7846455766144133
-[INFO    ]     # ibxl55f0q_flt.fits['SCI',1]:   0.7848111033354875
-[INFO    ]     # ibxl55f5q_flt.fits['SCI',1]:   0.7850345074542766
-[INFO    ]     # ibxl56huq_flt.fits['SCI',1]:   0.7931671549403104
-[INFO    ]     # ibxl56i2q_flt.fits['SCI',1]:   0.7882758622933576
-[INFO    ]     # ibxl57adq_flt.fits['SCI',1]:   0.7750039079861881
-[INFO    ]     # ibxl57aiq_flt.fits['SCI',1]:   0.7740212237785121
-[INFO    ]     # ibxl58sqq_flt.fits['SCI',1]:   0.7697945772180494
-[INFO    ]     # ibxl58svq_flt.fits['SCI',1]:   0.7681283422316582
+[INFO    ]     # ibxl50clq_flt.fits['SCI',1]:   0.7914817432352258
+[INFO    ]     # ibxl50cqq_flt.fits['SCI',1]:   0.7878752112931956
+[INFO    ]     # ibxl51eoq_flt.fits['SCI',1]:   0.805520942637849
+[INFO    ]     # ibxl51etq_flt.fits['SCI',1]:   0.7948444162526693
+[INFO    ]     # ibxl52k0q_flt.fits['SCI',1]:   0.8015515804290771
+[INFO    ]     # ibxl52k5q_flt.fits['SCI',1]:   0.789852426787417
+[INFO    ]     # ibxl53kxq_flt.fits['SCI',1]:   0.8084363373371782
+[INFO    ]     # ibxl53l9q_flt.fits['SCI',1]:   0.7880946334825643
+[INFO    ]     # ibxl54bgq_flt.fits['SCI',1]:   0.7898293811803252
+[INFO    ]     # ibxl54blq_flt.fits['SCI',1]:   0.7845882558378986
+[INFO    ]     # ibxl55f0q_flt.fits['SCI',1]:   0.7840747330838814
+[INFO    ]     # ibxl55f5q_flt.fits['SCI',1]:   0.7842176977062897
+[INFO    ]     # ibxl56huq_flt.fits['SCI',1]:   0.7940394412108709
+[INFO    ]     # ibxl56i2q_flt.fits['SCI',1]:   0.7891316506524743
+[INFO    ]     # ibxl57adq_flt.fits['SCI',1]:   0.7761400354178167
+[INFO    ]     # ibxl57aiq_flt.fits['SCI',1]:   0.7751888351419408
+[INFO    ]     # ibxl58sqq_flt.fits['SCI',1]:   0.7670840394252447
+[INFO    ]     # ibxl58svq_flt.fits['SCI',1]:   0.765428106303233
 [INFO    ] 
-[INFO    ] ***** skymatch ended on 2019-04-30 14:16:23.699066
-[INFO    ] TOTAL RUN TIME: 0:00:14.521559
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  14:16:24.009 (30/04/2019)
+[INFO    ] ***** skymatch ended on 2019-05-10 15:05:54.163580
+[INFO    ] TOTAL RUN TIME: 0:00:15.184056
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  15:05:54.56 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  14:16:24.011 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  15:05:54.562 (10/05/2019)
 [INFO    ] Single drizzle step not performed.
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:16:24.012 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  15:05:54.564 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  14:16:24.014 (30/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  15:05:54.566 (10/05/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  14:16:24.015 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  15:05:54.56 (10/05/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  14:16:24.016 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  15:05:54.569 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  14:16:24.018 (30/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  15:05:54.571 (10/05/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  14:16:24.019 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  15:05:54.573 (10/05/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -1762,13 +1762,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.791616 to ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.791482 to ibxl50clq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
@@ -1777,7 +1777,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.788041 to ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.787875 to ibxl50cqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
@@ -1786,7 +1786,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.804857 to ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.805521 to ibxl51eoq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
@@ -1795,7 +1795,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.794249 to ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.794844 to ibxl51etq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
@@ -1804,7 +1804,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.801340 to ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.801552 to ibxl52k0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
@@ -1813,7 +1813,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.789634 to ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.789852 to ibxl52k5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
@@ -1822,7 +1822,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.808385 to ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.808436 to ibxl53kxq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
@@ -1831,7 +1831,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.788083 to ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.788095 to ibxl53l9q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
@@ -1840,7 +1840,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.789858 to ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.789829 to ibxl54bgq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
@@ -1849,7 +1849,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.784646 to ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.784588 to ibxl54blq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
@@ -1858,7 +1858,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.784811 to ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.784075 to ibxl55f0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
@@ -1867,7 +1867,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.785035 to ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.784218 to ibxl55f5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
@@ -1876,7 +1876,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.793167 to ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.794039 to ibxl56huq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
@@ -1885,7 +1885,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.788276 to ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.789132 to ibxl56i2q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
@@ -1894,7 +1894,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.775004 to ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.776140 to ibxl57adq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
@@ -1903,7 +1903,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.774021 to ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.775189 to ibxl57aiq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
@@ -1912,7 +1912,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.769795 to ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.767084 to ibxl58sqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
@@ -1921,7 +1921,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.768128 to ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.765428 to ibxl58svq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
@@ -1933,29 +1933,29 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out image to disk: f160w_globalmin_match_drz_sci.fits
 [INFO    ] Writing out image to disk: f160w_globalmin_match_drz_wht.fits
 [INFO    ] Writing out image to disk: f160w_globalmin_match_drz_ctx.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:16:34.350 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  15:06:05.335 (10/05/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 14:16:34.354 (30/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 15:06:05.338 (10/05/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          3.8529 sec.
-[INFO    ]             Static Mask          0.7536 sec.
-[INFO    ]            Subtract Sky          15.3137 sec.
-[INFO    ]        Separate Drizzle          0.0012 sec.
+[INFO    ]          Initialization          4.1692 sec.
+[INFO    ]             Static Mask          0.9349 sec.
+[INFO    ]            Subtract Sky          16.1065 sec.
+[INFO    ]        Separate Drizzle          0.0017 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0011 sec.
+[INFO    ]                    Blot          0.0018 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          10.3314 sec.
+[INFO    ]           Final Drizzle          10.7624 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          30.2539 sec.
+[INFO    ]                   Total          31.9764 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 14:16:34.826 (30/04/2019)
+[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 15:06:05.805 (10/05/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -1964,28 +1964,28 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] numpy Version -> 1.15.4 
 [INFO    ] astropy Version -> 3.1.2 
 [INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  14:16:34.830 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  started at  15:06:05.810 (10/05/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f160w_globalmin_drz.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
-[INFO    ] Reading in MDRIZSKY of 0.791615967154743
-[INFO    ] Reading in MDRIZSKY of 0.7880410201189875
-[INFO    ] Reading in MDRIZSKY of 0.8048572190319209
-[INFO    ] Reading in MDRIZSKY of 0.7942491022921557
-[INFO    ] Reading in MDRIZSKY of 0.8013396263122559
-[INFO    ] Reading in MDRIZSKY of 0.789633590128747
-[INFO    ] Reading in MDRIZSKY of 0.8083848759113532
-[INFO    ] Reading in MDRIZSKY of 0.7880829542621111
-[INFO    ] Reading in MDRIZSKY of 0.7898577211287829
-[INFO    ] Reading in MDRIZSKY of 0.7846455766144133
-[INFO    ] Reading in MDRIZSKY of 0.7848111033354875
-[INFO    ] Reading in MDRIZSKY of 0.7850345074542766
-[INFO    ] Reading in MDRIZSKY of 0.7931671549403104
-[INFO    ] Reading in MDRIZSKY of 0.7882758622933576
-[INFO    ] Reading in MDRIZSKY of 0.7750039079861881
-[INFO    ] Reading in MDRIZSKY of 0.7740212237785121
-[INFO    ] Reading in MDRIZSKY of 0.7697945772180494
-[INFO    ] Reading in MDRIZSKY of 0.7681283422316582
+[INFO    ] Reading in MDRIZSKY of 0.7914817432352258
+[INFO    ] Reading in MDRIZSKY of 0.7878752112931956
+[INFO    ] Reading in MDRIZSKY of 0.805520942637849
+[INFO    ] Reading in MDRIZSKY of 0.7948444162526693
+[INFO    ] Reading in MDRIZSKY of 0.8015515804290771
+[INFO    ] Reading in MDRIZSKY of 0.789852426787417
+[INFO    ] Reading in MDRIZSKY of 0.8084363373371782
+[INFO    ] Reading in MDRIZSKY of 0.7880946334825643
+[INFO    ] Reading in MDRIZSKY of 0.7898293811803252
+[INFO    ] Reading in MDRIZSKY of 0.7845882558378986
+[INFO    ] Reading in MDRIZSKY of 0.7840747330838814
+[INFO    ] Reading in MDRIZSKY of 0.7842176977062897
+[INFO    ] Reading in MDRIZSKY of 0.7940394412108709
+[INFO    ] Reading in MDRIZSKY of 0.7891316506524743
+[INFO    ] Reading in MDRIZSKY of 0.7761400354178167
+[INFO    ] Reading in MDRIZSKY of 0.7751888351419408
+[INFO    ] Reading in MDRIZSKY of 0.7670840394252447
+[INFO    ] Reading in MDRIZSKY of 0.765428106303233
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50clq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl50cqq_flt.fits[DQ,1]
 [INFO    ] Reset bit values of 4096 to a value of 0 in ibxl51eoq_flt.fits[DQ,1]
@@ -2009,20 +2009,20 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] ********************************************************************************
 [INFO    ] *
-[INFO    ] *  Estimated memory usage:  up to 132 Mb.
-[INFO    ] *  Output image size:       3243 X 3348 pixels. 
+[INFO    ] *  Estimated memory usage:  up to 131 Mb.
+[INFO    ] *  Output image size:       3241 X 3344 pixels. 
 [INFO    ] *  Output image file:       ~ 124 Mb. 
 [INFO    ] *  Cores available:         1
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  14:16:38.872 (30/04/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  15:06:09.91 (10/05/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -2041,68 +2041,68 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  14:16:38.879 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  15:06:09.926 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207462;   rms = 0.216922;   static_sig = 4.00
+[INFO    ]   mode =  1.209246;   rms = 0.216049;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207839;   rms = 0.196342;   static_sig = 4.00
+[INFO    ]   mode =  1.197809;   rms = 0.195324;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.221172;   rms = 0.206762;   static_sig = 4.00
+[INFO    ]   mode =  1.218648;   rms = 0.206520;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.207844;   rms = 0.199916;   static_sig = 4.00
+[INFO    ]   mode =  1.218050;   rms = 0.199655;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.773733;   rms = 0.199576;   static_sig = 4.00
+[INFO    ]   mode =  0.776681;   rms = 0.199609;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.769833;   rms = 0.203669;   static_sig = 4.00
+[INFO    ]   mode =  0.763172;   rms = 0.203367;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.186549;   rms = 0.091877;   static_sig = 4.00
+[INFO    ]   mode =  1.185151;   rms = 0.091467;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.168201;   rms = 0.096564;   static_sig = 4.00
+[INFO    ]   mode =  1.171142;   rms = 0.095910;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.174149;   rms = 0.110932;   static_sig = 4.00
+[INFO    ]   mode =  1.173319;   rms = 0.110799;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.164085;   rms = 0.110765;   static_sig = 4.00
+[INFO    ]   mode =  1.165512;   rms = 0.110564;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.791748;   rms = 0.314888;   static_sig = 4.00
+[INFO    ]   mode =  0.791136;   rms = 0.313897;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.803423;   rms = 0.300056;   static_sig = 4.00
+[INFO    ]   mode =  0.802448;   rms = 0.299563;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.316266;   rms = 0.191944;   static_sig = 4.00
+[INFO    ]   mode =  1.316591;   rms = 0.191670;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.307520;   rms = 0.199302;   static_sig = 4.00
+[INFO    ]   mode =  1.303690;   rms = 0.199028;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.137981;   rms = 0.212963;   static_sig = 4.00
+[INFO    ]   mode =  1.136212;   rms = 0.212368;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  1.146413;   rms = 0.222245;   static_sig = 4.00
+[INFO    ]   mode =  1.146377;   rms = 0.221635;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.776562;   rms = 0.214849;   static_sig = 4.00
+[INFO    ]   mode =  0.778128;   rms = 0.213945;   static_sig = 4.00
 [INFO    ] Computing static mask:
 
-[INFO    ]   mode =  0.775712;   rms = 0.195034;   static_sig = 4.00
+[INFO    ]   mode =  0.774430;   rms = 0.194110;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3IR_1014x1014_1_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  14:16:39.723 (30/04/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  15:06:10.87 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  14:16:39.726 (30/04/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  15:06:10.876 (10/05/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -2118,7 +2118,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-04-30 14:16:40.255565
+[INFO    ] ***** skymatch started on 2019-05-10 15:06:11.374431
 [INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
@@ -2291,61 +2291,61 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] -----  Computing "global" sky on requested image extensions (detector chips):  -----
 [INFO    ] 
-[INFO    ]     "Global" sky value: 48.404630694335985 (brightness units)
+[INFO    ]     "Global" sky value: 48.418694698291006 (brightness units)
 [INFO    ] 
 [INFO    ]     Computed sky change (data units) for image ibxl50clq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl50cqq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl51eoq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl51etq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl52k0q_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl52k5q_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl53kxq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl53l9q_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl54bgq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl54blq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl55f0q_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl55f5q_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl56huq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl56i2q_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl57adq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl57aiq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl58sqq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
 [INFO    ]     Computed sky change (data units) for image ibxl58svq_flt.fits['SCI',1]:
-[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796162   NEW MDRIZSKY = 0.796162
-[INFO    ] ***** skymatch ended on 2019-04-30 14:16:42.084480
-[INFO    ] TOTAL RUN TIME: 0:00:01.828915
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  14:16:42.393 (30/04/2019)
+[INFO    ]       - EXT = 'SCI',1   delta(MDRIZSKY) = 0.796394   NEW MDRIZSKY = 0.796394
+[INFO    ] ***** skymatch ended on 2019-05-10 15:06:13.260697
+[INFO    ] TOTAL RUN TIME: 0:00:01.886266
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  15:06:13.61 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  14:16:42.395 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  15:06:13. (10/05/2019)
 [INFO    ] Single drizzle step not performed.
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  14:16:42.396 (30/04/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  15:06:13.615 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  14:16:42.398 (30/04/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  15:06:13.617 (10/05/2019)
 [INFO    ] Median combination step not performed.
-[INFO    ] ==== Processing Step  Blot  started at  14:16:42.399 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  started at  15:06:13.619 (10/05/2019)
 [INFO    ] Blot step not performed.
-[INFO    ] ==== Processing Step  Blot  finished at  14:16:42.400 (30/04/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  15:06:13.62 (10/05/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  14:16:42.402 (30/04/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  15:06:13.622 (10/05/2019)
 [INFO    ] Cosmic-ray identification (driz_cr) step not performed.
-[INFO    ] ==== Processing Step  Final Drizzle  started at  14:16:42.403 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  15:06:13.623 (10/05/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 64, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -2370,13 +2370,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 85.25353484431353  -2.451813772122487  
-[INFO    ] CRPIX : 1621.3887398779336  1674.8092115603197  
+[INFO    ] CRVAL : 85.25348306518585  -2.4518020585456224  
+[INFO    ] CRPIX : 1620.251719630333  1672.744352276096  
 [INFO    ] CD1_1 CD1_2  : 8.013881489775232e-06  -3.4711934332333745e-05  
 [INFO    ] CD2_1 CD2_2  : -3.4711934332333745e-05  -8.013881489775232e-06  
-[INFO    ] NAXIS : 3243  3348
+[INFO    ] NAXIS : 3241  3344
 [INFO    ] -Drizzle input: ibxl50clq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl50clq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl50clq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50clq_sci1_final_mask.fits
@@ -2385,7 +2385,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl50cqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl50cqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl50cqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl50cqq_sci1_final_mask.fits
@@ -2394,7 +2394,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51eoq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl51eoq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl51eoq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51eoq_sci1_final_mask.fits
@@ -2403,7 +2403,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl51etq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl51etq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl51etq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl51etq_sci1_final_mask.fits
@@ -2412,7 +2412,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl52k0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl52k0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k0q_sci1_final_mask.fits
@@ -2421,7 +2421,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl52k5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl52k5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl52k5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl52k5q_sci1_final_mask.fits
@@ -2430,7 +2430,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53kxq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl53kxq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl53kxq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53kxq_sci1_final_mask.fits
@@ -2439,7 +2439,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl53l9q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl53l9q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl53l9q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl53l9q_sci1_final_mask.fits
@@ -2448,7 +2448,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54bgq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl54bgq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl54bgq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54bgq_sci1_final_mask.fits
@@ -2457,7 +2457,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl54blq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl54blq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl54blq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl54blq_sci1_final_mask.fits
@@ -2466,7 +2466,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f0q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl55f0q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl55f0q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f0q_sci1_final_mask.fits
@@ -2475,7 +2475,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl55f5q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl55f5q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl55f5q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl55f5q_sci1_final_mask.fits
@@ -2484,7 +2484,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56huq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl56huq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl56huq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56huq_sci1_final_mask.fits
@@ -2493,7 +2493,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl56i2q_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl56i2q_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl56i2q_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl56i2q_sci1_final_mask.fits
@@ -2502,7 +2502,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57adq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl57adq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl57adq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57adq_sci1_final_mask.fits
@@ -2511,7 +2511,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl57aiq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl57aiq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl57aiq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl57aiq_sci1_final_mask.fits
@@ -2520,7 +2520,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58sqq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl58sqq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl58sqq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58sqq_sci1_final_mask.fits
@@ -2529,7 +2529,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibxl58svq_flt.fits[sci,1]
-[INFO    ] Applying sky value of 0.796162 to ibxl58svq_flt.fits[sci,1]
+[INFO    ] Applying sky value of 0.796394 to ibxl58svq_flt.fits[sci,1]
 [WARNING ] No CR mask file found! Input DQ array not updated.
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Writing out mask file: ibxl58svq_sci1_final_mask.fits
@@ -2541,26 +2541,26 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out image to disk: f160w_globalmin_drz_sci.fits
 [INFO    ] Writing out image to disk: f160w_globalmin_drz_wht.fits
 [INFO    ] Writing out image to disk: f160w_globalmin_drz_ctx.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  14:16:52.61 (30/04/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  15:06:24.586 (10/05/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 14:16:52.615 (30/04/2019).
+[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 15:06:24.590 (10/05/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          4.0412 sec.
-[INFO    ]             Static Mask          0.8439 sec.
-[INFO    ]            Subtract Sky          2.6674 sec.
-[INFO    ]        Separate Drizzle          0.0011 sec.
+[INFO    ]          Initialization          4.1051 sec.
+[INFO    ]             Static Mask          0.9471 sec.
+[INFO    ]            Subtract Sky          2.7355 sec.
+[INFO    ]        Separate Drizzle          0.0015 sec.
 [INFO    ]           Create Median          0.0000 sec.
-[INFO    ]                    Blot          0.0012 sec.
+[INFO    ]                    Blot          0.0013 sec.
 [INFO    ]                 Driz_CR          0.0000 sec.
-[INFO    ]           Final Drizzle          10.2085 sec.
+[INFO    ]           Final Drizzle          10.9623 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          17.7634 sec.
+[INFO    ]                   Total          18.7528 sec.
 [INFO    ] Trailer file written to:  astrodrizzle.log
 [ERROR   ] Invalid alias: The name clear can't be aliased because it is another magic command.
 [ERROR   ] Invalid alias: The name more can't be aliased because it is another magic command.

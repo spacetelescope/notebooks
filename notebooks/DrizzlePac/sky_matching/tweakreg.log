@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 14:15:02.73 (30/04/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 15:04:30.007 (10/05/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -79,70 +79,70 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'ibxl54030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl54030_drz.fits', EXT=('SCI', 1) started at: 14:15:03.224 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.183269
+[INFO    ]   #  Source finding for 'ibxl54030_drz.fits', EXT=('SCI', 1) started at: 15:04:30.47 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.543311
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/drizzlepac/findobj.py:190: RuntimeWarning: invalid value encountered in greater
   tdata=np.where(convdata > threshold, convdata, 0)
 
-[INFO    ] ###Source finding finished at: 14:15:03.316 (30/04/2019)
-[INFO    ]      Found 98 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl54030_drz.fits': 98
+[INFO    ] ###Source finding finished at: 15:04:30.586 (10/05/2019)
+[INFO    ]      Found 38 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl54030_drz.fits': 38
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl51030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl51030_drz.fits', EXT=('SCI', 1) started at: 14:15:03.525 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.119178
-[INFO    ] ###Source finding finished at: 14:15:03.634 (30/04/2019)
-[INFO    ]      Found 154 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl51030_drz.fits': 154
+[INFO    ]   #  Source finding for 'ibxl51030_drz.fits', EXT=('SCI', 1) started at: 15:04:30.799 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.553781
+[INFO    ] ###Source finding finished at: 15:04:30.945 (10/05/2019)
+[INFO    ]      Found 52 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl51030_drz.fits': 52
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl53030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl53030_drz.fits', EXT=('SCI', 1) started at: 14:15:03.833 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.070589
-[INFO    ] ###Source finding finished at: 14:15:03.984 (30/04/2019)
-[INFO    ]      Found 130 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl53030_drz.fits': 130
+[INFO    ]   #  Source finding for 'ibxl53030_drz.fits', EXT=('SCI', 1) started at: 15:04:31.185 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.527635
+[INFO    ] ###Source finding finished at: 15:04:31.291 (10/05/2019)
+[INFO    ]      Found 36 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl53030_drz.fits': 36
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl55030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl55030_drz.fits', EXT=('SCI', 1) started at: 14:15:04.142 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.058994
-[INFO    ] ###Source finding finished at: 14:15:04.286 (30/04/2019)
-[INFO    ]      Found 202 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl55030_drz.fits': 202
+[INFO    ]   #  Source finding for 'ibxl55030_drz.fits', EXT=('SCI', 1) started at: 15:04:31.50 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.259246
+[INFO    ] ###Source finding finished at: 15:04:31.600 (10/05/2019)
+[INFO    ]      Found 55 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl55030_drz.fits': 55
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl57030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl57030_drz.fits', EXT=('SCI', 1) started at: 14:15:04.44 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.061287
-[INFO    ] ###Source finding finished at: 14:15:04.536 (30/04/2019)
-[INFO    ]      Found 268 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl57030_drz.fits': 268
+[INFO    ]   #  Source finding for 'ibxl57030_drz.fits', EXT=('SCI', 1) started at: 15:04:31.816 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.505249
+[INFO    ] ###Source finding finished at: 15:04:31.901 (10/05/2019)
+[INFO    ]      Found 65 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl57030_drz.fits': 65
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl50030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl50030_drz.fits', EXT=('SCI', 1) started at: 14:15:04.727 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.252190
-[INFO    ] ###Source finding finished at: 14:15:04.813 (30/04/2019)
-[INFO    ]      Found 126 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl50030_drz.fits': 126
+[INFO    ]   #  Source finding for 'ibxl50030_drz.fits', EXT=('SCI', 1) started at: 15:04:32.097 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.553639
+[INFO    ] ###Source finding finished at: 15:04:32.245 (10/05/2019)
+[INFO    ]      Found 57 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl50030_drz.fits': 57
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl52030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl52030_drz.fits', EXT=('SCI', 1) started at: 14:15:05.012 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.016099
-[INFO    ] ###Source finding finished at: 14:15:05.178 (30/04/2019)
-[INFO    ]      Found 237 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl52030_drz.fits': 237
+[INFO    ]   #  Source finding for 'ibxl52030_drz.fits', EXT=('SCI', 1) started at: 15:04:32.41 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.240202
+[INFO    ] ###Source finding finished at: 15:04:32.49 (10/05/2019)
+[INFO    ]      Found 59 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl52030_drz.fits': 59
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl56030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl56030_drz.fits', EXT=('SCI', 1) started at: 14:15:05.330 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.200698
-[INFO    ] ###Source finding finished at: 14:15:05.414 (30/04/2019)
-[INFO    ]      Found 142 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl56030_drz.fits': 142
+[INFO    ]   #  Source finding for 'ibxl56030_drz.fits', EXT=('SCI', 1) started at: 15:04:32.678 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.619044
+[INFO    ] ###Source finding finished at: 15:04:32.772 (10/05/2019)
+[INFO    ]      Found 47 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl56030_drz.fits': 47
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ibxl58030_drz.fits':
-[INFO    ]   #  Source finding for 'ibxl58030_drz.fits', EXT=('SCI', 1) started at: 14:15:05.602 (30/04/2019)
-[INFO    ]    Finding sources using sky sigma = 0.010125
-[INFO    ] ###Source finding finished at: 14:15:05.781 (30/04/2019)
-[INFO    ]      Found 428 objects.
-[INFO    ] ===  FINAL number of objects in image 'ibxl58030_drz.fits': 428
+[INFO    ]   #  Source finding for 'ibxl58030_drz.fits', EXT=('SCI', 1) started at: 15:04:32.987 (10/05/2019)
+[INFO    ]    Finding sources using sky sigma = 1.247739
+[INFO    ] ###Source finding finished at: 15:04:33.086 (10/05/2019)
+[INFO    ]      Found 65 objects.
+[INFO    ] ===  FINAL number of objects in image 'ibxl58030_drz.fits': 65
 [INFO    ] 
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -195,28 +195,201 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Matching sources from 'ibxl51030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
 [INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
-[INFO    ] Found initial X and Y shifts of  -0.6418123436685583 -0.3293123436685583
-[INFO    ]     with significance of  332.55375505322445 and  11.0  matches
-[INFO    ] Found 15 matches for ibxl51030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl51030_drz.fits : 
-[INFO    ] XSH: -0.2993  YSH: -0.3612    ROT: 0.02169090133    SCALE: 1.000313
-[INFO    ] XRMS: 0.13    YRMS: 0.15
+[INFO    ] Found initial X and Y shifts of  -0.3918123436685583 -0.3918123436685583
+[INFO    ]     with significance of  92.951600308978 and  4.0  matches
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl51030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl51030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
 [INFO    ] 
-[INFO    ] RMS_RA: 5.8e-06 (deg)   RMS_DEC: 4.1e-06 (deg)
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl53030_drz.fits
 [INFO    ] 
-[INFO    ] Final solution based on  14  objects.
-[INFO    ] Creating catalog for the fit: ibxl51030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl51030_drz_catalog_fit.match
-[INFO    ] Total # points:  14
-[INFO    ] # of points after clipping:  14
-[INFO    ] Total # points:  14
-[INFO    ] # of points after clipping:  14
-[INFO    ] Adding 139 new sources to the reference catalog for a total of 237 sources.
-[INFO    ] Initializing new WCSCORR table for  ibxl51030_drz.fits
+[INFO    ] Matching sources from 'ibxl53030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] Found initial X and Y shifts of  -4.391812343668558 -0.3918123436685583
+[INFO    ]     with significance of  80.49844718999243 and  3.0  matches
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl53030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl53030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl55030_drz.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'ibxl55030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] Found initial X and Y shifts of  -0.3918123436685583 -0.3918123436685583
+[INFO    ]     with significance of  92.951600308978 and  4.0  matches
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl55030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl55030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl57030_drz.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'ibxl57030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] Found initial X and Y shifts of  -4.391812343668558 -2.3918123436685583
+[INFO    ]     with significance of  65.72670690061993 and  2.0  matches
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl57030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl57030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl50030_drz.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'ibxl50030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/stsci/ndimage/measurements.py:1039: RuntimeWarning: invalid value encountered in double_scalars
+  results = [sum(input * grids[dir].astype(float), labels, index) / normalizer for dir in range(input.ndim)]
+
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[INFO    ] !
+[INFO    ] ! WARNING: No valid shift found within a search radius of  23.39181234366856  pixels.
+[INFO    ] !
+[INFO    ] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl50030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl50030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl52030_drz.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'ibxl52030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] Found initial X and Y shifts of  -4.391812343668558 -2.3918123436685583
+[INFO    ]     with significance of  46.475800154489 and  1.0  matches
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl52030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl52030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl56030_drz.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'ibxl56030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[INFO    ] !
+[INFO    ] ! WARNING: No valid shift found within a search radius of  23.39181234366856  pixels.
+[INFO    ] !
+[INFO    ] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl56030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl56030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] ====================
+[INFO    ] Performing fit for: ibxl58030_drz.fits
+[INFO    ] 
+[INFO    ] Matching sources from 'ibxl58030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
+[INFO    ] Computing initial guess for X and Y shifts...
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
+[INFO    ] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[INFO    ] !
+[INFO    ] ! WARNING: No valid shift found within a search radius of  23.39181234366856  pixels.
+[INFO    ] !
+[INFO    ] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[WARNING ] ##############################################################################
+[WARNING ] #                                                                            #
+[WARNING ] # WARNING:                                                                   #
+[WARNING ] # Not enough matches (< 5) found for input image: ibxl58030_drz.fits         #
+[WARNING ] #                                                                            #
+[WARNING ] ##############################################################################
+[INFO    ] ##############################################################################
+[INFO    ] #                                                                            #
+[INFO    ] # WARNING:                                                                   #
+[INFO    ] # Not enough matches (< 5) found for input image: ibxl58030_drz.fits         #
+[INFO    ] #                                                                            #
+[INFO    ] ##############################################################################
+[INFO    ] 
+[INFO    ] Unable to match the following images:
+[INFO    ] -------------------------------------
+[INFO    ] ibxl51030_drz.fits
+[INFO    ] ibxl53030_drz.fits
+[INFO    ] ibxl55030_drz.fits
+[INFO    ] ibxl57030_drz.fits
+[INFO    ] ibxl50030_drz.fits
+[INFO    ] ibxl52030_drz.fits
+[INFO    ] ibxl56030_drz.fits
+[INFO    ] ibxl58030_drz.fits
+[INFO    ] 
+[INFO    ] Initializing new WCSCORR table for  ibxl54030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
 Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
@@ -241,49 +414,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl51030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl51030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl51030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.4704069446349155e-05 7.99841111385034e-06
-[INFO    ] CD_21  CD_22: 7.99841111978563e-06 -3.470406943211723e-05
-[INFO    ] CRVAL    : 85.26164695811929 -2.4828744247955226
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.12825000286102275
-[INFO    ] ORIENTAT : 167.02140460256936
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -309,34 +440,69 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl53030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl53030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
-[INFO    ] Found initial X and Y shifts of  -4.280701232557448 -0.1695901214463369
-[INFO    ]     with significance of  209.14110069520052 and  5.0  matches
-[INFO    ] Found 6 matches for ibxl53030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl53030_drz.fits : 
-[INFO    ] XSH: -4.2058  YSH: 0.3232    ROT: 359.9784605    SCALE: 1.000371
-[INFO    ] XRMS: 0.11    YRMS: 0.17
-[INFO    ] 
-[INFO    ] RMS_RA: 5.2e-06 (deg)   RMS_DEC: 5e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  6  objects.
-[INFO    ] Creating catalog for the fit: ibxl53030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl53030_drz_catalog_fit.match
-[INFO    ] Total # points:  6
-[INFO    ] # of points after clipping:  6
-[INFO    ] Total # points:  6
-[INFO    ] # of points after clipping:  6
-[INFO    ] Adding 124 new sources to the reference catalog for a total of 361 sources.
+[INFO    ] Initializing new WCSCORR table for  ibxl51030_drz.fits
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
+[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
+[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
+Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
+Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
+
+  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
+
 [INFO    ] Initializing new WCSCORR table for  ibxl53030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -374,49 +540,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl53030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl53030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl53030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.455051606730102e-05 8.62910430134829e-06
-[INFO    ] CD_21  CD_22: 8.629104300606466e-06 -3.4550516103204816e-05
-[INFO    ] CRVAL    : 85.28809146208634 -2.4447039243031967
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.1282500028610226
-[INFO    ] ORIENTAT : 165.97706244601974
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -442,34 +566,6 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl55030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl55030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
-[INFO    ] Found initial X and Y shifts of  -0.14181234366855833 -0.3084790103352262
-[INFO    ]     with significance of  249.4153162899183 and  7.0  matches
-[INFO    ] Found 8 matches for ibxl55030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl55030_drz.fits : 
-[INFO    ] XSH: 0.2564  YSH: -0.1030    ROT: 359.9896514    SCALE: 0.999885
-[INFO    ] XRMS: 0.092    YRMS: 0.23
-[INFO    ] 
-[INFO    ] RMS_RA: 5e-06 (deg)   RMS_DEC: 7.3e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  8  objects.
-[INFO    ] Creating catalog for the fit: ibxl55030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl55030_drz_catalog_fit.match
-[INFO    ] Total # points:  8
-[INFO    ] # of points after clipping:  8
-[INFO    ] Total # points:  8
-[INFO    ] # of points after clipping:  8
-[INFO    ] Adding 194 new sources to the reference catalog for a total of 555 sources.
 [INFO    ] Initializing new WCSCORR table for  ibxl55030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -507,49 +603,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl55030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl55030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl55030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.4714669671538566e-05 8.020213779826304e-06
-[INFO    ] CD_21  CD_22: 8.020213792736586e-06 -3.4714669678849626e-05
-[INFO    ] CRVAL    : 85.2211379800382 -2.461209364817033
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.1282500028610226
-[INFO    ] ORIENTAT : 166.99106742791437
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -575,34 +629,6 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl57030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl57030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
-[INFO    ] Found initial X and Y shifts of  -3.9251456770018898 -1.658479010335224
-[INFO    ]     with significance of  246.47515087732475 and  7.0  matches
-[INFO    ] Found 12 matches for ibxl57030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl57030_drz.fits : 
-[INFO    ] XSH: -3.7893  YSH: -1.3918    ROT: 359.9776196    SCALE: 1.000054
-[INFO    ] XRMS: 0.14    YRMS: 0.2
-[INFO    ] 
-[INFO    ] RMS_RA: 6.4e-06 (deg)   RMS_DEC: 5.8e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  12  objects.
-[INFO    ] Creating catalog for the fit: ibxl57030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl57030_drz_catalog_fit.match
-[INFO    ] Total # points:  12
-[INFO    ] # of points after clipping:  12
-[INFO    ] Total # points:  12
-[INFO    ] # of points after clipping:  12
-[INFO    ] Adding 256 new sources to the reference catalog for a total of 811 sources.
 [INFO    ] Initializing new WCSCORR table for  ibxl57030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -640,49 +666,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl57030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl57030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl57030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.4706974599791396e-05 8.026823446382281e-06
-[INFO    ] CD_21  CD_22: 8.026823398711079e-06 -3.47069746002419e-05
-[INFO    ] CRVAL    : 85.24773669374014 -2.423693003254842
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.12825000286102275
-[INFO    ] ORIENTAT : 166.9779233268067
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -708,34 +692,6 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl50030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl50030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] ! WARNING: Clipped data falls within 1 histogram bin
-[INFO    ] Found initial X and Y shifts of  -1.3418123436685576 -1.291812343668557
-[INFO    ]     with significance of  309.8386676965934 and  11.0  matches
-[INFO    ] Found 15 matches for ibxl50030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl50030_drz.fits : 
-[INFO    ] XSH: -0.7626  YSH: 0.3315    ROT: 0.03749598084    SCALE: 0.999318
-[INFO    ] XRMS: 0.088    YRMS: 0.1
-[INFO    ] 
-[INFO    ] RMS_RA: 3.9e-06 (deg)   RMS_DEC: 2.9e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  15  objects.
-[INFO    ] Creating catalog for the fit: ibxl50030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl50030_drz_catalog_fit.match
-[INFO    ] Total # points:  15
-[INFO    ] # of points after clipping:  15
-[INFO    ] Total # points:  15
-[INFO    ] # of points after clipping:  15
-[INFO    ] Adding 111 new sources to the reference catalog for a total of 922 sources.
 [INFO    ] Initializing new WCSCORR table for  ibxl50030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -773,49 +729,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl50030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl50030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl50030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.521390717746597e-05 5.554779077835682e-06
-[INFO    ] CD_21  CD_22: 5.554779093642358e-06 -3.52139071744735e-05
-[INFO    ] CRVAL    : 85.29352795972844 -2.4777496507550842
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.12825000286102275
-[INFO    ] ORIENTAT : 171.03580563586007
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -841,33 +755,6 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl52030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl52030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -4.199504651360865 -2.6610431128993284
-[INFO    ]     with significance of  293.07296822784997 and  9.0  matches
-[INFO    ] Found 20 matches for ibxl52030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl52030_drz.fits : 
-[INFO    ] XSH: -3.9448  YSH: -2.9939    ROT: 0.0328068772    SCALE: 1.000192
-[INFO    ] XRMS: 0.14    YRMS: 0.22
-[INFO    ] 
-[INFO    ] RMS_RA: 6.8e-06 (deg)   RMS_DEC: 6.6e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  20  objects.
-[INFO    ] Creating catalog for the fit: ibxl52030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl52030_drz_catalog_fit.match
-[INFO    ] Total # points:  20
-[INFO    ] # of points after clipping:  20
-[INFO    ] Total # points:  20
-[INFO    ] # of points after clipping:  20
-[INFO    ] Adding 217 new sources to the reference catalog for a total of 1139 sources.
 [INFO    ] Initializing new WCSCORR table for  ibxl52030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -905,49 +792,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl52030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl52030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl52030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.4710021792536334e-05 7.991804232628723e-06
-[INFO    ] CD_21  CD_22: 7.99180426910598e-06 -3.4710021707044255e-05
-[INFO    ] CRVAL    : 85.22831353382003 -2.490847076507909
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.12825000286102256
-[INFO    ] ORIENTAT : 167.03391139907836
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -973,33 +818,6 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl56030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl56030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -4.456328472700815 -1.0692316985072665
-[INFO    ]     with significance of  339.587985653203 and  13.0  matches
-[INFO    ] Found 21 matches for ibxl56030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl56030_drz.fits : 
-[INFO    ] XSH: -4.4839  YSH: -1.0790    ROT: 359.9593497    SCALE: 0.999805
-[INFO    ] XRMS: 0.12    YRMS: 0.14
-[INFO    ] 
-[INFO    ] RMS_RA: 5.2e-06 (deg)   RMS_DEC: 3.8e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  19  objects.
-[INFO    ] Creating catalog for the fit: ibxl56030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl56030_drz_catalog_fit.match
-[INFO    ] Total # points:  19
-[INFO    ] # of points after clipping:  19
-[INFO    ] Total # points:  19
-[INFO    ] # of points after clipping:  19
-[INFO    ] Adding 121 new sources to the reference catalog for a total of 1260 sources.
 [INFO    ] Initializing new WCSCORR table for  ibxl56030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -1037,49 +855,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl56030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl56030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl56030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.406741437268208e-05 1.0442535666133499e-05
-[INFO    ] CD_21  CD_22: 1.0442535607116651e-05 -3.4067414417430694e-05
-[INFO    ] CRVAL    : 85.27855589666655 -2.4139559419200567
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.12825000286102275
-[INFO    ] ORIENTAT : 162.95835549770334
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Saving Primary WCS to alternate WCS: " "
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
@@ -1105,139 +881,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
-[INFO    ] 
-[INFO    ] ====================
-[INFO    ] Performing fit for: ibxl58030_drz.fits
-[INFO    ] 
-[INFO    ] Matching sources from 'ibxl58030_drz.fits' with sources from reference image 'ibxl54030_drz.fits'
-[INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.3048558219294293 -0.37007321323377695
-[INFO    ]     with significance of  361.49688795340967 and  15.0  matches
-[INFO    ] Found 33 matches for ibxl58030_drz.fits...
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Performing "rscale" fit
-[INFO    ] Computed  rscale  fit for  ibxl58030_drz.fits : 
-[INFO    ] XSH: 0.4163  YSH: 0.0935    ROT: 359.9810933    SCALE: 1.000133
-[INFO    ] XRMS: 0.11    YRMS: 0.076
-[INFO    ] 
-[INFO    ] RMS_RA: 4.5e-06 (deg)   RMS_DEC: 1.7e-06 (deg)
-[INFO    ] 
-[INFO    ] Final solution based on  29  objects.
-[INFO    ] Creating catalog for the fit: ibxl58030_drz_catalog_fit.match
-[INFO    ] wrote XY data to:  ibxl58030_drz_catalog_fit.match
-[INFO    ] Total # points:  29
-[INFO    ] # of points after clipping:  29
-[INFO    ] Total # points:  29
-[INFO    ] # of points after clipping:  29
-[INFO    ] Adding 395 new sources to the reference catalog for a total of 1655 sources.
 [INFO    ] Initializing new WCSCORR table for  ibxl58030_drz.fits
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] 
-[INFO    ] ....Updating header for ibxl58030_drz.fits...
-[INFO    ] 
-[INFO    ] 
-[INFO    ] Processing ibxl58030_drz.fits['SCI',1]
-[INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Updating header for ibxl58030_drz.fits[1]
-[INFO    ]     with WCS of
-[INFO    ] WCS Keywords
-[INFO    ] 
-[INFO    ] CD_11  CD_12: 3.470489659325469e-05 8.023226882186023e-06
-[INFO    ] CD_21  CD_22: 8.023226887057362e-06 -3.4704896569966786e-05
-[INFO    ] CRVAL    : 85.21411150174492 -2.4316128925626646
-[INFO    ] CRPIX    : 542.0 507.5
-[INFO    ] NAXIS    : 1084 1015
-[INFO    ] Plate Scale : 0.12825000286102273
-[INFO    ] ORIENTAT : 166.98280652318704
-[INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
-[INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[INFO    ] Initializing new WCSCORR table for  ibxl54030_drz.fits
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
 Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
 Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.

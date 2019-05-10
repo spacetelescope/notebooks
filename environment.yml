@@ -2,7 +2,6 @@ name: notebooks_env
 
 channels:
   - astropy
-  - astropy-ci-extras
   - http://ssb.stsci.edu/astroconda
   - defaults
 
@@ -26,4 +25,5 @@ dependencies:
 
   - pip:
     - k2flix
+    - junit_xml
     - git+https://github.com/eteq/nbpages.git
