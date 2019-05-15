@@ -6,11 +6,9 @@ exec_*.ipynb
 *.coo
 *.match
 *.log
-*.png
 *.list
 *.txt
 *.cat
-*.jpg
 *.gif
 *.zip
 DrizzlePac/Initialization/reference_files/
@@ -21,10 +19,8 @@ MAST/Kepler/Kepler_TPF/mastDownload/
 # Exceptions committed to repo
 # ----------------------------
 !DrizzlePac/align_sparse_fields/input_flc.list
-!DrizzlePac/mask_satellite/sat.jpeg
 !DrizzlePac/sky_matching/drz.list
 !DrizzlePac/sky_matching/labeled_local_globalmatch_match.gif
-!DrizzlePac/sky_matching/MDRIZSKY_Values.png
 !**/requirements.txt
 !**/skyfile.txt
 !**/exclusions.txt
