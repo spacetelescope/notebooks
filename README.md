@@ -1,6 +1,6 @@
 # Notebooks
 
-[![Build Status](https://travis-ci.com/spacetelescope/notebooks.svg?branch=master)](https://travis-ci.com/spacetelescope/notebooks)
+[![CircleCI](https://circleci.com/gh/spacetelescope/notebooks/tree/master.svg?style=svg)](https://circleci.com/gh/spacetelescope/notebooks/tree/master)
 
 This repository contains a curated set of Jupyter notebooks related to the work that we do at STScI. These notebooks follow a consistent [style guide](https://github.com/spacetelescope/style-guides/blob/master/guides/jupyter-notebooks.md) in terms of layout/structure, coding conventions etc.
 
@@ -26,6 +26,8 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
   * Kepler
     * [Kepler Lightcurve](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.html)
     * [Kepler TPF](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.html)
+  * PanSTARRS
+    * [PanSTARRS1 DR2 TAP Demo](https://spacetelescope.github.io/notebooks/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.html)
   * TESS
     * [Beginner: Read and Plot A TESS Data Validation Timeseries File](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.html)
     * [Beginner: Read and Display a TESS Full Frame Image](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.html)
