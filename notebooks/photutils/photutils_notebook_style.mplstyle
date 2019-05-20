@@ -1,0 +1,20 @@
+# ---- Matplotlib formatting ----
+
+font.family 			: serif
+font.weight 			: light
+mathtext.bf 			: serif:normal
+
+font.size               : 12
+axes.titlesize 			: 20
+axes.titlepad			: 12
+axes.labelsize 			: 18
+xtick.labelsize 		: 16
+ytick.labelsize 		: 16
+
+text.usetex             : True
+
+figure.subplot.bottom   : 0.15
+figure.dpi              : 200
+
+savefig.dpi				: 300
+savefig.transparent		: True
