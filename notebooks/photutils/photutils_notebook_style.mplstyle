@@ -11,7 +11,7 @@ axes.labelsize 			: 18
 xtick.labelsize 		: 16
 ytick.labelsize 		: 16
 
-text.usetex             : True
+
 
 figure.subplot.bottom   : 0.15
 figure.dpi              : 200
