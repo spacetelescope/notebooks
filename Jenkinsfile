@@ -2,7 +2,7 @@ pipeline {
   agent { label 'linux' }
 
   environment {
-    env_name = 'notebooks'
+    env_name = 'notebooks_env'
     deploy_branch = 'gh-pages'
   }
 
