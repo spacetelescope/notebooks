@@ -36,19 +36,13 @@ else
   REMOTE_NAME="${REMOTE_NAME}"
 fi
 
-inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
+git clone -b ${DEPLOY_BRANCH} --single-branch ${REPO_URL} /out
 
-if [[ "$inside_git_repo" ]]; then
-  git checkout $DEPLOY_BRANCH -f
-else
-  git clone -b $DEPLOY_BRANCH --single-branch $REPO_URL out
-  cd out
-fi
+cd /out
 
-cp -aR $WORKSPACE/* .
-git status
+cp -aR ${WORKSPACE}/* .
+
 git add .
-git status
-
 git commit -m "Automated deployment to GitHub Pages: ${BUILD_TAG}" --allow-empty
 git push $REMOTE_NAME $DEPLOY_BRANCH
+git clean -dfx
