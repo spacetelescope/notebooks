@@ -1,5 +1,5 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 16:13:15.677 (15/05/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 19:02:14.049 (24/05/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -76,58 +76,58 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
   warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
 
 [INFO    ] ===  Source finding for image 'ick901hzq_flt.fits':
-[INFO    ]   #  Source finding for 'ick901hzq_flt.fits', EXT=('SCI', 1) started at: 16:13:15.818 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick901hzq_flt.fits', EXT=('SCI', 1) started at: 19:02:14.148 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.025950
-[INFO    ] ###Source finding finished at: 16:13:15.956 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:14.276 (24/05/2019)
 [INFO    ]      Found 546 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick901hzq_flt.fits': 546
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick901i7q_flt.fits':
-[INFO    ]   #  Source finding for 'ick901i7q_flt.fits', EXT=('SCI', 1) started at: 16:13:16.15 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick901i7q_flt.fits', EXT=('SCI', 1) started at: 19:02:14.498 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.064600
-[INFO    ] ###Source finding finished at: 16:13:16.257 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:14.639 (24/05/2019)
 [INFO    ]      Found 521 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick901i7q_flt.fits': 521
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick902n9q_flt.fits':
-[INFO    ]   #  Source finding for 'ick902n9q_flt.fits', EXT=('SCI', 1) started at: 16:13:16.43 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick902n9q_flt.fits', EXT=('SCI', 1) started at: 19:02:14.779 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.445831
-[INFO    ] ###Source finding finished at: 16:13:16.539 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:14.874 (24/05/2019)
 [INFO    ]      Found 574 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick902n9q_flt.fits': 574
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick902neq_flt.fits':
-[INFO    ]   #  Source finding for 'ick902neq_flt.fits', EXT=('SCI', 1) started at: 16:13:16.719 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick902neq_flt.fits', EXT=('SCI', 1) started at: 19:02:15.042 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.447646
-[INFO    ] ###Source finding finished at: 16:13:16.832 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:15.13 (24/05/2019)
 [INFO    ]      Found 602 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick902neq_flt.fits': 602
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick903n4q_flt.fits':
-[INFO    ]   #  Source finding for 'ick903n4q_flt.fits', EXT=('SCI', 1) started at: 16:13:16.978 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick903n4q_flt.fits', EXT=('SCI', 1) started at: 19:02:15.310 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.500067
-[INFO    ] ###Source finding finished at: 16:13:17.128 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:15.458 (24/05/2019)
 [INFO    ]      Found 479 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick903n4q_flt.fits': 479
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick903ncq_flt.fits':
-[INFO    ]   #  Source finding for 'ick903ncq_flt.fits', EXT=('SCI', 1) started at: 16:13:17.260 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick903ncq_flt.fits', EXT=('SCI', 1) started at: 19:02:15.591 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.463412
-[INFO    ] ###Source finding finished at: 16:13:17.364 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:15.728 (24/05/2019)
 [INFO    ]      Found 495 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick903ncq_flt.fits': 495
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick904obq_flt.fits':
-[INFO    ]   #  Source finding for 'ick904obq_flt.fits', EXT=('SCI', 1) started at: 16:13:17.541 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick904obq_flt.fits', EXT=('SCI', 1) started at: 19:02:15.859 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.431873
-[INFO    ] ###Source finding finished at: 16:13:17.640 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:15.955 (24/05/2019)
 [INFO    ]      Found 476 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick904obq_flt.fits': 476
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick904ogq_flt.fits':
-[INFO    ]   #  Source finding for 'ick904ogq_flt.fits', EXT=('SCI', 1) started at: 16:13:17.850 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick904ogq_flt.fits', EXT=('SCI', 1) started at: 19:02:16.163 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 3.437439
-[INFO    ] ###Source finding finished at: 16:13:17.965 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:16.276 (24/05/2019)
 [INFO    ]      Found 445 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick904ogq_flt.fits': 445
 [INFO    ] 
@@ -881,7 +881,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Writing out shiftfile : shift160_flt.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 16:13:52.951 (15/05/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 19:02:49.857 (24/05/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
@@ -950,134 +950,134 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick905k5q_flc.fits':
-[INFO    ]   #  Source finding for 'ick905k5q_flc.fits', EXT=('SCI', 1) started at: 16:13:53.131 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick905k5q_flc.fits', EXT=('SCI', 1) started at: 19:02:50.098 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 14.914108
-[INFO    ] ###Source finding finished at: 16:13:53.911 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:50.835 (24/05/2019)
 [INFO    ]      Found 148 objects.
-[INFO    ]   #  Source finding for 'ick905k5q_flc.fits', EXT=('SCI', 2) started at: 16:13:53.996 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick905k5q_flc.fits', EXT=('SCI', 2) started at: 19:02:50.926 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 11.987140
-[INFO    ] ###Source finding finished at: 16:13:54.718 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:51.666 (24/05/2019)
 [INFO    ]      Found 574 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick905k5q_flc.fits': 722
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick905keq_flc.fits':
-[INFO    ]   #  Source finding for 'ick905keq_flc.fits', EXT=('SCI', 1) started at: 16:13:54.959 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick905keq_flc.fits', EXT=('SCI', 1) started at: 19:02:51.9 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 14.909635
-[INFO    ] ###Source finding finished at: 16:13:55.697 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:52.799 (24/05/2019)
 [INFO    ]      Found 89 objects.
-[INFO    ]   #  Source finding for 'ick905keq_flc.fits', EXT=('SCI', 2) started at: 16:13:55.789 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick905keq_flc.fits', EXT=('SCI', 2) started at: 19:02:52.927 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 12.073435
-[INFO    ] ###Source finding finished at: 16:13:56.507 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:53.792 (24/05/2019)
 [INFO    ]      Found 215 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick905keq_flc.fits': 304
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick905knq_flc.fits':
-[INFO    ]   #  Source finding for 'ick905knq_flc.fits', EXT=('SCI', 1) started at: 16:13:56.757 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick905knq_flc.fits', EXT=('SCI', 1) started at: 19:02:54.053 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 16.029766
-[INFO    ] ###Source finding finished at: 16:13:57.47 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:54.803 (24/05/2019)
 [INFO    ]      Found 258 objects.
-[INFO    ]   #  Source finding for 'ick905knq_flc.fits', EXT=('SCI', 2) started at: 16:13:57.602 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick905knq_flc.fits', EXT=('SCI', 2) started at: 19:02:54.895 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 12.057777
-[INFO    ] ###Source finding finished at: 16:13:58.367 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:55.751 (24/05/2019)
 [INFO    ]      Found 213 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick905knq_flc.fits': 471
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick906kwq_flc.fits':
-[INFO    ]   #  Source finding for 'ick906kwq_flc.fits', EXT=('SCI', 1) started at: 16:13:58.701 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick906kwq_flc.fits', EXT=('SCI', 1) started at: 19:02:56.042 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 16.643072
-[INFO    ] ###Source finding finished at: 16:13:59.473 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:56.834 (24/05/2019)
 [INFO    ]      Found 186 objects.
-[INFO    ]   #  Source finding for 'ick906kwq_flc.fits', EXT=('SCI', 2) started at: 16:13:59.560 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick906kwq_flc.fits', EXT=('SCI', 2) started at: 19:02:56.922 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 15.414701
-[INFO    ] ###Source finding finished at: 16:14:00.304 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:57.639 (24/05/2019)
 [INFO    ]      Found 338 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick906kwq_flc.fits': 524
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick906l5q_flc.fits':
-[INFO    ]   #  Source finding for 'ick906l5q_flc.fits', EXT=('SCI', 1) started at: 16:14:00.520 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick906l5q_flc.fits', EXT=('SCI', 1) started at: 19:02:57.939 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 16.631145
-[INFO    ] ###Source finding finished at: 16:14:01.265 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:58.688 (24/05/2019)
 [INFO    ]      Found 94 objects.
-[INFO    ]   #  Source finding for 'ick906l5q_flc.fits', EXT=('SCI', 2) started at: 16:14:01.347 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick906l5q_flc.fits', EXT=('SCI', 2) started at: 19:02:58.777 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 15.561554
-[INFO    ] ###Source finding finished at: 16:14:02.095 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:02:59.523 (24/05/2019)
 [INFO    ]      Found 130 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick906l5q_flc.fits': 224
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick906leq_flc.fits':
-[INFO    ]   #  Source finding for 'ick906leq_flc.fits', EXT=('SCI', 1) started at: 16:14:02.307 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick906leq_flc.fits', EXT=('SCI', 1) started at: 19:02:59.74 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 16.691345
-[INFO    ] ###Source finding finished at: 16:14:03.017 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:00.499 (24/05/2019)
 [INFO    ]      Found 242 objects.
-[INFO    ]   #  Source finding for 'ick906leq_flc.fits', EXT=('SCI', 2) started at: 16:14:03.102 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick906leq_flc.fits', EXT=('SCI', 2) started at: 19:03:00.59 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 14.747993
-[INFO    ] ###Source finding finished at: 16:14:03.902 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:01.354 (24/05/2019)
 [INFO    ]      Found 186 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick906leq_flc.fits': 428
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick907nkq_flc.fits':
-[INFO    ]   #  Source finding for 'ick907nkq_flc.fits', EXT=('SCI', 1) started at: 16:14:04.155 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick907nkq_flc.fits', EXT=('SCI', 1) started at: 19:03:01.604 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.998682
-[INFO    ] ###Source finding finished at: 16:14:04.886 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:02.329 (24/05/2019)
 [INFO    ]      Found 111 objects.
-[INFO    ]   #  Source finding for 'ick907nkq_flc.fits', EXT=('SCI', 2) started at: 16:14:04.980 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick907nkq_flc.fits', EXT=('SCI', 2) started at: 19:03:02.419 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.788088
-[INFO    ] ###Source finding finished at: 16:14:05.777 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:03.212 (24/05/2019)
 [INFO    ]      Found 303 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick907nkq_flc.fits': 414
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick907o1q_flc.fits':
-[INFO    ]   #  Source finding for 'ick907o1q_flc.fits', EXT=('SCI', 1) started at: 16:14:06.019 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick907o1q_flc.fits', EXT=('SCI', 1) started at: 19:03:03.479 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 18.056701
-[INFO    ] ###Source finding finished at: 16:14:06.736 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:04.283 (24/05/2019)
 [INFO    ]      Found 88 objects.
-[INFO    ]   #  Source finding for 'ick907o1q_flc.fits', EXT=('SCI', 2) started at: 16:14:06.837 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick907o1q_flc.fits', EXT=('SCI', 2) started at: 19:03:04.374 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.742237
-[INFO    ] ###Source finding finished at: 16:14:07.655 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:05.181 (24/05/2019)
 [INFO    ]      Found 101 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick907o1q_flc.fits': 189
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick907ouq_flc.fits':
-[INFO    ]   #  Source finding for 'ick907ouq_flc.fits', EXT=('SCI', 1) started at: 16:14:07.888 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick907ouq_flc.fits', EXT=('SCI', 1) started at: 19:03:05.451 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.942683
-[INFO    ] ###Source finding finished at: 16:14:08.608 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:06.245 (24/05/2019)
 [INFO    ]      Found 262 objects.
-[INFO    ]   #  Source finding for 'ick907ouq_flc.fits', EXT=('SCI', 2) started at: 16:14:08.700 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick907ouq_flc.fits', EXT=('SCI', 2) started at: 19:03:06.337 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.810923
-[INFO    ] ###Source finding finished at: 16:14:09.507 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:07.126 (24/05/2019)
 [INFO    ]      Found 143 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick907ouq_flc.fits': 405
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick908pbq_flc.fits':
-[INFO    ]   #  Source finding for 'ick908pbq_flc.fits', EXT=('SCI', 1) started at: 16:14:09.777 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick908pbq_flc.fits', EXT=('SCI', 1) started at: 19:03:07.369 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 18.698361
-[INFO    ] ###Source finding finished at: 16:14:10.510 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:08.154 (24/05/2019)
 [INFO    ]      Found 119 objects.
-[INFO    ]   #  Source finding for 'ick908pbq_flc.fits', EXT=('SCI', 2) started at: 16:14:10.59 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick908pbq_flc.fits', EXT=('SCI', 2) started at: 19:03:08.255 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.107899
-[INFO    ] ###Source finding finished at: 16:14:11.306 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:09.093 (24/05/2019)
 [INFO    ]      Found 318 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick908pbq_flc.fits': 437
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick908pkq_flc.fits':
-[INFO    ]   #  Source finding for 'ick908pkq_flc.fits', EXT=('SCI', 1) started at: 16:14:11.555 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick908pkq_flc.fits', EXT=('SCI', 1) started at: 19:03:09.356 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 18.178764
-[INFO    ] ###Source finding finished at: 16:14:12.302 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:10.179 (24/05/2019)
 [INFO    ]      Found 57 objects.
-[INFO    ]   #  Source finding for 'ick908pkq_flc.fits', EXT=('SCI', 2) started at: 16:14:12.385 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick908pkq_flc.fits', EXT=('SCI', 2) started at: 19:03:10.274 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.168670
-[INFO    ] ###Source finding finished at: 16:14:13.101 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:11.03 (24/05/2019)
 [INFO    ]      Found 93 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick908pkq_flc.fits': 150
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'ick908ptq_flc.fits':
-[INFO    ]   #  Source finding for 'ick908ptq_flc.fits', EXT=('SCI', 1) started at: 16:14:13.350 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick908ptq_flc.fits', EXT=('SCI', 1) started at: 19:03:11.29 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 18.100852
-[INFO    ] ###Source finding finished at: 16:14:14.157 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:12.030 (24/05/2019)
 [INFO    ]      Found 182 objects.
-[INFO    ]   #  Source finding for 'ick908ptq_flc.fits', EXT=('SCI', 2) started at: 16:14:14.248 (15/05/2019)
+[INFO    ]   #  Source finding for 'ick908ptq_flc.fits', EXT=('SCI', 2) started at: 19:03:12.126 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 17.383158
-[INFO    ] ###Source finding finished at: 16:14:15.10 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:13.031 (24/05/2019)
 [INFO    ]      Found 116 objects.
 [INFO    ] ===  FINAL number of objects in image 'ick908ptq_flc.fits': 298
 [INFO    ] 
@@ -1113,12 +1113,12 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	writecat :	True
 [INFO    ] 	xyunits :	pixels
 [INFO    ] ===  Source finding for image 'f160w_drz_sci.fits':
-[INFO    ]   #  Source finding for 'f160w_drz_sci.fits', EXT=0 started at: 16:14:15.509 (15/05/2019)
+[INFO    ]   #  Source finding for 'f160w_drz_sci.fits', EXT=0 started at: 19:03:13.426 (24/05/2019)
 [INFO    ]    Finding sources using sky sigma = 2.134946
 [WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/drizzlepac/findobj.py:190: RuntimeWarning: invalid value encountered in greater
   tdata=np.where(convdata > threshold, convdata, 0)
 
-[INFO    ] ###Source finding finished at: 16:14:17.756 (15/05/2019)
+[INFO    ] ###Source finding finished at: 19:03:15.273 (24/05/2019)
 [INFO    ]      Found 1440 objects.
 [INFO    ] ===  FINAL number of objects in image 'f160w_drz_sci.fits': 1440
 [INFO    ] 
