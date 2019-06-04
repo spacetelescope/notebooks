@@ -1,34 +1,224 @@
 <?xml version="1.0" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="29" time="1344.7965831756592">
-	<testsuite disabled="0" errors="0" failures="0" name="Convert" package="spacetelescope_notebooks" skipped="0" tests="29" time="1344.7965831756592">
-		<testcase classname="optimize image sampling" file="/root/repo/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb" name="Convert_Execution" time="126.712862"/>
-		<testcase classname="use ds9 regions in tweakreg" file="/root/repo/notebooks/DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.ipynb" name="Convert_Execution" time="58.195380"/>
-		<testcase classname="drizzle wfpc2" file="/root/repo/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb" name="Convert_Execution" time="103.711998"/>
-		<testcase classname="Initialization" file="/root/repo/notebooks/DrizzlePac/Initialization/Initialization.ipynb" name="Convert_Execution" time="37.451016"/>
-		<testcase classname="sky matching" file="/root/repo/notebooks/DrizzlePac/sky_matching/sky_matching.ipynb" name="Convert_Execution" time="139.901979"/>
-		<testcase classname="align sparse fields" file="/root/repo/notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.ipynb" name="Convert_Execution" time="147.984002"/>
-		<testcase classname="align mosaics" file="/root/repo/notebooks/DrizzlePac/align_mosaics/align_mosaics.ipynb" name="Convert_Execution" time="216.031691"/>
-		<testcase classname="align to catalogs" file="/root/repo/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb" name="Convert_Execution" time="96.787327"/>
-		<testcase classname="mask satellite" file="/root/repo/notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb" name="Convert_Execution" time="127.832210"/>
-		<testcase classname="beginner how to use dvt" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.ipynb" name="Convert_Execution" time="3.416968"/>
-		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="5.418570"/>
-		<testcase classname="interm gi query" file="/root/repo/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.ipynb" name="Convert_Execution" time="6.419960"/>
-		<testcase classname="beginner tess exomast" file="/root/repo/notebooks/MAST/TESS/beginner_tess_exomast/beginner_tess_exomast.ipynb" name="Convert_Execution" time="7.518046"/>
-		<testcase classname="interm tesscut astroquery" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.ipynb" name="Convert_Execution" time="17.534669"/>
-		<testcase classname="beginner tour lc tp" file="/root/repo/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb" name="Convert_Execution" time="8.527021"/>
-		<testcase classname="interm tesscut requests" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb" name="Convert_Execution" time="15.628205"/>
-		<testcase classname="beginner how to use lc" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_lc/beginner_how_to_use_lc.ipynb" name="Convert_Execution" time="3.522029"/>
-		<testcase classname="beginner tic search hd209458" file="/root/repo/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb" name="Convert_Execution" time="4.418174"/>
-		<testcase classname="beginner how to use tp" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.ipynb" name="Convert_Execution" time="4.516221"/>
-		<testcase classname="PS1 DR2 TAP" file="/root/repo/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.ipynb" name="Convert_Execution" time="38.549513"/>
-		<testcase classname="k2 lightcurve" file="/root/repo/notebooks/MAST/K2/K2_Lightcurve/k2_lightcurve.ipynb" name="Convert_Execution" time="3.515689"/>
-		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/K2/K2_FFI/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="9.425452"/>
-		<testcase classname="k2 tpf" file="/root/repo/notebooks/MAST/K2/K2_TPF/k2_tpf.ipynb" name="Convert_Execution" time="4.417994"/>
-		<testcase classname="kepler tpf" file="/root/repo/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.ipynb" name="Convert_Execution" time="9.521702"/>
-		<testcase classname="kepler dvt" file="/root/repo/notebooks/MAST/Kepler/Kepler_DVT/kepler_dvt.ipynb" name="Convert_Execution" time="3.414628"/>
-		<testcase classname="kepler ffi" file="/root/repo/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb" name="Convert_Execution" time="21.556959"/>
-		<testcase classname="kepler lightcurve" file="/root/repo/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb" name="Convert_Execution" time="29.541032"/>
-		<testcase classname="HSC TAP" file="/root/repo/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.ipynb" name="Convert_Execution" time="62.576117"/>
-		<testcase classname="GriddedPSFModel simulation and photometry" file="/root/repo/notebooks/JWST/NIRCam/PSF_phot_01/GriddedPSFModel_simulation_and_photometry.ipynb" name="Convert_Execution" time="30.749166"/>
+<testsuites disabled="0" errors="2" failures="0" tests="29" time="2591.6215269565582">
+	<testsuite disabled="0" errors="2" failures="0" name="Convert" package="spacetelescope_notebooks" skipped="0" tests="29" time="2591.6215269565582">
+		<testcase classname="use ds9 regions in tweakreg" file="/root/repo/notebooks/DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.ipynb" name="Convert_Execution" time="77.256371"/>
+		<testcase classname="mask satellite" file="/root/repo/notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb" name="Convert_Execution" time="134.832876"/>
+		<testcase classname="align sparse fields" file="/root/repo/notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.ipynb" name="Convert_Execution" time="149.864022"/>
+		<testcase classname="align to catalogs" file="/root/repo/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb" name="Convert_Execution" time="102.766532"/>
+		<testcase classname="optimize image sampling" file="/root/repo/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb" name="Convert_Execution" time="126.964576"/>
+		<testcase classname="sky matching" file="/root/repo/notebooks/DrizzlePac/sky_matching/sky_matching.ipynb" name="Convert_Execution" time="142.787096"/>
+		<testcase classname="drizzle wfpc2" file="/root/repo/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb" name="Convert_Execution" time="111.791377"/>
+		<testcase classname="Initialization" file="/root/repo/notebooks/DrizzlePac/Initialization/Initialization.ipynb" name="Convert_Execution" time="42.456665"/>
+		<testcase classname="align mosaics" file="/root/repo/notebooks/DrizzlePac/align_mosaics/align_mosaics.ipynb" name="Convert_Execution" time="272.091065"/>
+		<testcase classname="beginner tess exomast" file="/root/repo/notebooks/MAST/TESS/beginner_tess_exomast/beginner_tess_exomast.ipynb" name="Convert_Execution" time="9.529622"/>
+		<testcase classname="beginner tic search hd209458" file="/root/repo/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb" name="Convert_Execution" time="5.524055"/>
+		<testcase classname="interm tesscut astroquery" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.ipynb" name="Convert_Execution" time="22.641349"/>
+		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="6.526807"/>
+		<testcase classname="interm tesscut requests" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb" name="Convert_Execution" time="17.639160"/>
+		<testcase classname="beginner tour lc tp" file="/root/repo/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb" name="Convert_Execution" time="9.635969"/>
+		<testcase classname="beginner how to use tp" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.ipynb" name="Convert_Execution" time="6.536737"/>
+		<testcase classname="interm gi query" file="/root/repo/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.ipynb" name="Convert_Execution" time="8.537457"/>
+		<testcase classname="beginner how to use lc" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_lc/beginner_how_to_use_lc.ipynb" name="Convert_Execution" time="4.528330"/>
+		<testcase classname="beginner how to use dvt" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.ipynb" name="Convert_Execution" time="4.530253"/>
+		<testcase classname="kepler dvt" file="/root/repo/notebooks/MAST/Kepler/Kepler_DVT/kepler_dvt.ipynb" name="Convert_Execution" time="5.523185"/>
+		<testcase classname="kepler ffi" file="/root/repo/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb" name="Convert_Execution" time="660.253993">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 381, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 424, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+catalogData = Catalogs.query_region(&quot;290.4620065226813  38.32946356799192&quot;, radius=&quot;0.7 deg&quot;, catalog=&quot;TIC&quot;)
+dattab = Table(catalogData)
+dattab
+------------------
+
+
+TimeoutErrorTraceback (most recent call last)
+&lt;ipython-input-12-bb36ab081667&gt; in &lt;module&gt;
+----&gt; 1 catalogData = Catalogs.query_region(&quot;290.4620065226813  38.32946356799192&quot;, radius=&quot;0.7 deg&quot;, catalog=&quot;TIC&quot;)
+      2 dattab = Table(catalogData)
+      3 dattab
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/class_or_instance.py in f(*args, **kwds)
+     23         def f(*args, **kwds):
+     24             if obj is not None:
+---&gt; 25                 return self.fn(obj, *args, **kwds)
+     26             else:
+     27                 return self.fn(cls, *args, **kwds)
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/process_asyncs.py in newmethod(self, *args, **kwargs)
+     24             verbose = kwargs.pop('verbose', False)
+     25 
+---&gt; 26             response = getattr(self, async_method_name)(*args, **kwargs)
+     27             if kwargs.get('get_query_payload') or kwargs.get('field_help'):
+     28                 return response
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/class_or_instance.py in f(*args, **kwds)
+     23         def f(*args, **kwds):
+     24             if obj is not None:
+---&gt; 25                 return self.fn(obj, *args, **kwds)
+     26             else:
+     27                 return self.fn(cls, *args, **kwds)
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/mast/core.py in query_region_async(self, coordinates, radius, catalog, version, pagesize, page, **kwargs)
+   1881             params[prop] = value
+   1882 
+-&gt; 1883         return self.service_request_async(service, params, pagesize, page)
+   1884 
+   1885     @class_or_instance
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/class_or_instance.py in f(*args, **kwds)
+     23         def f(*args, **kwds):
+     24             if obj is not None:
+---&gt; 25                 return self.fn(obj, *args, **kwds)
+     26             else:
+     27                 return self.fn(cls, *args, **kwds)
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/mast/core.py in service_request_async(self, service, params, pagesize, page, **kwargs)
+    841         reqString = _prepare_service_request_string(mashupRequest)
+    842         response = self._request(&quot;POST&quot;, self._MAST_REQUEST_URL, data=reqString, headers=headers,
+--&gt; 843                                  retrieve_all=retrieveAll)
+    844 
+    845         return response
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/mast/core.py in _request(self, method, url, params, data, headers, files, stream, auth, retrieve_all)
+    444 
+    445                 if (time.time() - startTime) &gt;= self.TIMEOUT:
+--&gt; 446                     raise TimeoutError(&quot;Timeout limit of {} exceeded.&quot;.format(self.TIMEOUT))
+    447 
+    448                 result = response.json()
+
+TimeoutError: Timeout limit of 600 exceeded.
+TimeoutError: Timeout limit of 600 exceeded.
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="kepler tpf" file="/root/repo/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.ipynb" name="Convert_Execution" time="12.527552"/>
+		<testcase classname="kepler lightcurve" file="/root/repo/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb" name="Convert_Execution" time="35.550138"/>
+		<testcase classname="PS1 DR2 TAP" file="/root/repo/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.ipynb" name="Convert_Execution" time="214.842473"/>
+		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/K2/K2_FFI/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="19.541101"/>
+		<testcase classname="k2 tpf" file="/root/repo/notebooks/MAST/K2/K2_TPF/k2_tpf.ipynb" name="Convert_Execution" time="5.522395"/>
+		<testcase classname="k2 lightcurve" file="/root/repo/notebooks/MAST/K2/K2_Lightcurve/k2_lightcurve.ipynb" name="Convert_Execution" time="4.523983"/>
+		<testcase classname="HSC TAP" file="/root/repo/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.ipynb" name="Convert_Execution" time="320.916828">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 381, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 424, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+job = HSC_service.launch_job_async(&quot;&quot;&quot;
+SELECT MatchID, MatchRA, MatchDec, TargetName, NumImages, NumVisits, A_F475W, A_F475W_MAD, A_F475W_N
+FROM dbo.SumMagAper2CatView
+WHERE 
+   A_F475W_N &gt;= 10
+   AND
+   CONTAINS(POINT('ICRS', MatchRA, MatchDec),CIRCLE('ICRS',16.117562,2.162183,0.1))=1
+   &quot;&quot;&quot;)
+HSC_results = job.get_results()
+HSC_results
+
+plt.rcParams.update({'font.size': 16})
+plt.figure(1,(10,6))
+plt.scatter(HSC_results['A_F475W'], HSC_results['A_F475W_MAD'])
+plt.xlabel('A_F475W')
+plt.ylabel('A_F475W_MAD')
+------------------
+
+
+ConnectionResetErrorTraceback (most recent call last)
+&lt;ipython-input-6-d728b8b1a652&gt; in &lt;module&gt;
+      6    AND
+      7    CONTAINS(POINT('ICRS', MatchRA, MatchDec),CIRCLE('ICRS',16.117562,2.162183,0.1))=1
+----&gt; 8    &quot;&quot;&quot;)
+      9 HSC_results = job.get_results()
+     10 HSC_results
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py in launch_job_async(self, query, name, output_file, output_format, verbose, dump_to_file, background, upload_resource, upload_table_name)
+    336                     job.save_results(verbose)
+    337                 else:
+--&gt; 338                     job.get_results()
+    339                     print(&quot;Query finished.&quot;)
+    340         return job
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py in get_results(self)
+    145         else:
+    146             # async: result is in the server once the job is finished
+--&gt; 147             self.__load_async_job_results()
+    148             return self.results
+    149 
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py in __load_async_job_results(self, debug)
+    217 
+    218     def __load_async_job_results(self, debug=False):
+--&gt; 219         wjResponse, wjData = self.wait_for_job_end()
+    220         subContext = &quot;async/&quot; + str(self.jobid) + &quot;/results/result&quot;
+    221         resultsResponse = self.connHandler.execute_get(subContext)
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py in wait_for_job_end(self, verbose)
+    203         responseData = None
+    204         while True:
+--&gt; 205             responseData = self.get_phase(update=True)
+    206             currentResponse = self.__last_phase_response_status
+    207 
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py in get_phase(self, update)
+     86         if update:
+     87             phase_request = &quot;async/&quot;+str(self.jobid)+&quot;/phase&quot;
+---&gt; 88             response = self.connHandler.execute_get(phase_request)
+     89 
+     90             self.__last_phase_response_status = response.status
+
+/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/conn/tapconn.py in execute_get(self, subcontext, verbose)
+    133         context = self.__get_tap_context(subcontext)
+    134         conn.request(&quot;GET&quot;, context, None, self.__getHeaders)
+--&gt; 135         response = conn.getresponse()
+    136         self.__currentReason = response.reason
+    137         self.__currentStatus = response.status
+
+/opt/conda/envs/notebooks_env/lib/python3.6/http/client.py in getresponse(self)
+   1329         try:
+   1330             try:
+-&gt; 1331                 response.begin()
+   1332             except ConnectionError:
+   1333                 self.close()
+
+/opt/conda/envs/notebooks_env/lib/python3.6/http/client.py in begin(self)
+    295         # read until we get a non-100 response
+    296         while True:
+--&gt; 297             version, status, reason = self._read_status()
+    298             if status != CONTINUE:
+    299                 break
+
+/opt/conda/envs/notebooks_env/lib/python3.6/http/client.py in _read_status(self)
+    256 
+    257     def _read_status(self):
+--&gt; 258         line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)
+    259         if len(line) &gt; _MAXLINE:
+    260             raise LineTooLong(&quot;status line&quot;)
+
+/opt/conda/envs/notebooks_env/lib/python3.6/socket.py in readinto(self, b)
+    584         while True:
+    585             try:
+--&gt; 586                 return self._sock.recv_into(b)
+    587             except timeout:
+    588                 self._timeout_occurred = True
+
+ConnectionResetError: [Errno 104] Connection reset by peer
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="GriddedPSFModel simulation and photometry" file="/root/repo/notebooks/JWST/NIRCam/PSF_phot_01/GriddedPSFModel_simulation_and_photometry.ipynb" name="Convert_Execution" time="55.979561"/>
 	</testsuite>
 </testsuites>
