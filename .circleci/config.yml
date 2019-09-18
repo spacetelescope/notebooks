@@ -33,8 +33,12 @@ jobs:
             conda info --envs
             source activate notebooks_env
             conda info --envs
-            python ./convert.py
+            mkdir test-results
+            python ./convert.py --report test-results/results.xml
           no_output_timeout: 20m
+
+      - store_test_results:
+          path: test-results
 
       - run:
           name: Check notebooks

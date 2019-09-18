@@ -26,6 +26,8 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
   * Kepler
     * [Kepler Lightcurve](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.html)
     * [Kepler TPF](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.html)
+  * PanSTARRS
+    * [PanSTARRS1 DR2 TAP Demo](https://spacetelescope.github.io/notebooks/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.html)
   * TESS
     * [Beginner: Read and Plot A TESS Data Validation Timeseries File](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.html)
     * [Beginner: Read and Display a TESS Full Frame Image](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.html)
@@ -38,9 +40,33 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
     * [Intermediate: Create TESS FFI Cutout using Python Requests](https://spacetelescope.github.io/notebooks/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.html)
 
 
-### Building Locally
+## Building Locally
 
-Alternatively, if you would like to execute the notebooks and view them locally, you can clone this repo and do ``python convert.py``. This requires the [nbpages](https://github.com/eteq/nbpages) python package, which you can most easily install by doing ``pip install -e git+https://github.com/eteq/nbpages.git#egg=nbpages``.
+Python 3 is required for use of these notebooks.
+
+To quickly create an environment with everything needed to run and convert, please first install Conda or Miniconda to your machine using [Conda Installation Instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+Once you have Conda installed, complete the following from a command line:
+
+```bash
+git clone https://github.com/spacetelescope/notebooks
+cd notebooks
+conda env create -f environment.yml
+conda activate notebooks_env
+python convert.py
+```
+
+Doing so will clone this repo, create and activate a conda environment with all needed dependencies, and convert the notebooks to html. For all current notebooks, this can take around 30 minutes.
+
+After converting, you can access the converted HTML of the notebooks in each notebook directory. These can be opened in any web browser. You can also open the index.html file in the root of the repo after converting that links to all converted notebooks.
+
+If you would like to view the notebooks in Jupyter, from the command line in the notebooks directory use:
+
+```bash
+jupyter notebook
+```
+
+Your web browser will open a new page and you can navigate the notebook directories and click the a notebook file (ends in .ipynb) to open.
 
 ## Contributing
 
