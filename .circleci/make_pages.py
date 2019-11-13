@@ -14,10 +14,16 @@ root.addHandler(handler)
 
 logger = logging.getLogger(__file__)
 
-args = make_parser().parse_args()
-logger.info('Converting notebooks into HTML')
-converted = run_parsed('.', output_type='HTML', args=args)
-# converted = [item for item in converted if not os.path.basename(item) in ['test-fail.html', 'test-succeed.html']]
+def main():
+    args = make_parser().parse_args()
+    logger.info('Converting notebooks into HTML')
+    converted = run_parsed('.', output_type='HTML', args=args)
+    # Used for debugging the .circleci pipeline
+    # converted = [item for item in converted if not os.path.basename(item) in ['test-fail.html', 'test-succeed.html']]
+    
+    logger.info('Creating HTML Index')
+    make_html_index(converted, './index.tpl')
 
-logger.info('Creating HTML Index')
-make_html_index(converted, './index.tpl')
+if __name__ in ['__main__']:
+    main()
+
