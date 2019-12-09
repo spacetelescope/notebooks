@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13198,8 +13159,8 @@ A light curve is a plot of flux versus time that shows the variability of light 
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> notebook
-<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="k">import</span> <span class="n">fits</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="k">import</span> <span class="n">Table</span> 
+<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span> 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 
@@ -13238,8 +13199,8 @@ A light curve is a plot of flux versus time that shows the variability of light 
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="k">import</span> <span class="n">Mast</span>
-<span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="k">import</span> <span class="n">Observations</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Mast</span>
+<span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Observations</span>
 </pre></div>
 
     </div>
@@ -13282,31 +13243,11 @@ A light curve is a plot of flux versus time that shows the variability of light 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<i>Table masked=True length=40</i>
-<table id="table139621235676664" class="table-striped table-bordered table-condensed">
-<thead><tr><th>obsID</th><th>obs_collection</th><th>dataproduct_type</th><th>obs_id</th><th>description</th><th>type</th><th>dataURI</th><th>productType</th><th>productGroupDescription</th><th>productSubGroupDescription</th><th>productDocumentationURL</th><th>project</th><th>prvversion</th><th>proposal_id</th><th>productFilename</th><th>size</th><th>parent_obsid</th></tr></thead>
-<thead><tr><th>str10</th><th>str6</th><th>str10</th><th>str36</th><th>str60</th><th>str1</th><th>str110</th><th>str7</th><th>str28</th><th>str1</th><th>str1</th><th>str6</th><th>str1</th><th>str7</th><th>str44</th><th>int64</th><th>str10</th></tr></thead>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q0</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009131110544_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009131110544_slc.fits</td><td>1457280</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q1</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009166044711_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009166044711_slc.fits</td><td>4947840</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q2</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009201121230_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009201121230_slc.fits</td><td>4550400</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q2</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009231120729_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009231120729_slc.fits</td><td>4432320</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q2</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009259162342_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009259162342_slc.fits</td><td>4011840</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q3</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009291181958_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009291181958_slc.fits</td><td>4484160</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q3</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009322144938_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009322144938_slc.fits</td><td>4440960</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q3</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009350160919_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009350160919_slc.fits</td><td>3844800</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q4</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010009094841_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2010009094841_slc.fits</td><td>3096000</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q5</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010111051353_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2010111051353_slc.fits</td><td>4659840</td><td>9000210988</td></tr>
-<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q14</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012211050319_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2012211050319_slc.fits</td><td>4561920</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q14</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012242122129_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2012242122129_slc.fits</td><td>4458240</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q14</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012277125453_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2012277125453_slc.fits</td><td>5045760</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q15</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012310112549_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2012310112549_slc.fits</td><td>4556160</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q15</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012341132017_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2012341132017_slc.fits</td><td>4452480</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q15</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2013011073258_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2013011073258_slc.fits</td><td>5158080</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q17</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2013121191144_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2013121191144_slc.fits</td><td>3314880</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q17</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2013131215648_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2013131215648_slc.fits</td><td>648000</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>tar file for Target Pixel Short Cadence (TPS) - all quarters</td><td>C</td><td>mast:Kepler/url/missions/kepler/target_pixel_files/0114/011446443/kplr011446443_tpf_sc_Q113313330333033302.tar</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443_tpf_sc_Q113313330333033302.tar</td><td>1276661760</td><td>9000210988</td></tr>
-<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>tar file for Lightcurves Short Cadence (CSC) - all quarters</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443_sc_Q113313330333033302.tar</td><td>SCIENCE</td><td>Minimum Recommended Products</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443_sc_Q113313330333033302.tar</td><td>162201600</td><td>9000210988</td></tr>
+<i>Table masked=True length=1</i>
+<table id="table140518784241504" class="table-striped table-bordered table-condensed">
+<thead><tr><th>obsID</th><th>obs_collection</th><th>dataproduct_type</th><th>obs_id</th><th>description</th><th>type</th><th>dataURI</th><th>productType</th><th>productGroupDescription</th><th>productSubGroupDescription</th><th>productDocumentationURL</th><th>project</th><th>prvversion</th><th>proposal_id</th><th>productFilename</th><th>size</th><th>parent_obsid</th><th>dataRights</th></tr></thead>
+<thead><tr><th>str10</th><th>str6</th><th>str10</th><th>str36</th><th>str60</th><th>str1</th><th>str110</th><th>str7</th><th>str28</th><th>str1</th><th>str1</th><th>str6</th><th>str1</th><th>str7</th><th>str44</th><th>int64</th><th>str10</th><th>str6</th></tr></thead>
+<tr><td>9000210988</td><td>Kepler</td><td>timeseries</td><td>kplr011446443_sc_Q113313330333033302</td><td>Lightcurve Short Cadence (CSC) - Q0</td><td>C</td><td>mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009131110544_slc.fits</td><td>SCIENCE</td><td>--</td><td>--</td><td>--</td><td>Kepler</td><td>--</td><td>EX_STKS</td><td>kplr011446443-2009131110544_slc.fits</td><td>1457280</td><td>9000210988</td><td>PUBLIC</td></tr>
 </table>
 </div>
 
@@ -13347,45 +13288,6 @@ A light curve is a plot of flux versus time that shows the variability of light 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009131110544_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009131110544_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009166044711_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009166044711_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009201121230_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009201121230_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009231120729_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009231120729_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009259162342_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009259162342_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009291181958_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009291181958_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009322144938_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009322144938_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2009350160919_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009350160919_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010009094841_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010009094841_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010111051353_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010111051353_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010140023957_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010140023957_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010174090439_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010174090439_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010203174610_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010203174610_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010234115140_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010234115140_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010265121752_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010265121752_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010296114515_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010296114515_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010326094124_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010326094124_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2010355172524_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010355172524_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011116030358_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011116030358_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011145075126_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011145075126_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011177032512_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011177032512_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011208035123_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011208035123_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011240104155_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011240104155_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011271113734_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011271113734_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011303113607_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011303113607_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2011334093404_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2011334093404_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012004120508_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012004120508_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012121044856_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012121044856_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012151031540_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012151031540_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012179063303_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012179063303_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012211050319_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012211050319_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012242122129_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012242122129_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012277125453_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012277125453_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012310112549_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012310112549_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2012341132017_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012341132017_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2013011073258_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2013011073258_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2013121191144_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2013121191144_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443-2013131215648_slc.fits to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2013131215648_slc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/target_pixel_files/0114/011446443/kplr011446443_tpf_sc_Q113313330333033302.tar to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443_tpf_sc_Q113313330333033302.tar ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/url/missions/kepler/lightcurves/0114/011446443/kplr011446443_sc_Q113313330333033302.tar to ./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443_sc_Q113313330333033302.tar ... [Done]
 </pre>
 </div>
 </div>
@@ -13397,31 +13299,11 @@ Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:Kepler/ur
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<i>Table length=40</i>
-<table id="table139622008739488" class="table-striped table-bordered table-condensed">
+<i>Table length=1</i>
+<table id="table140518784241616" class="table-striped table-bordered table-condensed">
 <thead><tr><th>Local Path</th><th>Status</th><th>Message</th><th>URL</th></tr></thead>
-<thead><tr><th>str103</th><th>str8</th><th>object</th><th>object</th></tr></thead>
+<thead><tr><th>str95</th><th>str8</th><th>object</th><th>object</th></tr></thead>
 <tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009131110544_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009166044711_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009201121230_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009231120729_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009259162342_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009291181958_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009322144938_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2009350160919_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010009094841_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2010111051353_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012211050319_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012242122129_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012277125453_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012310112549_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2012341132017_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2013011073258_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2013121191144_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443-2013131215648_slc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443_tpf_sc_Q113313330333033302.tar</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/Kepler/kplr011446443_sc_Q113313330333033302/kplr011446443_sc_Q113313330333033302.tar</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
 </table>
 </div>
 
@@ -13610,7 +13492,7 @@ TTYPE5  = &#39;SAP_FLUX_ERR&#39;       / column title: aperture phot. flux error
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table length=4</i>
-<table id="table139621230790864" class="table-striped table-bordered table-condensed">
+<table id="table140518783953216" class="table-striped table-bordered table-condensed">
 <thead><tr><th>TIME</th><th>TIMECORR</th><th>CADENCENO</th><th>SAP_FLUX</th><th>SAP_FLUX_ERR</th><th>SAP_BKG</th><th>SAP_BKG_ERR</th><th>PDCSAP_FLUX</th><th>PDCSAP_FLUX_ERR</th><th>SAP_QUALITY</th><th>PSF_CENTR1</th><th>PSF_CENTR1_ERR</th><th>PSF_CENTR2</th><th>PSF_CENTR2_ERR</th><th>MOM_CENTR1</th><th>MOM_CENTR1_ERR</th><th>MOM_CENTR2</th><th>MOM_CENTR2_ERR</th><th>POS_CORR1</th><th>POS_CORR2</th></tr></thead>
 <thead><tr><th>float64</th><th>float32</th><th>int32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int32</th><th>float64</th><th>float32</th><th>float64</th><th>float32</th><th>float64</th><th>float32</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th></tr></thead>
 <tr><td>120.52992386784899</td><td>0.00096672785</td><td>5501</td><td>401288.16</td><td>91.51187</td><td>2598.1086</td><td>0.5752603</td><td>406100.9</td><td>127.528824</td><td>0</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>621.2181187542091</td><td>0.0002101067</td><td>848.8972881655714</td><td>0.00029125414</td><td>0.0002031729</td><td>-0.0025746305</td></tr>
@@ -13735,10 +13617,10 @@ TTYPE5  = &#39;SAP_FLUX_ERR&#39;       / column title: aperture phot. flux error
 
 
 
-<div id="7145a5e8-34f6-4d51-b8ef-172b5dc123d8"></div>
+<div id="4c5bc4b2-5163-40d0-a7e3-ab4269921843"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7145a5e8-34f6-4d51-b8ef-172b5dc123d8');
+var element = $('#4c5bc4b2-5163-40d0-a7e3-ab4269921843');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13749,7 +13631,7 @@ mpl.get_websocket_type = function() {
     } else if (typeof(MozWebSocket) !== 'undefined') {
         return MozWebSocket;
     } else {
-        alert('Your browser does not have WebSocket support.' +
+        alert('Your browser does not have WebSocket support. ' +
               'Please try Chrome, Safari or Firefox ≥ 6. ' +
               'Firefox 4 and 5 are also supported but you ' +
               'have to enable WebSockets in about:config.');
@@ -13966,7 +13848,7 @@ mpl.figure.prototype._init_canvas = function() {
 mpl.figure.prototype._init_toolbar = function() {
     var fig = this;
 
-    var nav_element = $('<div/>')
+    var nav_element = $('<div/>');
     nav_element.attr('style', 'width: 100%');
     this.root.append(nav_element);
 
@@ -14023,7 +13905,7 @@ mpl.figure.prototype._init_toolbar = function() {
         var fmt = mpl.extensions[ind];
         var option = $(
             '<option/>', {selected: fmt === mpl.default_extension}).html(fmt);
-        fmt_picker.append(option)
+        fmt_picker.append(option);
     }
 
     // Add hover states to the ui-buttons
@@ -14087,7 +13969,7 @@ mpl.figure.prototype.handle_rubberband = function(fig, msg) {
     var height = Math.abs(y1 - y0);
 
     fig.rubberband_context.clearRect(
-        0, 0, fig.canvas.width, fig.canvas.height);
+        0, 0, fig.canvas.width / mpl.ratio, fig.canvas.height / mpl.ratio);
 
     fig.rubberband_context.strokeRect(min_x, min_y, width, height);
 }
@@ -14392,7 +14274,7 @@ mpl.figure.prototype.updated_canvas_event = function() {
 mpl.figure.prototype._init_toolbar = function() {
     var fig = this;
 
-    var nav_element = $('<div/>')
+    var nav_element = $('<div/>');
     nav_element.attr('style', 'width: 100%');
     this.root.append(nav_element);
 
@@ -14521,7 +14403,7 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id='04b3ebd6-f642-424f-9f82-bb9254efecba'></div>
+<div id='c5e0225e-c97f-4b70-b3c4-7b8ff094eca1'></div>
 </div>
 
 </div>
@@ -14636,10 +14518,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="f1196743-f565-4e1b-9a55-660147a4d9f9"></div>
+<div id="80290d04-b86a-42f9-920c-aff690e94387"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#f1196743-f565-4e1b-9a55-660147a4d9f9');
+var element = $('#80290d04-b86a-42f9-920c-aff690e94387');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14650,7 +14532,7 @@ mpl.get_websocket_type = function() {
     } else if (typeof(MozWebSocket) !== 'undefined') {
         return MozWebSocket;
     } else {
-        alert('Your browser does not have WebSocket support.' +
+        alert('Your browser does not have WebSocket support. ' +
               'Please try Chrome, Safari or Firefox ≥ 6. ' +
               'Firefox 4 and 5 are also supported but you ' +
               'have to enable WebSockets in about:config.');
@@ -14867,7 +14749,7 @@ mpl.figure.prototype._init_canvas = function() {
 mpl.figure.prototype._init_toolbar = function() {
     var fig = this;
 
-    var nav_element = $('<div/>')
+    var nav_element = $('<div/>');
     nav_element.attr('style', 'width: 100%');
     this.root.append(nav_element);
 
@@ -14924,7 +14806,7 @@ mpl.figure.prototype._init_toolbar = function() {
         var fmt = mpl.extensions[ind];
         var option = $(
             '<option/>', {selected: fmt === mpl.default_extension}).html(fmt);
-        fmt_picker.append(option)
+        fmt_picker.append(option);
     }
 
     // Add hover states to the ui-buttons
@@ -14988,7 +14870,7 @@ mpl.figure.prototype.handle_rubberband = function(fig, msg) {
     var height = Math.abs(y1 - y0);
 
     fig.rubberband_context.clearRect(
-        0, 0, fig.canvas.width, fig.canvas.height);
+        0, 0, fig.canvas.width / mpl.ratio, fig.canvas.height / mpl.ratio);
 
     fig.rubberband_context.strokeRect(min_x, min_y, width, height);
 }
@@ -15293,7 +15175,7 @@ mpl.figure.prototype.updated_canvas_event = function() {
 mpl.figure.prototype._init_toolbar = function() {
     var fig = this;
 
-    var nav_element = $('<div/>')
+    var nav_element = $('<div/>');
     nav_element.attr('style', 'width: 100%');
     this.root.append(nav_element);
 
@@ -15422,7 +15304,7 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id='723b8313-a6e5-4744-b689-9d11a1ac0293'></div>
+<div id='f2782b30-9d8a-433b-96e6-5b1e93f6223e'></div>
 </div>
 
 </div>
@@ -15435,7 +15317,7 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.colorbar.Colorbar at 0x7efc1989c588&gt;</pre>
+<pre>&lt;matplotlib.colorbar.Colorbar at 0x7fcd13ded2e8&gt;</pre>
 </div>
 
 </div>

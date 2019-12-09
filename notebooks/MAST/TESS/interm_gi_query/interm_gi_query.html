@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13154,8 +13115,8 @@ For information on how to install astroquery see their <a href="https://astroque
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="k">import</span> <span class="n">Observations</span>
-<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="k">import</span> <span class="n">fits</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Observations</span>
+<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
 </pre></div>
 
     </div>
@@ -13244,14 +13205,14 @@ For information on how to install astroquery see their <a href="https://astroque
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table masked=True length=5</i>
-<table id="table140333277893296" class="table-striped table-bordered table-condensed">
+<table id="table140594613237464" class="table-striped table-bordered table-condensed">
 <thead><tr><th>obsid</th><th>proposal_id</th><th>obs_id</th></tr></thead>
 <thead><tr><th>str11</th><th>str31</th><th>str47</th></tr></thead>
-<tr><td>17000013471</td><td>G011183_G011132_G011048_G011250</td><td>tess2018206045859-s0001-0000000144068704-0120-s</td></tr>
-<tr><td>17000005782</td><td>G011183_G011180_G011266</td><td>tess2018206045859-s0001-0000000139754153-0120-s</td></tr>
-<tr><td>17000006919</td><td>G011183_G011132_G011048</td><td>tess2018206045859-s0001-0000000161314759-0120-s</td></tr>
-<tr><td>17000001820</td><td>G011155_G011183_G011184_G011048</td><td>tess2018206045859-s0001-0000000129649472-0120-s</td></tr>
-<tr><td>17000001069</td><td>G011183_G011132_G011250</td><td>tess2018206045859-s0001-0000000197686484-0120-s</td></tr>
+<tr><td>17000015852</td><td>G011183</td><td>tess2018206045859-s0001-0000000231716612-0120-s</td></tr>
+<tr><td>17000006704</td><td>G011183_G011025_G011048_G011250</td><td>tess2018206045859-s0001-0000000231836962-0120-s</td></tr>
+<tr><td>17000009900</td><td>G011183_G011025_G011048</td><td>tess2018206045859-s0001-0000000234501204-0120-s</td></tr>
+<tr><td>17000003763</td><td>G011183_G011025_G011048_G011250</td><td>tess2018206045859-s0001-0000000099734092-0120-s</td></tr>
+<tr><td>17000012356</td><td>G011183_G011132_G011048_G011250</td><td>tess2018206045859-s0001-0000000281461362-0120-s</td></tr>
 </table>
 </div>
 
@@ -13312,7 +13273,8 @@ For information on how to install astroquery see their <a href="https://astroque
  &#39;proposal_id&#39;,
  &#39;productFilename&#39;,
  &#39;size&#39;,
- &#39;parent_obsid&#39;]</pre>
+ &#39;parent_obsid&#39;,
+ &#39;dataRights&#39;]</pre>
 </div>
 
 </div>
@@ -13345,21 +13307,21 @@ For information on how to install astroquery see their <a href="https://astroque
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table masked=True length=12</i>
-<table id="table140333277678616" class="table-striped table-bordered table-condensed">
+<table id="table140594613073568" class="table-striped table-bordered table-condensed">
 <thead><tr><th>obsID</th><th>productFilename</th><th>description</th></tr></thead>
 <thead><tr><th>str11</th><th>str55</th><th>str18</th></tr></thead>
-<tr><td>17000001820</td><td>tess2018206045859-s0001-0000000129649472-0120-s_lc.fits</td><td>Light curves</td></tr>
-<tr><td>17000001820</td><td>tess2018206045859-s0001-0000000129649472-0120-s_tp.fits</td><td>Target pixel files</td></tr>
-<tr><td>17000005782</td><td>tess2018206045859-s0001-0000000139754153-0120-s_lc.fits</td><td>Light curves</td></tr>
-<tr><td>17000005782</td><td>tess2018206045859-s0001-0000000139754153-0120-s_tp.fits</td><td>Target pixel files</td></tr>
-<tr><td>17000012989</td><td>tess2018206045859-s0001-0000000141411201-0120-s_lc.fits</td><td>Light curves</td></tr>
-<tr><td>17000012989</td><td>tess2018206045859-s0001-0000000141411201-0120-s_tp.fits</td><td>Target pixel files</td></tr>
-<tr><td>17000013471</td><td>tess2018206045859-s0001-0000000144068704-0120-s_lc.fits</td><td>Light curves</td></tr>
-<tr><td>17000013471</td><td>tess2018206045859-s0001-0000000144068704-0120-s_tp.fits</td><td>Target pixel files</td></tr>
-<tr><td>17000006919</td><td>tess2018206045859-s0001-0000000161314759-0120-s_lc.fits</td><td>Light curves</td></tr>
-<tr><td>17000006919</td><td>tess2018206045859-s0001-0000000161314759-0120-s_tp.fits</td><td>Target pixel files</td></tr>
-<tr><td>17000001069</td><td>tess2018206045859-s0001-0000000197686484-0120-s_lc.fits</td><td>Light curves</td></tr>
-<tr><td>17000001069</td><td>tess2018206045859-s0001-0000000197686484-0120-s_tp.fits</td><td>Target pixel files</td></tr>
+<tr><td>17000003763</td><td>tess2018206045859-s0001-0000000099734092-0120-s_lc.fits</td><td>Light curves</td></tr>
+<tr><td>17000003763</td><td>tess2018206045859-s0001-0000000099734092-0120-s_tp.fits</td><td>Target pixel files</td></tr>
+<tr><td>17000015852</td><td>tess2018206045859-s0001-0000000231716612-0120-s_lc.fits</td><td>Light curves</td></tr>
+<tr><td>17000015852</td><td>tess2018206045859-s0001-0000000231716612-0120-s_tp.fits</td><td>Target pixel files</td></tr>
+<tr><td>17000006704</td><td>tess2018206045859-s0001-0000000231836962-0120-s_lc.fits</td><td>Light curves</td></tr>
+<tr><td>17000006704</td><td>tess2018206045859-s0001-0000000231836962-0120-s_tp.fits</td><td>Target pixel files</td></tr>
+<tr><td>17000009900</td><td>tess2018206045859-s0001-0000000234501204-0120-s_lc.fits</td><td>Light curves</td></tr>
+<tr><td>17000009900</td><td>tess2018206045859-s0001-0000000234501204-0120-s_tp.fits</td><td>Target pixel files</td></tr>
+<tr><td>17000012356</td><td>tess2018206045859-s0001-0000000281461362-0120-s_lc.fits</td><td>Light curves</td></tr>
+<tr><td>17000012356</td><td>tess2018206045859-s0001-0000000281461362-0120-s_tp.fits</td><td>Target pixel files</td></tr>
+<tr><td>17000010554</td><td>tess2018206045859-s0001-0000000325178933-0120-s_lc.fits</td><td>Light curves</td></tr>
+<tr><td>17000010554</td><td>tess2018206045859-s0001-0000000325178933-0120-s_tp.fits</td><td>Target pixel files</td></tr>
 </table>
 </div>
 
@@ -13401,14 +13363,14 @@ We limit our list of data products to just those with the <strong>description</s
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>   obsID    obs_collection dataproduct_type ...   size  parent_obsid
------------ -------------- ---------------- ... ------- ------------
-17000001820           TESS       timeseries ... 2039040  17000001820
-17000005782           TESS       timeseries ... 2039040  17000005782
-17000012989           TESS       timeseries ... 2039040  17000012989
-17000013471           TESS       timeseries ... 2039040  17000013471
-17000006919           TESS       timeseries ... 2039040  17000006919
-17000001069           TESS       timeseries ... 2039040  17000001069
+<pre>   obsID    obs_collection dataproduct_type ...   size  parent_obsid dataRights
+----------- -------------- ---------------- ... ------- ------------ ----------
+17000003763           TESS       timeseries ... 2039040  17000003763     PUBLIC
+17000015852           TESS       timeseries ... 2039040  17000015852     PUBLIC
+17000006704           TESS       timeseries ... 2039040  17000006704     PUBLIC
+17000009900           TESS       timeseries ... 2039040  17000009900     PUBLIC
+17000012356           TESS       timeseries ... 2039040  17000012356     PUBLIC
+17000010554           TESS       timeseries ... 2039040  17000010554     PUBLIC
 </pre>
 </div>
 </div>
@@ -13440,20 +13402,20 @@ We limit our list of data products to just those with the <strong>description</s
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000129649472-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000129649472-0120-s/tess2018206045859-s0001-0000000129649472-0120-s_lc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000139754153-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000139754153-0120-s/tess2018206045859-s0001-0000000139754153-0120-s_lc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000141411201-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000141411201-0120-s/tess2018206045859-s0001-0000000141411201-0120-s_lc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000144068704-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000144068704-0120-s/tess2018206045859-s0001-0000000144068704-0120-s_lc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000161314759-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000161314759-0120-s/tess2018206045859-s0001-0000000161314759-0120-s_lc.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000197686484-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000197686484-0120-s/tess2018206045859-s0001-0000000197686484-0120-s_lc.fits ... [Done]
+<pre>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000099734092-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000099734092-0120-s/tess2018206045859-s0001-0000000099734092-0120-s_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000231716612-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000231716612-0120-s/tess2018206045859-s0001-0000000231716612-0120-s_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000231836962-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000231836962-0120-s/tess2018206045859-s0001-0000000231836962-0120-s_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000234501204-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000234501204-0120-s/tess2018206045859-s0001-0000000234501204-0120-s_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000281461362-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000281461362-0120-s/tess2018206045859-s0001-0000000281461362-0120-s_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2018206045859-s0001-0000000325178933-0120-s_lc.fits to ./mastDownload/TESS/tess2018206045859-s0001-0000000325178933-0120-s/tess2018206045859-s0001-0000000325178933-0120-s_lc.fits ... [Done]
                                                          Local Path                                                         ...
 --------------------------------------------------------------------------------------------------------------------------- ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000129649472-0120-s/tess2018206045859-s0001-0000000129649472-0120-s_lc.fits ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000139754153-0120-s/tess2018206045859-s0001-0000000139754153-0120-s_lc.fits ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000141411201-0120-s/tess2018206045859-s0001-0000000141411201-0120-s_lc.fits ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000144068704-0120-s/tess2018206045859-s0001-0000000144068704-0120-s_lc.fits ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000161314759-0120-s/tess2018206045859-s0001-0000000161314759-0120-s_lc.fits ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000197686484-0120-s/tess2018206045859-s0001-0000000197686484-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000099734092-0120-s/tess2018206045859-s0001-0000000099734092-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000231716612-0120-s/tess2018206045859-s0001-0000000231716612-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000231836962-0120-s/tess2018206045859-s0001-0000000231836962-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000234501204-0120-s/tess2018206045859-s0001-0000000234501204-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000281461362-0120-s/tess2018206045859-s0001-0000000281461362-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000325178933-0120-s/tess2018206045859-s0001-0000000325178933-0120-s_lc.fits ...
 </pre>
 </div>
 </div>
@@ -13484,11 +13446,11 @@ Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/prod
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Filename: ./mastDownload/TESS/tess2018206045859-s0001-0000000129649472-0120-s/tess2018206045859-s0001-0000000129649472-0120-s_lc.fits
+<pre>Filename: ./mastDownload/TESS/tess2018206045859-s0001-0000000099734092-0120-s/tess2018206045859-s0001-0000000099734092-0120-s_lc.fits
 No.    Name      Ver    Type      Cards   Dimensions   Format
   0  PRIMARY       1 PrimaryHDU      44   ()      
   1  LIGHTCURVE    1 BinTableHDU    167   20076R x 20C   [D, E, J, E, E, E, E, E, E, J, D, E, D, E, D, E, D, E, E, E]   
-  2  APERTURE      1 ImageHDU        49   (25, 25)   int32   
+  2  APERTURE      1 ImageHDU        49   (11, 13)   int32   
 </pre>
 </div>
 </div>
@@ -13547,12 +13509,12 @@ Here is a summary of the code required to do the problem described above, withou
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO: Found cached file ./mastDownload/TESS/tess2018206045859-s0001-0000000139754153-0120-s/tess2018206045859-s0001-0000000139754153-0120-s_lc.fits with expected size 2039040. [astroquery.query]
-INFO: Found cached file ./mastDownload/TESS/tess2018206045859-s0001-0000000144068704-0120-s/tess2018206045859-s0001-0000000144068704-0120-s_lc.fits with expected size 2039040. [astroquery.query]
+<pre>INFO: Found cached file ./mastDownload/TESS/tess2018206045859-s0001-0000000231716612-0120-s/tess2018206045859-s0001-0000000231716612-0120-s_lc.fits with expected size 2039040. [astroquery.query]
+INFO: Found cached file ./mastDownload/TESS/tess2018206045859-s0001-0000000231836962-0120-s/tess2018206045859-s0001-0000000231836962-0120-s_lc.fits with expected size 2039040. [astroquery.query]
                                                          Local Path                                                         ...
 --------------------------------------------------------------------------------------------------------------------------- ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000139754153-0120-s/tess2018206045859-s0001-0000000139754153-0120-s_lc.fits ...
-./mastDownload/TESS/tess2018206045859-s0001-0000000144068704-0120-s/tess2018206045859-s0001-0000000144068704-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000231716612-0120-s/tess2018206045859-s0001-0000000231716612-0120-s_lc.fits ...
+./mastDownload/TESS/tess2018206045859-s0001-0000000231836962-0120-s/tess2018206045859-s0001-0000000231836962-0120-s_lc.fits ...
 </pre>
 </div>
 </div>

@@ -13040,45 +13040,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13201,10 +13162,10 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use the astroquery TapPlus library as our client to the data service.</span>
-<span class="kn">from</span> <span class="nn">astroquery.utils.tap.core</span> <span class="k">import</span> <span class="n">TapPlus</span>
+<span class="kn">from</span> <span class="nn">astroquery.utils.tap.core</span> <span class="kn">import</span> <span class="n">TapPlus</span>
 
 <span class="c1">## For handling ordinary astropy Tables in responses</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="k">import</span> <span class="n">Table</span>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
 
 <span class="c1"># For displaying and manipulating some types of results</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -13212,14 +13173,14 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">astropy</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
 <span class="c1"># To allow display tweaks for wider response tables</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">display</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 
 <span class="c1"># For the second example: kernel density estimates</span>
-<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">gaussian_kde</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">gaussian_kde</span>
 </pre></div>
 
     </div>
@@ -13265,7 +13226,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created TAP+ (v1.0.1) - Connection:
+<pre>Created TAP+ (v1.2.1) - Connection:
 	Host: vao.stsci.edu
 	Use HTTPS: False
 	Port: 80
@@ -13321,57 +13282,108 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Retrieving tables...
-Parsing tables...
-Done.
-
-
-TAP Table name: dbo.dbo.SumMagAper2CatView
-Description: This table provides Source Extractor magaper2 information for each match based on sources with valid Source Extractor aper2 magnitudes. The companion table SumMagAper2CatViewView  contains other summary information for the corresponding match
-Num. columns: 818
-
-
-MatchID
-MatchRA
-MatchDec
-DSigma
-AbsCorr
-NumFilters
-NumVisits
-NumImages
-StartTime
-StopTime
-StartMJD
-StopMJD
-TargetName
-CI
-CI_Sigma
-KronRadius
-KronRadius_Sigma
-Extinction
-SpectrumFlag
-MatchID
-W3_BLANK
-W3_BLANK_MAD
-W3_BLANK_N
-W2_F122M
-W2_F122M_MAD
-W2_F122M_N
-W2_F160BN15
-W2_F160BN15_MAD
-W2_F160BN15_N
-W2_F160BW
-...
-W3_F160W
-W3_F160W_MAD
-W3_F160W_N
-W3_F164N
-W3_F164N_MAD
-W3_F164N_N
-W3_F167N
-W3_F167N_MAD
-W3_F167N_N
+<pre>INFO: Retrieving tables... [astroquery.utils.tap.core]
+INFO: Parsing tables... [astroquery.utils.tap.core]
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+
+<span class="ansi-red-fg">KeyError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-3-cec91d928ba8&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>HSC_tables <span class="ansi-blue-fg">=</span> HSC_service<span class="ansi-blue-fg">.</span>load_tables<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;\n&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">for</span> table <span class="ansi-green-fg">in</span> HSC_tables<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">if</span><span class="ansi-blue-fg">(</span> table<span class="ansi-blue-fg">.</span>name <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;dbo.SumMagAper2CatView&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span>         print<span class="ansi-blue-fg">(</span>table<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
+<span class="ansi-green-intense-fg ansi-bold">    807</span>         return self._Tap__load_tables(only_names=only_names,
+<span class="ansi-green-intense-fg ansi-bold">    808</span>                                       include_shared_tables<span class="ansi-blue-fg">=</span>include_shared_tables<span class="ansi-blue-fg">,</span>  <span class="ansi-red-fg"># noqa</span>
+<span class="ansi-green-fg">--&gt; 809</span><span class="ansi-red-fg">                                       verbose=verbose)
+</span><span class="ansi-green-intense-fg ansi-bold">    810</span> 
+<span class="ansi-green-intense-fg ansi-bold">    811</span>     <span class="ansi-green-fg">def</span> load_data<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> params_dict<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> output_file<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">__load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
+<span class="ansi-green-intense-fg ansi-bold">    235</span>         log<span class="ansi-blue-fg">.</span>info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Parsing tables...&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    236</span>         tsp <span class="ansi-blue-fg">=</span> TableSaxParser<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 237</span><span class="ansi-red-fg">         </span>tsp<span class="ansi-blue-fg">.</span>parseData<span class="ansi-blue-fg">(</span>response<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    238</span>         log<span class="ansi-blue-fg">.</span>info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Done.&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    239</span>         <span class="ansi-green-fg">return</span> tsp<span class="ansi-blue-fg">.</span>get_tables<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">parseData</span><span class="ansi-blue-fg">(self, data)</span>
+<span class="ansi-green-intense-fg ansi-bold">     65</span>         <span class="ansi-green-fg">del</span> self<span class="ansi-blue-fg">.</span>__tables<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     66</span>         self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">=</span> READING_SCHEMA
+<span class="ansi-green-fg">---&gt; 67</span><span class="ansi-red-fg">         </span>xml<span class="ansi-blue-fg">.</span>sax<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     68</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>__tables
+<span class="ansi-green-intense-fg ansi-bold">     69</span> 
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/__init__.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(source, handler, errorHandler)</span>
+<span class="ansi-green-intense-fg ansi-bold">     31</span>     parser<span class="ansi-blue-fg">.</span>setContentHandler<span class="ansi-blue-fg">(</span>handler<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     32</span>     parser<span class="ansi-blue-fg">.</span>setErrorHandler<span class="ansi-blue-fg">(</span>errorHandler<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 33</span><span class="ansi-red-fg">     </span>parser<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>source<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     34</span> 
+<span class="ansi-green-intense-fg ansi-bold">     35</span> <span class="ansi-green-fg">def</span> parseString<span class="ansi-blue-fg">(</span>string<span class="ansi-blue-fg">,</span> handler<span class="ansi-blue-fg">,</span> errorHandler<span class="ansi-blue-fg">=</span>ErrorHandler<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
+<span class="ansi-green-intense-fg ansi-bold">    109</span>             self<span class="ansi-blue-fg">.</span>reset<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    110</span>             self<span class="ansi-blue-fg">.</span>_cont_handler<span class="ansi-blue-fg">.</span>setDocumentLocator<span class="ansi-blue-fg">(</span>ExpatLocator<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 111</span><span class="ansi-red-fg">             </span>xmlreader<span class="ansi-blue-fg">.</span>IncrementalParser<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> source<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    112</span>         <span class="ansi-green-fg">except</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    113</span>             <span class="ansi-red-fg"># bpo-30264: Close the source on error to not leak resources:</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
+<span class="ansi-green-intense-fg ansi-bold">    123</span>         buffer <span class="ansi-blue-fg">=</span> file<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_bufsize<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    124</span>         <span class="ansi-green-fg">while</span> buffer<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 125</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>feed<span class="ansi-blue-fg">(</span>buffer<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    126</span>             buffer <span class="ansi-blue-fg">=</span> file<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_bufsize<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    127</span>         self<span class="ansi-blue-fg">.</span>close<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, data, isFinal)</span>
+<span class="ansi-green-intense-fg ansi-bold">    215</span>             <span class="ansi-red-fg"># document. When feeding chunks, they are not normally final -</span>
+<span class="ansi-green-intense-fg ansi-bold">    216</span>             <span class="ansi-red-fg"># except when invoked from close.</span>
+<span class="ansi-green-fg">--&gt; 217</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_parser<span class="ansi-blue-fg">.</span>Parse<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> isFinal<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    218</span>         <span class="ansi-green-fg">except</span> expat<span class="ansi-blue-fg">.</span>error <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    219</span>             exc <span class="ansi-blue-fg">=</span> SAXParseException<span class="ansi-blue-fg">(</span>expat<span class="ansi-blue-fg">.</span>ErrorString<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">.</span>code<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> e<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/tmp/build/80754af9/python_1564510748219/work/Modules/pyexpat.c</span> in <span class="ansi-cyan-fg">StartElement</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">start_element</span><span class="ansi-blue-fg">(self, name, attrs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    331</span>     <span class="ansi-red-fg"># event handlers</span>
+<span class="ansi-green-intense-fg ansi-bold">    332</span>     <span class="ansi-green-fg">def</span> start_element<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 333</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_cont_handler<span class="ansi-blue-fg">.</span>startElement<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> AttributesImpl<span class="ansi-blue-fg">(</span>attrs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    334</span> 
+<span class="ansi-green-intense-fg ansi-bold">    335</span>     <span class="ansi-green-fg">def</span> end_element<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">startElement</span><span class="ansi-blue-fg">(self, name, attrs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     72</span>             self<span class="ansi-blue-fg">.</span>__reading_schema<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     73</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">==</span> READING_TABLE<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 74</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__reading_table<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     75</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">==</span> READING_TABLE_COLUMN<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     76</span>             self<span class="ansi-blue-fg">.</span>__reading_table_column<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">__reading_table</span><span class="ansi-blue-fg">(self, name, attrs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    108</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__check_item_id<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;column&#34;</span><span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    109</span>             self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">=</span> READING_TABLE_COLUMN
+<span class="ansi-green-fg">--&gt; 110</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__currentColumn <span class="ansi-blue-fg">=</span> TapColumn<span class="ansi-blue-fg">(</span>attrs<span class="ansi-blue-fg">.</span>getValue<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;esatapplus:flags&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    111</span> 
+<span class="ansi-green-intense-fg ansi-bold">    112</span>     <span class="ansi-green-fg">def</span> __end_table<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">getValue</span><span class="ansi-blue-fg">(self, name)</span>
+<span class="ansi-green-intense-fg ansi-bold">    291</span> 
+<span class="ansi-green-intense-fg ansi-bold">    292</span>     <span class="ansi-green-fg">def</span> getValue<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 293</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_attrs<span class="ansi-blue-fg">[</span>name<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    294</span> 
+<span class="ansi-green-intense-fg ansi-bold">    295</span>     <span class="ansi-green-fg">def</span> getValueByQName<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">KeyError</span>: &#39;esatapplus:flags&#39;</pre>
 </div>
 </div>
 
@@ -13391,7 +13403,7 @@ W3_F167N_N
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -13407,39 +13419,6 @@ W3_F167N_N
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<i>Table masked=True length=10</i>
-<table id="table140079359096480" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MatchRA</th><th>MatchDec</th><th>TargetName</th><th>StartTime</th><th>StopTime</th></tr></thead>
-<thead><tr><th>float64</th><th>float64</th><th>object</th><th>object</th><th>object</th></tr></thead>
-<tr><td>129.217229657802</td><td>7.94543470425575</td><td>J083655+075712</td><td>12/7/2009 4:10:34 PM</td><td>12/7/2009 4:53:36 PM</td></tr>
-<tr><td>129.217737714562</td><td>7.95414102965508</td><td>J083655+075712</td><td>12/7/2009 4:10:34 PM</td><td>12/7/2009 4:53:36 PM</td></tr>
-<tr><td>129.264743296842</td><td>7.99903230660889</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td></tr>
-<tr><td>129.24708533424</td><td>8.04200793098827</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td></tr>
-<tr><td>129.253627804521</td><td>8.04016747741173</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td></tr>
-<tr><td>129.231776145691</td><td>7.9983386921068</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 2:55:27 PM</td></tr>
-<tr><td>129.243886032703</td><td>8.03350365274314</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td></tr>
-<tr><td>129.242971696111</td><td>7.94676389005236</td><td>J083655+075712</td><td>12/7/2009 4:10:34 PM</td><td>12/7/2009 4:53:36 PM</td></tr>
-<tr><td>129.256624878038</td><td>8.03979026963273</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td></tr>
-<tr><td>129.247384132746</td><td>8.00238461007864</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td></tr>
-</table>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13451,7 +13430,7 @@ W3_F167N_N
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -13469,39 +13448,6 @@ W3_F167N_N
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<i>Table masked=True length=10</i>
-<table id="table140078629721648" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MatchID</th><th>MatchRA</th><th>MatchDec</th><th>TargetName</th><th>StartTime</th><th>StopTime</th><th>TargetName1</th></tr></thead>
-<thead><tr><th>int64</th><th>float64</th><th>float64</th><th>object</th><th>object</th><th>object</th><th>object</th></tr></thead>
-<tr><td>25932069</td><td>129.212736081141</td><td>8.00451661211683</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>76418113</td><td>129.226696203498</td><td>8.02462094441062</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 2:55:27 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>34720390</td><td>129.233422690338</td><td>8.03149997812075</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>56244222</td><td>129.221267748767</td><td>8.01253702068661</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 2:55:27 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>105341376</td><td>129.220159843582</td><td>8.01529359750727</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 2:55:27 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>91278717</td><td>129.26352367866</td><td>8.00726309120154</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>13826624</td><td>129.220243560474</td><td>8.02967599177424</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>83896184</td><td>129.23585123415</td><td>8.01090190965691</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>44596403</td><td>129.260328018495</td><td>8.0205590128116</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 3:07:16 PM</td><td>SDSSJ0837+0801</td></tr>
-<tr><td>86653487</td><td>129.225123210498</td><td>8.04593545356552</td><td>SDSSJ0837+0801</td><td>3/15/2015 2:22:48 PM</td><td>3/15/2015 2:55:27 PM</td><td>SDSSJ0837+0801</td></tr>
-</table>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13514,7 +13460,7 @@ W3_F167N_N
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -13536,103 +13482,6 @@ W3_F167N_N
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-
-<span class="ansi-red-fg">ConnectionResetError</span>Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-6-d728b8b1a652&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>    AND
-<span class="ansi-green-intense-fg ansi-bold">      7</span>    CONTAINS<span class="ansi-blue-fg">(</span>POINT<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;ICRS&#39;</span><span class="ansi-blue-fg">,</span> MatchRA<span class="ansi-blue-fg">,</span> MatchDec<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>CIRCLE<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;ICRS&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">16.117562</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2.162183</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0.1</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span>
-<span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg">    &#34;&#34;&#34;)
-</span><span class="ansi-green-intense-fg ansi-bold">      9</span> HSC_results <span class="ansi-blue-fg">=</span> job<span class="ansi-blue-fg">.</span>get_results<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span> HSC_results
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">launch_job_async</span><span class="ansi-blue-fg">(self, query, name, output_file, output_format, verbose, dump_to_file, background, upload_resource, upload_table_name)</span>
-<span class="ansi-green-intense-fg ansi-bold">    336</span>                     job<span class="ansi-blue-fg">.</span>save_results<span class="ansi-blue-fg">(</span>verbose<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    337</span>                 <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 338</span><span class="ansi-red-fg">                     </span>job<span class="ansi-blue-fg">.</span>get_results<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    339</span>                     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Query finished.&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    340</span>         <span class="ansi-green-fg">return</span> job
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py</span> in <span class="ansi-cyan-fg">get_results</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    145</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    146</span>             <span class="ansi-red-fg"># async: result is in the server once the job is finished</span>
-<span class="ansi-green-fg">--&gt; 147</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__load_async_job_results<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    148</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>results
-<span class="ansi-green-intense-fg ansi-bold">    149</span> 
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py</span> in <span class="ansi-cyan-fg">__load_async_job_results</span><span class="ansi-blue-fg">(self, debug)</span>
-<span class="ansi-green-intense-fg ansi-bold">    217</span> 
-<span class="ansi-green-intense-fg ansi-bold">    218</span>     <span class="ansi-green-fg">def</span> __load_async_job_results<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> debug<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 219</span><span class="ansi-red-fg">         </span>wjResponse<span class="ansi-blue-fg">,</span> wjData <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>wait_for_job_end<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    220</span>         subContext <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;async/&#34;</span> <span class="ansi-blue-fg">+</span> str<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>jobid<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">&#34;/results/result&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    221</span>         resultsResponse <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>connHandler<span class="ansi-blue-fg">.</span>execute_get<span class="ansi-blue-fg">(</span>subContext<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py</span> in <span class="ansi-cyan-fg">wait_for_job_end</span><span class="ansi-blue-fg">(self, verbose)</span>
-<span class="ansi-green-intense-fg ansi-bold">    203</span>         responseData <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">None</span>
-<span class="ansi-green-intense-fg ansi-bold">    204</span>         <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">True</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 205</span><span class="ansi-red-fg">             </span>responseData <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>get_phase<span class="ansi-blue-fg">(</span>update<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    206</span>             currentResponse <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>__last_phase_response_status
-<span class="ansi-green-intense-fg ansi-bold">    207</span> 
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/model/job.py</span> in <span class="ansi-cyan-fg">get_phase</span><span class="ansi-blue-fg">(self, update)</span>
-<span class="ansi-green-intense-fg ansi-bold">     86</span>         <span class="ansi-green-fg">if</span> update<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     87</span>             phase_request <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;async/&#34;</span><span class="ansi-blue-fg">+</span>str<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>jobid<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">+</span><span class="ansi-blue-fg">&#34;/phase&#34;</span>
-<span class="ansi-green-fg">---&gt; 88</span><span class="ansi-red-fg">             </span>response <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>connHandler<span class="ansi-blue-fg">.</span>execute_get<span class="ansi-blue-fg">(</span>phase_request<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     89</span> 
-<span class="ansi-green-intense-fg ansi-bold">     90</span>             self<span class="ansi-blue-fg">.</span>__last_phase_response_status <span class="ansi-blue-fg">=</span> response<span class="ansi-blue-fg">.</span>status
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/conn/tapconn.py</span> in <span class="ansi-cyan-fg">execute_get</span><span class="ansi-blue-fg">(self, subcontext, verbose)</span>
-<span class="ansi-green-intense-fg ansi-bold">    133</span>         context <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>__get_tap_context<span class="ansi-blue-fg">(</span>subcontext<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    134</span>         conn<span class="ansi-blue-fg">.</span>request<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;GET&#34;</span><span class="ansi-blue-fg">,</span> context<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>__getHeaders<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 135</span><span class="ansi-red-fg">         </span>response <span class="ansi-blue-fg">=</span> conn<span class="ansi-blue-fg">.</span>getresponse<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    136</span>         self<span class="ansi-blue-fg">.</span>__currentReason <span class="ansi-blue-fg">=</span> response<span class="ansi-blue-fg">.</span>reason
-<span class="ansi-green-intense-fg ansi-bold">    137</span>         self<span class="ansi-blue-fg">.</span>__currentStatus <span class="ansi-blue-fg">=</span> response<span class="ansi-blue-fg">.</span>status
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/http/client.py</span> in <span class="ansi-cyan-fg">getresponse</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1329</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1330</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1331</span><span class="ansi-red-fg">                 </span>response<span class="ansi-blue-fg">.</span>begin<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1332</span>             <span class="ansi-green-fg">except</span> ConnectionError<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1333</span>                 self<span class="ansi-blue-fg">.</span>close<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/http/client.py</span> in <span class="ansi-cyan-fg">begin</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    295</span>         <span class="ansi-red-fg"># read until we get a non-100 response</span>
-<span class="ansi-green-intense-fg ansi-bold">    296</span>         <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">True</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 297</span><span class="ansi-red-fg">             </span>version<span class="ansi-blue-fg">,</span> status<span class="ansi-blue-fg">,</span> reason <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_read_status<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    298</span>             <span class="ansi-green-fg">if</span> status <span class="ansi-blue-fg">!=</span> CONTINUE<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    299</span>                 <span class="ansi-green-fg">break</span>
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/http/client.py</span> in <span class="ansi-cyan-fg">_read_status</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    256</span> 
-<span class="ansi-green-intense-fg ansi-bold">    257</span>     <span class="ansi-green-fg">def</span> _read_status<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 258</span><span class="ansi-red-fg">         </span>line <span class="ansi-blue-fg">=</span> str<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>fp<span class="ansi-blue-fg">.</span>readline<span class="ansi-blue-fg">(</span>_MAXLINE <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;iso-8859-1&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    259</span>         <span class="ansi-green-fg">if</span> len<span class="ansi-blue-fg">(</span>line<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">&gt;</span> _MAXLINE<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    260</span>             <span class="ansi-green-fg">raise</span> LineTooLong<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;status line&#34;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/socket.py</span> in <span class="ansi-cyan-fg">readinto</span><span class="ansi-blue-fg">(self, b)</span>
-<span class="ansi-green-intense-fg ansi-bold">    584</span>         <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">True</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    585</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 586</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_sock<span class="ansi-blue-fg">.</span>recv_into<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    587</span>             <span class="ansi-green-fg">except</span> timeout<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    588</span>                 self<span class="ansi-blue-fg">.</span>_timeout_occurred <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
-
-<span class="ansi-red-fg">ConnectionResetError</span>: [Errno 104] Connection reset by peer</pre>
-</div>
-</div>
-
 </div>
 </div>
 

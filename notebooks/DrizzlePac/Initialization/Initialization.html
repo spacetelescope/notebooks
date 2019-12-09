@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13130,7 +13091,7 @@ div#notebook {
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>DrizzlePac is a Python software package developed at STScI that is designed to align and combine HST images and is a successor to the older MultiDrizzle software. Since July 2012, all drizzled data products obtained from MAST are produced with AstroDrizzle.</p>
 <p>An abbreviation for Astrometric Drizzle, AstroDrizzle was designed from the ground-up to substantially improve the handling of distortion in the image header World Coordinate System. AstroDrizzle removes geometric distortion, corrects for sky background variations, flags cosmic-rays, and combines images with optional subsampling. Drizzled data products from MAST are generated for single visit associations only.</p>
 <p>To combine data from additional visits, TweakReg may be used to update the image WCS using matched source lists. Once the full set of images of a given target are properly aligned, they may be combined using AstroDrizzle.</p>
-<p>While the DrizzlePac software has been optimized to work with Hubble Space Telescope (HST) data, it can work with other types of data so long as the images adhere to the FITS standards for multi-extension files and for describing the World Coordinate System (WCS). It assumes that all distortions have been properly described in the WCS of the image, e.g. via the SIP distortion coefficients. <a href="http://www.stsci.edu/hst/HST_overview/drizzlepac/adfeatures">More details may be found here</a> under the section 'Aligning to Non-HST Image'.</p>
+<p>While the DrizzlePac software has been optimized to work with Hubble Space Telescope (HST) data, it can work with other types of data so long as the images adhere to the FITS standards for multi-extension files and for describing the World Coordinate System (WCS). It assumes that all distortions have been properly described in the WCS of the image, e.g. via the SIP distortion coefficients. <a href="http://www.stsci.edu/scientific-community/software/drizzlepac/features.html#h3-3-61c90abe-2d25-4c81-b5e0-450b9a59b17b">More details may be found here</a> under the section 'Aligning to Non-HST Image'.</p>
 <p>In this notebook, we will demonstrate how to set up your environment to analyze HST data with links to several resources, as well as a demonstration of how to download observations from the HST archive and their associated reference files.</p>
 
 </div>
@@ -13139,7 +13100,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class='alert-info'>Before working with HST data, users are advised to consult both the data handbooks and the instrument team websites for the instrument of interest. Additional useful discussion of the drizzling algorithm and of how distortion information is represented in the image header may be found in the <a href="http://documents.stsci.edu/hst/HST_overview/documents/DrizzlePac/DrizzlePac.cover.html">DrizzlePac Handbook</a>.</div>
+<div class='alert-info'>Before working with HST data, users are advised to consult both the data handbooks and the instrument team websites for the instrument of interest. Additional useful discussion of the drizzling algorithm and of how distortion information is represented in the image header may be found in the <a href="http://www.stsci.edu/scientific-community/software/drizzlepac.html">DrizzlePac Handbook</a>.</div>
 </div>
 </div>
 </div>
@@ -13147,7 +13108,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Notes about HST files:</strong></p>
-<p>HST images are stored using the Flexible Image Transport System (FITS). In particular, HST data use a multi-extension FITS (MEF) format. In this format, science data, error arrays, and data quality information for a single observation are stored as different extensions within a single file. The data format for the detector you are working with may be found in your instrument's data handbook, e.g. for <a href="http://www.stsci.edu/hst/wfc3/documents/handbooks/currentDHB/wfc3_cover.html">WFC3</a> and <a href="http://www.stsci.edu/hst/acs/documents/handbooks/currentDHB/acs_cover.html">ACS</a>.</p>
+<p>HST images are stored using the Flexible Image Transport System (FITS). In particular, HST data use a multi-extension FITS (MEF) format. In this format, science data, error arrays, and data quality information for a single observation are stored as different extensions within a single file. The data format for the detector you are working with may be found in your instrument's data handbook, e.g. for <a href="https://hst-docs.stsci.edu/display/WFC3IHB">WFC3</a> and <a href="https://hst-docs.stsci.edu/display/ACSIHB/ACS+Instrument+Handbook">ACS</a>.</p>
 <p><strong>Recent changes to ACS/WFC and WFC3/UVIS data quality flags:</strong></p>
 <p>In early 2017, the ACS instrument team changed the definition of data quality (DQ) flags populated in the calibrated FLT/FLC files. New calibration techniques now make it possible discern between unstable and stable hot pixels, the later of which are corrected by ‘calacs’ when subtracting the dark. Thus, pixels identified as hot and stable (DQ flag=16) may now be treated as 'good' data when drizzling, and those identified as unstable (DQ flag=32) should be treated as 'bad'. A new MDRIZTAB reference table (16r12191j_mdz.fits) was delivered in June 2017 and contains a set of default parameters for combining exposures with AstroDrizzle. With changes to the DQ flag definitions, the parameters 'driz_sep_bits' and 'final_bits', which define DQ flags for drizzle to ignore (e.g. to treat as good), are now set to a value of 336 (the sum of 16+64+256) so that stable hot pixels, warm pixels, and full-well saturated pixels will not be rejected when combining exposures. For details, see <a href="http://www.stsci.edu/hst/acs/documents/isrs/isr1705.pdf">ACS ISR 2017-05</a>.</p>
 <p>The WFC3 instrument team implemented a similar change to the DQ flag definitions in December 2018, and an updated MDRIZTAB reference file (2ck18260i_mdz.fits) reflects the new recommended drizzle parameter settings such that DQ flag values 16, 64, and 256 are treated as good pixels. These new flags are valid for UVIS observations obtained after Nov 08 2012, when the dark calibration program began using post-flash to mitigate hot pixel trailing due to poor charge transfer efficiency at low background levels. A description of the new UVIS bad pixel tables is described in <a href="http://www.stsci.edu/hst/wfc3/documents/ISRs/WFC3-2018-15.pdf">WFC3 ISR 2018-15</a>.</p>
@@ -13170,10 +13131,12 @@ div#notebook {
 <h2 id="Required-Software">Required Software<a class="anchor-link" href="#Required-Software">&#182;</a></h2><p>Anaconda is a method of managing python package installations in various environments and AstroConda adds STScI specific astronomy-related Python packages. Users unfamiliar with Anaconda/Astroconda should see the <a href="https://astroconda.readthedocs.io/en/latest/">documentation</a>. One must first install Anaconda and then they can use our Astroconda channel within Anaconda. <strong>For most users</strong>, the standard Python 3 software stack that <strong>does not include IRAF/PyRAF</strong> is appropriate and should be used for DrizzlePac.</p>
 <p><strong>Please be sure you have the latest version of AstroConda.</strong> The AstroConda page on <a href="https://astroconda.readthedocs.io/en/latest/updating.html">updating your software stack</a> goes into more detail, but you can update your base <code>conda</code> installation and <em>everything</em> installed in your AstroConda environment (assuming it is named "astroconda") by typing in a bash shell:</p>
 
-<pre><code>source deactivate
+<pre><code>conda deactivate
 conda update --all
 conda update -n astroconda --all
-source activate astroconda</code></pre>
+conda activate astroconda</code></pre>
+<p><strong>Please complete the previous step even if you have JUST installed AstroConda or Conda as it is necessary to ensure all updates.</strong></p>
+<p>For example, a newer change has made the <code>activate/deactivate</code> command above begin with <code>conda</code> instead of <code>source</code>. You should update everything to ensure you stay up-to-date with the software.</p>
 <p>In addition to the default AstroConda configuration, many DrizzlePac examples will use <a href="https://astroquery.readthedocs.io/en/latest/">astroquery</a> to obtain data from the Mikulski Archive for Space Telescopes (MAST). To install this, type the following in your bash shell:</p>
 
 <pre><code>conda install -c astropy astroquery</code></pre>
@@ -13183,6 +13146,13 @@ source activate astroconda</code></pre>
 <pre><code>conda install -c astropy ccdproc</code></pre>
 <p>For each of the tutorials, a 'requirements.txt' file is present in the directory along with the notebook which lists any other package dependencies.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class='alert-info'>It should be noted that these notebooks are not tutorials for conda or python, but all steps needed to work with DrizzlePac are explained herein. There are in-depth introductions to conda available <a href="https://astroconda.readthedocs.io/en/latest/getting_started.html">here</a> and to python available <a href="https://www.python.org/about/gettingstarted/">here</a>. </div>
 </div>
 </div>
 </div>
@@ -13213,7 +13183,7 @@ source activate astroconda</code></pre>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="k">import</span> <span class="n">Observations</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Observations</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">shutil</span>
 <span class="kn">import</span> <span class="nn">stwcs</span>
@@ -13258,6 +13228,17 @@ source activate astroconda</code></pre>
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>WARNING: AstropyDeprecationWarning: Criteria obstype argument will disappear in May 2019. Criteria &#39;obstype&#39; is now &#39;intentType&#39;, options are &#39;science&#39; or &#39;calibration&#39;, if intentType is not supplied all observations (science and calibration) are returned. [astroquery.mast.core]
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
@@ -13309,13 +13290,14 @@ source activate astroconda</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reference-Files">Reference Files<a class="anchor-link" href="#Reference-Files">&#182;</a></h2><p>HST data require reference files that specify calibration information. There are many types of reference files for each detector, so care should be taken to ensure that all necessary reference files for a particular dataset have been retrieved. The path to the reference files for each instrument (e.g., WFC3, ACS, WFPC2) is indicated with the appropriate environment variable. For the instruments supported by DrizzlePac, these are:</p>
+<h2 id="Reference-Files">Reference Files<a class="anchor-link" href="#Reference-Files">&#182;</a></h2><p>HST data require reference files that specify calibration information. <code>Drizzlepac</code> also needs various reference files in order to calibrate properly, so it's important to follow these instructions to allow <code>DrizzlePac</code> access to these needed calibration files.</p>
+<p>There are many types of reference files for each detector, so care should be taken to ensure that all necessary reference files for a particular dataset have been retrieved. The path to the reference files for each instrument (e.g., WFC3, ACS, WFPC2) is indicated with the appropriate environment variable. For the instruments supported by DrizzlePac, these are:</p>
 <ul>
 <li>ACS = jref</li>
 <li>WFC3 = iref</li>
 <li>WFPC2 = uref</li>
 </ul>
-<p>The Calibration Reference Data System (CRDS) both stores the reference files and determines the mapping of reference files to observations. The <code>crds</code> tool included in AstroConda can find and download the best reference files for a particular observation. The <a href="https://hst-crds.stsci.edu/static/users_guide/index.html">documentation</a> for <code>crds</code> describes many of the more advanced options, but we will demonstrate here how to obtain update reference file information stored in the FITS header of an observation and also download those files to a local directory.</p>
+<p>The Calibration Reference Data System (CRDS) both stores the reference files and determines the mapping of reference files to observations. The <code>crds</code> tool included in AstroConda can find and download the best reference files for a particular observation. The <a href="https://hst-crds.stsci.edu/static/users_guide/index.html">documentation</a> for <code>crds</code> describes many of the more advanced options, but we will demonstrate here how to obtain updated reference file information stored in the FITS header of an observation and also download those files to a local directory.</p>
 <p>First we need to set some environment variables:</p>
 <ul>
 <li>CRDS_SERVER_URL: Location of the CRDS server.</li>
@@ -13443,24 +13425,6 @@ source activate astroconda</code></pre>
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>WARNING: AstropyDeprecationWarning: 
-Private attributes &#34;_naxis1&#34; and &#34;_naxis2&#34; have been deprecated since v3.1.
-Instead use the &#34;pixel_shape&#34; property which returns a list of NAXISj keyword values.
- [astropy.wcs.wcs]
-WARNING: AstropyDeprecationWarning: 
-Private attributes &#34;_naxis1&#34; and &#34;_naxis2&#34; have been deprecated since v3.1.
-Instead use the &#34;pixel_shape&#34; property which returns a list of NAXISj keyword values.
- [astropy.wcs.wcs]
-</pre>
-</div>
-</div>
 
 <div class="output_area">
 
