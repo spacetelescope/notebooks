@@ -16,7 +16,9 @@ logger = logging.getLogger(__file__)
 
 def main():
     import sys; os
-    repo_path = os.path.join(os.getcwd(), '..')
+    repo_path = os.getcwd()
+    logger.info(f'Added path[{repo_path}]')
+    sys.path.append(repo_path)
     import convert
     # args = make_parser().parse_args()
     # # Used for debugging the .circleci pipeline
