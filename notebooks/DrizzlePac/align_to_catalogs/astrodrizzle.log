@@ -1,43 +1,19 @@
 [INFO    ] Setting up logfile :  astrodrizzle.log
-[INFO    ] AstroDrizzle Version 2.2.6 (2018-11-02 15:37:13 -0400) started at: 18:34:43.596 (04/06/2019)
+[INFO    ] AstroDrizzle Version 3.1.3 (2019-11-06 14:37:50 -0500) started at: 01:09:39.699 (18/12/2019)
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 7.3.0]
-[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
-[INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.2 
-[INFO    ] stwcs Version -> 1.4.2 
-[INFO    ] ==== Processing Step  Initialization  started at  18:34:43.602 (04/06/2019)
+[INFO    ] Python Version [Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.7.5 (default, Oct 25 2019, 10:52:18) 
+[INFO    ] numpy Version -> 1.17.4 
+[INFO    ] astropy Version -> 3.2.3 
+[INFO    ] stwcs Version -> 1.5.3 
+[INFO    ] ==== Processing Step  Initialization  started at  01:09:39.7 (18/12/2019)
 [INFO    ] Executing serially
 [INFO    ] Setting up output name: f606w_drc.fits
 [INFO    ] -Creating imageObject List as input for processing steps.
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Reading in MDRIZSKY of 15.34393882751465
 [INFO    ] Reading in MDRIZSKY of 15.34393882751465
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Reading in MDRIZSKY of 13.07778835296631
 [INFO    ] Reading in MDRIZSKY of 13.07778835296631
 [INFO    ] No context image will be created for ibwb01xrq_flc.fits
@@ -52,10 +28,10 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 290.2397214561937  37.79477400808415  
+[INFO    ] CRVAL : 290.2397215117102  37.79477401246605  
 [INFO    ] CRPIX : 2065.5  3222.5  
-[INFO    ] CD1_1 CD1_2  : -6.151227339310262e-06  -9.126042988064316e-06  
-[INFO    ] CD2_1 CD2_2  : -9.126042988064316e-06  6.151227339310262e-06  
+[INFO    ] CD1_1 CD1_2  : -6.1512273393101596e-06  -9.126042988064386e-06  
+[INFO    ] CD2_1 CD2_2  : -9.126042988064386e-06  6.1512273393101596e-06  
 [INFO    ] NAXIS : 4131  6445
 [INFO    ] ********************************************************************************
 [INFO    ] *
@@ -65,7 +41,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] *  Cores available:         4
 [INFO    ] *
 [INFO    ] ********************************************************************************
-[INFO    ] ==== Processing Step  Initialization  finished at  18:34:44.722 (04/06/2019)
+[INFO    ] ==== Processing Step  Initialization  finished at  01:09:40.414 (18/12/2019)
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	build :	False
@@ -84,7 +60,7 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	stepsize :	10
 [INFO    ] 	updatewcs :	False
 [INFO    ] 	wcskey :	
-[INFO    ] ==== Processing Step  Static Mask  started at  18:34:44.732 (04/06/2019)
+[INFO    ] ==== Processing Step  Static Mask  started at  01:09:40.423 (18/12/2019)
 [INFO    ] USER INPUT PARAMETERS for Static Mask Step:
 [INFO    ] 	static :	True
 [INFO    ] 	static_sig :	4.0
@@ -98,9 +74,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]   mode = 12.742882;   rms = 9.756549;   static_sig = 4.00
 [INFO    ] Saving static mask to disk: ./WFC3UVIS_2051x4096_1_staticMask.fits
 [INFO    ] Saving static mask to disk: ./WFC3UVIS_2051x4096_2_staticMask.fits
-[INFO    ] ==== Processing Step  Static Mask  finished at  18:34:46.034 (04/06/2019)
+[INFO    ] ==== Processing Step  Static Mask  finished at  01:09:41.295 (18/12/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Subtract Sky  started at  18:34:46.037 (04/06/2019)
+[INFO    ] ==== Processing Step  Subtract Sky  started at  01:09:41.297 (18/12/2019)
 [INFO    ] USER INPUT PARAMETERS for Sky Subtraction Step:
 [INFO    ] 	sky_bits :	0
 [INFO    ] 	skyclip :	5
@@ -116,8 +92,8 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	skyusigma :	4.0
 [INFO    ] 	skywidth :	0.1
 [INFO    ] 	use_static :	True
-[INFO    ] ***** skymatch started on 2019-06-04 18:34:46.388955
-[INFO    ]       Version 1.0.2 (2019-03-07 00:54:44 -0500)
+[INFO    ] ***** skymatch started on 2019-12-18 01:09:41.532481
+[INFO    ]       Version 1.0.4 (2019-05-30 14:31:23 -0400)
 [INFO    ] 
 [INFO    ] 'skymatch' task will apply computed sky differences to input image file(s).
 [INFO    ] 
@@ -183,11 +159,11 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]        -  EXT = 'SCI',1   delta(MDRIZSKY) = 0
 [INFO    ]        -  EXT = 'SCI',2   delta(MDRIZSKY) = 0
 [INFO    ] 
-[INFO    ] ***** skymatch ended on 2019-06-04 18:34:48.069226
-[INFO    ] TOTAL RUN TIME: 0:00:01.680271
-[INFO    ] ==== Processing Step  Subtract Sky  finished at  18:34:48.207 (04/06/2019)
+[INFO    ] ***** skymatch ended on 2019-12-18 01:09:42.914024
+[INFO    ] TOTAL RUN TIME: 0:00:01.381543
+[INFO    ] ==== Processing Step  Subtract Sky  finished at  01:09:43.137 (18/12/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Separate Drizzle  started at  18:34:48.210 (04/06/2019)
+[INFO    ] ==== Processing Step  Separate Drizzle  started at  01:09:43.139 (18/12/2019)
 [INFO    ] Interpreted paramDict with single=True as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'kernel': 'turbo', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'bits': 96, 'compress': False, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Separate Drizzle Step:
@@ -213,45 +189,45 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 290.2397214561937  37.79477400808415  
+[INFO    ] CRVAL : 290.2397215117102  37.79477401246605  
 [INFO    ] CRPIX : 2065.5  3222.5  
-[INFO    ] CD1_1 CD1_2  : -6.151227339310262e-06  -9.126042988064316e-06  
-[INFO    ] CD2_1 CD2_2  : -9.126042988064316e-06  6.151227339310262e-06  
+[INFO    ] CD1_1 CD1_2  : -6.1512273393101596e-06  -9.126042988064386e-06  
+[INFO    ] CD2_1 CD2_2  : -9.126042988064386e-06  6.1512273393101596e-06  
 [INFO    ] NAXIS : 4131  6445
 [INFO    ] Executing 2 parallel workers
-[INFO    ] -Drizzle input: ibwb01xrq_flc.fits[sci,1]
 [INFO    ] -Drizzle input: ibwb01xxq_flc.fits[sci,1]
-[INFO    ] Applying sky value of 2.106118 to ibwb01xrq_flc.fits[sci,1]
+[INFO    ] -Drizzle input: ibwb01xrq_flc.fits[sci,1]
 [INFO    ] Applying sky value of 0.000000 to ibwb01xxq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 2.106119 to ibwb01xrq_flc.fits[sci,1]
+[INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
-[INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] -Drizzle input: ibwb01xrq_flc.fits[sci,2]
 [INFO    ] -Drizzle input: ibwb01xxq_flc.fits[sci,2]
-[INFO    ] Applying sky value of 2.106118 to ibwb01xrq_flc.fits[sci,2]
+[INFO    ] -Drizzle input: ibwb01xrq_flc.fits[sci,2]
 [INFO    ] Applying sky value of 0.000000 to ibwb01xxq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 2.106119 to ibwb01xrq_flc.fits[sci,2]
+[INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
-[INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = turbo
 
 [INFO    ] -Drizzling using kernel = turbo
 
-[INFO    ] -Generating simple FITS output: ibwb01xxq_single_sci.fits
 [INFO    ] -Generating simple FITS output: ibwb01xrq_single_sci.fits
-[INFO    ] Writing out image to disk: ibwb01xxq_single_sci.fits
+[INFO    ] -Generating simple FITS output: ibwb01xxq_single_sci.fits
 [INFO    ] Writing out image to disk: ibwb01xrq_single_sci.fits
-[INFO    ] Writing out image to disk: ibwb01xxq_single_wht.fits
+[INFO    ] Writing out image to disk: ibwb01xxq_single_sci.fits
 [INFO    ] Writing out image to disk: ibwb01xrq_single_wht.fits
-[INFO    ] ==== Processing Step  Separate Drizzle  finished at  18:34:51.421 (04/06/2019)
+[INFO    ] Writing out image to disk: ibwb01xxq_single_wht.fits
+[INFO    ] ==== Processing Step  Separate Drizzle  finished at  01:09:46.753 (18/12/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Create Median  started at  18:34:51.42 (04/06/2019)
+[INFO    ] ==== Processing Step  Create Median  started at  01:09:46.761 (18/12/2019)
 [INFO    ] USER INPUT PARAMETERS for Create Median Step:
 [INFO    ] 	combine_bufsize :	None
 [INFO    ] 	combine_grow :	1
@@ -266,12 +242,12 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	median :	True
 [INFO    ] 	median_newmasks :	True
 [INFO    ] 	proc_unit :	native
-[INFO    ] reference sky value for image 'ibwb01xrq_flc.fits' is 2.1061177534677755
+[INFO    ] reference sky value for image 'ibwb01xrq_flc.fits' is 2.106119466914264
 [INFO    ] reference sky value for image 'ibwb01xxq_flc.fits' is 0.0
 [INFO    ] Saving output median image to: 'f606w_med.fits'
-[INFO    ] ==== Processing Step  Create Median  finished at  18:34:59.947 (04/06/2019)
+[INFO    ] ==== Processing Step  Create Median  finished at  01:09:55.378 (18/12/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Blot  started at  18:34:59.9 (04/06/2019)
+[INFO    ] ==== Processing Step  Blot  started at  01:09:55.380 (18/12/2019)
 [INFO    ] USER INPUT PARAMETERS for Blot Step:
 [INFO    ] 	blot_addsky :	True
 [INFO    ] 	blot_interp :	poly5
@@ -280,12 +256,12 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	coeffs :	True
 [INFO    ]     Blot: creating blotted image:  ibwb01xrq_flc.fits[sci,1]
 [INFO    ] Using default C-based coordinate transformation...
-[INFO    ] Applying sky value of 2.106118 to blotted image ibwb01xrq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 2.106119 to blotted image ibwb01xrq_flc.fits[sci,1]
 [INFO    ] -Generating simple FITS output: ibwb01xrq_sci1_blt.fits
 [INFO    ] Writing out image to disk: ibwb01xrq_sci1_blt.fits
 [INFO    ]     Blot: creating blotted image:  ibwb01xrq_flc.fits[sci,2]
 [INFO    ] Using default C-based coordinate transformation...
-[INFO    ] Applying sky value of 2.106118 to blotted image ibwb01xrq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 2.106119 to blotted image ibwb01xrq_flc.fits[sci,2]
 [INFO    ] -Generating simple FITS output: ibwb01xrq_sci2_blt.fits
 [INFO    ] Writing out image to disk: ibwb01xrq_sci2_blt.fits
 [INFO    ]     Blot: creating blotted image:  ibwb01xxq_flc.fits[sci,1]
@@ -298,9 +274,9 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] Applying sky value of 0.000000 to blotted image ibwb01xxq_flc.fits[sci,2]
 [INFO    ] -Generating simple FITS output: ibwb01xxq_sci2_blt.fits
 [INFO    ] Writing out image to disk: ibwb01xxq_sci2_blt.fits
-[INFO    ] ==== Processing Step  Blot  finished at  18:35:07.371 (04/06/2019)
+[INFO    ] ==== Processing Step  Blot  finished at  01:10:01.29 (18/12/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Driz_CR  started at  18:35:07.373 (04/06/2019)
+[INFO    ] ==== Processing Step  Driz_CR  started at  01:10:01.298 (18/12/2019)
 [INFO    ] USER INPUT PARAMETERS for Driz_CR Step:
 [INFO    ] 	crbit :	4096
 [INFO    ] 	driz_cr :	True
@@ -311,13 +287,13 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	driz_cr_snr :	3.5 3.0
 [INFO    ] 	inmemory :	False
 [INFO    ] Executing 2 parallel workers
-[INFO    ] Creating output :  ibwb01xrq_sci1_crmask.fits
-[INFO    ] Creating output :  ibwb01xxq_sci1_crmask.fits
-[INFO    ] Creating output :  ibwb01xrq_sci2_crmask.fits
-[INFO    ] Creating output :  ibwb01xxq_sci2_crmask.fits
-[INFO    ] ==== Processing Step  Driz_CR  finished at  18:35:13.926 (04/06/2019)
+[INFO    ] Creating output: ibwb01xrq_sci1_crmask.fits
+[INFO    ] Creating output: ibwb01xxq_sci1_crmask.fits
+[INFO    ] Creating output: ibwb01xrq_sci2_crmask.fits
+[INFO    ] Creating output: ibwb01xxq_sci2_crmask.fits
+[INFO    ] ==== Processing Step  Driz_CR  finished at  01:10:05.002 (18/12/2019)
 [INFO    ] 
-[INFO    ] ==== Processing Step  Final Drizzle  started at  18:35:13.943 (04/06/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  started at  01:10:05.01 (18/12/2019)
 [INFO    ] Interpreted paramDict with single=False as:
 {'build': False, 'stepsize': 10, 'coeffs': True, 'wcskey': '', 'wht_type': 'EXP', 'kernel': 'square', 'wt_scl': 'exptime', 'pixfrac': 1.0, 'fillval': None, 'maskval': None, 'bits': 96, 'units': 'cps'}
 [INFO    ] USER INPUT PARAMETERS for Final Drizzle Step:
@@ -342,20 +318,20 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Number of WCS axes: 2
 [INFO    ] CTYPE : 'RA---TAN'  'DEC--TAN'  
-[INFO    ] CRVAL : 290.2397214561937  37.79477400808415  
+[INFO    ] CRVAL : 290.2397215117102  37.79477401246605  
 [INFO    ] CRPIX : 2065.5  3222.5  
-[INFO    ] CD1_1 CD1_2  : -6.151227339310262e-06  -9.126042988064316e-06  
-[INFO    ] CD2_1 CD2_2  : -9.126042988064316e-06  6.151227339310262e-06  
+[INFO    ] CD1_1 CD1_2  : -6.1512273393101596e-06  -9.126042988064386e-06  
+[INFO    ] CD2_1 CD2_2  : -9.126042988064386e-06  6.1512273393101596e-06  
 [INFO    ] NAXIS : 4131  6445
 [INFO    ] -Drizzle input: ibwb01xrq_flc.fits[sci,1]
-[INFO    ] Applying sky value of 2.106118 to ibwb01xrq_flc.fits[sci,1]
+[INFO    ] Applying sky value of 2.106119 to ibwb01xrq_flc.fits[sci,1]
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 1
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
 [INFO    ] -Drizzling using kernel = square
 
 [INFO    ] -Drizzle input: ibwb01xrq_flc.fits[sci,2]
-[INFO    ] Applying sky value of 2.106118 to ibwb01xrq_flc.fits[sci,2]
+[INFO    ] Applying sky value of 2.106119 to ibwb01xrq_flc.fits[sci,2]
 [INFO    ] Applying EXPTIME weighting to DQ mask for chip 2
 [INFO    ] Using WCSLIB-based coordinate transformation...
 [INFO    ] stepsize = 10
@@ -378,30 +354,26 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] -Generating simple FITS output: f606w_drc_sci.fits
 [INFO    ] Writing out image to disk: f606w_drc_sci.fits
 [INFO    ] Writing out image to disk: f606w_drc_wht.fits
-[INFO    ] ==== Processing Step  Final Drizzle  finished at  18:35:27.693 (04/06/2019)
+[INFO    ] ==== Processing Step  Final Drizzle  finished at  01:10:17.04 (18/12/2019)
 [INFO    ] 
 [INFO    ] 
-[INFO    ] AstroDrizzle Version 2.2.6 is finished processing at 18:35:27.69 (04/06/2019).
+[INFO    ] AstroDrizzle Version 3.1.3 is finished processing at 01:10:17.047 (18/12/2019).
 [INFO    ] 
 [INFO    ] 
 [INFO    ]    --------------------          --------------------
 [INFO    ]                    Step          Elapsed time
 [INFO    ]    --------------------          --------------------
 [INFO    ] 
-[INFO    ]          Initialization          1.1205 sec.
-[INFO    ]             Static Mask          1.3021 sec.
-[INFO    ]            Subtract Sky          2.1701 sec.
-[INFO    ]        Separate Drizzle          3.2115 sec.
-[INFO    ]           Create Median          8.5232 sec.
-[INFO    ]                    Blot          7.4204 sec.
-[INFO    ]                 Driz_CR          6.5526 sec.
-[INFO    ]           Final Drizzle          13.7502 sec.
+[INFO    ]          Initialization          0.7092 sec.
+[INFO    ]             Static Mask          0.8712 sec.
+[INFO    ]            Subtract Sky          1.8398 sec.
+[INFO    ]        Separate Drizzle          3.6138 sec.
+[INFO    ]           Create Median          8.6173 sec.
+[INFO    ]                    Blot          5.9156 sec.
+[INFO    ]                 Driz_CR          3.7033 sec.
+[INFO    ]           Final Drizzle          12.0302 sec.
 [INFO    ]    ====================          ====================
-[INFO    ]                   Total          44.0506 sec.
+[INFO    ]                   Total          37.3005 sec.
 [INFO    ] Removing intermediate files for ibwb01xrq_flc.fits
 [INFO    ] Removing intermediate files for ibwb01xxq_flc.fits
 [INFO    ] Trailer file written to:  astrodrizzle.log
-[ERROR   ] Invalid alias: The name clear can't be aliased because it is another magic command.
-[ERROR   ] Invalid alias: The name more can't be aliased because it is another magic command.
-[ERROR   ] Invalid alias: The name less can't be aliased because it is another magic command.
-[ERROR   ] Invalid alias: The name man can't be aliased because it is another magic command.

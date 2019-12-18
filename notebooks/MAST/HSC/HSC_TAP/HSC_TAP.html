@@ -13295,8 +13295,8 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 
 <div class="output_subarea output_text output_error">
 <pre>
-
-<span class="ansi-red-fg">KeyError</span>Traceback (most recent call last)
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
 <span class="ansi-green-fg">&lt;ipython-input-3-cec91d928ba8&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>HSC_tables <span class="ansi-blue-fg">=</span> HSC_service<span class="ansi-blue-fg">.</span>load_tables<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;\n&#39;</span><span class="ansi-blue-fg">)</span>
@@ -13304,79 +13304,79 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">if</span><span class="ansi-blue-fg">(</span> table<span class="ansi-blue-fg">.</span>name <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;dbo.SumMagAper2CatView&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">      5</span>         print<span class="ansi-blue-fg">(</span>table<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
 <span class="ansi-green-intense-fg ansi-bold">    807</span>         return self._Tap__load_tables(only_names=only_names,
 <span class="ansi-green-intense-fg ansi-bold">    808</span>                                       include_shared_tables<span class="ansi-blue-fg">=</span>include_shared_tables<span class="ansi-blue-fg">,</span>  <span class="ansi-red-fg"># noqa</span>
 <span class="ansi-green-fg">--&gt; 809</span><span class="ansi-red-fg">                                       verbose=verbose)
 </span><span class="ansi-green-intense-fg ansi-bold">    810</span> 
 <span class="ansi-green-intense-fg ansi-bold">    811</span>     <span class="ansi-green-fg">def</span> load_data<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> params_dict<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> output_file<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">__load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">__load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
 <span class="ansi-green-intense-fg ansi-bold">    235</span>         log<span class="ansi-blue-fg">.</span>info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Parsing tables...&#34;</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    236</span>         tsp <span class="ansi-blue-fg">=</span> TableSaxParser<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-fg">--&gt; 237</span><span class="ansi-red-fg">         </span>tsp<span class="ansi-blue-fg">.</span>parseData<span class="ansi-blue-fg">(</span>response<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    238</span>         log<span class="ansi-blue-fg">.</span>info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Done.&#34;</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    239</span>         <span class="ansi-green-fg">return</span> tsp<span class="ansi-blue-fg">.</span>get_tables<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">parseData</span><span class="ansi-blue-fg">(self, data)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">parseData</span><span class="ansi-blue-fg">(self, data)</span>
 <span class="ansi-green-intense-fg ansi-bold">     65</span>         <span class="ansi-green-fg">del</span> self<span class="ansi-blue-fg">.</span>__tables<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span>
 <span class="ansi-green-intense-fg ansi-bold">     66</span>         self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">=</span> READING_SCHEMA
 <span class="ansi-green-fg">---&gt; 67</span><span class="ansi-red-fg">         </span>xml<span class="ansi-blue-fg">.</span>sax<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     68</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>__tables
 <span class="ansi-green-intense-fg ansi-bold">     69</span> 
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/__init__.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(source, handler, errorHandler)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/__init__.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(source, handler, errorHandler)</span>
 <span class="ansi-green-intense-fg ansi-bold">     31</span>     parser<span class="ansi-blue-fg">.</span>setContentHandler<span class="ansi-blue-fg">(</span>handler<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     32</span>     parser<span class="ansi-blue-fg">.</span>setErrorHandler<span class="ansi-blue-fg">(</span>errorHandler<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-fg">---&gt; 33</span><span class="ansi-red-fg">     </span>parser<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>source<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     34</span> 
 <span class="ansi-green-intense-fg ansi-bold">     35</span> <span class="ansi-green-fg">def</span> parseString<span class="ansi-blue-fg">(</span>string<span class="ansi-blue-fg">,</span> handler<span class="ansi-blue-fg">,</span> errorHandler<span class="ansi-blue-fg">=</span>ErrorHandler<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
 <span class="ansi-green-intense-fg ansi-bold">    109</span>             self<span class="ansi-blue-fg">.</span>reset<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    110</span>             self<span class="ansi-blue-fg">.</span>_cont_handler<span class="ansi-blue-fg">.</span>setDocumentLocator<span class="ansi-blue-fg">(</span>ExpatLocator<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-fg">--&gt; 111</span><span class="ansi-red-fg">             </span>xmlreader<span class="ansi-blue-fg">.</span>IncrementalParser<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> source<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    112</span>         <span class="ansi-green-fg">except</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">    113</span>             <span class="ansi-red-fg"># bpo-30264: Close the source on error to not leak resources:</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
 <span class="ansi-green-intense-fg ansi-bold">    123</span>         buffer <span class="ansi-blue-fg">=</span> file<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_bufsize<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    124</span>         <span class="ansi-green-fg">while</span> buffer<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 125</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>feed<span class="ansi-blue-fg">(</span>buffer<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    126</span>             buffer <span class="ansi-blue-fg">=</span> file<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_bufsize<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    127</span>         self<span class="ansi-blue-fg">.</span>close<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, data, isFinal)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, data, isFinal)</span>
 <span class="ansi-green-intense-fg ansi-bold">    215</span>             <span class="ansi-red-fg"># document. When feeding chunks, they are not normally final -</span>
 <span class="ansi-green-intense-fg ansi-bold">    216</span>             <span class="ansi-red-fg"># except when invoked from close.</span>
 <span class="ansi-green-fg">--&gt; 217</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_parser<span class="ansi-blue-fg">.</span>Parse<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> isFinal<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    218</span>         <span class="ansi-green-fg">except</span> expat<span class="ansi-blue-fg">.</span>error <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">    219</span>             exc <span class="ansi-blue-fg">=</span> SAXParseException<span class="ansi-blue-fg">(</span>expat<span class="ansi-blue-fg">.</span>ErrorString<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">.</span>code<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> e<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/tmp/build/80754af9/python_1564510748219/work/Modules/pyexpat.c</span> in <span class="ansi-cyan-fg">StartElement</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">/opt/concourse/worker/volumes/live/5ef35e25-0651-4251-5136-78db382b9314/volume/python_1572016161519/work/Modules/pyexpat.c</span> in <span class="ansi-cyan-fg">StartElement</span><span class="ansi-blue-fg">()</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">start_element</span><span class="ansi-blue-fg">(self, name, attrs)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">start_element</span><span class="ansi-blue-fg">(self, name, attrs)</span>
 <span class="ansi-green-intense-fg ansi-bold">    331</span>     <span class="ansi-red-fg"># event handlers</span>
 <span class="ansi-green-intense-fg ansi-bold">    332</span>     <span class="ansi-green-fg">def</span> start_element<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 333</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_cont_handler<span class="ansi-blue-fg">.</span>startElement<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> AttributesImpl<span class="ansi-blue-fg">(</span>attrs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    334</span> 
 <span class="ansi-green-intense-fg ansi-bold">    335</span>     <span class="ansi-green-fg">def</span> end_element<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">startElement</span><span class="ansi-blue-fg">(self, name, attrs)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">startElement</span><span class="ansi-blue-fg">(self, name, attrs)</span>
 <span class="ansi-green-intense-fg ansi-bold">     72</span>             self<span class="ansi-blue-fg">.</span>__reading_schema<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     73</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">==</span> READING_TABLE<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">---&gt; 74</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__reading_table<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     75</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">==</span> READING_TABLE_COLUMN<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">     76</span>             self<span class="ansi-blue-fg">.</span>__reading_table_column<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">__reading_table</span><span class="ansi-blue-fg">(self, name, attrs)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">__reading_table</span><span class="ansi-blue-fg">(self, name, attrs)</span>
 <span class="ansi-green-intense-fg ansi-bold">    108</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__check_item_id<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;column&#34;</span><span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">    109</span>             self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">=</span> READING_TABLE_COLUMN
 <span class="ansi-green-fg">--&gt; 110</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__currentColumn <span class="ansi-blue-fg">=</span> TapColumn<span class="ansi-blue-fg">(</span>attrs<span class="ansi-blue-fg">.</span>getValue<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;esatapplus:flags&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    111</span> 
 <span class="ansi-green-intense-fg ansi-bold">    112</span>     <span class="ansi-green-fg">def</span> __end_table<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">getValue</span><span class="ansi-blue-fg">(self, name)</span>
+<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">getValue</span><span class="ansi-blue-fg">(self, name)</span>
 <span class="ansi-green-intense-fg ansi-bold">    291</span> 
 <span class="ansi-green-intense-fg ansi-bold">    292</span>     <span class="ansi-green-fg">def</span> getValue<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 293</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_attrs<span class="ansi-blue-fg">[</span>name<span class="ansi-blue-fg">]</span>

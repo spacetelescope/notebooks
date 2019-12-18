@@ -13164,6 +13164,10 @@ div#notebook {
 <span class="c1"># For handling ordinary astropy Tables in responses</span>
 <span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
 
+<span class="c1"># For resolving coordinates and rendering units</span>
+<span class="kn">from</span> <span class="nn">astropy</span> <span class="kn">import</span> <span class="n">units</span> <span class="k">as</span> <span class="n">u</span>
+<span class="kn">from</span> <span class="nn">astropy.coordinates</span> <span class="kn">import</span> <span class="n">SkyCoord</span>
+
 <span class="c1"># For displaying and manipulating some types of results</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">requests</span>
@@ -13407,7 +13411,7 @@ tap_schema.key_columns
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table masked=True length=6927</i>
-<table id="table140656903883912" class="table-striped table-bordered table-condensed">
+<table id="table140645982818640" class="table-striped table-bordered table-condensed">
 <thead><tr><th>objID</th><th>RAMean</th><th>DecMean</th><th>nDetections</th><th>ng</th><th>nr</th><th>ni</th><th>nz</th><th>ny</th><th>gMeanPSFMag</th><th>rMeanPSFMag</th><th>iMeanPSFMag</th><th>zMeanPSFMag</th><th>yMeanPSFMag</th></tr></thead>
 <thead><tr><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th></tr></thead>
 <thead><tr><th>int64</th><th>float64</th><th>float64</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th></tr></thead>
@@ -13454,18 +13458,17 @@ tap_schema.key_columns
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">objname</span> <span class="o">=</span> <span class="s1">&#39;KQ UMa&#39;</span>
-<span class="n">coords</span> <span class="o">=</span> <span class="n">Mast</span><span class="o">.</span><span class="n">_resolve_object</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
-<span class="n">ra</span><span class="p">,</span><span class="n">dec</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">ra</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">coords</span><span class="o">.</span><span class="n">dec</span><span class="o">.</span><span class="n">value</span>
-<span class="n">radius</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">3600.0</span> <span class="c1"># radius = 1 arcsec</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="o">.</span><span class="n">from_name</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">arcsec</span>
 
 <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT objID, RAMean, DecMean, nDetections, ng, nr, ni, nz, ny, gMeanPSFMag, </span>
 <span class="s2">    rMeanPSFMag, iMeanPSFMag, zMeanPSFMag, yMeanPSFMag</span>
 <span class="s2">FROM dbo.MeanObjectView</span>
 <span class="s2">WHERE</span>
-<span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, RAMean, DecMean),CIRCLE(&#39;ICRS&#39;,</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">))=1</span>
+<span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, RAMean, DecMean),CIRCLE(&#39;ICRS&#39;,{:.value},{:.value},{:.value}))=1</span>
 <span class="s2">AND nDetections &gt; 1</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span><span class="n">dec</span><span class="p">,</span><span class="n">radius</span><span class="p">)</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">coord</span><span class="o">.</span><span class="n">ra</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">coord</span><span class="o">.</span><span class="n">dec</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">radius</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">degree</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
 <span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
@@ -13488,16 +13491,16 @@ tap_schema.key_columns
 
 <div class="output_subarea output_text output_error">
 <pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-5-91e514a36090&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     10</span> CONTAINS<span class="ansi-blue-fg">(</span>POINT<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;ICRS&#39;</span><span class="ansi-blue-fg">,</span> RAMean<span class="ansi-blue-fg">,</span> DecMean<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>CIRCLE<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;ICRS&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span> AND nDetections <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">1</span>
+<span class="ansi-green-fg">---&gt; 12</span><span class="ansi-red-fg"> &#34;&#34;&#34;.format(coord.ra.deg, coord.dec.deg, radius.to(u.degree))
+</span><span class="ansi-green-intense-fg ansi-bold">     13</span> print<span class="ansi-blue-fg">(</span>query<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span> 
 
-<span class="ansi-red-fg">AttributeError</span>Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-5-d3d63fe93a98&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> objname <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;KQ UMa&#39;</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>coords <span class="ansi-blue-fg">=</span> Mast<span class="ansi-blue-fg">.</span>_resolve_object<span class="ansi-blue-fg">(</span>objname<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> ra<span class="ansi-blue-fg">,</span>dec <span class="ansi-blue-fg">=</span> coords<span class="ansi-blue-fg">.</span>ra<span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">,</span>coords<span class="ansi-blue-fg">.</span>dec<span class="ansi-blue-fg">.</span>value
-<span class="ansi-green-intense-fg ansi-bold">      4</span> radius <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">/</span><span class="ansi-cyan-fg">3600.0</span> <span class="ansi-red-fg"># radius = 1 arcsec</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> 
-
-<span class="ansi-red-fg">AttributeError</span>: &#39;MastClass&#39; object has no attribute &#39;_resolve_object&#39;</pre>
+<span class="ansi-red-fg">NameError</span>: name &#39;coord&#39; is not defined</pre>
 </div>
 </div>
 

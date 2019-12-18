@@ -1,13 +1,13 @@
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 18:31:31.559 (04/06/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 01:11:45.346 (18/12/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 7.3.0]
-[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
-[INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.2 
-[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] Python Version [Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.7.5 (default, Oct 25 2019, 10:52:18) 
+[INFO    ] numpy Version -> 1.17.4 
+[INFO    ] astropy Version -> 3.2.3 
+[INFO    ] stwcs Version -> 1.5.3 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	clean :	False
@@ -61,74 +61,50 @@
 [INFO    ] 	writecat :	True
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 18:31:31.761 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 01:11:45.524 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 18:31:32.844 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:46.55 (18/12/2019)
 [INFO    ]      Found 8449 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 18:31:32.99 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 01:11:46.72 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 18:31:34.086 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:47.697 (18/12/2019)
 [INFO    ]      Found 8582 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 17031
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 18:31:34.519 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 01:11:48.050 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 18:31:35.542 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:49.025 (18/12/2019)
 [INFO    ]      Found 6124 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 18:31:35.713 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 01:11:49.12 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 18:31:36.606 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:50.054 (18/12/2019)
 [INFO    ]      Found 6070 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 12194
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 18:31:37.050 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 01:11:50.453 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 18:31:37.94 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:51.386 (18/12/2019)
 [INFO    ]      Found 4621 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 18:31:38.041 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 01:11:51.480 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 18:31:38.893 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:52.359 (18/12/2019)
 [INFO    ]      Found 4713 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 9334
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 18:31:39.294 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 01:11:52.72 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 18:31:40.15 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:53.673 (18/12/2019)
 [INFO    ]      Found 4884 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 18:31:40.272 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 01:11:53.767 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 18:31:41.241 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:11:54.660 (18/12/2019)
 [INFO    ]      Found 5267 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 10151
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Converting RA/Dec positions of reference sources from "j8xi0xsaq_flc.fits" to X,Y positions in reference WCS...
 [INFO    ] 
 [INFO    ] ===============================================================
@@ -167,54 +143,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs6q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.08095952023987962 -1.0299850074962507
-[INFO    ]     with significance of  535.084843247951 and  43.0  matches
-[INFO    ] Found 152 matches for j8xi0xs6q_flc.fits...
+[INFO    ] Found initial X and Y shifts of -0.1504, -0.3482 with significance of 18.52 and 377 matches
+[INFO    ] Found 106 matches for j8xi0xs6q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs6q_flc.fits : 
-[INFO    ] XSH: -0.0230  YSH: -0.7217    ROT: 0.001987304867    SCALE: 0.999940
-[INFO    ] XRMS: 0.62    YRMS: 0.71
+[INFO    ] XSH: -0.1083  YSH: -0.3009    ROT: 359.9990055    SCALE: 0.999918
+[INFO    ] FIT XRMS: 0.38       FIT YRMS: 0.39   
+[INFO    ] FIT RMSE: 0.54       FIT MAE: 0.46   
 [INFO    ] 
-[INFO    ] RMS_RA: 1.1e-05 (deg)   RMS_DEC: 6.7e-06 (deg)
+[INFO    ] RMS_RA: 6.2e-06 (deg)   RMS_DEC: 4.3e-06 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  152  objects.
+[INFO    ] Final solution based on  106  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs6q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs6q_flc_catalog_fit.match
-[INFO    ] Total # points:  152
-[INFO    ] # of points after clipping:  152
-[INFO    ] Total # points:  152
-[INFO    ] # of points after clipping:  152
+[INFO    ] Total # points: 106
+[INFO    ] # of points after clipping: 106
+[INFO    ] Total # points: 106
+[INFO    ] # of points after clipping: 106
 [INFO    ] ....Updating header for j8xi0xs6q_flc.fits...
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',1]
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[1]
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[4]
 [INFO    ] 
 [INFO    ] ====================
@@ -222,78 +174,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs3q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.21722113502935514 -0.9843444227005875
-[INFO    ]     with significance of  505.4141650773844 and  37.0  matches
-[INFO    ] Found 116 matches for j8xi0xs3q_flc.fits...
+[INFO    ] Found initial X and Y shifts of -0.4308, -0.1162 with significance of 14.84 and 292 matches
+[INFO    ] Found 80 matches for j8xi0xs3q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs3q_flc.fits : 
-[INFO    ] XSH: -0.1846  YSH: -0.6921    ROT: 359.9951865    SCALE: 0.999931
-[INFO    ] XRMS: 0.61    YRMS: 0.72
+[INFO    ] XSH: -0.2161  YSH: -0.1794    ROT: 359.9979434    SCALE: 1.000018
+[INFO    ] FIT XRMS: 0.45       FIT YRMS: 0.36   
+[INFO    ] FIT RMSE: 0.58       FIT MAE: 0.51   
 [INFO    ] 
-[INFO    ] RMS_RA: 1.1e-05 (deg)   RMS_DEC: 6.6e-06 (deg)
+[INFO    ] RMS_RA: 6e-06 (deg)   RMS_DEC: 5.4e-06 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  116  objects.
+[INFO    ] Final solution based on  80  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs3q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs3q_flc_catalog_fit.match
-[INFO    ] Total # points:  116
-[INFO    ] # of points after clipping:  116
-[INFO    ] Total # points:  116
-[INFO    ] # of points after clipping:  116
+[INFO    ] Total # points: 80
+[INFO    ] # of points after clipping: 80
+[INFO    ] Total # points: 80
+[INFO    ] # of points after clipping: 80
 [INFO    ] ....Updating header for j8xi0xs3q_flc.fits...
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',1]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[1]
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[4]
 [INFO    ] 
 [INFO    ] ====================
@@ -301,103 +205,43 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs0q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  0.06422018348623837 -0.9486238532110107
-[INFO    ]     with significance of  282.7861382741382 and  49.0  matches
-[INFO    ] Found 134 matches for j8xi0xs0q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.156, -0.3262 with significance of 14.56 and 308 matches
+[INFO    ] Found 76 matches for j8xi0xs0q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs0q_flc.fits : 
-[INFO    ] XSH: 0.1585  YSH: -0.6700    ROT: 359.9992648    SCALE: 0.999989
-[INFO    ] XRMS: 0.67    YRMS: 0.76
+[INFO    ] XSH: 0.1793  YSH: -0.3744    ROT: 359.998793    SCALE: 0.999986
+[INFO    ] FIT XRMS: 0.38       FIT YRMS: 0.31   
+[INFO    ] FIT RMSE: 0.49       FIT MAE: 0.38   
 [INFO    ] 
-[INFO    ] RMS_RA: 1.2e-05 (deg)   RMS_DEC: 7.3e-06 (deg)
+[INFO    ] RMS_RA: 5.2e-06 (deg)   RMS_DEC: 4.4e-06 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  134  objects.
+[INFO    ] Final solution based on  76  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs0q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs0q_flc_catalog_fit.match
-[INFO    ] Total # points:  134
-[INFO    ] # of points after clipping:  134
-[INFO    ] Total # points:  134
-[INFO    ] # of points after clipping:  134
+[INFO    ] Total # points: 76
+[INFO    ] # of points after clipping: 76
+[INFO    ] Total # points: 76
+[INFO    ] # of points after clipping: 76
 [INFO    ] ....Updating header for j8xi0xs0q_flc.fits...
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',1]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[1]
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[4]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Writing out shiftfile : shift814_flc_test1.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 18:31:45.426 (04/06/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 01:12:04.43 (18/12/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 7.3.0]
-[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
-[INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.2 
-[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] Python Version [Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.7.5 (default, Oct 25 2019, 10:52:18) 
+[INFO    ] numpy Version -> 1.17.4 
+[INFO    ] astropy Version -> 3.2.3 
+[INFO    ] stwcs Version -> 1.5.3 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	clean :	False
@@ -451,59 +295,47 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	writecat :	True
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 18:31:45.636 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 01:12:04.598 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 18:31:46.731 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:05.873 (18/12/2019)
 [INFO    ]      Found 2697 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 18:31:46.838 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 01:12:05.955 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 18:31:47.782 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:07.309 (18/12/2019)
 [INFO    ]      Found 2634 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 5331
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 18:31:48.090 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 01:12:07.603 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 18:31:49.068 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:08.847 (18/12/2019)
 [INFO    ]      Found 1841 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 18:31:49.148 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 01:12:08.925 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 18:31:50.141 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:10.173 (18/12/2019)
 [INFO    ]      Found 1847 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 3688
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 18:31:50.396 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 01:12:10.406 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 18:31:51.354 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:11.634 (18/12/2019)
 [INFO    ]      Found 1350 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 18:31:51.432 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 01:12:11.707 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 18:31:52.349 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:12.934 (18/12/2019)
 [INFO    ]      Found 1396 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 2746
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 18:31:52.611 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 01:12:13.171 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 18:31:53.542 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:14.412 (18/12/2019)
 [INFO    ]      Found 1475 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 18:31:53.622 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 01:12:14.48 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 18:31:54.555 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:15.7 (18/12/2019)
 [INFO    ]      Found 1557 objects.
 [INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 3032
 [INFO    ] 
@@ -545,54 +377,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs6q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.23148148148148096 -0.2129629629629619
-[INFO    ]     with significance of  389.63675391318003 and  21.0  matches
-[INFO    ] Found 59 matches for j8xi0xs6q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.1081, -0.2149 with significance of 34.01 and 86 matches
+[INFO    ] Found 52 matches for j8xi0xs6q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs6q_flc.fits : 
-[INFO    ] XSH: 0.0040  YSH: -0.0346    ROT: 359.997893    SCALE: 1.000007
-[INFO    ] XRMS: 0.2    YRMS: 0.22
+[INFO    ] XSH: 0.0241  YSH: -0.1148    ROT: 359.9993301    SCALE: 0.999993
+[INFO    ] FIT XRMS: 0.086      FIT YRMS: 0.095  
+[INFO    ] FIT RMSE: 0.13       FIT MAE: 0.096  
 [INFO    ] 
-[INFO    ] RMS_RA: 3.5e-06 (deg)   RMS_DEC: 2.2e-06 (deg)
+[INFO    ] RMS_RA: 1.5e-06 (deg)   RMS_DEC: 9.4e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  52  objects.
+[INFO    ] Final solution based on  44  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs6q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs6q_flc_catalog_fit.match
-[INFO    ] Total # points:  52
-[INFO    ] # of points after clipping:  52
-[INFO    ] Total # points:  52
-[INFO    ] # of points after clipping:  52
+[INFO    ] Total # points: 44
+[INFO    ] # of points after clipping: 44
+[INFO    ] Total # points: 44
+[INFO    ] # of points after clipping: 44
 [INFO    ] ....Updating header for j8xi0xs6q_flc.fits...
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',1]
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[1]
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[4]
 [INFO    ] 
 [INFO    ] ====================
@@ -600,78 +408,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs3q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.678160919540229 -1.0
-[INFO    ]     with significance of  390.90868498921844 and  23.0  matches
-[INFO    ] Found 50 matches for j8xi0xs3q_flc.fits...
+[INFO    ] Found initial X and Y shifts of -0.02424, -0.05346 with significance of 30.59 and 71 matches
+[INFO    ] Found 45 matches for j8xi0xs3q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs3q_flc.fits : 
-[INFO    ] XSH: -0.0419  YSH: -0.1546    ROT: 359.9992486    SCALE: 1.000011
-[INFO    ] XRMS: 0.17    YRMS: 0.22
+[INFO    ] XSH: 0.0649  YSH: -0.2451    ROT: 359.9996905    SCALE: 0.999982
+[INFO    ] FIT XRMS: 0.055      FIT YRMS: 0.14   
+[INFO    ] FIT RMSE: 0.15       FIT MAE: 0.1    
 [INFO    ] 
-[INFO    ] RMS_RA: 3.4e-06 (deg)   RMS_DEC: 1.8e-06 (deg)
+[INFO    ] RMS_RA: 2e-06 (deg)   RMS_DEC: 4.2e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  42  objects.
+[INFO    ] Final solution based on  37  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs3q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs3q_flc_catalog_fit.match
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
+[INFO    ] Total # points: 37
+[INFO    ] # of points after clipping: 37
+[INFO    ] Total # points: 37
+[INFO    ] # of points after clipping: 37
 [INFO    ] ....Updating header for j8xi0xs3q_flc.fits...
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',1]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[1]
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[4]
 [INFO    ] 
 [INFO    ] ====================
@@ -679,103 +439,43 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs0q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.1999999999999993 -0.629999999999999
-[INFO    ]     with significance of  478.3999647949292 and  35.0  matches
-[INFO    ] Found 51 matches for j8xi0xs0q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.03332, 0.1149 with significance of 32.52 and 72 matches
+[INFO    ] Found 47 matches for j8xi0xs0q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs0q_flc.fits : 
-[INFO    ] XSH: 0.0678  YSH: -0.1044    ROT: 0.0008996595693    SCALE: 0.999982
-[INFO    ] XRMS: 0.09    YRMS: 0.11
+[INFO    ] XSH: 0.1140  YSH: -0.3754    ROT: 6.329487741e-05    SCALE: 0.999962
+[INFO    ] FIT XRMS: 0.089      FIT YRMS: 0.12   
+[INFO    ] FIT RMSE: 0.15       FIT MAE: 0.11   
 [INFO    ] 
-[INFO    ] RMS_RA: 1.8e-06 (deg)   RMS_DEC: 9.6e-07 (deg)
+[INFO    ] RMS_RA: 1.8e-06 (deg)   RMS_DEC: 9.4e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  42  objects.
+[INFO    ] Final solution based on  39  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs0q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs0q_flc_catalog_fit.match
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
+[INFO    ] Total # points: 39
+[INFO    ] # of points after clipping: 39
+[INFO    ] Total # points: 39
+[INFO    ] # of points after clipping: 39
 [INFO    ] ....Updating header for j8xi0xs0q_flc.fits...
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',1]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[1]
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[4]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Writing out shiftfile : shift814_flc_test2.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 18:31:57.811 (04/06/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 01:12:19.350 (18/12/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 7.3.0]
-[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
-[INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.2 
-[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] Python Version [Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.7.5 (default, Oct 25 2019, 10:52:18) 
+[INFO    ] numpy Version -> 1.17.4 
+[INFO    ] astropy Version -> 3.2.3 
+[INFO    ] stwcs Version -> 1.5.3 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	clean :	False
@@ -829,61 +529,49 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	writecat :	True
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 18:31:57.999 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 01:12:19.534 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 18:31:58.983 (04/06/2019)
-[INFO    ]      Found 1087 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 18:31:59.079 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:20.86 (18/12/2019)
+[INFO    ]      Found 1089 objects.
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 01:12:20.956 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 18:32:00.096 (04/06/2019)
-[INFO    ]      Found 954 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 2041
+[INFO    ] ###Source finding finished at: 01:12:22.190 (18/12/2019)
+[INFO    ]      Found 956 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 2045
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 18:32:00.434 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 01:12:22.43 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 18:32:01.604 (04/06/2019)
-[INFO    ]      Found 755 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 18:32:01.713 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:23. (18/12/2019)
+[INFO    ]      Found 762 objects.
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 01:12:23.74 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 18:32:02.784 (04/06/2019)
-[INFO    ]      Found 704 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 1459
+[INFO    ] ###Source finding finished at: 01:12:24.978 (18/12/2019)
+[INFO    ]      Found 707 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 1469
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 18:32:03.11 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 01:12:25.221 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 18:32:04.317 (04/06/2019)
-[INFO    ]      Found 628 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 18:32:04.441 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:26.45 (18/12/2019)
+[INFO    ]      Found 621 objects.
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 01:12:26.550 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 18:32:05.66 (04/06/2019)
-[INFO    ]      Found 539 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 1167
+[INFO    ] ###Source finding finished at: 01:12:27.776 (18/12/2019)
+[INFO    ]      Found 541 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 1162
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 18:32:06.116 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 01:12:27.995 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 18:32:07.395 (04/06/2019)
-[INFO    ]      Found 618 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 18:32:07.541 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:29.220 (18/12/2019)
+[INFO    ]      Found 612 objects.
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 01:12:29.319 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 18:32:09.046 (04/06/2019)
-[INFO    ]      Found 605 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 1223
+[INFO    ] ###Source finding finished at: 01:12:30.54 (18/12/2019)
+[INFO    ]      Found 608 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 1220
 [INFO    ] 
 [INFO    ] Converting RA/Dec positions of reference sources from "j8xi0xsaq_flc.fits" to X,Y positions in reference WCS...
 [INFO    ] 
@@ -923,54 +611,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs6q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.22222222222222143 -0.6984126984126995
-[INFO    ]     with significance of  362.78492695508515 and  19.0  matches
-[INFO    ] Found 50 matches for j8xi0xs6q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.2628, -0.1438 with significance of 41.42 and 56 matches
+[INFO    ] Found 49 matches for j8xi0xs6q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs6q_flc.fits : 
-[INFO    ] XSH: 0.0402  YSH: -0.0028    ROT: 359.9997955    SCALE: 1.000002
-[INFO    ] XRMS: 0.055    YRMS: 0.064
+[INFO    ] XSH: 0.0169  YSH: -0.0960    ROT: 359.9991133    SCALE: 0.999992
+[INFO    ] FIT XRMS: 0.086      FIT YRMS: 0.072  
+[INFO    ] FIT RMSE: 0.11       FIT MAE: 0.087  
 [INFO    ] 
-[INFO    ] RMS_RA: 1e-06 (deg)   RMS_DEC: 6e-07 (deg)
+[INFO    ] RMS_RA: 1.2e-06 (deg)   RMS_DEC: 1e-06 (deg)
 [INFO    ] 
 [INFO    ] Final solution based on  42  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs6q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs6q_flc_catalog_fit.match
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
+[INFO    ] Total # points: 42
+[INFO    ] # of points after clipping: 42
+[INFO    ] Total # points: 42
+[INFO    ] # of points after clipping: 42
 [INFO    ] ....Updating header for j8xi0xs6q_flc.fits...
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',1]
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[1]
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[4]
 [INFO    ] 
 [INFO    ] ====================
@@ -978,78 +642,30 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs3q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.5666666666666664 -0.8333333333333321
-[INFO    ]     with significance of  372.367064560268 and  21.0  matches
-[INFO    ] Found 47 matches for j8xi0xs3q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.02802, -0.004584 with significance of 36.42 and 51 matches
+[INFO    ] Found 43 matches for j8xi0xs3q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs3q_flc.fits : 
-[INFO    ] XSH: 0.0066  YSH: -0.1050    ROT: 359.9996855    SCALE: 0.999997
-[INFO    ] XRMS: 0.071    YRMS: 0.079
+[INFO    ] XSH: 0.0565  YSH: -0.2828    ROT: 359.9987159    SCALE: 0.999975
+[INFO    ] FIT XRMS: 0.051      FIT YRMS: 0.074  
+[INFO    ] FIT RMSE: 0.09       FIT MAE: 0.072  
 [INFO    ] 
-[INFO    ] RMS_RA: 1.3e-06 (deg)   RMS_DEC: 7.7e-07 (deg)
+[INFO    ] RMS_RA: 1.1e-06 (deg)   RMS_DEC: 5.1e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  38  objects.
+[INFO    ] Final solution based on  36  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs3q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs3q_flc_catalog_fit.match
-[INFO    ] Total # points:  38
-[INFO    ] # of points after clipping:  38
-[INFO    ] Total # points:  38
-[INFO    ] # of points after clipping:  38
+[INFO    ] Total # points: 36
+[INFO    ] # of points after clipping: 36
+[INFO    ] Total # points: 36
+[INFO    ] # of points after clipping: 36
 [INFO    ] ....Updating header for j8xi0xs3q_flc.fits...
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',1]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[1]
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[4]
 [INFO    ] 
 [INFO    ] ====================
@@ -1057,103 +673,43 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs0q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.0967741935483879 -0.758064516129032
-[INFO    ]     with significance of  504.66094228369474 and  35.0  matches
-[INFO    ] Found 49 matches for j8xi0xs0q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0, 0 with significance of 37.16 and 50 matches
+[INFO    ] Found 44 matches for j8xi0xs0q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs0q_flc.fits : 
-[INFO    ] XSH: 0.0596  YSH: -0.1223    ROT: 0.000347438054    SCALE: 0.999992
-[INFO    ] XRMS: 0.078    YRMS: 0.08
+[INFO    ] XSH: 0.1048  YSH: -0.3954    ROT: 359.9994651    SCALE: 0.999971
+[INFO    ] FIT XRMS: 0.076      FIT YRMS: 0.082  
+[INFO    ] FIT RMSE: 0.11       FIT MAE: 0.081  
 [INFO    ] 
-[INFO    ] RMS_RA: 1.3e-06 (deg)   RMS_DEC: 8.8e-07 (deg)
+[INFO    ] RMS_RA: 1.3e-06 (deg)   RMS_DEC: 8.5e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  40  objects.
+[INFO    ] Final solution based on  37  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs0q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs0q_flc_catalog_fit.match
-[INFO    ] Total # points:  40
-[INFO    ] # of points after clipping:  40
-[INFO    ] Total # points:  40
-[INFO    ] # of points after clipping:  40
+[INFO    ] Total # points: 37
+[INFO    ] # of points after clipping: 37
+[INFO    ] Total # points: 37
+[INFO    ] # of points after clipping: 37
 [INFO    ] ....Updating header for j8xi0xs0q_flc.fits...
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',1]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[1]
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',2]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[4]
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Writing out shiftfile : shift814_flc_test3.txt
 [INFO    ] Trailer file written to:  tweakreg.log
 [INFO    ] Setting up logfile :  tweakreg.log
-[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 18:32:13.345 (04/06/2019) 
+[INFO    ] TweakReg Version 1.4.7(18-April-2018) started at: 01:12:33.767 (18/12/2019) 
 [INFO    ] 
 [INFO    ] Version Information
 [INFO    ] --------------------
-[INFO    ] Python Version [GCC 7.3.0]
-[INFO    ] 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 01:22:34) 
-[INFO    ] numpy Version -> 1.15.4 
-[INFO    ] astropy Version -> 3.1.2 
-[INFO    ] stwcs Version -> 1.4.2 
+[INFO    ] Python Version [Clang 4.0.1 (tags/RELEASE_401/final)]
+[INFO    ] 3.7.5 (default, Oct 25 2019, 10:52:18) 
+[INFO    ] numpy Version -> 1.17.4 
+[INFO    ] astropy Version -> 3.2.3 
+[INFO    ] stwcs Version -> 1.5.3 
 [INFO    ] 
 [INFO    ] USER INPUT PARAMETERS common to all Processing Steps:
 [INFO    ] 	clean :	False
@@ -1207,61 +763,49 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 	writecat :	True
 [INFO    ] 	xyunits :	pixels
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] ===  Source finding for image 'j8xi0xsaq_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 18:32:13.912 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 1) started at: 01:12:34.128 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.082394
-[INFO    ] ###Source finding finished at: 18:32:14.986 (04/06/2019)
-[INFO    ]      Found 1087 objects.
-[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 18:32:15.093 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:35.368 (18/12/2019)
+[INFO    ]      Found 1089 objects.
+[INFO    ]   #  Source finding for 'j8xi0xsaq_flc.fits', EXT=('SCI', 2) started at: 01:12:35.452 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 9.901318
-[INFO    ] ###Source finding finished at: 18:32:16.281 (04/06/2019)
-[INFO    ]      Found 954 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 2041
+[INFO    ] ###Source finding finished at: 01:12:36.781 (18/12/2019)
+[INFO    ]      Found 956 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xsaq_flc.fits': 2045
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs6q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 18:32:16.606 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 1) started at: 01:12:37.115 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.081750
-[INFO    ] ###Source finding finished at: 18:32:17.565 (04/06/2019)
-[INFO    ]      Found 755 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 18:32:17.687 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:38.347 (18/12/2019)
+[INFO    ]      Found 762 objects.
+[INFO    ]   #  Source finding for 'j8xi0xs6q_flc.fits', EXT=('SCI', 2) started at: 01:12:38.430 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.046386
-[INFO    ] ###Source finding finished at: 18:32:18.797 (04/06/2019)
-[INFO    ]      Found 704 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 1459
+[INFO    ] ###Source finding finished at: 01:12:39.655 (18/12/2019)
+[INFO    ]      Found 707 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xs6q_flc.fits': 1469
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs3q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 18:32:19.154 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 1) started at: 01:12:39.974 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.116258
-[INFO    ] ###Source finding finished at: 18:32:20.142 (04/06/2019)
-[INFO    ]      Found 628 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 18:32:20.282 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:41.206 (18/12/2019)
+[INFO    ]      Found 621 objects.
+[INFO    ]   #  Source finding for 'j8xi0xs3q_flc.fits', EXT=('SCI', 2) started at: 01:12:41.289 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.016353
-[INFO    ] ###Source finding finished at: 18:32:21.257 (04/06/2019)
-[INFO    ]      Found 539 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 1167
+[INFO    ] ###Source finding finished at: 01:12:42.516 (18/12/2019)
+[INFO    ]      Found 541 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xs3q_flc.fits': 1162
 [INFO    ] 
 [INFO    ] ===  Source finding for image 'j8xi0xs0q_flc.fits':
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 18:32:21.611 (04/06/2019)
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 1) started at: 01:12:42.828 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.574701
-[INFO    ] ###Source finding finished at: 18:32:22.600 (04/06/2019)
-[INFO    ]      Found 618 objects.
-[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 18:32:22.706 (04/06/2019)
+[INFO    ] ###Source finding finished at: 01:12:44.069 (18/12/2019)
+[INFO    ]      Found 612 objects.
+[INFO    ]   #  Source finding for 'j8xi0xs0q_flc.fits', EXT=('SCI', 2) started at: 01:12:44.162 (18/12/2019)
 [INFO    ]    Finding sources using sky sigma = 10.441343
-[INFO    ] ###Source finding finished at: 18:32:23.659 (04/06/2019)
-[INFO    ]      Found 605 objects.
-[INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 1223
+[INFO    ] ###Source finding finished at: 01:12:45.416 (18/12/2019)
+[INFO    ]      Found 608 objects.
+[INFO    ] ===  FINAL number of objects in image 'j8xi0xs0q_flc.fits': 1220
 [INFO    ] 
 [INFO    ] Converting RA/Dec positions of reference sources from "j8xi0xsaq_flc.fits" to X,Y positions in reference WCS...
 [INFO    ] 
@@ -1296,26 +840,26 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs6q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.22222222222222143 -0.6984126984126995
-[INFO    ]     with significance of  362.78492695508515 and  19.0  matches
-[INFO    ] Found 50 matches for j8xi0xs6q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.2628, -0.1438 with significance of 41.42 and 56 matches
+[INFO    ] Found 49 matches for j8xi0xs6q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs6q_flc.fits : 
-[INFO    ] XSH: 0.0402  YSH: -0.0028    ROT: 359.9997955    SCALE: 1.000002
-[INFO    ] XRMS: 0.055    YRMS: 0.064
+[INFO    ] XSH: 0.0169  YSH: -0.0960    ROT: 359.9991133    SCALE: 0.999992
+[INFO    ] FIT XRMS: 0.086      FIT YRMS: 0.072  
+[INFO    ] FIT RMSE: 0.11       FIT MAE: 0.087  
 [INFO    ] 
-[INFO    ] RMS_RA: 1e-06 (deg)   RMS_DEC: 6e-07 (deg)
+[INFO    ] RMS_RA: 1.2e-06 (deg)   RMS_DEC: 1e-06 (deg)
 [INFO    ] 
 [INFO    ] Final solution based on  42  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs6q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs6q_flc_catalog_fit.match
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
-[INFO    ] Total # points:  42
-[INFO    ] # of points after clipping:  42
+[INFO    ] Total # points: 42
+[INFO    ] # of points after clipping: 42
+[INFO    ] Total # points: 42
+[INFO    ] # of points after clipping: 42
 [INFO    ] 
 [INFO    ] ....Updating header for j8xi0xs6q_flc.fits...
 [INFO    ] 
@@ -1326,95 +870,35 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ]     with WCS of
 [INFO    ] WCS Keywords
 [INFO    ] 
-[INFO    ] CD_11  CD_12: 2.8100878099842194e-06 1.3844834699641343e-05
-[INFO    ] CD_21  CD_22: 1.3557441326549291e-05 -1.887790519389511e-06
-[INFO    ] CRVAL    : 150.18752974807956 2.678737131147837
+[INFO    ] CD_11  CD_12: 2.80350213592781e-06 1.3859833511676653e-05
+[INFO    ] CD_21  CD_22: 1.3557424320416147e-05 -1.8921997422942406e-06
+[INFO    ] CRVAL    : 150.18741245943534 2.6787674492582214
 [INFO    ] CRPIX    : 2048.0 1024.0
 [INFO    ] NAXIS    : 4096 2048
-[INFO    ] Plate Scale : 0.049844274512112006
-[INFO    ] ORIENTAT : 97.76459118154769
+[INFO    ] Plate Scale : 0.04983893388069146
+[INFO    ] ORIENTAT : 97.77418556707268
 [INFO    ] WCSNAME  :  TWEAK
 [INFO    ] 
 [INFO    ] Processing j8xi0xs6q_flc.fits['SCI',2]
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs6q_flc.fits[4]
 [INFO    ]     with WCS of
 [INFO    ] WCS Keywords
 [INFO    ] 
-[INFO    ] CD_11  CD_12: 2.9565875532241413e-06 1.3396511053676178e-05
-[INFO    ] CD_21  CD_22: 1.3360530741538096e-05 -1.7229788484596075e-06
-[INFO    ] CRVAL    : 150.2161824835538 2.6748949510833047
+[INFO    ] CD_11  CD_12: 2.9501899805599017e-06 1.3411066038082081e-05
+[INFO    ] CD_21  CD_22: 1.3360383982723292e-05 -1.7270171766689415e-06
+[INFO    ] CRVAL    : 150.21603635081973 2.674942533790987
 [INFO    ] CRPIX    : 2048.0 1024.0
 [INFO    ] NAXIS    : 4096 2048
-[INFO    ] Plate Scale : 0.04926161476778738
-[INFO    ] ORIENTAT : 97.32880604345358
+[INFO    ] Plate Scale : 0.049255659028792816
+[INFO    ] ORIENTAT : 97.33791051267566
 [INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Writing out new WCS to alternate WCS: "C"
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
 [INFO    ] 
@@ -1423,149 +907,65 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs3q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.5666666666666664 -0.8333333333333321
-[INFO    ]     with significance of  372.367064560268 and  21.0  matches
-[INFO    ] Found 47 matches for j8xi0xs3q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0.02802, -0.004584 with significance of 36.42 and 51 matches
+[INFO    ] Found 43 matches for j8xi0xs3q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs3q_flc.fits : 
-[INFO    ] XSH: 0.0066  YSH: -0.1050    ROT: 359.9996855    SCALE: 0.999997
-[INFO    ] XRMS: 0.071    YRMS: 0.079
+[INFO    ] XSH: 0.0565  YSH: -0.2828    ROT: 359.9987159    SCALE: 0.999975
+[INFO    ] FIT XRMS: 0.051      FIT YRMS: 0.074  
+[INFO    ] FIT RMSE: 0.09       FIT MAE: 0.072  
 [INFO    ] 
-[INFO    ] RMS_RA: 1.3e-06 (deg)   RMS_DEC: 7.7e-07 (deg)
+[INFO    ] RMS_RA: 1.1e-06 (deg)   RMS_DEC: 5.1e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  38  objects.
+[INFO    ] Final solution based on  36  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs3q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs3q_flc_catalog_fit.match
-[INFO    ] Total # points:  38
-[INFO    ] # of points after clipping:  38
-[INFO    ] Total # points:  38
-[INFO    ] # of points after clipping:  38
+[INFO    ] Total # points: 36
+[INFO    ] # of points after clipping: 36
+[INFO    ] Total # points: 36
+[INFO    ] # of points after clipping: 36
 [INFO    ] 
 [INFO    ] ....Updating header for j8xi0xs3q_flc.fits...
 [INFO    ] 
 [INFO    ] 
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',1]
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[1]
 [INFO    ]     with WCS of
 [INFO    ] WCS Keywords
 [INFO    ] 
-[INFO    ] CD_11  CD_12: 2.8101287259314283e-06 1.3845167802532859e-05
-[INFO    ] CD_21  CD_22: 1.3557769372549166e-05 -1.8878089266267742e-06
-[INFO    ] CRVAL    : 150.18835242022843 2.678524784866032
+[INFO    ] CD_11  CD_12: 2.8035571769654962e-06 1.386057496912875e-05
+[INFO    ] CD_21  CD_22: 1.355770237160731e-05 -1.8925177157864187e-06
+[INFO    ] CRVAL    : 150.18823614067068 2.6785547459254855
 [INFO    ] CRPIX    : 2048.0 1024.0
 [INFO    ] NAXIS    : 4096 2048
-[INFO    ] Plate Scale : 0.04984521986664923
-[INFO    ] ORIENTAT : 97.76448143556931
+[INFO    ] Plate Scale : 0.04983908423250734
+[INFO    ] ORIENTAT : 97.7750651420869
 [INFO    ] WCSNAME  :  TWEAK
 [INFO    ] 
 [INFO    ] Processing j8xi0xs3q_flc.fits['SCI',2]
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs3q_flc.fits[4]
 [INFO    ]     with WCS of
 [INFO    ] WCS Keywords
 [INFO    ] 
-[INFO    ] CD_11  CD_12: 2.95663230027647e-06 1.3396833186838974e-05
-[INFO    ] CD_21  CD_22: 1.3360854376532596e-05 -1.722994181142128e-06
-[INFO    ] CRVAL    : 150.21700584001897 2.6746825681922153
+[INFO    ] CD_11  CD_12: 2.9502413433048623e-06 1.3411773579244721e-05
+[INFO    ] CD_21  CD_22: 1.336066410079676e-05 -1.727323837892086e-06
+[INFO    ] CRVAL    : 150.21686046607624 2.6747297830554992
 [INFO    ] CRPIX    : 2048.0 1024.0
 [INFO    ] NAXIS    : 4096 2048
-[INFO    ] Plate Scale : 0.04926254902188699
-[INFO    ] ORIENTAT : 97.32869624273093
+[INFO    ] Plate Scale : 0.04925582375646241
+[INFO    ] ORIENTAT : 97.33881631845084
 [INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Writing out new WCS to alternate WCS: "C"
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
 [INFO    ] 
@@ -1574,193 +974,73 @@ Instead use the "pixel_shape" property which returns a list of NAXISj keyword va
 [INFO    ] 
 [INFO    ] Matching sources from 'j8xi0xs0q_flc.fits' with sources from reference image 'j8xi0xsaq_flc.fits'
 [INFO    ] Computing initial guess for X and Y shifts...
-[INFO    ] Found initial X and Y shifts of  -0.0967741935483879 -0.758064516129032
-[INFO    ]     with significance of  504.66094228369474 and  35.0  matches
-[INFO    ] Found 49 matches for j8xi0xs0q_flc.fits...
+[INFO    ] Found initial X and Y shifts of 0, 0 with significance of 37.16 and 50 matches
+[INFO    ] Found 44 matches for j8xi0xs0q_flc.fits...
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Performing "rscale" fit
 [INFO    ] Computed  rscale  fit for  j8xi0xs0q_flc.fits : 
-[INFO    ] XSH: 0.0596  YSH: -0.1223    ROT: 0.000347438054    SCALE: 0.999992
-[INFO    ] XRMS: 0.078    YRMS: 0.08
+[INFO    ] XSH: 0.1048  YSH: -0.3954    ROT: 359.9994651    SCALE: 0.999971
+[INFO    ] FIT XRMS: 0.076      FIT YRMS: 0.082  
+[INFO    ] FIT RMSE: 0.11       FIT MAE: 0.081  
 [INFO    ] 
-[INFO    ] RMS_RA: 1.3e-06 (deg)   RMS_DEC: 8.8e-07 (deg)
+[INFO    ] RMS_RA: 1.3e-06 (deg)   RMS_DEC: 8.5e-07 (deg)
 [INFO    ] 
-[INFO    ] Final solution based on  40  objects.
+[INFO    ] Final solution based on  37  objects.
 [INFO    ] Creating catalog for the fit: j8xi0xs0q_flc_catalog_fit.match
 [INFO    ] wrote XY data to:  j8xi0xs0q_flc_catalog_fit.match
-[INFO    ] Total # points:  40
-[INFO    ] # of points after clipping:  40
-[INFO    ] Total # points:  40
-[INFO    ] # of points after clipping:  40
+[INFO    ] Total # points: 37
+[INFO    ] # of points after clipping: 37
+[INFO    ] Total # points: 37
+[INFO    ] # of points after clipping: 37
 [INFO    ] 
 [INFO    ] ....Updating header for j8xi0xs0q_flc.fits...
 [INFO    ] 
 [INFO    ] 
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',1]
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[1]
 [INFO    ]     with WCS of
 [INFO    ] WCS Keywords
 [INFO    ] 
-[INFO    ] CD_11  CD_12: 2.8103648807548032e-06 1.3845427354502308e-05
-[INFO    ] CD_21  CD_22: 1.3558010842738697e-05 -1.8880299294094418e-06
-[INFO    ] CRVAL    : 150.18920940428802 2.6784806717108833
+[INFO    ] CD_11  CD_12: 2.803777543564549e-06 1.3861066997825172e-05
+[INFO    ] CD_21  CD_22: 1.3558173480915093e-05 -1.892639944480594e-06
+[INFO    ] CRVAL    : 150.18909423956995 2.678510113120627
 [INFO    ] CRPIX    : 2048.0 1024.0
 [INFO    ] NAXIS    : 4096 2048
-[INFO    ] Plate Scale : 0.04984597991229051
-[INFO    ] ORIENTAT : 97.76523552446345
+[INFO    ] Plate Scale : 0.049840714278485104
+[INFO    ] ORIENTAT : 97.77528851966095
 [INFO    ] WCSNAME  :  TWEAK
 [INFO    ] 
 [INFO    ] Processing j8xi0xs0q_flc.fits['SCI',2]
 [INFO    ] 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2686: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2696: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
 [INFO    ] Updating header for j8xi0xs0q_flc.fits[4]
 [INFO    ]     with WCS of
 [INFO    ] WCS Keywords
 [INFO    ] 
-[INFO    ] CD_11  CD_12: 2.9568688572743883e-06 1.3397085675083097e-05
-[INFO    ] CD_21  CD_22: 1.3361089899612285e-05 -1.723205877279661e-06
-[INFO    ] CRVAL    : 150.21786336095803 2.6746379994347484
+[INFO    ] CD_11  CD_12: 2.9504689632131873e-06 1.3412263079601292e-05
+[INFO    ] CD_21  CD_22: 1.3361125620009374e-05 -1.7274336559109079e-06
+[INFO    ] CRVAL    : 150.2177186165875 2.674684887108254
 [INFO    ] CRPIX    : 2048.0 1024.0
 [INFO    ] NAXIS    : 4096 2048
-[INFO    ] Plate Scale : 0.049263300242822126
-[INFO    ] ORIENTAT : 97.3294502588655
+[INFO    ] Plate Scale : 0.049257433630216355
+[INFO    ] ORIENTAT : 97.33901287372346
 [INFO    ] WCSNAME  :  TWEAK
-[INFO    ]     Writing out new WCS to alternate WCS: "B"
+[INFO    ]     Writing out new WCS to alternate WCS: "C"
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
-[INFO    ]     Saving Primary WCS to alternate WCS: " "
+[INFO    ]     Saving Primary WCS to alternate WCS: "B"
 [INFO    ] Updating WCSCORR table with new WCS solution "TWEAK"
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2691: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/wcs/wcs.py:2701: AstropyDeprecationWarning: 
-Private attributes "_naxis1" and "_naxis2" have been deprecated since v3.1.
-Instead use the "pixel_shape" property which returns a list of NAXISj keyword values.
-
-  warnings.warn(NAXIS_DEPRECATE_MESSAGE, AstropyDeprecationWarning)
-
-[WARNING ] /opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astropy/io/fits/card.py:266: VerifyWarning: Keyword name 'IDCSCALEB' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
+[WARNING ] /Users/etollerud/miniconda3/envs/nb-build/lib/python3.7/site-packages/astropy/io/fits/card.py:267: VerifyWarning: Keyword name 'IDCSCALEC' is greater than 8 characters or contains characters not allowed by the FITS standard; a HIERARCH card will be created.
   keyword), VerifyWarning)
 
 [INFO    ] Trailer file written to:  tweakreg.log
