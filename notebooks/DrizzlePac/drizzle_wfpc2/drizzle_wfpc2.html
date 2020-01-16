@@ -13145,12 +13145,78 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The following task in the stsci.skypac package can be run with TEAL:
                                     skymatch                                    
-The following tasks in the drizzlepac package can be run with TEAL:
-    astrodrizzle       config_testbed      imagefindpars           mapreg       
-       photeq            pixreplace           pixtopix            pixtosky      
-  refimagefindpars       resetbits          runastrodriz          skytopix      
-     tweakback            tweakreg           updatenpol
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>Traceback (most recent call last)
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;numpy.core._multiarray_umath&#39;</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+ Coordinate transformation and image resampling library NOT found!
+
+ Please check the installation of this package to insure C code was built successfully.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+
+<span class="ansi-red-fg">ImportError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/drizzlepac/ablot.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     22</span> <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 23</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span> <span class="ansi-green-fg">import</span> cdriz
+<span class="ansi-green-intense-fg ansi-bold">     24</span> <span class="ansi-green-fg">except</span> ImportError<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">ImportError</span>: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">ImportError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-651af469802b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span> <span class="ansi-green-fg">from</span> astroquery<span class="ansi-blue-fg">.</span>mast <span class="ansi-green-fg">import</span> Observations
+<span class="ansi-green-intense-fg ansi-bold">     10</span> <span class="ansi-green-fg">from</span> stwcs<span class="ansi-blue-fg">.</span>updatewcs <span class="ansi-green-fg">import</span> updatewcs
+<span class="ansi-green-fg">---&gt; 11</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> drizzlepac <span class="ansi-green-fg">import</span> tweakreg<span class="ansi-blue-fg">,</span> astrodrizzle<span class="ansi-blue-fg">,</span> photeq
+<span class="ansi-green-intense-fg ansi-bold">     12</span> <span class="ansi-green-fg">from</span> stsci<span class="ansi-blue-fg">.</span>skypac <span class="ansi-green-fg">import</span> skymatch
+<span class="ansi-green-intense-fg ansi-bold">     13</span> 
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/drizzlepac/__init__.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     19</span> <span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span>version <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
+<span class="ansi-green-intense-fg ansi-bold">     20</span> 
+<span class="ansi-green-fg">---&gt; 21</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span> <span class="ansi-green-fg">import</span> ablot
+<span class="ansi-green-intense-fg ansi-bold">     22</span> <span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span> <span class="ansi-green-fg">import</span> adrizzle
+<span class="ansi-green-intense-fg ansi-bold">     23</span> <span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span> <span class="ansi-green-fg">import</span> astrodrizzle
+
+<span class="ansi-green-fg">/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/drizzlepac/ablot.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     26</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;\n Coordinate transformation and image resampling library NOT found!&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     27</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;\n Please check the installation of this package to insure C code was built successfully.&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 28</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">raise</span> ImportError
+<span class="ansi-green-intense-fg ansi-bold">     29</span> 
+<span class="ansi-green-intense-fg ansi-bold">     30</span> <span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span>version <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
+
+<span class="ansi-red-fg">ImportError</span>: </pre>
 </div>
 </div>
 
@@ -13169,7 +13235,7 @@ The following tasks in the drizzlepac package can be run with TEAL:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Retrieve the observation information.</span>
@@ -13198,35 +13264,6 @@ The following tasks in the drizzlepac package can be run with TEAL:
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060502m_c0m.fits to ./mastDownload/HST/ua060502m/ua060502m_c0m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060502m_c1m.fits to ./mastDownload/HST/ua060502m/ua060502m_c1m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060504m_c0m.fits to ./mastDownload/HST/ua060504m/ua060504m_c0m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060504m_c1m.fits to ./mastDownload/HST/ua060504m/ua060504m_c1m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060506m_c0m.fits to ./mastDownload/HST/ua060506m/ua060506m_c0m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060506m_c1m.fits to ./mastDownload/HST/ua060506m/ua060506m_c1m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060508m_c0m.fits to ./mastDownload/HST/ua060508m/ua060508m_c0m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua060508m_c1m.fits to ./mastDownload/HST/ua060508m/ua060508m_c1m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua06050am_c0m.fits to ./mastDownload/HST/ua06050am/ua06050am_c0m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua06050am_c1m.fits to ./mastDownload/HST/ua06050am/ua06050am_c1m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua06050cm_c0m.fits to ./mastDownload/HST/ua06050cm/ua06050cm_c0m.fits ... [Done]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ua06050cm_c1m.fits to ./mastDownload/HST/ua06050cm/ua06050cm_c1m.fits ... [Done]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13239,7 +13276,7 @@ Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/produ
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;CRDS_SERVER_URL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;https://hst-crds.stsci.edu&#39;</span>
@@ -13251,47 +13288,6 @@ Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/produ
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">CalledProcessError</span>                        Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-3-1b10d8847b66&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> os<span class="ansi-blue-fg">.</span>environ<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;CRDS_PATH&#39;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> os<span class="ansi-blue-fg">.</span>path<span class="ansi-blue-fg">.</span>abspath<span class="ansi-blue-fg">(</span>os<span class="ansi-blue-fg">.</span>path<span class="ansi-blue-fg">.</span>join<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;.&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;reference_files&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> 
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>subprocess<span class="ansi-blue-fg">.</span>check_output<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;crds bestrefs --files ua0605*_c0m.fits --sync-references=1 --update-bestrefs&#39;</span><span class="ansi-blue-fg">,</span> shell<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span> stderr<span class="ansi-blue-fg">=</span>subprocess<span class="ansi-blue-fg">.</span>DEVNULL<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> 
-<span class="ansi-green-intense-fg ansi-bold">      6</span> os<span class="ansi-blue-fg">.</span>environ<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;uref&#39;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> os<span class="ansi-blue-fg">.</span>path<span class="ansi-blue-fg">.</span>abspath<span class="ansi-blue-fg">(</span>os<span class="ansi-blue-fg">.</span>path<span class="ansi-blue-fg">.</span>join<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;.&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;reference_files&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;references&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;hst&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;wfpc2&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">+</span> os<span class="ansi-blue-fg">.</span>path<span class="ansi-blue-fg">.</span>sep
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/subprocess.py</span> in <span class="ansi-cyan-fg">check_output</span><span class="ansi-blue-fg">(timeout, *popenargs, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    409</span> 
-<span class="ansi-green-intense-fg ansi-bold">    410</span>     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
-<span class="ansi-green-fg">--&gt; 411</span><span class="ansi-red-fg">                **kwargs).stdout
-</span><span class="ansi-green-intense-fg ansi-bold">    412</span> 
-<span class="ansi-green-intense-fg ansi-bold">    413</span> 
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/subprocess.py</span> in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(input, capture_output, timeout, check, *popenargs, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    510</span>         <span class="ansi-green-fg">if</span> check <span class="ansi-green-fg">and</span> retcode<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    511</span>             raise CalledProcessError(retcode, process.args,
-<span class="ansi-green-fg">--&gt; 512</span><span class="ansi-red-fg">                                      output=stdout, stderr=stderr)
-</span><span class="ansi-green-intense-fg ansi-bold">    513</span>     <span class="ansi-green-fg">return</span> CompletedProcess<span class="ansi-blue-fg">(</span>process<span class="ansi-blue-fg">.</span>args<span class="ansi-blue-fg">,</span> retcode<span class="ansi-blue-fg">,</span> stdout<span class="ansi-blue-fg">,</span> stderr<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    514</span> 
-
-<span class="ansi-red-fg">CalledProcessError</span>: Command &#39;crds bestrefs --files ua0605*_c0m.fits --sync-references=1 --update-bestrefs&#39; returned non-zero exit status 1.</pre>
-</div>
-</div>
-
 </div>
 </div>
 

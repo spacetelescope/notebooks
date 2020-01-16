@@ -6,7 +6,6 @@
 # WORKSPACE - where to copy files from to add to deploy commit (build location)
 # BUILD_TAG - tag for deploy commit
 # REMOTE_NAME - remote to push up to
-# OUT_DIR - the directory to use as the output build location
 # These can be set by using "export var=value" for manual deploy
 # Or they are set in environment vars when used on CI
 
@@ -36,20 +35,14 @@ if [[ -z "${REMOTE_NAME}" ]]; then
 else
   REMOTE_NAME="${REMOTE_NAME}"
 fi
-if [[ -z "${OUT_DIR}" ]]; then
-  OUT_DIR="/out"
-else
-  OUT_DIR="${OUT_DIR}"
-fi
 
-set -e  # ensures everything below fails immediately
+git clone -b ${DEPLOY_BRANCH} --single-branch ${REPO_URL} /out
 
-git clone -b ${DEPLOY_BRANCH} --single-branch ${REPO_URL} $OUT_DIR
-
-cd $OUT_DIR
+cd /out
 
 cp -aR ${WORKSPACE}/* .
 
 git add .
 git commit -m "Automated deployment to GitHub Pages: ${BUILD_TAG}" --allow-empty
 git push $REMOTE_NAME $DEPLOY_BRANCH
+git clean -dfx

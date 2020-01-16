@@ -1,7 +1,67 @@
 <?xml version="1.0" ?>
-<testsuites disabled="0" errors="13" failures="0" tests="34" time="697.551650762558">
-	<testsuite disabled="0" errors="13" failures="0" name="Convert" package="spacetelescope_notebooks" skipped="0" tests="34" time="697.551650762558">
-		<testcase classname="interm tasc lc" file="/root/repo/notebooks/MAST/TESS/interm_tasc_lc/interm_tasc_lc.ipynb" name="Convert_Execution" time="2.809280">
+<testsuites disabled="0" errors="14" failures="0" tests="34" time="513.1875853538513">
+	<testsuite disabled="0" errors="14" failures="0" name="Convert" package="spacetelescope_notebooks" skipped="0" tests="34" time="513.1875853538513">
+		<testcase classname="HSC TAP" file="/root/repo/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.ipynb" name="Convert_Execution" time="1.316633">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import pyvo as vo
+
+## For handling ordinary astropy Tables in responses
+from astropy.table import Table
+
+# For displaying and manipulating some types of results
+%matplotlib inline
+import requests
+import astropy
+import numpy as np
+import time
+from matplotlib import pyplot as plt
+
+# To allow display tweaks for wider response tables
+from IPython.core.display import display
+from IPython.core.display import HTML
+
+# For the second example: kernel density estimates
+from scipy.stats import gaussian_kde
+
+
+# suppress unimportant unit warnings from many TAP services
+import warnings
+warnings.filterwarnings(&quot;ignore&quot;, module=&quot;astropy.io.votable.*&quot;)
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+&lt;ipython-input-1-27ca0255115b&gt; in &lt;module&gt;
+----&gt; 1 import pyvo as vo
+      2 
+      3 ## For handling ordinary astropy Tables in responses
+      4 from astropy.table import Table
+      5 
+
+ModuleNotFoundError: No module named 'pyvo'
+ModuleNotFoundError: No module named 'pyvo'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="beginner tour lc tp" file="/root/repo/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb" name="Convert_Execution" time="5.768208"/>
+		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="4.131936"/>
+		<testcase classname="beginner how to use tp" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.ipynb" name="Convert_Execution" time="3.215316"/>
+		<testcase classname="tess prf retrieval" file="/root/repo/notebooks/MAST/TESS/interm_tess_prf_retrieve/tess_prf_retrieval.ipynb" name="Convert_Execution" time="27.807422"/>
+		<testcase classname="interm tesscut requests" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb" name="Convert_Execution" time="19.840340"/>
+		<testcase classname="beginner tic search hd209458" file="/root/repo/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb" name="Convert_Execution" time="4.533396"/>
+		<testcase classname="beginner how to use lc" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_lc/beginner_how_to_use_lc.ipynb" name="Convert_Execution" time="2.713881"/>
+		<testcase classname="interm gi query" file="/root/repo/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.ipynb" name="Convert_Execution" time="25.009249"/>
+		<testcase classname="interm tasc lc" file="/root/repo/notebooks/MAST/TESS/interm_tasc_lc/interm_tasc_lc.ipynb" name="Convert_Execution" time="2.213977">
 			<error message="Traceback (most recent call last):
   File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
     executor.preprocess(nb, {'metadata': {'path': self.path_only}})
@@ -59,24 +119,11 @@ ModuleNotFoundError: No module named 'bokeh'
 
 " type="CellExecutionError"/>
 		</testcase>
-		<testcase classname="beginner tour lc tp" file="/root/repo/notebooks/MAST/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb" name="Convert_Execution" time="7.035896"/>
-		<testcase classname="tess prf retrieval" file="/root/repo/notebooks/MAST/TESS/interm_tess_prf_retrieve/tess_prf_retrieval.ipynb" name="Convert_Execution" time="24.092403"/>
-		<testcase classname="beginner how to use lc" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_lc/beginner_how_to_use_lc.ipynb" name="Convert_Execution" time="2.458491"/>
-		<testcase classname="interm tesscut astroquery" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.ipynb" name="Convert_Execution" time="23.981054"/>
-		<testcase classname="beginner tic search hd209458" file="/root/repo/notebooks/MAST/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb" name="Convert_Execution" time="3.423718"/>
-		<testcase classname="interm tesscut requests" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb" name="Convert_Execution" time="13.436671"/>
-		<testcase classname="beginner tess exomast" file="/root/repo/notebooks/MAST/TESS/beginner_tess_exomast/beginner_tess_exomast.ipynb" name="Convert_Execution" time="5.592730"/>
-		<testcase classname="beginner how to use dvt" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.ipynb" name="Convert_Execution" time="2.419753"/>
-		<testcase classname="beginner tess tap search" file="/root/repo/notebooks/MAST/TESS/beginner_tess_tap_search/beginner_tess_tap_search.ipynb" name="Convert_Execution" time="52.376020"/>
-		<testcase classname="beginner astroquery dv" file="/root/repo/notebooks/MAST/TESS/beginner_astroquery_dv/beginner_astroquery_dv.ipynb" name="Convert_Execution" time="40.450369"/>
-		<testcase classname="interm gi query" file="/root/repo/notebooks/MAST/TESS/interm_gi_query/interm_gi_query.ipynb" name="Convert_Execution" time="19.847002"/>
-		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_ffi/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="3.857333"/>
-		<testcase classname="beginner how to use tp" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_tp/beginner_how_to_use_tp.ipynb" name="Convert_Execution" time="3.340274"/>
-		<testcase classname="kepler tpf" file="/root/repo/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.ipynb" name="Convert_Execution" time="3.557437"/>
-		<testcase classname="kepler dvt" file="/root/repo/notebooks/MAST/Kepler/Kepler_DVT/kepler_dvt.ipynb" name="Convert_Execution" time="2.991653"/>
-		<testcase classname="kepler ffi" file="/root/repo/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb" name="Convert_Execution" time="239.815847"/>
-		<testcase classname="kepler lightcurve" file="/root/repo/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb" name="Convert_Execution" time="2.637296"/>
-		<testcase classname="HSC TAP" file="/root/repo/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.ipynb" name="Convert_Execution" time="2.794158">
+		<testcase classname="beginner astroquery dv" file="/root/repo/notebooks/MAST/TESS/beginner_astroquery_dv/beginner_astroquery_dv.ipynb" name="Convert_Execution" time="30.783211"/>
+		<testcase classname="interm tesscut astroquery" file="/root/repo/notebooks/MAST/TESS/interm_tesscut_astroquery/interm_tesscut_astroquery.ipynb" name="Convert_Execution" time="26.385689"/>
+		<testcase classname="beginner how to use dvt" file="/root/repo/notebooks/MAST/TESS/beginner_how_to_use_dvt/beginner_how_to_use_dvt.ipynb" name="Convert_Execution" time="2.720767"/>
+		<testcase classname="beginner tess exomast" file="/root/repo/notebooks/MAST/TESS/beginner_tess_exomast/beginner_tess_exomast.ipynb" name="Convert_Execution" time="5.536875"/>
+		<testcase classname="beginner tess tap search" file="/root/repo/notebooks/MAST/TESS/beginner_tess_tap_search/beginner_tess_tap_search.ipynb" name="Convert_Execution" time="1.342006">
 			<error message="Traceback (most recent call last):
   File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
     executor.preprocess(nb, {'metadata': {'path': self.path_only}})
@@ -88,115 +135,50 @@ ModuleNotFoundError: No module named 'bokeh'
     raise CellExecutionError.from_cell_and_msg(cell, out)
 nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-HSC_tables = HSC_service.load_tables()
-print('\n')
-for table in HSC_tables:
-    if( table.name == 'dbo.SumMagAper2CatView'):
-        print(table)
-        print('\n')
-        for i, column in enumerate(table.columns):
-            #only show the first 30 and last 10 columns
-            if i &lt; 30 or i &gt; len(table.columns)-10:
-                print(column.name)
-            #skip display for the middle column names
-            elif i == 30:
-                print(&quot;...&quot;)
+# Use the pyvo library as our client to the data service.
+import pyvo as vo
+
+# For handling ordinary astropy Tables in responses
+from astropy.table import Table
+
+# For displaying and manipulating some types of results
+import requests
+import astropy
+import time
+
+# To allow display tweaks for wider response tables
+from IPython.core.display import display
+from IPython.core.display import HTML
+
+# suppress unimportant unit warnings from many TAP services
+import warnings
+warnings.filterwarnings(&quot;ignore&quot;, module=&quot;astropy.io.votable.*&quot;)
+warnings.filterwarnings(&quot;ignore&quot;, module=&quot;pyvo.utils.xml.elements&quot;)
+warnings.filterwarnings(&quot;ignore&quot;, module=&quot;pyvo.io.vosi.vodataservice&quot;)
 ------------------
 
 
-KeyErrorTraceback (most recent call last)
-&lt;ipython-input-3-cec91d928ba8&gt; in &lt;module&gt;
-----&gt; 1 HSC_tables = HSC_service.load_tables()
-      2 print('\n')
-      3 for table in HSC_tables:
-      4     if( table.name == 'dbo.SumMagAper2CatView'):
-      5         print(table)
+ModuleNotFoundErrorTraceback (most recent call last)
+&lt;ipython-input-1-ce81d0e2bcc3&gt; in &lt;module&gt;
+      1 # Use the pyvo library as our client to the data service.
+----&gt; 2 import pyvo as vo
+      3 
+      4 # For handling ordinary astropy Tables in responses
+      5 from astropy.table import Table
 
-/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py in load_tables(self, only_names, include_shared_tables, verbose)
-    807         return self._Tap__load_tables(only_names=only_names,
-    808                                       include_shared_tables=include_shared_tables,  # noqa
---&gt; 809                                       verbose=verbose)
-    810 
-    811     def load_data(self, params_dict=None, output_file=None, verbose=False):
-
-/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/core.py in __load_tables(self, only_names, include_shared_tables, verbose)
-    235         log.info(&quot;Parsing tables...&quot;)
-    236         tsp = TableSaxParser()
---&gt; 237         tsp.parseData(response)
-    238         log.info(&quot;Done.&quot;)
-    239         return tsp.get_tables()
-
-/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py in parseData(self, data)
-     65         del self.__tables[:]
-     66         self.__status = READING_SCHEMA
----&gt; 67         xml.sax.parse(data, self)
-     68         return self.__tables
-     69 
-
-/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/__init__.py in parse(source, handler, errorHandler)
-     31     parser.setContentHandler(handler)
-     32     parser.setErrorHandler(errorHandler)
----&gt; 33     parser.parse(source)
-     34 
-     35 def parseString(string, handler, errorHandler=ErrorHandler()):
-
-/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py in parse(self, source)
-    109             self.reset()
-    110             self._cont_handler.setDocumentLocator(ExpatLocator(self))
---&gt; 111             xmlreader.IncrementalParser.parse(self, source)
-    112         except:
-    113             # bpo-30264: Close the source on error to not leak resources:
-
-/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/xmlreader.py in parse(self, source)
-    123         buffer = file.read(self._bufsize)
-    124         while buffer:
---&gt; 125             self.feed(buffer)
-    126             buffer = file.read(self._bufsize)
-    127         self.close()
-
-/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py in feed(self, data, isFinal)
-    215             # document. When feeding chunks, they are not normally final -
-    216             # except when invoked from close.
---&gt; 217             self._parser.Parse(data, isFinal)
-    218         except expat.error as e:
-    219             exc = SAXParseException(expat.ErrorString(e.code), e, self)
-
-/tmp/build/80754af9/python_1564510748219/work/Modules/pyexpat.c in StartElement()
-
-/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/expatreader.py in start_element(self, name, attrs)
-    331     # event handlers
-    332     def start_element(self, name, attrs):
---&gt; 333         self._cont_handler.startElement(name, AttributesImpl(attrs))
-    334 
-    335     def end_element(self, name):
-
-/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py in startElement(self, name, attrs)
-     72             self.__reading_schema(name, attrs)
-     73         elif self.__status == READING_TABLE:
----&gt; 74             self.__reading_table(name, attrs)
-     75         elif self.__status == READING_TABLE_COLUMN:
-     76             self.__reading_table_column(name, attrs)
-
-/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py in __reading_table(self, name, attrs)
-    108         elif self.__check_item_id(&quot;column&quot;, name):
-    109             self.__status = READING_TABLE_COLUMN
---&gt; 110             self.__currentColumn = TapColumn(attrs.getValue('esatapplus:flags'))
-    111 
-    112     def __end_table(self, name):
-
-/opt/conda/envs/notebooks_env/lib/python3.6/xml/sax/xmlreader.py in getValue(self, name)
-    291 
-    292     def getValue(self, name):
---&gt; 293         return self._attrs[name]
-    294 
-    295     def getValueByQName(self, name):
-
-KeyError: 'esatapplus:flags'
-KeyError: 'esatapplus:flags'
+ModuleNotFoundError: No module named 'pyvo'
+ModuleNotFoundError: No module named 'pyvo'
 
 " type="CellExecutionError"/>
 		</testcase>
-		<testcase classname="PS1 DR2 TAP" file="/root/repo/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.ipynb" name="Convert_Execution" time="128.187924">
+		<testcase classname="kepler ffi" file="/root/repo/notebooks/MAST/Kepler/Kepler_FFI/kepler_ffi.ipynb" name="Convert_Execution" time="217.535741"/>
+		<testcase classname="kepler lightcurve" file="/root/repo/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.ipynb" name="Convert_Execution" time="2.896255"/>
+		<testcase classname="kepler tpf" file="/root/repo/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.ipynb" name="Convert_Execution" time="4.023546"/>
+		<testcase classname="kepler dvt" file="/root/repo/notebooks/MAST/Kepler/Kepler_DVT/kepler_dvt.ipynb" name="Convert_Execution" time="2.477159"/>
+		<testcase classname="k2 lightcurve" file="/root/repo/notebooks/MAST/K2/K2_Lightcurve/k2_lightcurve.ipynb" name="Convert_Execution" time="7.952724"/>
+		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/K2/K2_FFI/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="8.839607"/>
+		<testcase classname="k2 tpf" file="/root/repo/notebooks/MAST/K2/K2_TPF/k2_tpf.ipynb" name="Convert_Execution" time="3.313406"/>
+		<testcase classname="PS1 DR2 TAP" file="/root/repo/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.ipynb" name="Convert_Execution" time="1.227384">
 			<error message="Traceback (most recent call last):
   File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
     executor.preprocess(nb, {'metadata': {'path': self.path_only}})
@@ -208,44 +190,375 @@ KeyError: 'esatapplus:flags'
     raise CellExecutionError.from_cell_and_msg(cell, out)
 nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-objname = 'KQ UMa'
-coords = Mast._resolve_object(objname)
-ra,dec = coords.ra.value,coords.dec.value
-radius = 1.0/3600.0 # radius = 1 arcsec
+# Use the pyvo library as our client to the data service.
+import pyvo as vo
 
-query = &quot;&quot;&quot;
-SELECT objID, RAMean, DecMean, nDetections, ng, nr, ni, nz, ny, gMeanPSFMag, 
-    rMeanPSFMag, iMeanPSFMag, zMeanPSFMag, yMeanPSFMag
-FROM dbo.MeanObjectView
-WHERE
-CONTAINS(POINT('ICRS', RAMean, DecMean),CIRCLE('ICRS',{},{},{}))=1
-AND nDetections &gt; 1
-&quot;&quot;&quot;.format(ra,dec,radius)
-print(query)
+# For resolving objects with tools from MAST
+from astroquery.mast import Mast
 
-job = TAP_service.launch_job_async(query)
-TAP_results = job.get_results()
-TAP_results
+# For handling ordinary astropy Tables in responses
+from astropy.table import Table
+
+# For displaying and manipulating some types of results
+%matplotlib inline
+import requests
+import astropy
+import numpy as np
+import pylab
+import time
+import json
+from matplotlib import pyplot as plt
+
+# For calling the object name resolver. Note these are Python 3 dependencies
+#import sys
+#import http.client as httplib 
+#from urllib.parse import quote as urlencode
+#from urllib.request import urlretrieve
+
+# To allow display tweaks for wider response tables
+from IPython.core.display import display
+from IPython.core.display import HTML
+
+# suppress unimportant unit warnings from many TAP services
+import warnings
+warnings.filterwarnings(&quot;ignore&quot;, module=&quot;astropy.io.votable.*&quot;)
+warnings.filterwarnings(&quot;ignore&quot;, module=&quot;pyvo.utils.xml.elements&quot;)
 ------------------
 
 
-AttributeErrorTraceback (most recent call last)
-&lt;ipython-input-5-d3d63fe93a98&gt; in &lt;module&gt;
-      1 objname = 'KQ UMa'
-----&gt; 2 coords = Mast._resolve_object(objname)
-      3 ra,dec = coords.ra.value,coords.dec.value
-      4 radius = 1.0/3600.0 # radius = 1 arcsec
-      5 
+ModuleNotFoundErrorTraceback (most recent call last)
+&lt;ipython-input-1-ba4a2215e643&gt; in &lt;module&gt;
+      1 # Use the pyvo library as our client to the data service.
+----&gt; 2 import pyvo as vo
+      3 
+      4 # For resolving objects with tools from MAST
+      5 from astroquery.mast import Mast
 
-AttributeError: 'MastClass' object has no attribute '_resolve_object'
-AttributeError: 'MastClass' object has no attribute '_resolve_object'
+ModuleNotFoundError: No module named 'pyvo'
+ModuleNotFoundError: No module named 'pyvo'
 
 " type="CellExecutionError"/>
 		</testcase>
-		<testcase classname="k2 lightcurve" file="/root/repo/notebooks/MAST/K2/K2_Lightcurve/k2_lightcurve.ipynb" name="Convert_Execution" time="2.762244"/>
-		<testcase classname="beginner how to use ffi" file="/root/repo/notebooks/MAST/K2/K2_FFI/beginner_how_to_use_ffi.ipynb" name="Convert_Execution" time="7.421784"/>
-		<testcase classname="k2 tpf" file="/root/repo/notebooks/MAST/K2/K2_TPF/k2_tpf.ipynb" name="Convert_Execution" time="3.633028"/>
-		<testcase classname="GriddedPSFModel simulation and photometry" file="/root/repo/notebooks/JWST/NIRCam/PSF_phot_01/GriddedPSFModel_simulation_and_photometry.ipynb" name="Convert_Execution" time="2.253113">
+		<testcase classname="drizzle wfpc2" file="/root/repo/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb" name="Convert_Execution" time="2.745579">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import shutil
+import glob
+import os
+import subprocess
+
+import matplotlib.pyplot as plt
+from astropy.io import fits
+
+from astroquery.mast import Observations
+from stwcs.updatewcs import updatewcs
+from drizzlepac import tweakreg, astrodrizzle, photeq
+from stsci.skypac import skymatch
+
+# ONLY needed for the simulation section:
+import numpy as np
+from stwcs.wcsutil import HSTWCS
+from drizzlepac.wfpc2Data import WFPC2_GAINS
+
+%matplotlib inline
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="align sparse fields" file="/root/repo/notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.ipynb" name="Convert_Execution" time="2.620951">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from astropy.table import Table
+from astropy.io import fits
+from astroquery.mast import Observations
+from ccdproc import ImageFileCollection
+import glob
+import matplotlib.pyplot as plt
+import os
+import shutil
+from drizzlepac import tweakreg
+from drizzlepac import astrodrizzle
+from IPython.display import Image
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="use ds9 regions in tweakreg" file="/root/repo/notebooks/DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.ipynb" name="Convert_Execution" time="2.051107">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# import all packages
+import glob
+import os
+import shutil
+
+from astropy.table import Table
+from astropy.io import fits
+from astroquery.mast import Observations
+from drizzlepac import tweakreg
+import matplotlib.pyplot as plt
+from photutils import CircularAperture
+import regions
+from regions import read_ds9
+
+# set plotting details for notebooks
+%matplotlib inline
+plt.rcParams['figure.figsize'] = (20,20)
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="Initialization" file="/root/repo/notebooks/DrizzlePac/Initialization/Initialization.ipynb" name="Convert_Execution" time="34.307409"/>
+		<testcase classname="align mosaics" file="/root/repo/notebooks/DrizzlePac/align_mosaics/align_mosaics.ipynb" name="Convert_Execution" time="2.526412">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from astroquery.mast import Observations
+from ccdproc import ImageFileCollection
+from astropy.table import Table
+from astropy.io import fits
+from astropy.io import ascii
+from astropy.visualization import ZScaleInterval
+from IPython.display import Image
+import glob
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import shutil
+from drizzlepac import tweakreg
+from drizzlepac import astrodrizzle
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="mask satellite" file="/root/repo/notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb" name="Convert_Execution" time="3.146060">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import os
+import shutil
+
+from astropy.io import fits
+from astroquery.mast import Observations
+from astropy.visualization import astropy_mpl_style,LogStretch,ImageNormalize,LinearStretch
+from IPython.display import Image
+import matplotlib.pyplot as plt
+import pyregion
+
+import acstools
+from acstools.satdet import detsat, make_mask, update_dq
+from drizzlepac.astrodrizzle import AstroDrizzle as adriz
+
+%matplotlib inline
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="sky matching" file="/root/repo/notebooks/DrizzlePac/sky_matching/sky_matching.ipynb" name="Convert_Execution" time="2.830832">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# All imports needed through out this notebook are included at the beginning. 
+import glob
+import os
+import shutil
+from shutil import copyfile
+
+from astropy.io import fits
+from astropy.visualization import astropy_mpl_style
+from astroquery.mast import Observations
+from ccdproc import ImageFileCollection
+from IPython.display import Image
+import matplotlib.pyplot as plt
+import pandas as pd
+
+import drizzlepac
+from drizzlepac import tweakreg
+from drizzlepac import tweakback
+from stwcs import updatewcs 
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="optimize image sampling" file="/root/repo/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb" name="Convert_Execution" time="2.362143">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import glob
+import shutil
+import os
+
+from astropy.io import fits
+from astroquery.mast import Observations
+from astropy.visualization import LogStretch,ImageNormalize,LinearStretch
+from astropy import wcs
+import drizzlepac
+import matplotlib.pyplot as plt
+import numpy as np
+
+%matplotlib inline
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="using updated astrometry solutions" file="/root/repo/notebooks/DrizzlePac/using_updated_astrometry_solutions/using_updated_astrometry_solutions.ipynb" name="Convert_Execution" time="44.217726">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from drizzlepac.alignimages import generate_astrometric_catalog
+ast_tbl = generate_astrometric_catalog('id7307xfq_flc.fits', output=True) 
+ast_tbl
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="align to catalogs" file="/root/repo/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb" name="Convert_Execution" time="2.530488">
+			<error message="Traceback (most recent call last):
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
+    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
+    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
+    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
+    raise CellExecutionError.from_cell_and_msg(cell, out)
+nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import astropy.units as u
+import glob
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+
+from astropy.io import fits
+from astropy.table import Table
+from astropy.units import Quantity
+from astropy.coordinates import SkyCoord
+from astroquery.gaia import Gaia
+from astroquery.mast import Observations
+from astroquery.sdss import SDSS
+
+from ccdproc import ImageFileCollection
+from IPython.display import Image
+
+from drizzlepac import tweakreg
+from drizzlepac import astrodrizzle
+------------------
+
+
+ModuleNotFoundErrorTraceback (most recent call last)
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+" type="CellExecutionError"/>
+		</testcase>
+		<testcase classname="GriddedPSFModel simulation and photometry" file="/root/repo/notebooks/JWST/NIRCam/PSF_phot_01/GriddedPSFModel_simulation_and_photometry.ipynb" name="Convert_Execution" time="2.264153">
 			<error message="Traceback (most recent call last):
   File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
     executor.preprocess(nb, {'metadata': {'path': self.path_only}})
@@ -314,325 +627,6 @@ __init__.pxd in init photutils.geometry.circular_overlap()
 
 ValueError: numpy.ufunc size changed, may indicate binary incompatibility. Expected 216 from C header, got 192 from PyObject
 ValueError: numpy.ufunc size changed, may indicate binary incompatibility. Expected 216 from C header, got 192 from PyObject
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="align mosaics" file="/root/repo/notebooks/DrizzlePac/align_mosaics/align_mosaics.ipynb" name="Convert_Execution" time="2.604459">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-from astroquery.mast import Observations
-from ccdproc import ImageFileCollection
-from astropy.table import Table
-from astropy.io import fits
-from astropy.io import ascii
-from astropy.visualization import ZScaleInterval
-from IPython.display import Image
-import glob
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-import shutil
-from drizzlepac import tweakreg
-from drizzlepac import astrodrizzle
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="align sparse fields" file="/root/repo/notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.ipynb" name="Convert_Execution" time="2.465200">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-from astropy.table import Table
-from astropy.io import fits
-from astroquery.mast import Observations
-from ccdproc import ImageFileCollection
-import glob
-import matplotlib.pyplot as plt
-import os
-import shutil
-from drizzlepac import tweakreg
-from drizzlepac import astrodrizzle
-from IPython.display import Image
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="sky matching" file="/root/repo/notebooks/DrizzlePac/sky_matching/sky_matching.ipynb" name="Convert_Execution" time="2.782316">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-# All imports needed through out this notebook are included at the beginning. 
-import glob
-import os
-import shutil
-from shutil import copyfile
-
-from astropy.io import fits
-from astropy.visualization import astropy_mpl_style
-from astroquery.mast import Observations
-from ccdproc import ImageFileCollection
-from IPython.display import Image
-import matplotlib.pyplot as plt
-import pandas as pd
-
-import drizzlepac
-from drizzlepac import tweakreg
-from drizzlepac import tweakback
-from stwcs import updatewcs 
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="Initialization" file="/root/repo/notebooks/DrizzlePac/Initialization/Initialization.ipynb" name="Convert_Execution" time="25.064342"/>
-		<testcase classname="optimize image sampling" file="/root/repo/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb" name="Convert_Execution" time="2.335985">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-import glob
-import shutil
-import os
-
-from astropy.io import fits
-from astroquery.mast import Observations
-from astropy.visualization import LogStretch,ImageNormalize,LinearStretch
-from astropy import wcs
-import drizzlepac
-import matplotlib.pyplot as plt
-import numpy as np
-
-%matplotlib inline
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="mask satellite" file="/root/repo/notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb" name="Convert_Execution" time="3.061183">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-import os
-import shutil
-
-from astropy.io import fits
-from astroquery.mast import Observations
-from astropy.visualization import astropy_mpl_style,LogStretch,ImageNormalize,LinearStretch
-from IPython.display import Image
-import matplotlib.pyplot as plt
-import pyregion
-
-import acstools
-from acstools.satdet import detsat, make_mask, update_dq
-from drizzlepac.astrodrizzle import AstroDrizzle as adriz
-
-%matplotlib inline
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="drizzle wfpc2" file="/root/repo/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb" name="Convert_Execution" time="2.321661">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-import shutil
-import glob
-import os
-import subprocess
-
-import matplotlib.pyplot as plt
-from astropy.io import fits
-
-from astroquery.mast import Observations
-from stwcs.updatewcs import updatewcs
-from drizzlepac import tweakreg, astrodrizzle, photeq
-from stsci.skypac import skymatch
-
-# ONLY needed for the simulation section:
-import numpy as np
-from stwcs.wcsutil import HSTWCS
-from drizzlepac.wfpc2Data import WFPC2_GAINS
-
-%matplotlib inline
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="align to catalogs" file="/root/repo/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb" name="Convert_Execution" time="2.456204">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-import astropy.units as u
-import glob
-import numpy as np
-import matplotlib.pyplot as plt
-import os
-
-from astropy.io import fits
-from astropy.table import Table
-from astropy.units import Quantity
-from astropy.coordinates import SkyCoord
-from astroquery.gaia import Gaia
-from astroquery.mast import Observations
-from astroquery.sdss import SDSS
-
-from ccdproc import ImageFileCollection
-from IPython.display import Image
-
-from drizzlepac import tweakreg
-from drizzlepac import astrodrizzle
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="using updated astrometry solutions" file="/root/repo/notebooks/DrizzlePac/using_updated_astrometry_solutions/using_updated_astrometry_solutions.ipynb" name="Convert_Execution" time="51.243185">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-from drizzlepac.alignimages import generate_astrometric_catalog
-ast_tbl = generate_astrometric_catalog('id7307xfq_flc.fits', output=True) 
-ast_tbl
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-
-" type="CellExecutionError"/>
-		</testcase>
-		<testcase classname="use ds9 regions in tweakreg" file="/root/repo/notebooks/DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.ipynb" name="Convert_Execution" time="2.041637">
-			<error message="Traceback (most recent call last):
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbpages/converter.py&quot;, line 116, in execute
-    executor.preprocess(nb, {'metadata': {'path': self.path_only}})
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 405, in preprocess
-    nb, resources = super(ExecutePreprocessor, self).preprocess(nb, resources)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/base.py&quot;, line 69, in preprocess
-    nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
-  File &quot;/opt/conda/envs/notebooks_env/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py&quot;, line 448, in preprocess_cell
-    raise CellExecutionError.from_cell_and_msg(cell, out)
-nbconvert.preprocessors.execute.CellExecutionError: An error occurred while executing the following cell:
-------------------
-# import all packages
-import glob
-import os
-import shutil
-
-from astropy.table import Table
-from astropy.io import fits
-from astroquery.mast import Observations
-from drizzlepac import tweakreg
-import matplotlib.pyplot as plt
-from photutils import CircularAperture
-import regions
-from regions import read_ds9
-
-# set plotting details for notebooks
-%matplotlib inline
-plt.rcParams['figure.figsize'] = (20,20)
-------------------
-
-
-ModuleNotFoundErrorTraceback (most recent call last)
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
-ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
 
 " type="CellExecutionError"/>
 		</testcase>

@@ -13141,9 +13141,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Table Access Protocol (TAP) services allow more direct and flexible access to astronomical data than the simpler types of IVOA standard data services. Queries are built with the SQL-like Astronomical Data Query Language (ADQL), and can include geographic / spatial queries as well as filtering on other characteristics of the data. This also allows the user fine-grained control over the returned columns, unlike the fixed set of coumns retunred from cone, image, and spectral services.</p>
-<p>For this example, we'll be using the astroquery TAP/TAP+ client, which was developed by the ESAC Space Data Centre for working with the GAIA catalog, but is interoperable with other valid TAP services, including those at MAST. As an astroquery project, TAP+ documentation is available at ReadTheDocs: <a href="http://astroquery.readthedocs.io/en/latest/utils/tap.html">http://astroquery.readthedocs.io/en/latest/utils/tap.html</a></p>
-<p>We'll be using TAP+ to call the most recent version (3) of the Hubble Source Catalog TAP service at MAST. The schema is described within the service, and we'll show how to inspect it. The schema is also the same as the one available via the CasJobs interface, with an additional view added for the most common positional queries. CasJobs has its own copy of the schema documentation, which can be accessed through its own site: <a href="http://mastweb.stsci.edu/hcasjobs/">http://mastweb.stsci.edu/hcasjobs/</a></p>
+<p>Table Access Protocol (TAP) services allow more direct and flexible access to astronomical data than the simpler types of IVOA standard data services. Queries are built with the SQL-like Astronomical Data Query Language (ADQL), and can include geographic/spatial queries as well as filtering on other characteristics of the data. This also allows the user fine-grained control over the returned columns, unlike the fixed set of coumns returned from cone, image, and spectral services.</p>
+<p>For this example, we'll be using the astropy affiliated PyVO client, which is interoperable with other valid TAP services, including those at MAST. PyVO documentation is available at ReadTheDocs: <a href="https://pyvo.readthedocs.io">https://pyvo.readthedocs.io</a></p>
+<p>We'll be using PyVO to call the most recent version (3) of the Hubble Source Catalog TAP service at MAST. The schema is described within the service, and we'll show how to inspect it. The schema is also the same as the one available via the CasJobs interface, with an additional view added for the most common positional queries. CasJobs has its own copy of the schema documentation, which can be accessed through its own site: <a href="http://mastweb.stsci.edu/hcasjobs/">http://mastweb.stsci.edu/hcasjobs/</a></p>
 
 </div>
 </div>
@@ -13161,8 +13161,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use the astroquery TapPlus library as our client to the data service.</span>
-<span class="kn">from</span> <span class="nn">astroquery.utils.tap.core</span> <span class="kn">import</span> <span class="n">TapPlus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pyvo</span> <span class="k">as</span> <span class="nn">vo</span>
 
 <span class="c1">## For handling ordinary astropy Tables in responses</span>
 <span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
@@ -13181,9 +13180,41 @@ div#notebook {
 
 <span class="c1"># For the second example: kernel density estimates</span>
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">gaussian_kde</span>
+
+
+<span class="c1"># suppress unimportant unit warnings from many TAP services</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s2">&quot;astropy.io.votable.*&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-27ca0255115b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> pyvo <span class="ansi-green-fg">as</span> vo
+<span class="ansi-green-intense-fg ansi-bold">      2</span> 
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-red-fg">## For handling ordinary astropy Tables in responses</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-green-fg">from</span> astropy<span class="ansi-blue-fg">.</span>table <span class="ansi-green-fg">import</span> Table
+<span class="ansi-green-intense-fg ansi-bold">      5</span> 
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;pyvo&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13199,42 +13230,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Connecting-to-a-TAP-Service">Connecting to a TAP Service<a class="anchor-link" href="#Connecting-to-a-TAP-Service">&#182;</a></h3><p>The TapPlus library is able to connect to any TAP service, given the "base" URL as noted in metadata registry resources describing the service. This is the URL for the newest version of the Hubble Source Catalog TAP service.</p>
+<h3 id="Connecting-to-a-TAP-Service">Connecting to a TAP Service<a class="anchor-link" href="#Connecting-to-a-TAP-Service">&#182;</a></h3><p>The PyVO library is able to connect to any TAP service, given the "base" URL as noted in metadata registry resources describing the service. This is the URL for the newest version of the Hubble Source Catalog TAP service.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HSC_service</span> <span class="o">=</span> <span class="n">TapPlus</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s2">&quot;http://vao.stsci.edu/HSCTAP/tapservice.aspx&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HSC_service</span> <span class="o">=</span> <span class="n">vo</span><span class="o">.</span><span class="n">dal</span><span class="o">.</span><span class="n">TAPService</span><span class="p">(</span><span class="s2">&quot;http://vao.stsci.edu/hsctap/tapservice.aspx&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Created TAP+ (v1.2.1) - Connection:
-	Host: vao.stsci.edu
-	Use HTTPS: False
-	Port: 80
-	SSL Port: 443
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13242,151 +13251,39 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Querying-for-Table-Schema-Information">Querying for Table Schema Information<a class="anchor-link" href="#Querying-for-Table-Schema-Information">&#182;</a></h3><p>TAP services are self-describing, which means the service itself can be asked for its schema and documentation about it. Since the hubble Source Catalog does not follow a data model described by a standard, this is the best way to see what tables and columns we have available to then query based on geometry or other filters.</p>
-<p>The main view for HSC, SumMagAper2CatView, is extremely wide, containing columns for all potential filters, each of which may have null data. So in showing our query results, we will cut off the display with "..." marks. You can change the 'if' line to show the rest of these columns.</p>
+<h3 id="Querying-for-Table-Schema-Information">Querying for Table Schema Information<a class="anchor-link" href="#Querying-for-Table-Schema-Information">&#182;</a></h3><p>TAP services are self-describing, which means the service itself can be asked for its schema and documentation about it. Since the Hubble Source Catalog does not follow a data model described by a standard, this is the best way to see what tables and columns we have available to then query based on geometry or other filters.</p>
+<p>Note that several views for HSC, including the main science table SumMagAper2CatView, are extremely wide, containing columns for all potential filters, each of which may have null data. The ability to filter queries based on only columns we want, or that aren't null, makes TAP services more flexible and potentially faster.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HSC_tables</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">load_tables</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">HSC_tables</span><span class="p">:</span>
-    <span class="k">if</span><span class="p">(</span> <span class="n">table</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;dbo.SumMagAper2CatView&#39;</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">column</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
-            <span class="c1">#only show the first 30 and last 10 columns</span>
-            <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">30</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">column</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-            <span class="c1">#skip display for the middle column names</span>
-            <span class="k">elif</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">30</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HSC_service</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO: Retrieving tables... [astroquery.utils.tap.core]
-INFO: Parsing tables... [astroquery.utils.tap.core]
-</pre>
 </div>
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HSC_tables</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">tables</span>
+<span class="k">for</span> <span class="n">tablename</span> <span class="ow">in</span> <span class="n">HSC_tables</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="s2">&quot;tap_schema&quot;</span> <span class="ow">in</span> <span class="n">tablename</span><span class="p">:</span>  
+        <span class="n">HSC_tables</span><span class="p">[</span><span class="n">tablename</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columns=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="n">k</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">HSC_tables</span><span class="p">[</span><span class="n">tablename</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span> <span class="p">])))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----&quot;</span><span class="p">)</span>
+</pre></div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-3-cec91d928ba8&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>HSC_tables <span class="ansi-blue-fg">=</span> HSC_service<span class="ansi-blue-fg">.</span>load_tables<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;\n&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">for</span> table <span class="ansi-green-fg">in</span> HSC_tables<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">if</span><span class="ansi-blue-fg">(</span> table<span class="ansi-blue-fg">.</span>name <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;dbo.SumMagAper2CatView&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span>         print<span class="ansi-blue-fg">(</span>table<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
-<span class="ansi-green-intense-fg ansi-bold">    807</span>         return self._Tap__load_tables(only_names=only_names,
-<span class="ansi-green-intense-fg ansi-bold">    808</span>                                       include_shared_tables<span class="ansi-blue-fg">=</span>include_shared_tables<span class="ansi-blue-fg">,</span>  <span class="ansi-red-fg"># noqa</span>
-<span class="ansi-green-fg">--&gt; 809</span><span class="ansi-red-fg">                                       verbose=verbose)
-</span><span class="ansi-green-intense-fg ansi-bold">    810</span> 
-<span class="ansi-green-intense-fg ansi-bold">    811</span>     <span class="ansi-green-fg">def</span> load_data<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> params_dict<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> output_file<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/core.py</span> in <span class="ansi-cyan-fg">__load_tables</span><span class="ansi-blue-fg">(self, only_names, include_shared_tables, verbose)</span>
-<span class="ansi-green-intense-fg ansi-bold">    235</span>         log<span class="ansi-blue-fg">.</span>info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Parsing tables...&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    236</span>         tsp <span class="ansi-blue-fg">=</span> TableSaxParser<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 237</span><span class="ansi-red-fg">         </span>tsp<span class="ansi-blue-fg">.</span>parseData<span class="ansi-blue-fg">(</span>response<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    238</span>         log<span class="ansi-blue-fg">.</span>info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Done.&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    239</span>         <span class="ansi-green-fg">return</span> tsp<span class="ansi-blue-fg">.</span>get_tables<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">parseData</span><span class="ansi-blue-fg">(self, data)</span>
-<span class="ansi-green-intense-fg ansi-bold">     65</span>         <span class="ansi-green-fg">del</span> self<span class="ansi-blue-fg">.</span>__tables<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     66</span>         self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">=</span> READING_SCHEMA
-<span class="ansi-green-fg">---&gt; 67</span><span class="ansi-red-fg">         </span>xml<span class="ansi-blue-fg">.</span>sax<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     68</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>__tables
-<span class="ansi-green-intense-fg ansi-bold">     69</span> 
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/__init__.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(source, handler, errorHandler)</span>
-<span class="ansi-green-intense-fg ansi-bold">     31</span>     parser<span class="ansi-blue-fg">.</span>setContentHandler<span class="ansi-blue-fg">(</span>handler<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     32</span>     parser<span class="ansi-blue-fg">.</span>setErrorHandler<span class="ansi-blue-fg">(</span>errorHandler<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 33</span><span class="ansi-red-fg">     </span>parser<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>source<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     34</span> 
-<span class="ansi-green-intense-fg ansi-bold">     35</span> <span class="ansi-green-fg">def</span> parseString<span class="ansi-blue-fg">(</span>string<span class="ansi-blue-fg">,</span> handler<span class="ansi-blue-fg">,</span> errorHandler<span class="ansi-blue-fg">=</span>ErrorHandler<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
-<span class="ansi-green-intense-fg ansi-bold">    109</span>             self<span class="ansi-blue-fg">.</span>reset<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    110</span>             self<span class="ansi-blue-fg">.</span>_cont_handler<span class="ansi-blue-fg">.</span>setDocumentLocator<span class="ansi-blue-fg">(</span>ExpatLocator<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 111</span><span class="ansi-red-fg">             </span>xmlreader<span class="ansi-blue-fg">.</span>IncrementalParser<span class="ansi-blue-fg">.</span>parse<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> source<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    112</span>         <span class="ansi-green-fg">except</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    113</span>             <span class="ansi-red-fg"># bpo-30264: Close the source on error to not leak resources:</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">parse</span><span class="ansi-blue-fg">(self, source)</span>
-<span class="ansi-green-intense-fg ansi-bold">    123</span>         buffer <span class="ansi-blue-fg">=</span> file<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_bufsize<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    124</span>         <span class="ansi-green-fg">while</span> buffer<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 125</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>feed<span class="ansi-blue-fg">(</span>buffer<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    126</span>             buffer <span class="ansi-blue-fg">=</span> file<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_bufsize<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    127</span>         self<span class="ansi-blue-fg">.</span>close<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, data, isFinal)</span>
-<span class="ansi-green-intense-fg ansi-bold">    215</span>             <span class="ansi-red-fg"># document. When feeding chunks, they are not normally final -</span>
-<span class="ansi-green-intense-fg ansi-bold">    216</span>             <span class="ansi-red-fg"># except when invoked from close.</span>
-<span class="ansi-green-fg">--&gt; 217</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_parser<span class="ansi-blue-fg">.</span>Parse<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> isFinal<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    218</span>         <span class="ansi-green-fg">except</span> expat<span class="ansi-blue-fg">.</span>error <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    219</span>             exc <span class="ansi-blue-fg">=</span> SAXParseException<span class="ansi-blue-fg">(</span>expat<span class="ansi-blue-fg">.</span>ErrorString<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">.</span>code<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> e<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/concourse/worker/volumes/live/5ef35e25-0651-4251-5136-78db382b9314/volume/python_1572016161519/work/Modules/pyexpat.c</span> in <span class="ansi-cyan-fg">StartElement</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/expatreader.py</span> in <span class="ansi-cyan-fg">start_element</span><span class="ansi-blue-fg">(self, name, attrs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    331</span>     <span class="ansi-red-fg"># event handlers</span>
-<span class="ansi-green-intense-fg ansi-bold">    332</span>     <span class="ansi-green-fg">def</span> start_element<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 333</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_cont_handler<span class="ansi-blue-fg">.</span>startElement<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> AttributesImpl<span class="ansi-blue-fg">(</span>attrs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    334</span> 
-<span class="ansi-green-intense-fg ansi-bold">    335</span>     <span class="ansi-green-fg">def</span> end_element<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">startElement</span><span class="ansi-blue-fg">(self, name, attrs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     72</span>             self<span class="ansi-blue-fg">.</span>__reading_schema<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     73</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">==</span> READING_TABLE<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 74</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__reading_table<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     75</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">==</span> READING_TABLE_COLUMN<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     76</span>             self<span class="ansi-blue-fg">.</span>__reading_table_column<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/site-packages/astroquery/utils/tap/xmlparser/tableSaxParser.py</span> in <span class="ansi-cyan-fg">__reading_table</span><span class="ansi-blue-fg">(self, name, attrs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    108</span>         <span class="ansi-green-fg">elif</span> self<span class="ansi-blue-fg">.</span>__check_item_id<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;column&#34;</span><span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    109</span>             self<span class="ansi-blue-fg">.</span>__status <span class="ansi-blue-fg">=</span> READING_TABLE_COLUMN
-<span class="ansi-green-fg">--&gt; 110</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>__currentColumn <span class="ansi-blue-fg">=</span> TapColumn<span class="ansi-blue-fg">(</span>attrs<span class="ansi-blue-fg">.</span>getValue<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;esatapplus:flags&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    111</span> 
-<span class="ansi-green-intense-fg ansi-bold">    112</span>     <span class="ansi-green-fg">def</span> __end_table<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">~/miniconda3/envs/nb-build/lib/python3.7/xml/sax/xmlreader.py</span> in <span class="ansi-cyan-fg">getValue</span><span class="ansi-blue-fg">(self, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">    291</span> 
-<span class="ansi-green-intense-fg ansi-bold">    292</span>     <span class="ansi-green-fg">def</span> getValue<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 293</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_attrs<span class="ansi-blue-fg">[</span>name<span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">    294</span> 
-<span class="ansi-green-intense-fg ansi-bold">    295</span>     <span class="ansi-green-fg">def</span> getValueByQName<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-red-fg">KeyError</span>: &#39;esatapplus:flags&#39;</pre>
-</div>
-</div>
-
+    </div>
 </div>
 </div>
 
@@ -13406,13 +13303,12 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT TOP 10 MatchRA, MatchDec, TargetName, StartTime, StopTime</span>
 <span class="s2">FROM dbo.SumMagAper2CatView</span>
 <span class="s2">WHERE CONTAINS(POINT(&#39;ICRS&#39;, MatchRA, MatchDec),CIRCLE(&#39;ICRS&#39;,129.23,7.95,0.1))=1</span>
 <span class="s2">  &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">HSC_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
-<span class="n">HSC_results</span>
+<span class="n">results</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13433,15 +13329,14 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT TOP 10 MatchID, MatchRA, MatchDec, TargetName, StartTime, StopTime, TargetName </span>
 <span class="s2">FROM dbo.SumMagAper2CatView</span>
 <span class="s2">WHERE </span>
 <span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, MatchRA, MatchDec),CIRCLE(&#39;ICRS&#39;,129.23,7.95,0.1))=1</span>
 <span class="s2">AND StartTime &gt; &#39;2015-01-01&#39; AND StopTime &lt; &#39;2015-04-01&#39;</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">HSC_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
-<span class="n">HSC_results</span>
+<span class="n">results</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13453,7 +13348,7 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="Use-Case:-Plotting-a-light-curve-for-the-most-variable-object-in-a-field">Use Case: Plotting a light curve for the most variable object in a field<a class="anchor-link" href="#Use-Case:-Plotting-a-light-curve-for-the-most-variable-object-in-a-field">&#182;</a></h3><p>A use case example: search for objects with 10 or more ACS F475W magnitudes in a crowded field near IC 1613 (see <a href="http://archive.stsci.edu/hst/hsc/help/use_case_3_v2.html">HSC Use Case 3</a>). Then get the individual A_F475W measurements for the most variable object in the list and plot the light curve. Note we are using asynchronous query mode for this example rather than synchronous, because it has a longer allowed timeout, which can be useful for large or complex queries.</p>
+<h3 id="Use-Case:-Plotting-a-light-curve-for-the-most-variable-object-in-a-field">Use Case: Plotting a light curve for the most variable object in a field<a class="anchor-link" href="#Use-Case:-Plotting-a-light-curve-for-the-most-variable-object-in-a-field">&#182;</a></h3><p>A use case example: search for objects with 10 or more ACS F475W magnitudes in a crowded field near IC 1613 (see <a href="http://archive.stsci.edu/hst/hsc/help/use_case_3_v2.html">HSC Use Case 3</a>). Then get the individual A_F475W measurements for the most variable object in the list and plot the light curve. Note we must use asynchronous query mode for this example rather than synchronous, because it has a longer allowed timeout, which can be useful for large or complex queries.</p>
 
 </div>
 </div>
@@ -13463,7 +13358,7 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT MatchID, MatchRA, MatchDec, TargetName, NumImages, NumVisits, A_F475W, A_F475W_MAD, A_F475W_N</span>
 <span class="s2">FROM dbo.SumMagAper2CatView</span>
 <span class="s2">WHERE </span>
@@ -13471,10 +13366,21 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <span class="s2">   AND</span>
 <span class="s2">   CONTAINS(POINT(&#39;ICRS&#39;, MatchRA, MatchDec),CIRCLE(&#39;ICRS&#39;,16.117562,2.162183,0.1))=1</span>
 <span class="s2">   &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">HSC_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">HSC_results</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 <span class="n">HSC_results</span>
+</pre></div>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">HSC_results</span><span class="p">[</span><span class="s1">&#39;A_F475W&#39;</span><span class="p">],</span> <span class="n">HSC_results</span><span class="p">[</span><span class="s1">&#39;A_F475W_MAD&#39;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;A_F475W&#39;</span><span class="p">)</span>
@@ -13497,7 +13403,7 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <span class="nb">print</span><span class="p">(</span><span class="n">HSC_results</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 
 <span class="n">matchid</span> <span class="o">=</span> <span class="n">HSC_results</span><span class="p">[</span><span class="s1">&#39;MatchID&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
-<span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="n">details</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT SourceID, ImageID, SourceRA, SourceDec, D, Filter, Detector, MagAper2, StartMJD</span>
 <span class="s2">FROM dbo.DetailedCatalog</span>
 <span class="s2">WHERE </span>
@@ -13505,7 +13411,7 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <span class="s2">   AND Detector=&#39;ACS/WFC&#39; AND Filter=&#39;F475W&#39; AND Det=&#39;Y&#39;</span>
 <span class="s2">ORDER BY StartMJD</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">matchid</span><span class="p">))</span>
-<span class="n">HSC_details</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">HSC_details</span> <span class="o">=</span> <span class="n">details</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 <span class="n">HSC_details</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
@@ -13536,13 +13442,13 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 
-<span class="n">job</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">HSC_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT MatchID, MatchRA, MatchDec, CI, A_F555W, A_F814W</span>
 <span class="s2">FROM dbo.SumMagAper2CatView</span>
 <span class="s2">WHERE A_F555W_N &gt; 0 and A_F814W_N &gt; 0</span>
 <span class="s2">    AND CONTAINS(POINT(&#39;ICRS&#39;, MatchRA, MatchDec),CIRCLE(&#39;ICRS&#39;,13.1866,-72.8286,0.25))=1</span>
 <span class="s2">   &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">HSC_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">HSC_results</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Query completed in </span><span class="si">{:.1f}</span><span class="s2"> sec&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t0</span><span class="p">))</span>
 <span class="n">HSC_results</span>
 </pre></div>
@@ -13634,9 +13540,10 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 <li>IVOA standard for querying astronomical data in tabular format, with geometric search support</li>
 <li><a href="http://www.ivoa.net/documents/latest/ADQL.html">http://www.ivoa.net/documents/latest/ADQL.html</a></li>
 </ul>
-<h2 id="TapPlus">TapPlus<a class="anchor-link" href="#TapPlus">&#182;</a></h2><ul>
-<li>Module created by ESAC Space Data Centre</li>
-<li><a href="http://astroquery.readthedocs.io/en/latest/utils/tap.html">http://astroquery.readthedocs.io/en/latest/utils/tap.html</a></li>
+<h2 id="PyVO">PyVO<a class="anchor-link" href="#PyVO">&#182;</a></h2><ul>
+<li>an affiliated package for astropy</li>
+<li>find and retrieve astronomical data available from archives that support standard IVOA virtual observatory service protocols.</li>
+<li><a href="https://pyvo.readthedocs.io/en/latest/index.html">https://pyvo.readthedocs.io/en/latest/index.html</a></li>
 </ul>
 
 </div>
@@ -13654,7 +13561,7 @@ INFO: Parsing tables... [astroquery.utils.tap.core]
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="About-this-Notebook">About this Notebook<a class="anchor-link" href="#About-this-Notebook">&#182;</a></h2><p><strong>Authors:</strong> Rick White &amp; Theresa Dower, STScI Archive Scientist &amp; Software Engineer
-<strong>Updated On:</strong> 11/23/2018</p>
+<strong>Updated On:</strong> 01/08/2020</p>
 
 </div>
 </div>

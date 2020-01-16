@@ -13136,8 +13136,8 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Table Access Protocol (TAP) services allow more direct and flexible access to astronomical data than the simpler types of IVOA standard data services. Queries are built with the SQL-like Astronomical Data Query Language (ADQL), and can include geographic / spatial queries as well as filtering on other characteristics of the data. This also allows the user fine-grained control over the returned columns, unlike the fixed set of coumns returned from cone, image, and spectral services.</p>
-<p>For this example, we'll be using the astroquery TAP/TAP+ client, which was developed by the ESAC Space Data Centre for working with the GAIA catalog, but is interoperable with other valid TAP services, including those at MAST. As an astroquery project, TAP+ documentation is available at ReadTheDocs: <a href="http://astroquery.readthedocs.io/en/latest/utils/tap.html">http://astroquery.readthedocs.io/en/latest/utils/tap.html</a></p>
-<p>We'll be using TAP+ to call the TAP service at MAST serving PanSTARRS 1 Data Release 2, now with individual detection information. The schema is described within the service, and we'll show how to inspect it. The schema is also the same as the one available via the CasJobs interface, with an additional view added for the most common positional queries. CasJobs has its own copy of the schema documentation, which can be accessed through its own site: <a href="http://mastweb.stsci.edu/ps1casjobs/">http://mastweb.stsci.edu/ps1casjobs/</a></p>
+<p>For this example, we'll be using the astropy affiliated PyVO client, which is interoperable with other valid TAP services, including those at MAST. PyVO documentation is available at ReadTheDocs: <a href="https://pyvo.readthedocs.io">https://pyvo.readthedocs.io</a></p>
+<p>We'll be using PyVO to call the TAP service at MAST serving PanSTARRS 1 Data Release 2, now with individual detection information. The schema is described within the service, and we'll show how to inspect it. The schema is also the same as the one available via the CasJobs interface, with an additional view added for the most common positional queries. CasJobs has its own copy of the schema documentation, which can be accessed through its own site: <a href="http://mastweb.stsci.edu/ps1casjobs/">http://mastweb.stsci.edu/ps1casjobs/</a></p>
 
 </div>
 </div>
@@ -13155,18 +13155,14 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use the astroquery TapPlus library as our client to the data service.</span>
-<span class="kn">from</span> <span class="nn">astroquery.utils.tap.core</span> <span class="kn">import</span> <span class="n">TapPlus</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use the pyvo library as our client to the data service.</span>
+<span class="kn">import</span> <span class="nn">pyvo</span> <span class="k">as</span> <span class="nn">vo</span>
 
 <span class="c1"># For resolving objects with tools from MAST</span>
 <span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Mast</span>
 
 <span class="c1"># For handling ordinary astropy Tables in responses</span>
 <span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
-
-<span class="c1"># For resolving coordinates and rendering units</span>
-<span class="kn">from</span> <span class="nn">astropy</span> <span class="kn">import</span> <span class="n">units</span> <span class="k">as</span> <span class="n">u</span>
-<span class="kn">from</span> <span class="nn">astropy.coordinates</span> <span class="kn">import</span> <span class="n">SkyCoord</span>
 
 <span class="c1"># For displaying and manipulating some types of results</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -13187,293 +13183,11 @@ div#notebook {
 <span class="c1"># To allow display tweaks for wider response tables</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Connecting-to-a-TAP-Service">Connecting to a TAP Service<a class="anchor-link" href="#Connecting-to-a-TAP-Service">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The TapPlus library is able to connect to any TAP service, given the "base" URL as noted in metadata registry resources describing the service. This is the URL for the PanSTARRS 1 DR2 TAP service.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">TAP_service</span> <span class="o">=</span> <span class="n">TapPlus</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s2">&quot;http://vao.stsci.edu/PS1DR2/tapservice.aspx&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Created TAP+ (v1.2.1) - Connection:
-	Host: vao.stsci.edu
-	Use HTTPS: False
-	Port: 80
-	SSL Port: 443
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="List-available-tables">List available tables<a class="anchor-link" href="#List-available-tables">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tables</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">load_tables</span><span class="p">(</span><span class="n">only_names</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO: Retrieving tables... [astroquery.utils.tap.core]
-INFO: Parsing tables... [astroquery.utils.tap.core]
-INFO: Done. [astroquery.utils.tap.core]
-dbo.ForcedMeanLensing
-dbo.ForcedMeanObject
-dbo.ForcedMeanObjectView
-dbo.Detection
-dbo.DetectionFlags
-dbo.DetectionFlags2
-dbo.DetectionFlags3
-dbo.DetectionObjectView
-dbo.DiffDetection
-dbo.DiffDetEffMeta
-dbo.DiffDetObject
-dbo.DiffDetObjectView
-dbo.DiffMeta
-dbo.DiffToImage
-dbo.DiffType
-dbo.Filter
-dbo.FitModel
-dbo.ForcedGalaxyModelView
-dbo.ForcedGalaxyShape
-dbo.ForcedGalaxyShapeFlags
-dbo.FrameMeta
-dbo.ImageDetEffMeta
-dbo.ImageFlags
-dbo.ImageMeta
-dbo.MeanObject
-dbo.MeanObjectView
-dbo.ObjectFilterFlags
-dbo.ObjectInfoFlags
-dbo.ObjectQualityFlags
-dbo.ObjectThin
-dbo.PhotoCal
-dbo.StackApFlx
-dbo.StackApFlxExGalCon6
-dbo.StackApFlxExGalCon6ObjectView
-dbo.StackApFlxExGalCon8
-dbo.StackApFlxExGalCon8ObjectView
-dbo.StackApFlxExGalUnc
-dbo.StackApFlxExGalUncObjectView
-dbo.StackApFlxObjectView
-dbo.StackDetEffMeta
-dbo.StackMeta
-dbo.StackModelFitDeV
-dbo.StackModelFitDeVObjectView
-dbo.StackModelFitExp
-dbo.StackModelFitExpObjectView
-dbo.StackModelFitExtra
-dbo.StackModelFitPetObjectView
-dbo.StackModelFitSer
-dbo.StackModelFitSerObjectView
-dbo.StackModelObjectView
-dbo.StackObjectAttributes
-dbo.StackObjectThin
-dbo.StackObjectView
-dbo.StackPetrosian
-dbo.StackToFrame
-dbo.StackToImage
-dbo.StackType
-dbo.Survey
-dbo.TessellationType
-tap_schema.schemas
-tap_schema.tables
-tap_schema.columns
-tap_schema.keys
-tap_schema.key_columns
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Use-Cases">Use Cases<a class="anchor-link" href="#Use-Cases">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Simple-Positional-Query">Simple Positional Query<a class="anchor-link" href="#Simple-Positional-Query">&#182;</a></h2><p>This searches the mean object catalog for objects within .2 degrees of M87 (RA=187.706, Dec=12.391 in degrees). The view used contains information from the <a href="https://outerspace.stsci.edu/x/W4Oc">ObjectThin</a> table (which has information on object positions and the number of available measurements) and the <a href="https://outerspace.stsci.edu/x/WYOc">MeanObject</a> table (which has information on photometry averaged over the multiple epochs of observation).</p>
-<p>Note that the results are restricted to objects with <code>nDetections&gt;1</code>, where <code>nDetections</code> is the total number of times the object was detected on the single-epoch images in any filter at any time.  Objects with <code>nDetections=1</code> tend to be  artifacts, so this is a quick way to eliminate most spurious objects from the catalog.</p>
-<p>This query runs in TAP's asynchronous mode, which is a queued batch mode with some overhead and longer timeouts, useful for big catalogs like PanSTARRS. It may not be necessary for all queries to PS1 DR2, but the TAP+ client can automatically handle the additional processing required over synchronous mode.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT objID, RAMean, DecMean, nDetections, ng, nr, ni, nz, ny, gMeanPSFMag, rMeanPSFMag, iMeanPSFMag, zMeanPSFMag, yMeanPSFMag</span>
-<span class="s2">FROM dbo.MeanObjectView</span>
-<span class="s2">WHERE</span>
-<span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, RAMean, DecMean),CIRCLE(&#39;ICRS&#39;,187.706,12.391,.2))=1</span>
-<span class="s2">AND nDetections &gt; 1</span>
-<span class="s2">  &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
-<span class="n">TAP_results</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO: Query finished. [astroquery.utils.tap.core]
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<i>Table masked=True length=6927</i>
-<table id="table140645982818640" class="table-striped table-bordered table-condensed">
-<thead><tr><th>objID</th><th>RAMean</th><th>DecMean</th><th>nDetections</th><th>ng</th><th>nr</th><th>ni</th><th>nz</th><th>ny</th><th>gMeanPSFMag</th><th>rMeanPSFMag</th><th>iMeanPSFMag</th><th>zMeanPSFMag</th><th>yMeanPSFMag</th></tr></thead>
-<thead><tr><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th></tr></thead>
-<thead><tr><th>int64</th><th>float64</th><th>float64</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>int16</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th></tr></thead>
-<tr><td>122861877059169881</td><td>187.70591961</td><td>12.39112604</td><td>54</td><td>10</td><td>10</td><td>14</td><td>8</td><td>12</td><td>10.295</td><td>10.732</td><td>11.076</td><td>11.342</td><td>11.557</td></tr>
-<tr><td>122861877056308967</td><td>187.70559948</td><td>12.39030211</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>14.9985</td></tr>
-<tr><td>122871877063310741</td><td>187.70630472</td><td>12.39182315</td><td>3</td><td>0</td><td>2</td><td>0</td><td>1</td><td>0</td><td>-999.0</td><td>14.4229</td><td>-999.0</td><td>14.4249</td><td>-999.0</td></tr>
-<tr><td>122861877058698594</td><td>187.70580919</td><td>12.39013311</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>14.7305</td></tr>
-<tr><td>122861877050678994</td><td>187.70512805</td><td>12.39043743</td><td>5</td><td>2</td><td>2</td><td>1</td><td>0</td><td>0</td><td>17.0287</td><td>15.0843</td><td>16.169</td><td>-999.0</td><td>-999.0</td></tr>
-<tr><td>122871877062551436</td><td>187.70622365</td><td>12.39236505</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>15.1102</td></tr>
-<tr><td>122861877044629638</td><td>187.70451598</td><td>12.39086724</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>15.5294</td><td>-999.0</td></tr>
-<tr><td>122861877056688054</td><td>187.70558996</td><td>12.38960002</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>14.4064</td><td>-999.0</td></tr>
-<tr><td>122871877075050430</td><td>187.70747912</td><td>12.3915839</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>15.5752</td><td>-999.0</td></tr>
-<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-<tr><td>123101877313707983</td><td>187.73121143</td><td>12.58941058</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>19.9209</td><td>-999.0</td></tr>
-<tr><td>122901875031002013</td><td>187.50314403</td><td>12.41791089</td><td>37</td><td>7</td><td>10</td><td>11</td><td>7</td><td>2</td><td>21.2326</td><td>20.7473</td><td>20.5742</td><td>20.6803</td><td>20.2113</td></tr>
-<tr><td>122661878055210091</td><td>187.80550514</td><td>12.21628402</td><td>57</td><td>13</td><td>14</td><td>12</td><td>6</td><td>12</td><td>20.9059</td><td>20.3516</td><td>20.0699</td><td>19.9956</td><td>19.8391</td></tr>
-<tr><td>122631877536376320</td><td>187.75369336</td><td>12.19655761</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>-999.0</td><td>-999.0</td><td>-999.0</td><td>21.0599</td><td>-999.0</td></tr>
-<tr><td>123031875562633406</td><td>187.55622129</td><td>12.52734999</td><td>3</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td><td>-999.0</td><td>-999.0</td><td>20.5518</td><td>-999.0</td><td>-999.0</td></tr>
-<tr><td>122681878343382931</td><td>187.834381</td><td>12.23524835</td><td>24</td><td>5</td><td>9</td><td>6</td><td>4</td><td>0</td><td>22.0912</td><td>21.7042</td><td>21.3068</td><td>21.0164</td><td>-999.0</td></tr>
-<tr><td>123061878259604285</td><td>187.82588872</td><td>12.55313763</td><td>2</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>21.9049</td><td>-999.0</td><td>21.4564</td><td>-999.0</td><td>-999.0</td></tr>
-<tr><td>123001875376856622</td><td>187.53784864</td><td>12.5051674</td><td>4</td><td>0</td><td>3</td><td>1</td><td>0</td><td>0</td><td>-999.0</td><td>21.1887</td><td>21.1419</td><td>-999.0</td><td>-999.0</td></tr>
-<tr><td>122751878844752179</td><td>187.88446998</td><td>12.29301648</td><td>77</td><td>16</td><td>24</td><td>14</td><td>11</td><td>12</td><td>21.4623</td><td>20.3555</td><td>20.1394</td><td>20.0368</td><td>19.8008</td></tr>
-<tr><td>123101876640214622</td><td>187.66398441</td><td>12.58674517</td><td>3</td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td>-999.0</td><td>-999.0</td><td>21.8531</td><td>21.6726</td><td>-999.0</td></tr>
-</table>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Get-DR2-light-curve-for-RR-Lyrae-star-KQ-UMa">Get DR2 light curve for RR Lyrae star KQ UMa<a class="anchor-link" href="#Get-DR2-light-curve-for-RR-Lyrae-star-KQ-UMa">&#182;</a></h2><p>This time we start with the object name, use the MAST name resolver (which relies on Simbad and NED) to convert the name to RA and Dec, and then query the PS1 DR2 mean object catalog at that position.  Then we run a spatial query to TAP using those coordinates.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">objname</span> <span class="o">=</span> <span class="s1">&#39;KQ UMa&#39;</span>
-<span class="n">coords</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="o">.</span><span class="n">from_name</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
-<span class="n">radius</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">arcsec</span>
-
-<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT objID, RAMean, DecMean, nDetections, ng, nr, ni, nz, ny, gMeanPSFMag, </span>
-<span class="s2">    rMeanPSFMag, iMeanPSFMag, zMeanPSFMag, yMeanPSFMag</span>
-<span class="s2">FROM dbo.MeanObjectView</span>
-<span class="s2">WHERE</span>
-<span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, RAMean, DecMean),CIRCLE(&#39;ICRS&#39;,{:.value},{:.value},{:.value}))=1</span>
-<span class="s2">AND nDetections &gt; 1</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">coord</span><span class="o">.</span><span class="n">ra</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">coord</span><span class="o">.</span><span class="n">dec</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">radius</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">degree</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-
-<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
-<span class="n">TAP_results</span>
+<span class="c1"># suppress unimportant unit warnings from many TAP services</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s2">&quot;astropy.io.votable.*&quot;</span><span class="p">)</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s2">&quot;pyvo.utils.xml.elements&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13491,19 +13205,150 @@ tap_schema.key_columns
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-5-91e514a36090&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span> CONTAINS<span class="ansi-blue-fg">(</span>POINT<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;ICRS&#39;</span><span class="ansi-blue-fg">,</span> RAMean<span class="ansi-blue-fg">,</span> DecMean<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>CIRCLE<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;ICRS&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span> AND nDetections <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">1</span>
-<span class="ansi-green-fg">---&gt; 12</span><span class="ansi-red-fg"> &#34;&#34;&#34;.format(coord.ra.deg, coord.dec.deg, radius.to(u.degree))
-</span><span class="ansi-green-intense-fg ansi-bold">     13</span> print<span class="ansi-blue-fg">(</span>query<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span> 
 
-<span class="ansi-red-fg">NameError</span>: name &#39;coord&#39; is not defined</pre>
+<span class="ansi-red-fg">ModuleNotFoundError</span>Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-ba4a2215e643&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg"># Use the pyvo library as our client to the data service.</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> pyvo <span class="ansi-green-fg">as</span> vo
+<span class="ansi-green-intense-fg ansi-bold">      3</span> 
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># For resolving objects with tools from MAST</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-green-fg">from</span> astroquery<span class="ansi-blue-fg">.</span>mast <span class="ansi-green-fg">import</span> Mast
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;pyvo&#39;</pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h2 id="Connecting-to-a-TAP-Service">Connecting to a TAP Service<a class="anchor-link" href="#Connecting-to-a-TAP-Service">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The PyVO library is able to connect to any TAP service, given the "base" URL as noted in metadata registry resources describing the service. This is the URL for the PanSTARRS 1 DR2 TAP service.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">TAP_service</span> <span class="o">=</span> <span class="n">vo</span><span class="o">.</span><span class="n">dal</span><span class="o">.</span><span class="n">TAPService</span><span class="p">(</span><span class="s2">&quot;http://vao.stsci.edu/PS1DR2/tapservice.aspx&quot;</span><span class="p">)</span>
+<span class="n">TAP_service</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="List-available-tables">List available tables<a class="anchor-link" href="#List-available-tables">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">TAP_tables</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">tables</span>
+<span class="k">for</span> <span class="n">tablename</span> <span class="ow">in</span> <span class="n">TAP_tables</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="s2">&quot;tap_schema&quot;</span> <span class="ow">in</span> <span class="n">tablename</span><span class="p">:</span>  
+        <span class="n">TAP_tables</span><span class="p">[</span><span class="n">tablename</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columns=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="n">k</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">TAP_tables</span><span class="p">[</span><span class="n">tablename</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span> <span class="p">])))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Use-Cases">Use Cases<a class="anchor-link" href="#Use-Cases">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Simple-Positional-Query">Simple Positional Query<a class="anchor-link" href="#Simple-Positional-Query">&#182;</a></h2><p>This searches the mean object catalog for objects within .2 degrees of M87 (RA=187.706, Dec=12.391 in degrees). The view used contains information from the <a href="https://outerspace.stsci.edu/x/W4Oc">ObjectThin</a> table (which has information on object positions and the number of available measurements) and the <a href="https://outerspace.stsci.edu/x/WYOc">MeanObject</a> table (which has information on photometry averaged over the multiple epochs of observation).</p>
+<p>Note that the results are restricted to objects with <code>nDetections&gt;1</code>, where <code>nDetections</code> is the total number of times the object was detected on the single-epoch images in any filter at any time.  Objects with <code>nDetections=1</code> tend to be  artifacts, so this is a quick way to eliminate most spurious objects from the catalog.</p>
+<p>This query runs in TAP's asynchronous mode, which is a queued batch mode with some overhead and longer timeouts, useful for big catalogs like PanSTARRS. It may not be necessary for all queries to PS1 DR2, but the PyVO client can automatically handle the additional processing required over synchronous mode.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT objID, RAMean, DecMean, nDetections, ng, nr, ni, nz, ny, gMeanPSFMag, rMeanPSFMag, iMeanPSFMag, zMeanPSFMag, yMeanPSFMag</span>
+<span class="s2">FROM dbo.MeanObjectView</span>
+<span class="s2">WHERE</span>
+<span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, RAMean, DecMean),CIRCLE(&#39;ICRS&#39;,187.706,12.391,.2))=1</span>
+<span class="s2">AND nDetections &gt; 1</span>
+<span class="s2">  &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
+<span class="n">TAP_results</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Get-DR2-light-curve-for-RR-Lyrae-star-KQ-UMa">Get DR2 light curve for RR Lyrae star KQ UMa<a class="anchor-link" href="#Get-DR2-light-curve-for-RR-Lyrae-star-KQ-UMa">&#182;</a></h2><p>This time we start with the object name, use the MAST name resolver (which relies on Simbad and NED) to convert the name to RA and Dec, and then query the PS1 DR2 mean object catalog at that position.  Then we run a spatial query to TAP using those coordinates.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">objname</span> <span class="o">=</span> <span class="s1">&#39;KQ UMa&#39;</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">Mast</span><span class="o">.</span><span class="n">resolve_object</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
+<span class="n">ra</span><span class="p">,</span><span class="n">dec</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">ra</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">coords</span><span class="o">.</span><span class="n">dec</span><span class="o">.</span><span class="n">value</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">3600.0</span> <span class="c1"># radius = 1 arcsec</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT objID, RAMean, DecMean, nDetections, ng, nr, ni, nz, ny, gMeanPSFMag, </span>
+<span class="s2">    rMeanPSFMag, iMeanPSFMag, zMeanPSFMag, yMeanPSFMag</span>
+<span class="s2">FROM dbo.MeanObjectView</span>
+<span class="s2">WHERE</span>
+<span class="s2">CONTAINS(POINT(&#39;ICRS&#39;, RAMean, DecMean),CIRCLE(&#39;ICRS&#39;,</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">))=1</span>
+<span class="s2">AND nDetections &gt; 1</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span><span class="n">dec</span><span class="p">,</span><span class="n">radius</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
+<span class="n">TAP_results</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -13534,8 +13379,8 @@ tap_schema.key_columns
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">objid</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
-<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="n">detection_TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">detection_TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 <span class="n">detection_TAP_results</span>
 </pre></div>
 
@@ -13797,7 +13642,7 @@ tap_schema.key_columns
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">objname</span> <span class="o">=</span> <span class="s1">&#39;KIC 2161623&#39;</span>
-<span class="n">coords</span> <span class="o">=</span> <span class="n">Mast</span><span class="o">.</span><span class="n">_resolve_object</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">Mast</span><span class="o">.</span><span class="n">resolve_object</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
 <span class="n">ra</span><span class="p">,</span><span class="n">dec</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">ra</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">coords</span><span class="o">.</span><span class="n">dec</span><span class="o">.</span><span class="n">value</span>
 <span class="n">radius</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">3600.0</span> <span class="c1"># radius = 1 arcsec</span>
 
@@ -13810,8 +13655,8 @@ tap_schema.key_columns
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span><span class="n">dec</span><span class="p">,</span><span class="n">radius</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
-<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 <span class="n">TAP_results</span>
 </pre></div>
 
@@ -13848,8 +13693,8 @@ tap_schema.key_columns
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">objid</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
-<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="n">detection_TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">detection_TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 
 <span class="c1"># add magnitude and difference from mean</span>
 <span class="n">detection_TAP_results</span><span class="p">[</span><span class="s1">&#39;magmean&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -13955,7 +13800,7 @@ tap_schema.key_columns
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">objname</span> <span class="o">=</span> <span class="s1">&#39;KIC 8153568&#39;</span>
-<span class="n">coords</span> <span class="o">=</span> <span class="n">Mast</span><span class="o">.</span><span class="n">_resolve_object</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">Mast</span><span class="o">.</span><span class="n">resolve_object</span><span class="p">(</span><span class="n">objname</span><span class="p">)</span>
 <span class="n">ra</span><span class="p">,</span><span class="n">dec</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">ra</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">coords</span><span class="o">.</span><span class="n">dec</span><span class="o">.</span><span class="n">value</span>
 <span class="n">radius</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">3600.0</span> <span class="c1"># radius = 1 arcsec</span>
 
@@ -13968,8 +13813,8 @@ tap_schema.key_columns
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span><span class="n">dec</span><span class="p">,</span><span class="n">radius</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
-<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 <span class="n">TAP_results</span>
 </pre></div>
 
@@ -13997,8 +13842,8 @@ tap_schema.key_columns
 <span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">objid</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
 
-<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">launch_job_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-<span class="n">detection_TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">TAP_service</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">detection_TAP_results</span> <span class="o">=</span> <span class="n">job</span><span class="o">.</span><span class="n">to_table</span><span class="p">()</span>
 
 <span class="c1"># add magnitude and difference from mean</span>
 <span class="n">detection_TAP_results</span><span class="p">[</span><span class="s1">&#39;magmean&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -14113,9 +13958,10 @@ tap_schema.key_columns
 <li>IVOA standard for querying astronomical data in tabular format, with geometric search support</li>
 <li><a href="http://www.ivoa.net/documents/latest/ADQL.html">http://www.ivoa.net/documents/latest/ADQL.html</a></li>
 </ul>
-<h2 id="TapPlus">TapPlus<a class="anchor-link" href="#TapPlus">&#182;</a></h2><ul>
-<li>Module created by ESAC Space Data Centre</li>
-<li><a href="http://astroquery.readthedocs.io/en/latest/utils/tap.html">http://astroquery.readthedocs.io/en/latest/utils/tap.html</a></li>
+<h2 id="PyVO">PyVO<a class="anchor-link" href="#PyVO">&#182;</a></h2><ul>
+<li>an affiliated package for astropy</li>
+<li>find and retrieve astronomical data available from archives that support standard IVOA virtual observatory service protocols.</li>
+<li><a href="https://pyvo.readthedocs.io/en/latest/index.html">https://pyvo.readthedocs.io/en/latest/index.html</a></li>
 </ul>
 
 </div>
@@ -14133,7 +13979,7 @@ tap_schema.key_columns
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="About-this-Notebook">About this Notebook<a class="anchor-link" href="#About-this-Notebook">&#182;</a></h2><p><strong>Authors:</strong> Rick White &amp; Theresa Dower, STScI Archive Scientist &amp; Software Engineer
-<strong>Updated On:</strong> 02/27/2019</p>
+<strong>Updated On:</strong> 01/09/2020</p>
 
 </div>
 </div>
