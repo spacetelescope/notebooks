@@ -19,8 +19,8 @@ def main():
     repo_path = os.getcwd()
     logger.info(f'Added path[{repo_path}]')
     sys.path.append(repo_path)
-    import convert
+    with open("convert.py") as f:
+        exec(f.read())
 
 if __name__ in ['__main__']:
     main()
-
