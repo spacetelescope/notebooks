@@ -1,3 +1,7 @@
 **/*.ipynb_checkpoints/
-*.fits
 ._*.ipynb
+*.fits
+*.swp
+src
+index.html
+env
