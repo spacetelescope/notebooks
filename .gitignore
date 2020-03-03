@@ -1,4 +1,5 @@
 **/*.ipynb_checkpoints/
+._*.ipynb
 *.fits
 *.swp
 src
