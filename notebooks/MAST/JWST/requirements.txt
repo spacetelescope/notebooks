@@ -1,0 +1,4 @@
+astropy>=4.0
+astroquery>=0.4
+ipython>=7.12
+numpy>=1.18
