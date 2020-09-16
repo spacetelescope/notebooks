@@ -1,0 +1,1 @@
+lightkurve>=2.0b1
