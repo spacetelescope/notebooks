@@ -1,1 +1,1 @@
-pyregion=2.0
+pyregion==2.0
