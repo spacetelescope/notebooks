@@ -20,6 +20,7 @@
 * [Searching for Kepler/K2 and TESS Data Products Using Lightkurve](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/kepler_searching_for_data_products/kepler_searching_for_data_products.ipynb)
 * [Creating Your Own Light Curves using Custom Aperture Photometry](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/kepler_creating_your_own_light_curves/kepler_creating_your_own_light_curves.ipynb)
 * [Combining Multiple Quarters of Kepler Data with Lightkurve](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/kepler_combining_multiple_quarters/kepler_combining_multiple_quarters.ipynb)
+* [Interactively Inspecting Target Pixel Files and Light Curves](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/kepler_interactively_inspecting_target_pixel_files_and_light_curves/kepler_interactively_inspecting_target_pixel_files_and_light_curves.ipynb)
 
 
 ## Understanding Instrumental Noise
