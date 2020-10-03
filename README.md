@@ -24,8 +24,7 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
   * Hubble Source Catalog
     * [MAST Table Access Protocol Hubble Source Catalog Demo](https://spacetelescope.github.io/notebooks/notebooks/MAST/HSC/HSC_TAP/HSC_TAP.html)
   * Kepler
-    * [Kepler Lightcurve](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_Lightcurve/kepler_lightcurve.html)
-    * [Kepler TPF](https://spacetelescope.github.io/notebooks/notebooks/MAST/Kepler/Kepler_TPF/kepler_tpf.html)
+    * See [notebooks/MAST/Kepler/README.md](https://github.com/spacetelescope/notebooks/blob/master/notebooks/MAST/Kepler/README.md)
   * PanSTARRS
     * [PanSTARRS1 DR2 TAP Demo](https://spacetelescope.github.io/notebooks/notebooks/MAST/PanSTARRS/PS1_DR2_TAP/PS1_DR2_TAP.html)
   * TESS
