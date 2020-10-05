@@ -1,7 +1,7 @@
 # Walkthroughs
 Interactive walkthrough guides to common COS data procedures for PIs and other COS data users.
 
-Abstract***
+***Abstract***
 
 1.  The **goal** of this project is to produce *Jupyter Notebooks* presenting walkthroughs of common data analysis procedures for data from the Cosmic Origins Spectrograph (COS).
     1.  A secondary goal is to investigate the feasibility of integrating STScI's DMD's `specutils` and `specvis` modules into these walkthrough notebooks, and into the COS team's general operations.
