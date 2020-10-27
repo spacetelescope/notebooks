@@ -119,6 +119,7 @@ def estimate_SNR(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
     """
     snr_array = [] # Initialize to empty array
     weight_avg_snr = -1 # Will return -1 UNLESS changed
+    segsFound = 0
     
     # STEP ONE - BINNING
     if bin_data_first == True: # Should we bin first?
@@ -137,7 +138,7 @@ def estimate_SNR(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
 
         else:
             if ((min(snr_range) > min(wvln_)) & (max(snr_range) < max(wvln_))):
-                
+                segsFound += 1
                 wvln_range_mask = (wvln_ > snr_range[0]) & (wvln_ < snr_range[1])
 
                 wvln_range, gcount_range, gross_range = \
@@ -164,15 +165,32 @@ def estimate_SNR(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
     if (np.all(np.squeeze(snr_array) == -1 )) & (snr_range != [-1, -1]):
         if verbose:
             print("\nThe input range was not found in any segment!\n")
+    if segsFound > 1:
+        if verbose:
+            print("\nThis range was found on multiple segments, (grating = G230L?) ,which at present is not fully supported. The returned array should be accurate, but the mean may be incorrect.")
     return weight_avg_snr, snr_array
 # %%
 
-# # %%
-# fuvDat = Table.read('/Users/nkerman/Projects/Walkthroughs/ViewData/data/mastDownload/HST/lcxv13050/lcxv13050_x1dsum.fits')
-# # %%
-# fuvDat[0]
-# # %%
-# binByResel(fuvDat)
-# # %%
+def withinPercent(val1, val2, percent = 1.):
+    """
+    Primarily created for testing, this function evaluates whether two values are 'close-enough' to one another, i.e. within a percent value, that they could only differ by slight pipeline changes.
+
+    Parameters:
+    val1, val2 (numerical) : Values to compare.
+    percent (float) : Returns value of true if the values are within this percent.
+
+    Returns:
+    bool : Whether or not values are within the specified percent.
+    float : Percent they are off by.
+    """
+    if (val1 == np.nan) | (val2 == np.nan) :
+        print("One of your values is NOT A NUMBER")
+    hival = np.max(np.array([val1, val2]))
+    meanval = np.mean(np.array([val1, val2]))
+    absDif = np.abs(np.subtract(val1, val2))
+    percentDif = 100* (absDif/meanval)
+    within_percent_bool = percentDif <= percent
+    return within_percent_bool, percentDif
+# %%
 
 # %%
