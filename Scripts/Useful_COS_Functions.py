@@ -173,7 +173,7 @@ def estimate_SNR(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
 
 def withinPercent(val1, val2, percent = 1.):
     """
-    Primarily created for testing, this function evaluates whether two values are 'close-enough' to one another, i.e. within a percent value, that they could only differ by slight pipeline changes.
+    Primarily created for testing, this function evaluates whether two values are 'close-enough' to one another, i.e. within a percent value, that they could only differ by slight pipeline changes; This one is defined such that at close values, the percent difference is accurate.
 
     Parameters:
     val1, val2 (numerical) : Values to compare.
@@ -185,12 +185,11 @@ def withinPercent(val1, val2, percent = 1.):
     """
     if (val1 == np.nan) | (val2 == np.nan) :
         print("One of your values is NOT A NUMBER")
-    hival = np.max(np.array([val1, val2]))
+    lowval = np.min(np.array([val1, val2]))
     meanval = np.mean(np.array([val1, val2]))
     absDif = np.abs(np.subtract(val1, val2))
-    percentDif = 100* (absDif/meanval)
+    percentDif = np.abs(100* (absDif/lowval))
     within_percent_bool = percentDif <= percent
     return within_percent_bool, percentDif
 # %%
 
-# %%
