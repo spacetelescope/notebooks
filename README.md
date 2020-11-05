@@ -16,7 +16,7 @@ Interactive walkthrough guides to common COS data procedures for PIs and other C
 You need to be able to run Jupyter Notebooks and install python packages. If you don't have Jupyter installed, continue reading, or see the [Jupyter Docs](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for much more detailed installation instructions.
 
 If you have `pip` or `conda` installed:
-|`pip`|`conda` (**preferred**)|
+|`pip`|`conda` (**strongly preferred**)|
 |-|-|
 |`pip install jupyterlab`|`conda install -c conda-forge jupyterlab`|
 
@@ -28,4 +28,4 @@ We recommend installing either the Anaconda or Minicoda distributions. See [this
 
 These will install the conda command line tool, allowing you to run `conda install -c conda-forge jupyterlab`. 
 
-Next, if you don't have experience installing packages, you should begin with our notebook on setting up a [conda environment]().
+Next, if you don't have experience installing packages, you should begin with our notebook on setting up a [conda environment](https://github.com/spacetelescope/COS-Notebooks/blob/master/Setup/Setup.ipynb).
