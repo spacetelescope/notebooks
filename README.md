@@ -1,4 +1,6 @@
-# Walkthroughs
+# COS-Notebooks
+
+## Jupyter Notebooks of COS Data Processing Walkthroughs
 Interactive walkthrough guides to common COS data procedures for PIs and other COS data users.
 
 ***Abstract***
