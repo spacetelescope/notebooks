@@ -43,3 +43,6 @@ Next, if you don't have experience installing packages, you should begin with ou
 - [DataDL.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DataDL/DataDl.ipynb)
 - [ViewData.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/ViewData/ViewData.ipynb)
 - [Calcos.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/Calcos/Calcos.ipynb)
+
+
+If you don't want to run the notebooks but just want to see rendered html versions of the notebooks *(with outputs)* check out [the html renders](https://github.com/spacetelescope/COS-Notebooks/tree/master/html_renders).
