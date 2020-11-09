@@ -17522,7 +17522,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a id="topV"></a></p>
-<h1 id="Viewing-COS-Data">Viewing COS Data<a class="anchor-link" href="#Viewing-COS-Data">&#182;</a></h1><h1 id="Learning-Goals">Learning Goals<a class="anchor-link" href="#Learning-Goals">&#182;</a></h1><h3 id="This-Notebook-is-designed-to-walk-the-user-(you)-through:">This Notebook is designed to walk the user (<em>you</em>) through:<a class="anchor-link" href="#This-Notebook-is-designed-to-walk-the-user-(you)-through:">&#182;</a></h3><h4 id="1.-Reading-in-the-data-using-Python">1. <strong><a href="#readInV">Reading in the data</a> using <code>Python</code></strong><a class="anchor-link" href="#1.-Reading-in-the-data-using-Python">&#182;</a></h4><h4 id="2.-Displaying-the-data-using-common-plotting-techniques">2. <strong><a href="#plottingV">Displaying the data</a> using common plotting techniques</strong><a class="anchor-link" href="#2.-Displaying-the-data-using-common-plotting-techniques">&#182;</a></h4><h4 id="3.-Making-a-quick-assessment-of-the-data-with-tools-to-bin-and-measure-the-data's-SNR-and-resolution">3. <strong><a href="#AssessingV">Making a quick assessment of the data</a> with tools to bin and measure the data's SNR and resolution</strong><a class="anchor-link" href="#3.-Making-a-quick-assessment-of-the-data-with-tools-to-bin-and-measure-the-data's-SNR-and-resolution">&#182;</a></h4><h5 id="$\-\-\-\-$-3.1.-Understanding-and-Using-Data-Quality-Flags">$\ \ \ \ $ 3.1. <a href="#DataQualV">Understanding and Using Data Quality Flags</a><a class="anchor-link" href="#$\-\-\-\-$-3.1.-Understanding-and-Using-Data-Quality-Flags">&#182;</a></h5><h5 id="$\-\-\-\-$-3.2.-Binning-the-Data">$\ \ \ \ $ 3.2. <a href="#BinningV">Binning the Data</a><a class="anchor-link" href="#$\-\-\-\-$-3.2.-Binning-the-Data">&#182;</a></h5><h5 id="$\-\-\-\-$-3.3.-Calculating-the-Signal-to-Noise-Ratio">$\ \ \ \ $ 3.3. <a href="#SnrV">Calculating the Signal-to-Noise Ratio</a><a class="anchor-link" href="#$\-\-\-\-$-3.3.-Calculating-the-Signal-to-Noise-Ratio">&#182;</a></h5><p><em>If you're confident with Reading-in and Plotting data in Python, you may run the first few cells and then click the link to go ahead and skip to <a href="#AssessingV">section 3</a>.</em></p>
+<h1 id="Viewing-COS-Data">Viewing COS Data<a class="anchor-link" href="#Viewing-COS-Data">&#182;</a></h1><h1 id="Learning-Goals">Learning Goals<a class="anchor-link" href="#Learning-Goals">&#182;</a></h1><h3 id="This-Notebook-is-designed-to-walk-the-user-(you)-through:">This Notebook is designed to walk the user (<em>you</em>) through:<a class="anchor-link" href="#This-Notebook-is-designed-to-walk-the-user-(you)-through:">&#182;</a></h3><h4 id="1.-Reading-in-the-data-using-Python">1. <strong><a href="#readInV">Reading in the data</a> using <code>Python</code></strong><a class="anchor-link" href="#1.-Reading-in-the-data-using-Python">&#182;</a></h4><h4 id="2.-Displaying-the-data-using-common-plotting-techniques">2. <strong><a href="#plottingV">Displaying the data</a> using common plotting techniques</strong><a class="anchor-link" href="#2.-Displaying-the-data-using-common-plotting-techniques">&#182;</a></h4><h4 id="3.-Making-a-quick-assessment-of-the-data-with-tools-to-bin-and-measure-the-data's-SNR-and-resolution">3. <strong><a href="#AssessingV">Making a quick assessment of the data</a> with tools to bin and measure the data's SNR and resolution</strong><a class="anchor-link" href="#3.-Making-a-quick-assessment-of-the-data-with-tools-to-bin-and-measure-the-data's-SNR-and-resolution">&#182;</a></h4><h5 id="--3.1.-Understanding-and-Using-Data-Quality-Flags">- 3.1. <a href="#DataQualV">Understanding and Using Data Quality Flags</a><a class="anchor-link" href="#--3.1.-Understanding-and-Using-Data-Quality-Flags">&#182;</a></h5><h5 id="--3.2.-Binning-the-Data">- 3.2. <a href="#BinningV">Binning the Data</a><a class="anchor-link" href="#--3.2.-Binning-the-Data">&#182;</a></h5><h5 id="--3.3.-Calculating-the-Signal-to-Noise-Ratio">- 3.3. <a href="#SnrV">Calculating the Signal-to-Noise Ratio</a><a class="anchor-link" href="#--3.3.-Calculating-the-Signal-to-Noise-Ratio">&#182;</a></h5><p><em>If you're confident with Reading-in and Plotting data in Python, you may run the first few cells and then click the link to go ahead and skip to <a href="#AssessingV">section 3</a>.</em></p>
 <h1 id="0.-Introduction">0. Introduction<a class="anchor-link" href="#0.-Introduction">&#182;</a></h1><h4 id="The-Cosmic-Origins-Spectrograph-(COS)-is-an-ultraviolet-spectrograph-on-board-the-Hubble-Space-Telescope-(HST)-with-capabilities-in-the-near-ultraviolet-(NUV)-and-far-ultraviolet-(FUV).">The Cosmic Origins Spectrograph (<a href="https://www.nasa.gov/content/hubble-space-telescope-cosmic-origins-spectrograph"><em>COS</em></a>) is an ultraviolet spectrograph on-board the Hubble Space Telescope (<a href="https://www.stsci.edu/hst/about"><em>HST</em></a>) with capabilities in the near ultraviolet (<em>NUV</em>) and far ultraviolet (<em>FUV</em>).<a class="anchor-link" href="#The-Cosmic-Origins-Spectrograph-(COS)-is-an-ultraviolet-spectrograph-on-board-the-Hubble-Space-Telescope-(HST)-with-capabilities-in-the-near-ultraviolet-(NUV)-and-far-ultraviolet-(FUV).">&#182;</a></h4><h4 id="This-tutorial-aims-to-prepare-you-to-begin-analyzing-COS-data-of-your-choice-by-walking-you-through-reading-and-viewing-a-spectrum-obtained-with-COS,-as-well-as-obtaining-a-few-diagnostic-measurements-of-your-spectrum.">This tutorial aims to prepare you to begin analyzing COS data of your choice by walking you through reading and viewing a spectrum obtained with COS, as well as obtaining a few diagnostic measurements of your spectrum.<a class="anchor-link" href="#This-tutorial-aims-to-prepare-you-to-begin-analyzing-COS-data-of-your-choice-by-walking-you-through-reading-and-viewing-a-spectrum-obtained-with-COS,-as-well-as-obtaining-a-few-diagnostic-measurements-of-your-spectrum.">&#182;</a></h4><ul>
 <li>For an in-depth manual to working with COS data and a discussion of caveats and user tips, see the <a href="https://hst-docs.stsci.edu/display/COSDHB/">COS Data Handbook</a>.</li>
 <li>For a detailed overview of the COS instrument, see the <a href="https://hst-docs.stsci.edu/display/COSIHB/">COS Instrument Handbook</a>.</li>
@@ -17583,7 +17583,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="We-will-also-define-a-few-directories-in-which-to-place-our-data-and-plots,-as-well-as-a-few-colors-we-will-use-in-plots-later.">We will also define a few directories in which to place our data and plots, as well as a few colors we will use in plots later.<a class="anchor-link" href="#We-will-also-define-a-few-directories-in-which-to-place-our-data-and-plots,-as-well-as-a-few-colors-we-will-use-in-plots-later.">&#182;</a></h2>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
@@ -17610,29 +17610,6 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>mkdir: ./data: File exists
-mkdir: ./output/: File exists
-mkdir: ./output/plots: File exists
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -17647,7 +17624,7 @@ mkdir: ./output/plots: File exists
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nuv_downloads</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">download_products</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">get_product_list</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">query_criteria</span><span class="p">(</span><span class="n">obs_id</span> <span class="o">=</span> <span class="s1">&#39;lbbd01020&#39;</span><span class="p">)),</span> <span class="c1"># GET the NUV data on WD1057+719 with the G230L grating; only the _x1dsum and _asn</span>
                                            <span class="n">download_dir</span><span class="o">=</span><span class="n">datadir</span> <span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="s1">&#39;fits&#39;</span><span class="p">,</span> <span class="n">mrp_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="n">fuv_downloads</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">download_products</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">get_product_list</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">query_criteria</span><span class="p">(</span><span class="n">obs_id</span> <span class="o">=</span> <span class="s1">&#39;lcxv13050&#39;</span><span class="p">)),</span> <span class="c1"># GET the NUV data on WD1057+719 with the G230L grating; only the _x1dsum and _asn</span>
+<span class="n">fuv_downloads</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">download_products</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">get_product_list</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">query_criteria</span><span class="p">(</span><span class="n">obs_id</span> <span class="o">=</span> <span class="s1">&#39;lcxv13050&#39;</span><span class="p">)),</span> <span class="c1"># GET the FUV data on QSO 3C48; only the _x1dsum and _asn</span>
                                            <span class="n">download_dir</span><span class="o">=</span><span class="n">datadir</span> <span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="s1">&#39;fits&#39;</span><span class="p">,</span> <span class="n">mrp_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
@@ -17918,7 +17895,7 @@ Table of FUV data with columns:
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <i>Table length=2</i>
-<table id="table140224929854408" class="table-striped table-bordered table-condensed">
+<table id="table140255396373840" class="table-striped table-bordered table-condensed">
 <thead><tr><th>SEGMENT</th><th>EXPTIME</th><th>NELEM</th><th>WAVELENGTH [16384]</th><th>FLUX [16384]</th><th>ERROR [16384]</th><th>ERROR_LOWER [16384]</th><th>GROSS [16384]</th><th>GCOUNTS [16384]</th><th>VARIANCE_FLAT [16384]</th><th>VARIANCE_COUNTS [16384]</th><th>VARIANCE_BKG [16384]</th><th>NET [16384]</th><th>BACKGROUND [16384]</th><th>DQ [16384]</th><th>DQ_WGT [16384]</th></tr></thead>
 <thead><tr><th></th><th>s</th><th></th><th>Angstrom</th><th>erg / (Angstrom cm2 s)</th><th>erg / (Angstrom cm2 s)</th><th>ct / s</th><th>ct / s</th><th>ct</th><th>ct</th><th>ct</th><th>ct</th><th>ct / s</th><th>ct / s</th><th></th><th></th></tr></thead>
 <thead><tr><th>bytes4</th><th>float64</th><th>int32</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>int16</th><th>float32</th></tr></thead>
@@ -18439,8 +18416,8 @@ Remember the source we're looking at - the quasar 3C48. This quasar can be expec
 <pre>
 ----
 
-CPU times: user 22.1 s, sys: 915 ms, total: 23 s
-Wall time: 23 s
+CPU times: user 21.2 s, sys: 795 ms, total: 22 s
+Wall time: 22 s
 </pre>
 </div>
 </div>
@@ -19264,7 +19241,7 @@ Binned   Dataset Length is 2730
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <i>Table length=2</i>
-<table id="table140226297909432" class="table-striped table-bordered table-condensed">
+<table id="table140254124648432" class="table-striped table-bordered table-condensed">
 <thead><tr><th>EXPTIME</th><th>WAVELENGTH [2730]</th><th>FLUX [2730]</th><th>ERROR [2730]</th><th>ERROR_LOWER [2730]</th><th>GROSS [2730]</th><th>GCOUNTS [2730]</th></tr></thead>
 <thead><tr><th>float64</th><th>float64</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th><th>float32</th></tr></thead>
 <tr><td>6532.512</td><td>1610.2714700565607 .. 1810.8652436074628</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td></tr>
@@ -19507,9 +19484,10 @@ Out of range on 1-th segment with limits: 1421.977067212425 1622.5162032453686
 <hr>
 <h2 id="About-this-Notebook">About this Notebook<a class="anchor-link" href="#About-this-Notebook">&#182;</a></h2><p><strong>Author:</strong> <a href="nkerman@stsci.edu">Nat Kerman</a></p>
 <p><strong>Updated On:</strong> 2020-10-26</p>
-<blockquote><p><em>This tutorial was generated to be in compliance with the <a href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em>&gt;<em>This tutorial was generated to be in compliance with the <a href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
+<blockquote><p><em>This tutorial was generated to be in compliance with the <a href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
+<h2 id="Citations">Citations<a class="anchor-link" href="#Citations">&#182;</a></h2>
 </blockquote>
-<h2 id="Citations">Citations<a class="anchor-link" href="#Citations">&#182;</a></h2><p>If you use <code>astropy</code>, <code>matplotlib</code>, <code>astroquery</code>, or <code>numpy</code> for published research, please cite the
+<p>If you use <code>astropy</code>, <code>matplotlib</code>, <code>astroquery</code>, or <code>numpy</code> for published research, please cite the
 authors. Follow these links for more information about citations:</p>
 <ul>
 <li><a href="https://www.scipy.org/citing.html">Citing <code>astropy</code>/<code>numpy</code>/<code>matplotlib</code></a></li>
