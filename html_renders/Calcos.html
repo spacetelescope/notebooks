@@ -17518,22 +17518,7 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="n">t00</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
-</div>
-
-</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a id="topC"></a></p>
@@ -17636,7 +17621,7 @@ a.anchor-link {
 <h2 id="1.1.-Prerequisites">1.1. Prerequisites<a class="anchor-link" href="#1.1.-Prerequisites">&#182;</a></h2><p>This tutorial assumes some basic knowledge of the command line and was built using a unix bash-style shell. Those using a Windows computer will likely have the best results if working within the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a>.</p>
 <p>If you do not already have any distribution of the <code>conda</code> tool, see <a href="https://astroconda.readthedocs.io/en/latest/getting_started.html#getting-started-jump">this page</a> for instructions, and install either <a href="https://docs.anaconda.com/anaconda/install/"><code>anaconda</code> - more beginner friendly, ~ 3 GB, lots of extras you likely won't use</a> or <a href="https://docs.conda.io/en/latest/miniconda.html"><code>miniconda</code> - ~ 400 MB, only what you need</a>.</p>
 <p><a id = condaenvC></a></p>
-<h2 id="1.2.-Create-your-conda-environment">1.2. Create your conda environment<a class="anchor-link" href="#1.2.-Create-your-conda-environment">&#182;</a></h2><p>Once you have <code>conda</code> installed, it's time to create an environment.</p>
+<h2 id="1.2.-Create-your-conda-environment">1.2. Create your conda environment<a class="anchor-link" href="#1.2.-Create-your-conda-environment">&#182;</a></h2><p>Once you have <code>conda</code> installed, it's time to create an environment. If you already setup an <code>astroconda</code> environment in the notebook on "Setting up your environment", you may skip this and merely activate the environment you created then.</p>
 <p>Open up your terminal app, likely <code>Terminal</code> or <code>iTerm</code> on a Mac or <code>Windows Terminal</code> or <code>Powershell</code> on Windows.</p>
 <p>First, add the stsci channel to your computer's conda channel list. This enables conda to look in the right place to find all the packages we want to install.</p>
 <p><code>$ conda config --add channels http://ssb.stsci.edu/astroconda</code></p>
@@ -17646,7 +17631,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Now we can create a new environment for running calcos; let's call it <code>calcos_env</code>, and initialize it with the packages in the stsci channel's list we just added.</p>
-<p><code>$ conda create -n astroconda stsci</code></p>
+<p><code>$ conda create -n calcos_env stsci</code></p>
 <p>After allowing conda to proceed to installing the packages (type <code>y</code> then hit enter/return), you can see all of your environments with:</p>
 <p><code>$ conda env list</code></p>
 <p>and then switch over to your new environment with</p>
@@ -18677,8 +18662,8 @@ INFO: Found cached file data/compare/mastDownload/HST/lcxv13040/lcxv13040_x1dsum
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
 <h2 id="About-this-Notebook">About this Notebook<a class="anchor-link" href="#About-this-Notebook">&#182;</a></h2><p><strong>Author:</strong> <a href="nkerman@stsci.edu">Nat Kerman</a></p>
-<p><strong>Updated On:</strong> 2020-10-26</p>
-<blockquote><p><em>This tutorial was generated to be in compliance with the <a href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em>&gt;<em>This tutorial was generated to be in compliance with the <a href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
+<p><strong>Updated On:</strong> 2020-11-02</p>
+<blockquote><p><em>This tutorial was generated to be in compliance with the <a href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
 </blockquote>
 <h2 id="Citations">Citations<a class="anchor-link" href="#Citations">&#182;</a></h2><p>If you use <code>astropy</code>, <code>matplotlib</code>, <code>astroquery</code>, or <code>numpy</code> for published research, please cite the
 authors. Follow these links for more information about citations:</p>
@@ -18699,56 +18684,6 @@ authors. Follow these links for more information about citations:</p>
 <br></br></p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t01</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The whole notebook took </span><span class="si">{</span><span class="p">(</span><span class="n">t01</span><span class="o">-</span><span class="n">t00</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The whole notebook took 278.61 seconds
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
