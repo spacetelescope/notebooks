@@ -45,4 +45,4 @@ Next, if you don't have experience installing packages, you should begin with ou
 - [Calcos.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/Calcos/Calcos.ipynb)
 
 
-If you don't want to run the notebooks but just want to see rendered html versions of the notebooks *(with outputs)* check out [the html renders](https://github.com/spacetelescope/COS-Notebooks/tree/master/html_renders).
+If you don't want to run the notebooks but just want to see rendered html versions of the notebooks *(with outputs)* check out the html renders on the [GitHub Pages site](https://spacetelescope.github.io/COS-Notebooks).
