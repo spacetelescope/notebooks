@@ -79,7 +79,7 @@ def redefine_lsf(lsf_file, cenwave, disptab, detector='FUV'):
 
     lsf_array = [np.array(lsf[key]) for key in lsf.keys()]
     if deltaw > len(pix)*step*2: #this seems super arbitary
-        raise ValueError('deltaw too large:\ndeltaw:{}\nthreshold:{}'.format(detaw, len(pix)*step*2))
+        raise ValueError('deltaw too large:\ndeltaw:{}\nthreshold:{}'.format(deltaw, len(pix)*step*2))
 
     # this is all a set up of the bins we want to use I think
     new_deltaw = round(len(pix)*step*2.)
