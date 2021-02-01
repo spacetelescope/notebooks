@@ -1,7 +1,1 @@
-Setup
-ViewData
-DataDl
 LSF
-Calcos
-AsnFile
-DayNight
