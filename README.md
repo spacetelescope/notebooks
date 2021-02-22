@@ -62,3 +62,5 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 |CalCOS|Running the COS pipeline ([CalCOS](https://hst-docs.stsci.edu/cosdhb/chapter-3-cos-calibration))|[CalCOS.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/CalCOS/CalCOS.ipynb)|[CalCOS.html](https://spacetelescope.github.io/COS-Notebooks/CalCOS.html)|
 |DayNight|Filtering out COS data taken during the day or night|[DayNight.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DayNight/DayNight.ipynb)|[DayNight.html](https://spacetelescope.github.io/COS-Notebooks/DayNight.html)|
 |LSF|Working with the COS Line Spread Function (LSF)|[LSF.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/LSF/LSF.ipynb)|[LSF.html](https://spacetelescope.github.io/COS-Notebooks/LSF.html)|
+
+##### For notebooks with exercises, you can find worked solutions at the end of the notebook.
