@@ -20,6 +20,8 @@ Interactive walkthrough guides to common COS data procedures for PIs and other C
 <a id = ch2></a>
 ## Basic Requirements
 
+If you have never used Jupyter/IPython Notebooks before, please see the [Jupyter/IPython Notebook Quick Start Guide](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/).
+
 While you *can* run most of the notebooks at present on their own, it is **highly recommended that you clone this entire repository**. Specifically, *ViewData.ipynb* cannot run at present without both the *Scripts* and *ViewData* subdirectories installed side-by-side.
 
 You need to be able to run Jupyter Notebooks and install python packages. If you don't have Jupyter installed, continue reading, or see the [Jupyter Docs](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) for much more detailed installation instructions.
