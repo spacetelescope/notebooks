@@ -56,7 +56,7 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 |Name|Topic|Notebook file (`ipynb`)|Rendered file (`html`)|
 |-|-|-|-|
 |Setup|Setting up an environment to work with COS data|[Setup.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/Setup/Setup.ipynb)|[Setup.html](https://spacetelescope.github.io/COS-Notebooks/Setup.html)|
-|DataDL|Downloading COS Data from the archive|[DataDL.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DataDl/DataDl.ipynb)|[DataDl.html](https://spacetelescope.github.io/COS-Notebooks/DataDl.html)|
+|DataDl|Downloading COS Data from the archive|[DataDl.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DataDl/DataDl.ipynb)|[DataDl.html](https://spacetelescope.github.io/COS-Notebooks/DataDl.html)|
 |ViewData|Beginning to work with COS data in Python|[ViewData.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/ViewData/ViewData.ipynb)|[ViewData.html](https://spacetelescope.github.io/COS-Notebooks/ViewData.html)|
 |AsnFile|Modifying or creating an association file|[AsnFile.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/AsnFile/AsnFile.ipynb)|[AsnFile.html](https://spacetelescope.github.io/COS-Notebooks/AsnFile.html)|
 |CalCOS|Running the COS pipeline ([CalCOS](https://hst-docs.stsci.edu/cosdhb/chapter-3-cos-calibration))|[CalCOS.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/CalCOS/CalCOS.ipynb)|[CalCOS.html](https://spacetelescope.github.io/COS-Notebooks/CalCOS.html)|
