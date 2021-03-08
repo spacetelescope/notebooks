@@ -56,11 +56,12 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 |Name|Topic|Notebook file (`ipynb`)|Rendered file (`html`)|
 |-|-|-|-|
 |Setup|Setting up an environment to work with COS data|[Setup.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/Setup/Setup.ipynb)|[Setup.html](https://spacetelescope.github.io/COS-Notebooks/Setup.html)|
-|DataDL|Downloading COS Data from the archive|[DataDL.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DataDl/DataDl.ipynb)|[DataDl.html](https://spacetelescope.github.io/COS-Notebooks/DataDl.html)|
+|DataDl|Downloading COS Data from the archive|[DataDl.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DataDl/DataDl.ipynb)|[DataDl.html](https://spacetelescope.github.io/COS-Notebooks/DataDl.html)|
 |ViewData|Beginning to work with COS data in Python|[ViewData.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/ViewData/ViewData.ipynb)|[ViewData.html](https://spacetelescope.github.io/COS-Notebooks/ViewData.html)|
 |AsnFile|Modifying or creating an association file|[AsnFile.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/AsnFile/AsnFile.ipynb)|[AsnFile.html](https://spacetelescope.github.io/COS-Notebooks/AsnFile.html)|
 |CalCOS|Running the COS pipeline ([CalCOS](https://hst-docs.stsci.edu/cosdhb/chapter-3-cos-calibration))|[CalCOS.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/CalCOS/CalCOS.ipynb)|[CalCOS.html](https://spacetelescope.github.io/COS-Notebooks/CalCOS.html)|
 |DayNight|Filtering out COS data taken during the day or night|[DayNight.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/DayNight/DayNight.ipynb)|[DayNight.html](https://spacetelescope.github.io/COS-Notebooks/DayNight.html)|
 |LSF|Working with the COS Line Spread Function (LSF)|[LSF.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/LSF/LSF.ipynb)|[LSF.html](https://spacetelescope.github.io/COS-Notebooks/LSF.html)|
+|Extract|Editing an XTRACTAB's extraction boxes|[Extract.ipynb](https://github.com/spacetelescope/COS-Notebooks/blob/master/Extract/Extract.ipynb)|[Extract.html](https://spacetelescope.github.io/COS-Notebooks/Extract.html)|
 
 ##### For notebooks with exercises, you can find worked solutions at the end of the notebook.
