@@ -192,12 +192,3 @@ def withinPercent(val1, val2, percent = 1.):
     within_percent_bool = percentDif <= percent
     return within_percent_bool, percentDif
 # %%
-
-def get_simbad_name(fitsfile):
-    from astroquery.simbad import Simbad
-    import astropy.coordinates as coord
-    import astropy.units as u
-    hdr = fits.getheader(fitsfile)
-    print("The proposer gave the TARGNAME = ", hdr['TARGNAME'], "\nQuerying Simbad with the coordinates:")
-    ra,dec = hdr['RA_TARG'] ,hdr['DEC_TARG']
-    return Simbad.query_region(coord.SkyCoord(ra, dec, unit=(u.deg, u.deg)))[0]
