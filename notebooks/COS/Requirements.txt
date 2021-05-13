@@ -1,0 +1,20 @@
+## Requirements
+python3.6
+numpy 
+matplotlib
+astropy
+astroquery
+glob
+sys
+os
+shutil
+datetime
+csv
+calcos
+costools
+scipy
+urllib
+tarfile
+specutils
+pandas
+IPython
