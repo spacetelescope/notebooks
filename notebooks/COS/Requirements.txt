@@ -1,20 +1,11 @@
-## Requirements
 # requires python3.6 or higher
 numpy 
 matplotlib
 astropy
 astroquery
-glob
-sys
-os
-shutil
-datetime
-csv
 calcos
 costools
 scipy
-urllib
-tarfile
 specutils
 pandas
 IPython
