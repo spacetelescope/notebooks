@@ -8,4 +8,4 @@ costools
 scipy
 specutils
 pandas
-IPython
+ipython
