@@ -1,5 +1,5 @@
 ## Requirements
-python3.6
+# requires python3.6 or higher
 numpy 
 matplotlib
 astropy
