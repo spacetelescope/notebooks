@@ -6,7 +6,8 @@ This is a repository of interactive walkthrough guides to common COS data proced
 
 #### 1. [Currently Operational Notebooks](#ch1)
 #### 2. [Basic Requirements](#ch2)
-#### 3. [Getting Help](#ch3)
+#### 3. [Notes for those new to `Python`/`Jupyter`/Coding](#ch3)
+#### 4. [Getting Help](#ch4)
 
 ---
 <a id=ch1></a>
@@ -85,7 +86,15 @@ Either of the previous commands should open up a new window in your default web 
 
 If you don't have experience installing packages, you should begin with our **introductory notebook** [Setup.ipynb](https://github.com/nkerman/notebooks/blob/main/notebooks/COS/Setup/Setup.ipynb) on setting up an environment for running astronomical Python code. If you do not yet have Jupyter up-and-running, you can read the pre-rendered (`.html`) version [here](https://spacetelescope.github.io/COS-Notebooks/Setup.html).
 
-<a id = ch3></a>
+<a id=ch3></a>
+## Notes for those new to `Python`/`Jupyter`/Coding:
+
+- You will frequently see exclamation points (**\!**) or dollar signs (**\$**) at the beginning of a line of code. These are not part of the actual commands. The exclamation points tell a jupyter notebook to pass the following line to the command line, and the dollar sign merely indicates the start of a terminal prompt. 
+- Similarly, when a variable or argument in a line of code is surrounded by sharp brackets, like \<these words are\>, this is an indication that the variable or argument is something which you should change to suit your data.
+
+- If you install the full Anaconda distribution with the [*Anaconda Navigator* tool](https://docs.anaconda.com/anaconda/navigator/), (see Section 1 of the `Setup.ipynb` Notebook) you will also have access to a graphical interface (AKA a way to use windows and a point-and-click interface instead of the terminal for installing packages and managing environments).
+  
+<a id = ch4></a>
 ## Getting Help
 
 If you have an issue using these notebooks which you cannot fix, or if believe you have discovered an error in a notebook, please reach out to the [HST Help Desk](https://stsci.service-now.com/hst) or to the notebook's primary author: <nkerman@stsci.edu>.
