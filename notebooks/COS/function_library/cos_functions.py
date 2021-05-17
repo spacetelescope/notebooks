@@ -47,7 +47,7 @@ def downsample_1d(myarr, factor, weightsarr =[ -1], weighted = True, in_quad = F
     return dsarr
 
 # %%
-def binByResel(data_table , binsize = 6, weighted = True, verbose = True):
+def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
     """
     Bins an entire COS dataset (in astropy Table form); does errors in quadrature; weights averages by a pixel's exposure time.
     
@@ -63,7 +63,7 @@ def binByResel(data_table , binsize = 6, weighted = True, verbose = True):
     exptimes_ = []
     wvlns_, fluxs_, fluxErrs_, fluxErr_lowers_, gross_s_, gcount_s_ = [], [], [], [], [], []
     
-    print(f"function `BinByResel` is Binning by {binsize}")
+    print(f"function `bin_by_resel` is Binning by {binsize}")
     for i in range(len(data_table)):
         exptimes_.append(data_table[i]['EXPTIME'])
         wvln_, flux_, fluxErr_,fluxErr_lower_, gross_, gcount_ = data_table[i][
@@ -100,7 +100,7 @@ def binByResel(data_table , binsize = 6, weighted = True, verbose = True):
 
 
 # %%
-def estimate_SNR(data_table, snr_range = [-1, -1],  bin_data_first = False, binsize_ = 6, weighted = False, verbose = True):
+def estimate_snr(data_table, snr_range = [-1, -1],  bin_data_first = False, binsize_ = 6, weighted = False, verbose = True):
     """
     Gets an estimate of the Signal to Noise Ratio (SNR), either over wvln-range or whole spectrum, using Poisson noise assumption SNR ~sqrt(N_Counts).
     Weights the SNR 
@@ -125,7 +125,7 @@ def estimate_SNR(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
     if bin_data_first == True: # Should we bin first?
         if verbose:
             print("First, Binning the data by ", binsize_)
-        data_table = binByResel(data_table , binsize = binsize_)
+        data_table = bin_by_resel(data_table , binsize = binsize_)
 
     # STEP TWO - ESTIMATE SNR
     for i in range(len(data_table)):
