@@ -36,11 +36,13 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 
 ### Downloading the notebooks
 
-While you *can* run most of the notebooks with only the `ipynb` file downloaded, it is **highly recommended that you clone this entire repository**. Specifically, `ViewData.ipynb` cannot run at present without both the `function_library` and `ViewData` subdirectories installed side-by-side. To clone (which means download in the language of `git`) the repository with all the COS notebooks, run the following command from a terminal as shown in this [video walkthrough](https://vimeo.com/548158095):
+While you *can* run most of the notebooks with only the `ipynb` file downloaded, it is **highly recommended that you clone this entire repository**. Specifically, `ViewData.ipynb` cannot run at present without both the file `cos_functions.py` and `ViewData` installed side-by-side in the same directory. To clone (which means download, in the language of `git`,) the repository with all the COS notebooks, run the following command from a terminal in the directory where you would like to download the notebook repository. 
 
 ```bash
 git clone https://github.com/spacetelescope/notebooks
 ```
+
+The git cloning process is also shown in [this video walkthrough](https://vimeo.com/548158095).
 
 ### Using Jupyter Notebooks
 If you have never used Jupyter/IPython Notebooks before, please see the [Jupyter/IPython Notebook Quick Start Guide](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/).
@@ -100,4 +102,3 @@ If you don't have experience installing packages, you should begin with our **in
 If you have an issue using these notebooks which you cannot fix, or if believe you have discovered an error in a notebook, please reach out to the [HST Help Desk](https://stsci.service-now.com/hst) or to the notebook's primary author: <nkerman@stsci.edu>.
 
 ---
-
