@@ -1,4 +1,15 @@
-#!/usr/bin/env python
+"""
+AUTHOR: Nathaniel Kerman <nkerman@stsci.edu>
+DATE of last modification: May 17 2021
+DESCRIPTION: 
+    Several functions useful for the COS ViewData.ipynb notebook, such as:
+    * downsampling
+    * binning to a resolution element (resel)
+    * estimating SNR
+    * Checking how close two values are
+    
+    The reason this file is defined separate of the notebook is to prevent the notebook from including large and confusing code chunks. In the future, these functions may be incorporated into a Python package, such as `COSTools`.
+"""
 #%%
 import numpy as np
 from astropy.table import Table
