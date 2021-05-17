@@ -34,4 +34,5 @@ processed_data_tab = Table.read(output_dir+'calcos_processed_1/'+'ldifcombo_x1ds
 for segment in processed_data_tab:
     wvln, flux = segment["WAVELENGTH", "FLUX"]
     plt.plot(wvln, flux)
+plt.savefig("plots_dir"+"AsnFile_test.png", dpi = 200)
 # %%
