@@ -36,7 +36,7 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 
 ### Downloading the notebooks
 
-While you *can* run most of the notebooks with only the `ipynb` file downloaded, it is **highly recommended that you clone this entire repository**. Specifically, `ViewData.ipynb` cannot run at present without both the `Scripts` and `ViewData` subdirectories installed side-by-side. To clone (which means download in the language of `git`) the repository with all the COS notebooks, run the following command from a terminal as shown in this [video walkthrough](https://vimeo.com/548158095):
+While you *can* run most of the notebooks with only the `ipynb` file downloaded, it is **highly recommended that you clone this entire repository**. Specifically, `ViewData.ipynb` cannot run at present without both the `function_library` and `ViewData` subdirectories installed side-by-side. To clone (which means download in the language of `git`) the repository with all the COS notebooks, run the following command from a terminal as shown in this [video walkthrough](https://vimeo.com/548158095):
 
 ```bash
 git clone https://github.com/spacetelescope/notebooks
