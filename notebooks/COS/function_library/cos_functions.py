@@ -8,7 +8,7 @@ def downsample_1d(myarr, factor, weightsarr =[ -1], weighted = True, in_quad = F
     Downsamples a 1D array by averaging over *factor* pixels; Crops right side if the shape is not a multiple of factor; Can do in quadrature, and weighted.
     
     Parameters:
-    myarr (numpy array): numpy arrayf to be downsampled/binned.
+    myarr (numpy array): numpy array to be downsampled/binned.
     factor (int) : how much you want to rebin the array by.
     weightsarr (numpy array) : numpy array by which to weight the average; Unnecessary if weighted == False.
     weighted (bool) : Default True. Is this an unweighted mean or a weighted average
