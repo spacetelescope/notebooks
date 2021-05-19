@@ -1,4 +1,5 @@
-# COS Notebooks
+# COS Notebooks 
+*[Click here](https://spacetelescope.github.io/COS-Notebooks/) for the COS Notebooks website*
 
 ## Jupyter Notebook Walkthroughs of Cosmic Origins Spectrograph (COS) Data Processing
 The [Cosmic Origins Spectrograph](https://www.stsci.edu/hst/instrumentation/cos) (COS) is an instrument on the [Hubble Space Telescope](https://www.stsci.edu/hst/about) (HST).
