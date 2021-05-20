@@ -33,6 +33,8 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 <a id = ch2></a>
 ## Basic Requirements
 
+### Computer requirements
+We have built these notebooks to be cross-platform compatible; however they have been tested primarily on `Unix` and `Unix`-`like` systems, (i.e. **MacOS** and **Linux**). As such **Users may encounter issues when run on Windows computers**. If you are unable to run a particular notebook from a Windows device, please reach out to us (see [Getting Help](#ch4)) and we will work to fix the problem. The first solution to try if the notebooks are failing because of a Windows incompatibility is using the [Windows Sub-System for Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL), which will allow you to run a Linux computer environment from your Windows device.
 
 
 ### Downloading the notebooks
