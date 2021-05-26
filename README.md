@@ -9,6 +9,15 @@ These notebooks are also under continuous integration to ensure that astronomers
 ## Contents
 
 This repository holds the notebooks themselves, but in a harder-to-read unexecuted form. If you want to view the notebooks online, you should view [the rendered versions](https://spacetelescope.github.io/notebooks).  At present this includes:
+* COS
+  * [Setting up your computer environment to work with COS data](https://spacetelescope.github.io/COS-Notebooks/Setup.html)
+  * [Downloading COS Data from the archive](https://spacetelescope.github.io/COS-Notebooks/DataDl.html)
+  * [Beginning to work with COS data in Python: *plotting, binning, calculating SNR, & evaluating* a spectrum](https://spacetelescope.github.io/COS-Notebooks/ViewData.html)
+  * [Modifying or creating an association file](https://spacetelescope.github.io/COS-Notebooks/AsnFile.html)
+  * [Running the COS pipeline (CalCOS)](https://spacetelescope.github.io/COS-Notebooks/CalCOS.html)
+  * [Filtering out COS data taken during the day or night](https://spacetelescope.github.io/COS-Notebooks/DayNight.html)
+  * [Working with the COS Line Spread Function (LSF)](https://spacetelescope.github.io/COS-Notebooks/LSF.html)
+  * [Editing the extraction boxes in a BOXCAR-method spectral extraction file (XTRACTAB)](https://spacetelescope.github.io/COS-Notebooks/Extract.html)
 * DrizzlePac
   * [Initialization](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/Initialization/Initialization.html)
   * [Aligning HST images to an absolute reference catalog](https://spacetelescope.github.io/notebooks/notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.html)

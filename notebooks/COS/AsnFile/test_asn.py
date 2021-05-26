@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #%%[markdown]
 ### From here, you can run the `calcos` pipeline on your new association file.
-##### Running `calcos` is explained in *much* more detail in our [notebook on running the pipeline](https://github.com/spacetelescope/COS-Notebooks/blob/master/Calcos/Calcos.ipynb)
+##### Running `calcos` is explained in *much* more detail in our [notebook on running the pipeline](https://github.com/spacetelescope/notebooks/blob/master/notebooks/COS/CalCOS/CalCOS.ipynb)
 
 ##### In short, to run the `calcos` pipeline, you will need the relavent reference files. These will need be hosted in the directory assigned the environmetn variable `lref`. 
 ##### No matter *where* you place these files, you *must* create the lref environment variable.
