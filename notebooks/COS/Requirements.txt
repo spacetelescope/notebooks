@@ -9,3 +9,5 @@ scipy
 specutils
 pandas
 ipython
+jupyterlab
+crds
