@@ -17,14 +17,10 @@ outputdir = Path('./output/')
 plotsdir =  Path('./output/plots/')
 # %%
 ######### SETTING THE lref VARIABLE:
-### YOU LIKELY NEED TO CHANGE THIS LOCATION!!!
+### YOU LIKELY NEED TO CHANGE THIS LOCATION !
 where_i_keep_my_ref_files = "/grp/hst/cdbs/lref/"
 os.environ['lref'] = where_i_keep_my_ref_files
 
-# %%
-# shutil.copy("./output/ldifcombo_2_asn.fits", "./data/ldifcombo_2_asn.fits")
-# calcos.calcos('./data/ldifcombo_2_asn.fits', verbosity=0, outdir=str(outputdir/"./calcos_processed_1"))
-# %%
 processed_data_tab = Table.read(str(outputdir/'calcos_processed_1/')+'/ldifcombo_x1dsum.fits')
 for segment in processed_data_tab:
     wvln, flux = segment["WAVELENGTH", "FLUX"]
@@ -33,7 +29,7 @@ for segment in processed_data_tab:
 plt.xlabel('Wavelength [$\AA$]')
 plt.ylabel('Flux [ergs/s/$cm^2$/$\AA$]')
 
-plt.title("If this graph looks reasonable, your ASN file seems to have worked!\n")
+plt.title("If this graph looks reasonable, your ASN file seems to have worked\n")
 plt.tight_layout()
 plt.savefig(str(plotsdir/"AsnFile_test.png"), bbox_inches = 'tight', dpi = 200)
 # %%
