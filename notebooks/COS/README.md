@@ -14,7 +14,7 @@ This is a repository of interactive walkthrough guides to common COS data proced
 <a id=ch1></a>
 ## Currently Operational Notebooks
 
-If you don't want to run the notebooks for yourself but just want to see rendered html versions of the notebooks, *(with outputs,)* you may use the rendered `html` file.
+If you don't want to run the Notebooks for yourself but just want to see rendered html versions of the Notebooks, *(with outputs,)* you may use the rendered `html` file.
 
 |Name|Topic|Notebook file (`ipynb`)|Rendered file (`html`)|
 |-|-|-|-|
@@ -27,19 +27,19 @@ If you don't want to run the notebooks for yourself but just want to see rendere
 |LSF|Working with the COS Line Spread Function (LSF)|[LSF.ipynb](https://github.com/spacetelescope/notebooks/blob/master/notebooks/COS/LSF/LSF.ipynb)|[LSF.html](https://spacetelescope.github.io/COS-Notebooks/LSF.html)|
 |Extract|Editing the extraction boxes in a BOXCAR-method spectral extraction file (XTRACTAB)|[Extract.ipynb](https://github.com/spacetelescope/notebooks/blob/master/notebooks/COS/Extract/Extract.ipynb)|[Extract.html](https://spacetelescope.github.io/COS-Notebooks/Extract.html)|
 
-##### For notebooks with exercises, you can find worked solutions at the end of the notebook.
+##### For Notebooks with exercises, you can find worked solutions at the end of the Notebook.
 
 
 <a id = ch2></a>
 ## Basic Requirements
 
 ### Computer requirements
-We have built these notebooks to be cross-platform compatible; however they have been tested primarily on `Unix` and `Unix`-`like` systems, (i.e. **MacOS** and **Linux**). As such **Users may encounter issues when run on Windows computers**. If you are unable to run a particular notebook from a Windows device, please reach out to us (see [Getting Help](#ch4)) and we will work to fix the problem. The first solution to try if the notebooks are failing because of a Windows incompatibility is using the [Windows Sub-System for Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL), which will allow you to run a Linux computer environment from your Windows device.
+We have built these Notebooks to be cross-platform compatible; however they have been tested primarily on `Unix` and `Unix`-`like` systems, (i.e. **MacOS** and **Linux**). As such **Users may encounter issues when run on Windows computers**. If you are unable to run a particular Notebook from a Windows device, please reach out to us (see [Getting Help](#ch4)) and we will work to fix the problem. The first solution to try if the Notebooks are failing because of a Windows incompatibility is using the [Windows Sub-System for Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL), which will allow you to run a Linux computer environment from your Windows device.
 
 
-### Downloading the notebooks
+### Downloading the Notebooks
 
-While you *can* run most of the notebooks with only the `ipynb` file downloaded, it is **highly recommended that you clone this entire repository**. Specifically, `ViewData.ipynb` cannot run at present without both the file `cos_functions.py` and `ViewData` installed side-by-side in the same directory. To clone (which means download, in the language of `git`,) the repository with all the COS notebooks, run the following command from a terminal in the directory where you would like to download the notebook repository. 
+While you *can* run most of the Notebooks with only the `ipynb` file downloaded, it is **highly recommended that you clone this entire repository**. Specifically, `ViewData.ipynb` cannot run at present without both the file `cos_functions.py` and `ViewData` installed side-by-side in the same directory. To clone (which means download, in the language of `git`,) the repository with all the COS Notebooks, run the following command from a terminal in the directory where you would like to download the Notebook repository. 
 
 ```bash
 git clone https://github.com/spacetelescope/notebooks
@@ -79,22 +79,22 @@ conda install -c conda-forge jupyterlab
 
 #### Running Jupyter
 
-From a new terminal (*make sure that the current working directory encompasses your notebook directory*), simply run either:
+From a new terminal (*make sure that the current working directory encompasses your Notebook directory*), simply run either:
 
-`jupyter notebook` to begin a notebook kernel (*recommended for new users*)
+`jupyter notebook` to begin a Notebook kernel (*recommended for new users*)
 
 *OR*
 
 `jupyter lab` to begin a lab kernel (*more versatile for advanced users*)
 
-Either of the previous commands should open up a new window in your default web browser (with an address like `localhost:8888/`). From there you can navigate to a notebook and open it.
+Either of the previous commands should open up a new window in your default web browser (with an address like `localhost:8888/`). From there you can navigate to a Notebook and open it.
 
-If you don't have experience installing packages, you should begin with our **introductory notebook** [Setup.ipynb](https://github.com/spacetelescope/notebooks/blob/master/notebooks/COS/Setup/Setup.ipynb) on setting up an environment for running astronomical Python code. If you do not yet have Jupyter up-and-running, you can read the pre-rendered (`.html`) version [here](https://spacetelescope.github.io/COS-Notebooks/Setup.html).
+If you don't have experience installing packages, you should begin with our **introductory Notebook** [Setup.ipynb](https://github.com/spacetelescope/notebooks/blob/master/notebooks/COS/Setup/Setup.ipynb) on setting up an environment for running astronomical Python code. If you do not yet have Jupyter up-and-running, you can read the pre-rendered (`.html`) version [here](https://spacetelescope.github.io/COS-Notebooks/Setup.html).
 
 <a id=ch3></a>
 ## Notes for those new to `Python`/`Jupyter`/Coding:
 
-- You will frequently see exclamation points (**\!**) or dollar signs (**\$**) at the beginning of a line of code. These are not part of the actual commands. The exclamation points tell a jupyter notebook to pass the following line to the command line, and the dollar sign merely indicates the start of a terminal prompt. 
+- You will frequently see exclamation points (**\!**) or dollar signs (**\$**) at the beginning of a line of code. These are not part of the actual commands. The exclamation points tell a Jupyter Notebook to pass the following line to the command line, and the dollar sign merely indicates the start of a terminal prompt. 
 - Similarly, when a variable or argument in a line of code is surrounded by sharp brackets, like \<these words are\>, this is an indication that the variable or argument is something which you should change to suit your data.
 
 - If you install the full Anaconda distribution with the [*Anaconda Navigator* tool](https://docs.anaconda.com/anaconda/navigator/), (see Section 1 of the `Setup.ipynb` Notebook) you will also have access to a graphical interface (AKA a way to use windows and a point-and-click interface instead of the terminal for installing packages and managing environments).
@@ -102,6 +102,6 @@ If you don't have experience installing packages, you should begin with our **in
 <a id = ch4></a>
 ## Getting Help
 
-If you have an issue using these notebooks which you cannot fix, or if believe you have discovered an error in a notebook, please reach out to the [HST Help Desk](https://stsci.service-now.com/hst) or to the notebook's primary author: <nkerman@stsci.edu>.
+If you have an issue using these Notebooks which you cannot fix, or if believe you have discovered an error in a Notebook, please reach out to the [HST Help Desk](https://stsci.service-now.com/hst) or to the Notebook's primary author: <nkerman@stsci.edu>.
 
 ---
