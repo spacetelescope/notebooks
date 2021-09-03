@@ -5,3 +5,5 @@
 src
 index.html
 env
+.DS_Store
+**/.DS_Store
