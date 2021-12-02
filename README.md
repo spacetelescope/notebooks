@@ -16,6 +16,7 @@ This repository holds the notebooks themselves, but in a harder-to-read unexecut
   * [Modifying or creating an association file](https://spacetelescope.github.io/COS-Notebooks/AsnFile.html)
   * [Running the COS pipeline (CalCOS)](https://spacetelescope.github.io/COS-Notebooks/CalCOS.html)
   * [Filtering out COS data taken during the day or night](https://spacetelescope.github.io/COS-Notebooks/DayNight.html)
+  * [Breaking TIME-TAG data into multiple sub-exposures](https://spacetelescope.github.io/COS-Notebooks/SplitTag.html)
   * [Working with the COS Line Spread Function (LSF)](https://spacetelescope.github.io/COS-Notebooks/LSF.html)
   * [Editing the extraction boxes in a BOXCAR-method spectral extraction file (XTRACTAB)](https://spacetelescope.github.io/COS-Notebooks/Extract.html)
 * DrizzlePac
