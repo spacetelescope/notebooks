@@ -14,6 +14,20 @@ DESCRIPTION:
 import numpy as np
 from astropy.table import Table
 
+def downsample_sum(myarr, factor):
+    """Downsamples a 1D array by summing over *factor* pixels; Crops right side if the shape is not a multiple of factor.
+
+    Args:
+        myarr (numpy array): numpy array to be downsampled/binned.
+        factor (int) : how much you want to rebin the array by.
+    """
+    xs = myarr.shape[0]
+    crop_arr = myarr[:xs-(xs % int(factor))]
+    dsarr = np.sum(np.concatenate(
+    [[crop_arr[i::factor] for i in range(factor)] ]
+    ),axis=0)
+    return dsarr
+# %%
 def downsample_1d(myarr, factor, weightsarr =[ -1], weighted = True, in_quad = False):
     """
     Downsamples a 1D array by averaging over *factor* pixels; Crops right side if the shape is not a multiple of factor; Can do in quadrature, and weighted.
@@ -71,24 +85,29 @@ def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
     Returns:
     Table : New binned table of values
     """
+    assert binsize != 0,"Impossible binsize of 0."
+    assert binsize != 1,"Binning by 1 means doing nothing."
+    assert binsize > 1 and type(binsize) == int, "Binsize must be an integer greater than 1."
     exptimes_ = []
     wvlns_, fluxs_, fluxErrs_, fluxErr_lowers_, gross_s_, gcount_s_ = [], [], [], [], [], []
     
-    print(f"function `bin_by_resel` is Binning by {binsize}")
+    print(f"function `bin_by_resel` is binning by {binsize}")
     for i in range(len(data_table)):
         exptimes_.append(data_table[i]['EXPTIME'])
         wvln_, flux_, fluxErr_,fluxErr_lower_, gross_, gcount_ = data_table[i][
             'WAVELENGTH', 'FLUX', 'ERROR', 'ERROR_LOWER', 'GROSS', 'GCOUNTS']
         if weighted == True:
+            np.seterr(invalid='ignore') # We want to silence warnings from  dividing 0/0
             weightsarr_ = np.nan_to_num(gcount_/gross_, nan = 1E-30) # Exposure time can be calculated by gross counts divided by gross counts/second
                                                                       # Dividing this way results in NaNs which are messy. replace nans with a value << exptime
                                                                        # This way, weight is ~0 unless all values in a chunk are NaN
+            np.seterr(invalid='warn') # Turn the warnings back on
             wvln_ = downsample_1d(myarr = wvln_, weightsarr = weightsarr_, factor = binsize)
             flux_ = downsample_1d(myarr = flux_, weightsarr = weightsarr_, factor = binsize)
             fluxErr_ = downsample_1d(myarr = fluxErr_, weightsarr = weightsarr_, factor = binsize, in_quad = True) # Errors are summed/averaged in quadrature
             fluxErr_lower_ = downsample_1d(myarr = fluxErr_lower_, weightsarr = weightsarr_, factor = binsize, in_quad = True)
-            gross_ = downsample_1d(myarr = gross_, weightsarr = weightsarr_, factor = binsize)
-            gcount_ = downsample_1d(myarr = gcount_, weightsarr = weightsarr_, factor = binsize)
+            gross_ = downsample_sum(myarr = gross_, factor = binsize)
+            gcount_ = downsample_sum(myarr = gcount_,factor = binsize)
 
         elif weighted == False:
             weightsarr_ = -1
@@ -97,8 +116,8 @@ def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
             flux_ = downsample_1d(myarr = flux_, weighted = False, factor = binsize)
             fluxErr_ = downsample_1d(myarr = fluxErr_, weighted = False, factor = binsize, in_quad = True)
             fluxErr_lower_ = downsample_1d(myarr = fluxErr_lower_, weighted = False, factor = binsize, in_quad = True)
-            gross_ = downsample_1d(myarr = gross_, weighted = False, factor = binsize)
-            gcount_ = downsample_1d(myarr = gcount_, weighted = False, factor = binsize)
+            gross_ = downsample_sum(myarr = gross_, factor = binsize)
+            gcount_ = downsample_sum(myarr = gcount_,factor = binsize)
             
         wvlns_.append(wvln_)
         fluxs_.append(flux_)
@@ -107,7 +126,7 @@ def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
         gross_s_.append(gross_)
         gcount_s_.append(gcount_)
         
-    return Table([exptimes_,wvlns_, fluxs_, fluxErrs_, fluxErr_lowers_, gross_s_, gcount_s_], names=['EXPTIME', 'WAVELENGTH', 'FLUX', 'ERROR', 'ERROR_LOWER', 'GROSS', 'GCOUNTS'])
+    return Table([exptimes_,wvlns_, fluxs_, gross_s_, gcount_s_], names=['EXPTIME', 'WAVELENGTH', 'FLUX', 'GROSS', 'GCOUNTS'])
 
 
 # %%
@@ -172,8 +191,13 @@ def estimate_snr(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
                 snr_array.append([-1,-1,-1])
                 if verbose:
                     print(f"Out of range on {i}-th segment with limits:", min(wvln_), max(wvln_))
-
-    if (np.all(np.squeeze(snr_array) == -1 )) & (snr_range != [-1, -1]):
+    if (
+        all(
+            [elem == -1 for elem in (snr_array[0][2], snr_array[1][2])]
+        )
+    ) & (
+        snr_range != [-1, -1]
+    ):
         if verbose:
             print("\nThe input range was not found in any segment!\n")
     if segsFound > 1:
