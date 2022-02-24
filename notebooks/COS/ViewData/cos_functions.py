@@ -74,7 +74,10 @@ def downsample_1d(myarr, factor, weightsarr =[ -1], weighted = True, in_quad = F
 # %%
 def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
     """
-    Bins an entire COS dataset (in astropy Table form); does errors in quadrature; weights averages by a pixel's exposure time.
+    Bins an entire COS dataset (in astropy Table form)
+        * Wavelength and flux are combined by taking an exposure-time weighted mean of all the pixels in a bin. 
+        * Errors are combined as above and divided by the square root of the number of pixels in a bin
+        * Counts and count rate are summed over all the pixels in a bin.
     
     Parameters:
     data_table (Table) : Astropy Table of COS spectral data.
