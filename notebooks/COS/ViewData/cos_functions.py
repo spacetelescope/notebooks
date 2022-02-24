@@ -104,8 +104,8 @@ def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
             np.seterr(invalid='warn') # Turn the warnings back on
             wvln_ = downsample_1d(myarr = wvln_, weightsarr = weightsarr_, factor = binsize)
             flux_ = downsample_1d(myarr = flux_, weightsarr = weightsarr_, factor = binsize)
-            fluxErr_ = downsample_1d(myarr = fluxErr_, weightsarr = weightsarr_, factor = binsize, in_quad = True) # Errors are summed/averaged in quadrature
-            fluxErr_lower_ = downsample_1d(myarr = fluxErr_lower_, weightsarr = weightsarr_, factor = binsize, in_quad = True)
+            fluxErr_ = np.divide(downsample_1d(myarr = fluxErr_, weighted = False, factor = binsize, in_quad = False), np.sqrt(binsize)) # Errors are divided by the square root of the number of (identical) observations they represent - this is idealized and simplified. It is good for an estimation.
+            fluxErr_lower_ = np.divide(downsample_1d(myarr = fluxErr_lower_, weighted = False, factor = binsize, in_quad = False), np.sqrt(binsize))
             gross_ = downsample_sum(myarr = gross_, factor = binsize)
             gcount_ = downsample_sum(myarr = gcount_,factor = binsize)
 
@@ -114,8 +114,8 @@ def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
             
             wvln_ = downsample_1d(myarr = wvln_, weighted = False, factor = binsize)
             flux_ = downsample_1d(myarr = flux_, weighted = False, factor = binsize)
-            fluxErr_ = downsample_1d(myarr = fluxErr_, weighted = False, factor = binsize, in_quad = True)
-            fluxErr_lower_ = downsample_1d(myarr = fluxErr_lower_, weighted = False, factor = binsize, in_quad = True)
+            fluxErr_ = np.divide(downsample_1d(myarr = fluxErr_, weighted = False, factor = binsize, in_quad = False), np.sqrt(binsize))
+            fluxErr_lower_ = np.divide(downsample_1d(myarr = fluxErr_lower_, weighted = False, factor = binsize, in_quad = False), np.sqrt(binsize))
             gross_ = downsample_sum(myarr = gross_, factor = binsize)
             gcount_ = downsample_sum(myarr = gcount_,factor = binsize)
             
@@ -126,7 +126,7 @@ def bin_by_resel(data_table , binsize = 6, weighted = True, verbose = True):
         gross_s_.append(gross_)
         gcount_s_.append(gcount_)
         
-    return Table([exptimes_,wvlns_, fluxs_, gross_s_, gcount_s_], names=['EXPTIME', 'WAVELENGTH', 'FLUX', 'GROSS', 'GCOUNTS'])
+    return Table([exptimes_,wvlns_, fluxs_,fluxErrs_, fluxErr_lowers_, gross_s_, gcount_s_], names=['EXPTIME', 'WAVELENGTH', 'FLUX', 'ERROR', 'ERROR_LOWER', 'GROSS', 'GCOUNTS'])
 
 
 # %%
@@ -205,7 +205,6 @@ def estimate_snr(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
             print("\nThis range was found on multiple segments, (grating = G230L?) ,which at present is not fully supported. The returned array should be accurate, but the mean may be incorrect.")
     return weight_avg_snr, snr_array
 # %%
-
 def withinPercent(val1, val2, percent = 1.):
     """
     Primarily created for testing, this function evaluates whether two values are 'close-enough' to one another, i.e. within a percent value, that they could only differ by slight pipeline changes; This one is defined such that at close values, the percent difference is accurate.
@@ -226,4 +225,81 @@ def withinPercent(val1, val2, percent = 1.):
     percentDif = np.abs(100* (absDif/lowval))
     within_percent_bool = percentDif <= percent
     return within_percent_bool, percentDif
+# %%
+"""
+This section is for testing and validating our S/N Calculations.
+"""
+test_SNR_calculations = False
+if test_SNR_calculations:
+    # You will need to set this filepath to a fitsfile. 
+    # I used the publicly available ldxt08010_x1dsum.fits from program 15646 (https://archive.stsci.edu/cgi-bin/mastpreview?mission=hst&dataid=LDXT08010). It was chosen at random, and is not particularly high quality data.
+    filepath = "./ldxt08010_x1dsum.fits.gz"
+    
+    from astropy.io import fits
+    import matplotlib.pyplot as plt
+
+    unbin_tab = Table.read(
+        filepath
+    )
+    X =[1]
+    snr_counts_approach = [
+        estimate_snr(
+            unbin_tab,
+            snr_range=[1565,1575],
+            bin_data_first=False,
+        )[0]
+        ]
+
+    snr_flux_approach = [
+        np.nanmean(
+            unbin_tab["FLUX"][(unbin_tab["WAVELENGTH"] > 1565) & (unbin_tab["WAVELENGTH"] <  1575)]/unbin_tab["ERROR"][(unbin_tab["WAVELENGTH"] > 1565) & (unbin_tab["WAVELENGTH"] <  1575)]
+        )
+    ]
+    snr_flux_approach_low = [
+        np.nanmean(
+            unbin_tab["FLUX"][(unbin_tab["WAVELENGTH"] > 1565) & (unbin_tab["WAVELENGTH"] <  1575)]/unbin_tab["ERROR_LOWER"][(unbin_tab["WAVELENGTH"] > 1565) & (unbin_tab["WAVELENGTH"] <  1575)]
+        )
+    ]
+    for bs_ in range(1,100):
+        try:
+            a, b = estimate_snr(
+                unbin_tab,
+                snr_range=[1565,1575],
+                bin_data_first=True,
+                binsize_=bs_,
+                weighted=True, verbose=False
+                        )
+            X.append(bs_)
+            snr_counts_approach.append(a)
+            # flux/error approach: 
+            bin_tab = bin_by_resel(unbin_tab , binsize = bs_)
+            x1d_error_range = bin_tab["FLUX"][(bin_tab["WAVELENGTH"] > 1565) & (bin_tab["WAVELENGTH"] <  1575)]/bin_tab["ERROR"][(bin_tab["WAVELENGTH"] > 1565) & (bin_tab["WAVELENGTH"] <  1575)]
+            x1d_error_range_low = bin_tab["FLUX"][(bin_tab["WAVELENGTH"] > 1565) & (bin_tab["WAVELENGTH"] <  1575)]/bin_tab["ERROR_LOWER"][(bin_tab["WAVELENGTH"] > 1565) & (bin_tab["WAVELENGTH"] <  1575)]
+            snr_flux_approach_val = np.nanmean(x1d_error_range)
+            snr_flux_approach_val_low = np.nanmean(x1d_error_range_low)
+            snr_flux_approach.append(snr_flux_approach_val)
+            snr_flux_approach_low.append(snr_flux_approach_val_low)
+            
+        except Exception as ex:
+            print("failed for",bs_)
+            print(ex)
+    plt.figure(figsize=(8,6), dpi=200)
+    # plt.scatter(X[1:],limfluxerrs, label = "From my binning algorithm")
+    plt.scatter(X,snr_counts_approach, label = "From my binning algorithm")
+    plt.scatter(x=X,y=snr_flux_approach , label = "From the X1DSUM's $\dfrac{FLUX}{ERROR}$", marker = "x", c="r")
+    plt.scatter(x=X,y=snr_flux_approach_low, label = "From the X1DSUM's $\dfrac{FLUX}{ERROR\_LOWER}$", marker = "x", c="g")
+    plt.xlabel("Binsize [pixels]")
+    plt.ylabel("$\dfrac{Signal}{Noise}$")
+    # plt.xlim(0,30)
+    plt.legend()
+    plt.show()
+
+    plt.figure(figsize=(8,6), dpi=200)
+    plt.title("Comparing our S/N calculation to CalCOS'")
+    plt.scatter(x=X,y=100*(np.divide(snr_counts_approach,snr_flux_approach) - 1), label = "Comparing against S/N from ERROR", marker = "x", c="k")
+    plt.scatter(x=X,y=100*(np.divide(snr_counts_approach,snr_flux_approach_low) - 1), label = "Comparing against S/N from ERROR_LOWER", marker = ".", c="b")
+    plt.xlabel("Binsize [pixels]")
+    plt.ylabel("Exceeds the X1DSum file's binned S/N by this %")
+    plt.legend()
+    plt.show()
 # %%
