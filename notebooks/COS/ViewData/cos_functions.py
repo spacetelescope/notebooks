@@ -1,6 +1,6 @@
 """
 AUTHOR: Nathaniel Kerman <nkerman@stsci.edu>
-DATE of last modification: May 17 2021
+DATE of last modification: Feb 2022
 DESCRIPTION: 
     Several functions useful for the COS ViewData.ipynb Notebook, such as:
     * downsampling
@@ -23,9 +23,11 @@ def downsample_sum(myarr, factor):
     """
     xs = myarr.shape[0]
     crop_arr = myarr[:xs-(xs % int(factor))]
-    dsarr = np.sum(np.concatenate(
-    [[crop_arr[i::factor] for i in range(factor)] ]
-    ),axis=0)
+    dsarr = np.sum(
+        np.concatenate(
+            [[crop_arr[i::factor] for i in range(factor)]]
+        ),
+    axis=0)
     return dsarr
 # %%
 def downsample_1d(myarr, factor, weightsarr =[ -1], weighted = True, in_quad = False):
@@ -194,14 +196,14 @@ def estimate_snr(data_table, snr_range = [-1, -1],  bin_data_first = False, bins
                 snr_array.append([-1,-1,-1])
                 if verbose:
                     print(f"Out of range on {i}-th segment with limits:", min(wvln_), max(wvln_))
-    if (
+    if ( # Check whether the code has found any specified wavelength ranges
         all(
             [elem == -1 for elem in (snr_array[0][2], snr_array[1][2])]
         )
-    ) & (
+    ) & ( # Check that the user specified wavelength ranges
         snr_range != [-1, -1]
     ):
-        if verbose:
+        if verbose: # Then print to the user that the ranges weren't found 
             print("\nThe input range was not found in any segment!\n")
     if segsFound > 1:
         if verbose:
