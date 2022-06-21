@@ -3,6 +3,8 @@
   - [DMD Notebook Submission Policy and Contributor guide][4]
   - [Notebooks workflow][5]
   - [C4 Model for notebook CI][6]
+  - [Technical Review Guide for JDAT Notebooks][7]
+  - [Jupyter Notebooks and Tutorials][8]
 - For full packages list, see [environment.yml][3]
   - python 3.10
   - astropy 5.0.4
@@ -24,3 +26,5 @@
   [4]: https://innerspace.stsci.edu/x/hrWsEg
   [5]: https://innerspace.stsci.edu/x/foqgEQ
   [6]: https://innerspace.stsci.edu/x/XOUQEQ
+  [7]: https://innerspace.stsci.edu/x/A6fsEQ
+  [8]: https://github.com/spacetelescope/style-guides/blob/master/guides/jupyter-notebooks.md
