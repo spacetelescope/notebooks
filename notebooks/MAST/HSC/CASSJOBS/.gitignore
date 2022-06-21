@@ -1,0 +1,4 @@
+
+*.png
+.ipynb_checkpoints
+.idea
