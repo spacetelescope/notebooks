@@ -2,6 +2,8 @@
 ._*.ipynb
 *.fits
 *.swp
+*.txt
+*.jpg
 src
 index.html
 env
