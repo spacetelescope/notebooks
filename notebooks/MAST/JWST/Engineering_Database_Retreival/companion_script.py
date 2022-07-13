@@ -8,16 +8,12 @@ from datetime import datetime
 from pathlib import Path
 
 # default file to use if no file specified
-DEFAULT_FILE = "SA_ZADUCMDX-20160122T172818-20160122T184604.csv"
+DEFAULT_FILE = "SA_ZADUCMDX-20220601T000000-20220601T060000.csv"
 
 
-def download_edb_datafiles(token, filenames, folder="testing", prefix=""):
+def download_edb_datafiles(filenames, folder, prefix=""):
     """Download filenames to directory"""
     Path(folder).mkdir(exist_ok=True)
-
-    opener = urllib.request.build_opener()
-    opener.addheaders = [("Authorization", f"token {token}")]
-    urllib.request.install_opener(opener)
 
     status = 0
     for fname in filenames:
@@ -65,7 +61,7 @@ def parse_edb_query(csvfile):
     return filenames
 
 
-def download_edb_datafiles_by_mnemonic_starttime_endtime(token, requests, folder):
+def download_edb_datafiles_by_mnemonic_starttime_endtime(requests, folder):
     """Download datafiles by mnemonic/starttime/endtime to directory
 
     Example
@@ -79,7 +75,7 @@ def download_edb_datafiles_by_mnemonic_starttime_endtime(token, requests, folder
     request["endtime"] = datetime(2016,1,22,18,46,4)
     requests = list()
     requests.append(request)
-    download_edb_datafiles_by_mnemonic_starttime_endtime(token, requests, "test")
+    download_edb_datafiles_by_mnemonic_starttime_endtime(requests, "test")
     ```
     """
 
@@ -88,7 +84,7 @@ def download_edb_datafiles_by_mnemonic_starttime_endtime(token, requests, folder
         filename = parse_mnemonic_starttime_endtime(req)
         print(f"adding file: {filename}")
         filenames.append(filename)
-    download_edb_datafiles(token, filenames, folder)
+    download_edb_datafiles(filenames, folder)
 
 
 def parse_args(args):
@@ -96,13 +92,7 @@ def parse_args(args):
         args = sys.argv[1:]
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-t",
-        "--token",
-        type=str,
-        help="Auth Mast API Token (to obtain token, visit https://auth.mast.stsci.edu/token)",
-    )
-    parser.add_argument(
-        "-f", "--folder", type=str, default="testing", help="Folder to download to"
+        "-f", "--folder", type=str, default="edb-data", help="Folder to download to"
     )
     parser.add_argument(
         "-p", "--prefix", type=str, default="", help="Prefix path to use (example: '/jwst')"
@@ -115,12 +105,6 @@ def parse_args(args):
     )
     parser.add_argument("file", nargs="*", type=str, help="File(s) to download")
     args = parser.parse_args(args)
-
-    token = args.token
-    if not token:
-        token = os.getenv("MAST_API_TOKEN", None)
-    if not token:
-        parser.error("Token not specified as argument and not present as env. variable")
 
     filenames = args.file
     if not filenames:
@@ -140,12 +124,12 @@ def parse_args(args):
         print(f"No files specified, using default file: {DEFAULT_FILE}")
         filenames = {DEFAULT_FILE}
 
-    return token, filenames, folder, prefix
+    return filenames, folder, prefix
 
 
 def main(args=None):
-    token, filenames, folder, prefix = parse_args(args)
-    return download_edb_datafiles(token, filenames, folder, prefix)
+    filenames, folder, prefix = parse_args(args)
+    return download_edb_datafiles(filenames, folder, prefix)
 
 
 if __name__ == "__main__":
