@@ -1,0 +1,29 @@
+header = {
+    'derived_from' : 'hst_cos_tracetab_0273.rmap',
+    'filekind' : 'TRACETAB',
+    'instrument' : 'COS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_tracetab_0274.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OBSTYPE', 'LIFE_ADJ'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'TRCECORR',
+    'rmap_relevance' : '(LIFE_ADJ in ["3.0","4.0","5.0","6.0"])',
+    'sha1sum' : '69beccc8e7cd02c4482076aa81fa5dc264a1cabb',
+}
+
+selector = Match({
+    ('FUV', 'SPECTROSCOPIC', '3.0') : UseAfter({
+        '2009-05-11 00:00:00' : '5b91919sl_trace.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '4.0') : UseAfter({
+        '2009-05-11 00:00:00' : '2bj2256jl_trace.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '5.0') : UseAfter({
+        '2009-05-11 00:00:00' : '5992009nl_trace.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '6.0') : UseAfter({
+        '2009-05-11 00:00:00' : '6331526fl_trace.fits',
+    }),
+})

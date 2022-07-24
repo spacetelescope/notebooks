@@ -1,0 +1,21 @@
+header = {
+    'derived_from' : 'hst_stis_imphttab_0250.rmap',
+    'filekind' : 'IMPHTTAB',
+    'instrument' : 'STIS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_stis_imphttab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : '50182bf799d97d5610e7ba255d38255373fc3f43',
+}
+
+selector = Match({
+    () : UseAfter({
+        '1996-10-01 00:00:00' : 'y2i1649no_imp.fits',
+        '2007-01-01 00:00:00' : '59l1632po_imp.fits',
+    }),
+})
