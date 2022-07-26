@@ -1,0 +1,13 @@
+# requires python3.6 or higher
+numpy 
+matplotlib
+astropy
+astroquery
+calcos
+costools
+scipy
+specutils
+pandas
+ipython
+jupyterlab
+crds
