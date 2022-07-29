@@ -1,0 +1,21 @@
+header = {
+    'derived_from' : 'generated from CDBS database 2014-05-09 23:25:41.638760',
+    'filekind' : 'OFFTAB',
+    'instrument' : 'WFPC2',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_wfpc2_offtab_0250.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : 'fdec6f6d1799e59e1f2706fa10447f92316ba9a9',
+}
+
+selector = Match({
+    () : UseAfter({
+        '1993-12-01 00:00:00' : 's9m1329lu_off.fits',
+        '1994-01-01 00:00:00' : 's9518396u_off.fits',
+    }),
+})

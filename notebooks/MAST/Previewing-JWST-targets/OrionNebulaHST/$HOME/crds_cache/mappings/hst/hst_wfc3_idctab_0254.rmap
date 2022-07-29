@@ -1,0 +1,23 @@
+header = {
+    'derived_from' : 'hst_wfc3_idctab_0253.rmap',
+    'filekind' : 'IDCTAB',
+    'instrument' : 'WFC3',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_wfc3_idctab_0254.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : '8c477490d8ab6f2aea228333c78826fc3e22ad34',
+}
+
+selector = Match({
+    ('IR',) : UseAfter({
+        '2009-05-11 00:00:00' : 'w3m18525i_idc.fits',
+    }),
+    ('UVIS',) : UseAfter({
+        '2009-05-11 00:00:00' : '2731450pi_idc.fits',
+    }),
+})

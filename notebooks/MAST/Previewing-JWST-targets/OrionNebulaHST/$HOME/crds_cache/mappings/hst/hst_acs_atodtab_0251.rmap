@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'hst_acs_atodtab_0250.rmap',
+    'filekind' : 'ATODTAB',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_atodtab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'ATODCORR',
+    'rmap_relevance' : '((DETECTOR != "SBC") and (ATODCORR != "OMIT"))',
+    'sha1sum' : 'a96c7152ef847a71a3100a89b8b9106e07c3f284',
+}
+
+selector = Match({
+})

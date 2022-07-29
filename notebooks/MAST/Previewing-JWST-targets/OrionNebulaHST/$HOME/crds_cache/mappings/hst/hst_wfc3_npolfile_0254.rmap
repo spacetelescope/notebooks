@@ -1,0 +1,125 @@
+header = {
+    'derived_from' : 'hst_wfc3_npolfile_0253.rmap',
+    'filekind' : 'NPOLFILE',
+    'instrument' : 'WFC3',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_wfc3_npolfile_0254.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'FILTER'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'NO',
+    'reffile_switch' : 'DRIZCORR',
+    'rmap_relevance' : '((DETECTOR == "UVIS") and (DRIZCORR != "OMIT"))',
+    'sha1sum' : '37704596d5d616ffdc1de839ae41d6975574c2b6',
+}
+
+selector = Match({
+    ('UVIS', 'F225W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516ii_npl.fits',
+    }),
+    ('UVIS', 'F275W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516ji_npl.fits',
+    }),
+    ('UVIS', 'F280N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d15191i_npl.fits',
+    }),
+    ('UVIS', 'F336W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516ki_npl.fits',
+    }),
+    ('UVIS', 'F343N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518ni_npl.fits',
+    }),
+    ('UVIS', 'F350LP') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516li_npl.fits',
+    }),
+    ('UVIS', 'F373N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518gi_npl.fits',
+    }),
+    ('UVIS', 'F390M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823hi_npl.fits',
+    }),
+    ('UVIS', 'F390W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516ni_npl.fits',
+    }),
+    ('UVIS', 'F395N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d15190i_npl.fits',
+    }),
+    ('UVIS', 'F410M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823ii_npl.fits',
+    }),
+    ('UVIS', 'F438W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516oi_npl.fits',
+    }),
+    ('UVIS', 'F467M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823ji_npl.fits',
+    }),
+    ('UVIS', 'F469N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518ei_npl.fits',
+    }),
+    ('UVIS', 'F475W') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518hi_npl.fits',
+    }),
+    ('UVIS', 'F475X') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518ji_npl.fits',
+    }),
+    ('UVIS', 'F487N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518di_npl.fits',
+    }),
+    ('UVIS', 'F502N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518pi_npl.fits',
+    }),
+    ('UVIS', 'F547M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823ki_npl.fits',
+    }),
+    ('UVIS', 'F555W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516qi_npl.fits',
+    }),
+    ('UVIS', 'F600LP') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518si_npl.fits',
+    }),
+    ('UVIS', 'F606W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516ri_npl.fits',
+    }),
+    ('UVIS', 'F621M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823li_npl.fits',
+    }),
+    ('UVIS', 'F631N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518ki_npl.fits',
+    }),
+    ('UVIS', 'F645N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518ii_npl.fits',
+    }),
+    ('UVIS', 'F656N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518qi_npl.fits',
+    }),
+    ('UVIS', 'F658N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518oi_npl.fits',
+    }),
+    ('UVIS', 'F665N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518ti_npl.fits',
+    }),
+    ('UVIS', 'F680N') : UseAfter({
+        '2009-06-09 00:00:00' : '27d1518mi_npl.fits',
+    }),
+    ('UVIS', 'F689M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823mi_npl.fits',
+    }),
+    ('UVIS', 'F763M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823ni_npl.fits',
+    }),
+    ('UVIS', 'F775W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b1516ti_npl.fits',
+    }),
+    ('UVIS', 'F814W') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b15170i_npl.fits',
+    }),
+    ('UVIS', 'F845M') : UseAfter({
+        '2009-06-09 00:00:00' : '1cl1823pi_npl.fits',
+    }),
+    ('UVIS', 'F850LP') : UseAfter({
+        '2009-06-09 00:00:00' : 'y7b15171i_npl.fits',
+    }),
+    ('UVIS', 'F953N') : UseAfter({
+        '2009-06-09 00:00:00' : 'yas16219i_npl.fits',
+    }),
+})

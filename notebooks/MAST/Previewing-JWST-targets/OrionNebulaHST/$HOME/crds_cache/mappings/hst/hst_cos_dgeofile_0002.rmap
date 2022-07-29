@@ -1,0 +1,28 @@
+header = {
+    'derived_from' : 'hst_cos_dgeofile_0001.rmap',
+    'extra_keys' : (),
+    'file_ext' : '.fits',
+    'filekind' : 'DGEOFILE',
+    'filetype' : 'DELTA GEOMETRIC DISTORTION REFERENCE IMAGE',
+    'instrument' : 'COS',
+    'ld_tpn' : 'cos_dgeo_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_dgeofile_0002.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'DGEOCORR',
+    'rmap_relevance' : '((DETECTOR == "FUV") and (DGEOCORR != "OMIT"))',
+    'sha1sum' : '4474f908a1ed00e7a44d7be79de06aa6da067bca',
+    'suffix' : 'dgeo',
+    'text_descr' : 'Delta Geometric Distortion Correction Image',
+    'tpn' : 'cos_dgeo.tpn',
+    'unique_rowkeys' : None,
+}
+
+selector = Match({
+    'FUV' : UseAfter({
+        '2003-10-10 00:00:00' : '15c2018fl_dgeo.fits',
+    }),
+})

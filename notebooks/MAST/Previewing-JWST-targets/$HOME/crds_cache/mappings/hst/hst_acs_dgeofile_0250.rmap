@@ -1,0 +1,90 @@
+header = {
+    'derived_from' : 'generated from CDBS database 2014-05-09 23:23:16.467267',
+    'filekind' : 'DGEOFILE',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_dgeofile_0250.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'FILTER1', 'FILTER2'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'NO',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : '21dc35eab2ea60c4b9d2351c87ef230bc3489b09',
+}
+
+selector = Match({
+    ('HRC', 'CLEAR1S', 'F220W') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214fj_dxy.fits',
+    }),
+    ('HRC', 'CLEAR1S', 'F330W') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214gj_dxy.fits',
+    }),
+    ('HRC', 'CLEAR1S', 'F435W') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214ij_dxy.fits',
+    }),
+    ('HRC', 'CLEAR1S', 'F814W') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214rj_dxy.fits',
+    }),
+    ('HRC', 'F475W', 'CLEAR2S') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214jj_dxy.fits',
+    }),
+    ('HRC', 'F555W', 'CLEAR2S') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214mj_dxy.fits',
+    }),
+    ('HRC', 'F606W', 'CLEAR2S') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214nj_dxy.fits',
+    }),
+    ('HRC', 'F625W', 'CLEAR2S') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214oj_dxy.fits',
+    }),
+    ('HRC', 'F775W', 'CLEAR2S') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214qj_dxy.fits',
+    }),
+    ('HRC', 'F850LP', 'CLEAR2S') : UseAfter({
+        '2002-03-01 00:00:00' : 'o8u2214sj_dxy.fits',
+    }),
+    ('SBC', 'ANY', 'N/A') : UseAfter({
+        '2002-10-21 00:00:00' : 's5d1409ej_dxy.fits',
+    }),
+    ('SBC', 'BLOCK1|BLOCK2|BLOCK3|BLOCK4|F115LP|F122M|F125LP|F140LP|F150LP|F165LP', 'N/A') : UseAfter({
+        '2002-03-01 00:00:00' : 'v921637gj_dxy.fits',
+        '2002-10-21 00:00:00' : 's5f20000j_dxy.fits',
+    }),
+    ('WFC', 'CLEAR1L', 'F435W') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu1641tj_dxy.fits',
+    }),
+    ('WFC', 'CLEAR1L', 'F660N') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16427j_dxy.fits',
+    }),
+    ('WFC', 'CLEAR1L', 'F814W') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16429j_dxy.fits',
+    }),
+    ('WFC', 'F475W', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16420j_dxy.fits',
+    }),
+    ('WFC', 'F502N', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16421j_dxy.fits',
+    }),
+    ('WFC', 'F550M', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16422j_dxy.fits',
+    }),
+    ('WFC', 'F555W', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16423j_dxy.fits',
+    }),
+    ('WFC', 'F606W', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16424j_dxy.fits',
+    }),
+    ('WFC', 'F625W', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16425j_dxy.fits',
+    }),
+    ('WFC', 'F658N', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16426j_dxy.fits',
+    }),
+    ('WFC', 'F775W', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu16428j_dxy.fits',
+    }),
+    ('WFC', 'F850LP', 'CLEAR2L') : UseAfter({
+        '2002-03-01 00:00:00' : 'qbu1642aj_dxy.fits',
+    }),
+})

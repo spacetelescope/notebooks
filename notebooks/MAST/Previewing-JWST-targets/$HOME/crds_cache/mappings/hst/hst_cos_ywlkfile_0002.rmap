@@ -1,0 +1,28 @@
+header = {
+    'derived_from' : 'hst_cos_ywlkfile_0001.rmap',
+    'extra_keys' : (),
+    'file_ext' : '.fits',
+    'filekind' : 'YWLKFILE',
+    'filetype' : 'Y WALK CORRECTION FILE',
+    'instrument' : 'COS',
+    'ld_tpn' : 'cos_ywalk_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_ywlkfile_0002.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OBSMODE'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'YWLKCORR',
+    'rmap_relevance' : '((DETECTOR == "FUV") and (OBSMODE=="TIME-TAG") and (YWLKCORR != "OMIT"))',
+    'sha1sum' : 'e38d4ec451a16eadcc6462bf403e87c5c652f1d6',
+    'suffix' : 'ywalk',
+    'text_descr' : 'Y Walk Correction File',
+    'tpn' : 'cos_ywalk.tpn',
+    'unique_rowkeys' : None,
+}
+
+selector = Match({
+    ('FUV', 'TIME-TAG') : UseAfter({
+        '2009-05-11 00:00:00' : '14o2013rl_ywalk.fits',
+    }),
+})

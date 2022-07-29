@@ -1,0 +1,23 @@
+header = {
+    'derived_from' : 'hst_wfc3_biacfile_0002.rmap',
+    'filekind' : 'BIACFILE',
+    'filetype' : 'CTEBIAS',
+    'instrument' : 'WFC3',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_wfc3_biacfile_0003.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'PCTECORR',
+    'rmap_relevance' : '(DETECTOR == "UVIS" and PCTECORR == "PERFORM")',
+    'sha1sum' : '22bfe4614295a0942c2dc2474137a3532d4d98d4',
+    'suffix' : 'bic',
+    'text_descr' : 'CTE Bias Frame',
+}
+
+selector = Match({
+    () : UseAfter({
+        '2009-05-10 00:00:00' : 'zcv2057ni_bic.fits',
+    }),
+})

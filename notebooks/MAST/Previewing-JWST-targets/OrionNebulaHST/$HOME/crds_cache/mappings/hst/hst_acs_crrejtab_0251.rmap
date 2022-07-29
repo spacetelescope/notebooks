@@ -1,0 +1,27 @@
+header = {
+    'derived_from' : 'hst_acs_crrejtab_0250.rmap',
+    'extra_keys' : ('RPTCORR',),
+    'filekind' : 'CRREJTAB',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_crrejtab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'RPTCORR'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'CRCORR',
+    'rmap_relevance' : '((DETECTOR != "SBC") and ((CRCORR != "OMIT") or (RPTCORR != "OMIT")))',
+    'sha1sum' : '0cd5416b419ebef53b9fc6d7b0aa6a1d9b7e0914',
+}
+
+selector = Match({
+    ('HRC', 'N/A') : UseAfter({
+        '1991-01-01 00:00:00' : 'j4d1435lj_crr.fits',
+        '1992-01-01 00:00:00' : 'lci1518ej_crr.fits',
+        '2002-03-01 00:00:00' : 'n4e12510j_crr.fits',
+    }),
+    ('WFC', 'N/A') : UseAfter({
+        '1991-01-01 00:00:00' : 'lci1518fj_crr.fits',
+        '2002-03-01 00:00:00' : '29p1548cj_crr.fits',
+    }),
+})

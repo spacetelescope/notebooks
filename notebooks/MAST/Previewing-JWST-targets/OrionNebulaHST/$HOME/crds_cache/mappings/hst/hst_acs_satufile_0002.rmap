@@ -1,0 +1,38 @@
+header = {
+    'derived_from' : 'hst_acs_satufile_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'SATUFILE',
+    'filetype' : 'FULL-WELL SATURATION LEVEL MAP',
+    'instrument' : 'ACS',
+    'ld_tpn' : 'acs_sat_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_satufile_0002.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'CCDAMP'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'BIASCORR',
+    'rmap_relevance' : '((DETECTOR != "SBC") and (BIASCORR != "OMIT"))',
+    'sha1sum' : 'b911ac02e801c1518c02beeddb40c01dc1870207',
+    'suffix' : 'sat',
+    'text_descr' : 'Full-Well Saturation Level Map',
+    'tpn' : 'acs_sat.tpn',
+}
+
+selector = Match({
+    ('HRC', 'A') : UseAfter({
+        '2002-03-01 00:00:00' : '53319174j_sat.fits',
+    }),
+    ('HRC', 'B') : UseAfter({
+        '2002-03-01 00:00:00' : '53319172j_sat.fits',
+    }),
+    ('HRC', 'C') : UseAfter({
+        '2002-03-01 00:00:00' : '53319178j_sat.fits',
+    }),
+    ('HRC', 'D') : UseAfter({
+        '2002-03-01 00:00:00' : '53319176j_sat.fits',
+    }),
+    ('WFC', 'N/A') : UseAfter({
+        '2002-03-01 00:00:00' : '5331917aj_sat.fits',
+    }),
+})

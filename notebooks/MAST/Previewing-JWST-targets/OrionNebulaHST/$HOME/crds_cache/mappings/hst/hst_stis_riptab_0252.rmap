@@ -1,0 +1,26 @@
+header = {
+    'derived_from' : 'hst_stis_riptab_0251.rmap',
+    'filekind' : 'RIPTAB',
+    'instrument' : 'STIS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_stis_riptab_0252.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(DETECTOR != "CCD" and OBSTYPE == "SPECTROSCOPIC")',
+    'sha1sum' : '709da2baeb7f6755a47c36ee670919da80b9932b',
+}
+
+selector = Match({
+    ('FUV-MAMA',) : UseAfter({
+        '1996-10-01 00:00:00' : 'k8m09588o_rip.fits',
+        '2009-05-11 00:00:00' : '6471931ao_rip.fits',
+        '2016-07-01 00:00:00' : '6471930to_rip.fits',
+    }),
+    ('NUV-MAMA',) : UseAfter({
+        '1996-10-01 00:00:00' : 'k8m0958fo_rip.fits',
+        '2009-05-11 00:00:00' : 'vb816447o_rip.fits',
+    }),
+})

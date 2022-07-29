@@ -1,0 +1,25 @@
+header = {
+    'derived_from' : 'hst_acs_oscntab_0250.rmap',
+    'filekind' : 'OSCNTAB',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_oscntab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(DETECTOR != "SBC")',
+    'sha1sum' : '20b1947c6fc6a1f6586435df455c37a840fb12fb',
+}
+
+selector = Match({
+    ('HRC',) : UseAfter({
+        '1991-01-01 00:00:00' : 'j4d1435pj_osc.fits',
+        '1992-01-01 00:00:00' : 'lch1459aj_osc.fits',
+        '2001-03-01 00:00:00' : '14s1737dj_osc.fits',
+    }),
+    ('WFC',) : UseAfter({
+        '1991-01-01 00:00:00' : '17717071j_osc.fits',
+    }),
+})

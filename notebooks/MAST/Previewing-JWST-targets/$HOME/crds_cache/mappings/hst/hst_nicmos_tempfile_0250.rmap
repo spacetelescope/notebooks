@@ -1,0 +1,32 @@
+header = {
+    'derived_from' : 'generated from CDBS database 2014-05-09 23:25:04.091176',
+    'filekind' : 'TEMPFILE',
+    'instrument' : 'NICMOS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_nicmos_tempfile_0250.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('CAMERA',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : 'bbebe80dd1954befc2a161fa93cf07f6a2edb137',
+}
+
+selector = Match({
+    (1,) : UseAfter({
+        '1997-01-01 00:00:00' : 't160440tn_tdd.fits',
+        '1997-08-21 00:00:00' : 'sc31741bn_tdd.fits',
+        '2002-01-01 00:00:00' : 'sc31741ln_tdd.fits',
+    }),
+    (2,) : UseAfter({
+        '1997-01-01 00:00:00' : 't160441hn_tdd.fits',
+        '1997-08-21 00:00:00' : 'sc31741cn_tdd.fits',
+        '2002-01-01 00:00:00' : 't7a2001en_tdd.fits',
+    }),
+    (3,) : UseAfter({
+        '1997-01-01 00:00:00' : 't160441nn_tdd.fits',
+        '1997-08-21 00:00:00' : 'sc31741dn_tdd.fits',
+        '2002-01-01 00:00:00' : 'sc31741nn_tdd.fits',
+    }),
+})

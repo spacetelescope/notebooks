@@ -1,0 +1,20 @@
+header = {
+    'derived_from' : 'hst_acs_spottab_0250.rmap',
+    'filekind' : 'SPOTTAB',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_spottab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OBSTYPE'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NO',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(DETECTOR == "HRC" and OBSTYPE == "CORONAGRAPHIC")',
+    'sha1sum' : '632c80f9ba318cd6eb5fd07c1b6709c84eafc9c8',
+}
+
+selector = Match({
+    ('HRC', 'CORONAGRAPHIC') : UseAfter({
+        '2002-03-01 00:00:00' : '61i17241j_csp.fits',
+    }),
+})

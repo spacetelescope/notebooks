@@ -1,0 +1,26 @@
+header = {
+    'classes' : ('Match',),
+    'derived_from' : 'hst_synphot_tmgtab_0009.rmap',
+    'extra_keys' : (),
+    'file_ext' : '.fits',
+    'filekind' : 'TMGTAB',
+    'filetype' : 'CRGRAPH',
+    'instrument' : 'SYNPHOT',
+    'ld_tpn' : 'symphot_tmg_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_synphot_tmgtab_0010.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((),),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'NONE',
+    'sha1sum' : 'fb59c628cf65fe67258b16c9b7acb7a2b1e36e65',
+    'suffix' : 'tmg',
+    'text_descr' : 'Graph Table',
+    'tpn' : 'synphot_tmg.tpn',
+    'unique_rowkeys' : ('COMPNAME', 'KEYWORD', 'INNODE', 'OUTNODE', 'THCOMPNAME'),
+}
+
+selector = Match({
+    () : '57g1733im_tmg.fits',
+})

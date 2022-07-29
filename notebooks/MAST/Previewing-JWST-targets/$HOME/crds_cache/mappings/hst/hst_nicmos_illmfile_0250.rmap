@@ -1,0 +1,188 @@
+header = {
+    'derived_from' : 'generated from CDBS database 2014-05-09 23:25:03.847946',
+    'filekind' : 'ILLMFILE',
+    'instrument' : 'NICMOS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_nicmos_illmfile_0250.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('CAMERA', 'FILTER'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(FILTER != "BLANK")',
+    'sha1sum' : '3a57e4edc65015c8fc8b69d422d16d5af416617f',
+}
+
+selector = Match({
+    (1, 'F090M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320gn_ilm.fits',
+    }),
+    (1, 'F095N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320in_ilm.fits',
+    }),
+    (1, 'F097N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320jn_ilm.fits',
+    }),
+    (1, 'F108N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320ln_ilm.fits',
+    }),
+    (1, 'F110M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320mn_ilm.fits',
+    }),
+    (1, 'F110W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320on_ilm.fits',
+    }),
+    (1, 'F113N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320qn_ilm.fits',
+    }),
+    (1, 'F140W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241320sn_ilm.fits',
+    }),
+    (1, 'F145M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413210n_ilm.fits',
+    }),
+    (1, 'F160W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413211n_ilm.fits',
+    }),
+    (1, 'F164N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413213n_ilm.fits',
+    }),
+    (1, 'F165M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413215n_ilm.fits',
+    }),
+    (1, 'F166N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413217n_ilm.fits',
+    }),
+    (1, 'F170M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413218n_ilm.fits',
+    }),
+    (1, 'F187N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241321bn_ilm.fits',
+    }),
+    (1, 'F190N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241321dn_ilm.fits',
+    }),
+    (1, 'POL0S') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241321kn_ilm.fits',
+    }),
+    (1, 'POL120S') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241321fn_ilm.fits',
+    }),
+    (1, 'POL240S') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241321in_ilm.fits',
+    }),
+    (2, 'F110W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241323pn_ilm.fits',
+    }),
+    (2, 'F160W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241323qn_ilm.fits',
+    }),
+    (2, 'F165M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241323rn_ilm.fits',
+    }),
+    (2, 'F171M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241323tn_ilm.fits',
+    }),
+    (2, 'F180M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413240n_ilm.fits',
+    }),
+    (2, 'F187N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413241n_ilm.fits',
+    }),
+    (2, 'F187W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413242n_ilm.fits',
+    }),
+    (2, 'F190N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413243n_ilm.fits',
+    }),
+    (2, 'F204M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413244n_ilm.fits',
+    }),
+    (2, 'F205W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413245n_ilm.fits',
+    }),
+    (2, 'F207M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413246n_ilm.fits',
+    }),
+    (2, 'F212N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413247n_ilm.fits',
+    }),
+    (2, 'F215N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413248n_ilm.fits',
+    }),
+    (2, 'F216N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413249n_ilm.fits',
+    }),
+    (2, 'F222M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241324an_ilm.fits',
+    }),
+    (2, 'F237M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241324bn_ilm.fits',
+    }),
+    (2, 'POL0L') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241324fn_ilm.fits',
+    }),
+    (2, 'POL120L') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241324cn_ilm.fits',
+    }),
+    (2, 'POL240L') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241324dn_ilm.fits',
+    }),
+    (3, 'F108N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h2413259n_ilm.fits',
+    }),
+    (3, 'F110W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325an_ilm.fits',
+    }),
+    (3, 'F113N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325bn_ilm.fits',
+    }),
+    (3, 'F150W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325cn_ilm.fits',
+    }),
+    (3, 'F160W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325dn_ilm.fits',
+    }),
+    (3, 'F164N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325en_ilm.fits',
+    }),
+    (3, 'F166N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325gn_ilm.fits',
+    }),
+    (3, 'F175W') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325hn_ilm.fits',
+    }),
+    (3, 'F187N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325in_ilm.fits',
+    }),
+    (3, 'F190N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325jn_ilm.fits',
+    }),
+    (3, 'F196N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325kn_ilm.fits',
+    }),
+    (3, 'F200N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325ln_ilm.fits',
+    }),
+    (3, 'F212N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325nn_ilm.fits',
+    }),
+    (3, 'F215N') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325on_ilm.fits',
+    }),
+    (3, 'F222M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325pn_ilm.fits',
+    }),
+    (3, 'F240M') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325qn_ilm.fits',
+    }),
+    (3, 'G096') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325rn_ilm.fits',
+    }),
+    (3, 'G141') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325sn_ilm.fits',
+    }),
+    (3, 'G206') : UseAfter({
+        '1997-01-01 00:00:00' : 'h241325tn_ilm.fits',
+    }),
+})

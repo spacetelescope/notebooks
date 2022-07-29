@@ -1,0 +1,31 @@
+header = {
+    'derived_from' : 'hst_acs_bpixtab_0251.rmap',
+    'filekind' : 'BPIXTAB',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_bpixtab_0252.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'DQICORR',
+    'rmap_relevance' : '(DQICORR != "OMIT")',
+    'sha1sum' : 'aca342431ee378b1e3e66e0856dfb860efd64453',
+}
+
+selector = Match({
+    ('HRC',) : UseAfter({
+        '1991-01-01 00:00:00' : 'j4d1435jj_bpx.fits',
+        '1992-01-01 00:00:00' : 'lch1502ij_bpx.fits',
+        '2002-03-01 00:00:00' : 'm8r09169j_bpx.fits',
+        '2004-10-08 09:05:46' : 'ob82155qj_bpx.fits',
+    }),
+    ('SBC',) : UseAfter({
+        '1993-01-01 00:00:00' : 'u451251ej_bpx.fits',
+    }),
+    ('WFC',) : UseAfter({
+        '1991-01-01 00:00:00' : 'lch1502kj_bpx.fits',
+        '2002-03-02 00:00:00' : '25g1256nj_bpx.fits',
+        '2017-05-05 00:00:00' : '25g1256mj_bpx.fits',
+    }),
+})

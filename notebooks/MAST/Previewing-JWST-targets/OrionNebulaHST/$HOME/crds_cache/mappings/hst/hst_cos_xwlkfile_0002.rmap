@@ -1,0 +1,28 @@
+header = {
+    'derived_from' : 'hst_cos_xwlkfile_0001.rmap',
+    'extra_keys' : (),
+    'file_ext' : '.fits',
+    'filekind' : 'XWLKFILE',
+    'filetype' : 'X WALK CORRECTION FILE',
+    'instrument' : 'COS',
+    'ld_tpn' : 'cos_xwalk_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_xwlkfile_0002.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OBSMODE'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'XWLKCORR',
+    'rmap_relevance' : '((DETECTOR == "FUV") and (OBSMODE=="TIME-TAG") and (XWLKCORR != "OMIT"))',
+    'sha1sum' : '64da1b1d6ad67f885f855b604d4904a0c09bfab5',
+    'suffix' : 'xwalk',
+    'text_descr' : 'X Walk Correction File',
+    'tpn' : 'cos_xwalk.tpn',
+    'unique_rowkeys' : None,
+}
+
+selector = Match({
+    ('FUV', 'TIME-TAG') : UseAfter({
+        '2009-05-11 00:00:00' : '14o2013ql_xwalk.fits',
+    }),
+})

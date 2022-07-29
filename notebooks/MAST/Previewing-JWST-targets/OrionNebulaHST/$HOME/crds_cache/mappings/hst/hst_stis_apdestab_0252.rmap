@@ -1,0 +1,21 @@
+header = {
+    'derived_from' : 'hst_stis_apdestab_0251.rmap',
+    'filekind' : 'APDESTAB',
+    'instrument' : 'STIS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_stis_apdestab_0252.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(OBSTYPE=="SPECTROSCOPIC")',
+    'sha1sum' : '8fd01356ee0b7dd46bab29479744f83904af41ec',
+}
+
+selector = Match({
+    () : UseAfter({
+        '1996-10-01 00:00:00' : 'obm1723qo_apd.fits',
+        '1997-12-08 00:00:00' : '16j16005o_apd.fits',
+    }),
+})

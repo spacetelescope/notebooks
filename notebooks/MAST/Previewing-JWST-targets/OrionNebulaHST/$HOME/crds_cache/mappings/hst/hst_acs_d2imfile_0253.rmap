@@ -1,0 +1,20 @@
+header = {
+    'derived_from' : 'hst_acs_d2imfile_0252.rmap',
+    'filekind' : 'D2IMFILE',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_d2imfile_0253.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'NO',
+    'reffile_switch' : 'DRIZCORR',
+    'rmap_relevance' : '((DETECTOR == "WFC") and (DRIZCORR != "OMIT"))',
+    'sha1sum' : '17a888f3d4ea0822a4f19b8cea5ed75d6a403b71',
+}
+
+selector = Match({
+    () : UseAfter({
+        '2002-03-01 00:00:00' : '4bb15371j_d2i.fits',
+    }),
+})

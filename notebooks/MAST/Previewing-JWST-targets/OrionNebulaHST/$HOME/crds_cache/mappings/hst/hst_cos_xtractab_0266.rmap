@@ -1,0 +1,46 @@
+header = {
+    'derived_from' : 'hst_cos_xtractab_0265.rmap',
+    'filekind' : 'XTRACTAB',
+    'instrument' : 'COS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_xtractab_0266.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OBSTYPE', 'LIFE_ADJ'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(OBSTYPE == "SPECTROSCOPIC")',
+    'sha1sum' : 'a59c85274bd8b75f51271df83fc7d66e968aee5c',
+}
+
+selector = Match({
+    ('FUV', 'SPECTROSCOPIC', '-1|1') : UseAfter({
+        '2009-05-11 00:00:01' : 'x1v17414l_1dx.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', 0) : UseAfter({
+        '1996-10-01 00:00:00' : 's7g17006l_1dx.fits',
+        '2006-10-01 00:00:00' : 's7g17007l_1dx.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', 2) : UseAfter({
+        '2009-05-11 00:00:02' : 'x6q17586l_1dx.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '3.0') : UseAfter({
+        '2009-05-11 00:00:00' : '5b919206l_1dx.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '4.0') : UseAfter({
+        '2009-05-11 00:00:00' : '2bj2256il_1dx.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '5.0') : UseAfter({
+        '2009-05-11 00:00:00' : '59920102l_1dx.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', '6.0') : UseAfter({
+        '2009-05-11 00:00:00' : '6522024cl_1dx.fits',
+    }),
+    ('NUV', 'SPECTROSCOPIC', '-1|1') : UseAfter({
+        '2009-05-11 00:00:00' : 'w5g1439sl_1dx.fits',
+    }),
+    ('NUV', 'SPECTROSCOPIC', 0) : UseAfter({
+        '1996-10-01 00:00:00' : 's7g1700nl_1dx.fits',
+        '2006-10-01 00:00:00' : 's7g1700ol_1dx.fits',
+    }),
+})

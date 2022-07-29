@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'hst_acs_shadfile_0250.rmap',
+    'filekind' : 'SHADFILE',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_shadfile_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'SHADCORR',
+    'rmap_relevance' : '((DETECTOR != "SBC") and (SHADCORR != "OMIT"))',
+    'sha1sum' : 'a0df0d0ff234dc584a9f9df49ee1b675cc20b7e9',
+}
+
+selector = Match({
+})
