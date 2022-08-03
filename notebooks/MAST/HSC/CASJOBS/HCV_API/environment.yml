@@ -206,8 +206,8 @@ dependencies:
   - zlib>=1.2.12
   - zstd>=1.4.9
   - pip:
-    - casjobs>=0.0.1
-    - cython>=0.29.28
+    - casjobs>=0.0.2
+    - cython>=0.29.32
     - fastkde>=1.0.19
-    - mastcasjobs>=0.0.4
-    - multitasking>=0.0.10
+    - mastcasjobs>=0.0.5
+    - multitasking>=0.0.11
