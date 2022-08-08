@@ -1,6 +1,7 @@
 '''
 This script downloads large queries from the MAST archives. This is
-often necessary when you have many observations.
+often necessary when you have many observations. By default, this script
+pulls data from JWST program 1173 and downloads via a curl script.
 '''
 # Necessary imports
 from astroquery.mast import Observations
@@ -24,7 +25,6 @@ Observations.login(store_token=True)
 # This generates a curl script, which can be used to download the files.
 # You can download directly by setting 'curl_flag = False'
 manifest = Observations.download_products(
-           files,
-           productSubGroupDescription='UNCAL',
-           curl_flag=True
+           files
+           , curl_flag=True
            )
