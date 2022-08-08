@@ -1,6 +1,11 @@
+"""
+This script takes a csv file containing one mnemonic, start time,
+and end time per line. It will return the associated engineering data, and
+includes an example file if no data is specified.
+"""
+
 import argparse
 import csv
-import os
 import sys
 import urllib.error
 import urllib.request
@@ -79,7 +84,7 @@ def download_edb_datafiles_by_mnemonic_starttime_endtime(requests, folder):
     ```
     """
 
-    filenames = list()
+    filenames = []
     for req in requests:
         filename = parse_mnemonic_starttime_endtime(req)
         print(f"adding file: {filename}")
@@ -88,6 +93,7 @@ def download_edb_datafiles_by_mnemonic_starttime_endtime(requests, folder):
 
 
 def parse_args(args):
+    """Get command line arguments, use defaults if not specified """
     if args is None:
         args = sys.argv[1:]
     parser = argparse.ArgumentParser()
@@ -128,6 +134,7 @@ def parse_args(args):
 
 
 def main(args=None):
+    """Collect args from user input, give them to the download function"""
     filenames, folder, prefix = parse_args(args)
     return download_edb_datafiles(filenames, folder, prefix)
 
