@@ -1,4 +1,4 @@
-name: notebooks_env8
+name: notebooks_env
 
 channels:
   - astropy
