@@ -1,4 +1,4 @@
-name: notebooks_env17
+name: notebooks_env20
 
 channels:
   - astropy
@@ -14,6 +14,7 @@ dependencies:
   - pip:
     - mastcasjobs
     - fastkde
+    - lightkurve
     - ipykernel==6.9.1
     - notebook==6.0.1
     - future==0.17.1
@@ -21,7 +22,7 @@ dependencies:
     - jupyter-client==6.1
     - nbconvert==5.6.1
     - jinja2==3.0.3
-    - 'git+https://github.com/eteq/nbpages.git@refs/pull/16/head' #'git+https://github.com/eteq/nbpages.git@1a514875d0ea25d0de11192408b44ad05dc3c245'
+    - 'git+https://github.com/eteq/nbpages.git@refs/pull/16/head'
     # Necessary to compile the notebooks
     - astroquery>=0.3.10
     - matplotlib>=2.2.2
