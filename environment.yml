@@ -1,4 +1,4 @@
-name: notebooks_env20
+name: notebooks_env23
 
 channels:
   - astropy
@@ -6,15 +6,15 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.7
+  - python=3.8.12
   - ca-certificates=2019.8.28
   - pip
   - virtualenv=16.0.0
-  - astropy=3.0.4
+  - astropy>=3.0.4
   - pip:
     - mastcasjobs
     - fastkde
-    - lightkurve
+    - lightkurve==2.3.0
     - ipykernel==6.9.1
     - notebook==6.0.1
     - future==0.17.1
