@@ -16,12 +16,23 @@ datadir = Path('./data/')
 outputdir = Path('./output/')
 plotsdir =  Path('./output/plots/')
 # %%
-######### SETTING THE lref VARIABLE:
+######### Setting the lref environment variable:
 ### YOU LIKELY NEED TO CHANGE THIS LOCATION !
 where_i_keep_my_ref_files = "/grp/hst/cdbs/lref/"
 os.environ['lref'] = where_i_keep_my_ref_files
+assert Path(os.environ['lref']).exists(), "Make sure to set the 'lref' environment variable to a valid path with all of your reference files."
 
+# Copy the asn file we made into the directory where we moved all of our ldif* exposures' data
+shutil.copy("./output/ldifcombo_2_asn.fits", "./data/ldifcombo_2_asn.fits")
+
+# Run the CalCOS pipeline on our ldifcombo asn file
+calcos.calcos('./data/ldifcombo_2_asn.fits', verbosity=0, outdir=str(outputdir/"./calcos_processed_1"))
+
+# %%
+# Read in the processed data
 processed_data_tab = Table.read(str(outputdir/'calcos_processed_1/')+'/ldifcombo_x1dsum.fits')
+
+# Plot the processed data
 for segment in processed_data_tab:
     wvln, flux = segment["WAVELENGTH", "FLUX"]
     plt.plot(wvln, flux)
@@ -29,7 +40,9 @@ for segment in processed_data_tab:
 plt.xlabel('Wavelength [$\AA$]')
 plt.ylabel('Flux [ergs/s/$cm^2$/$\AA$]')
 
-plt.title("If this graph looks reasonable, your ASN file seems to have worked\n")
+plt.title("If this graph looks at all reasonable, your ASN file seems to have worked\n")
 plt.tight_layout()
-plt.savefig(str(plotsdir/"AsnFile_test.png"), bbox_inches = 'tight', dpi = 200)
+plot_path = str(plotsdir/"AsnFile_test.png")
+plt.savefig(plot_path, bbox_inches = 'tight', dpi = 200)
+print(f"Saved plot to: {plot_path}")
 # %%
