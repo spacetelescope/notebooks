@@ -3,9 +3,9 @@
 Contributions are welcome from both inside and outside the institute.
 
 1. Read over the [spacetelescope notebook style guide](https://github.com/spacetelescope/style-guides/blob/master/guides/jupyter-notebooks.md). The style parts are guidelines and it is not always necessary to follow them to the letter, but contributions are expected to generally follow this guide.  However the layout and data rules in general should be followed to ensure this repository stays consistent.
-2. Fork this repository if you have not already, and clone it to your local device.
+2. Fork this repository. See the preferred method of doing this on the [workflow page](https://github.com/spacetelescope/style-guides/blob/master/guides/git-workflow.md).
 3. Create a feature branch to add or modify content (`git checkout -b my-new-feature`).  You should aim to do one branch (and therefore one Pull Request) per notebook, as that will make review faster and easier. 
-4. Create your notebook. It can be anywhere within the `notebooks` directory or any level of sub-directory, but each notebook should be in its *own* directory with no other notebooks or other files.
+4. Create your notebook. It can be anywhere within the `notebooks` directory or any level of sub-directory, but each notebook should be in its *own* directory with no other notebooks or other files. See [the Jupyter Notebook template](https://github.com/spacetelescope/notebooks/tree/master/notebooks/MAST/templates/jupyter_template/jupyter_template.ipynb) for an idea of how to get started.
 5. Develop your notebook by adding and committing it (`git add path/to/my/notebook/notebook.ipynb`,  `git commit -m 'Added some feature'`), as many times as necessary to capture your development history.  Note that you should *never* commit a notebook with executed cells or commit large data files (see the guide).  Always "Clear Ouputs" on cells before adding/committing.
 6.  Add a ``requirements.txt`` file next to your notebook.  Each line should be a separate package following `pip` [requirements file conventions](https://pip.pypa.io/en/stable/reference/pip_install/#requirement-specifiers), listing all the required packages for your notebook, including a "known good version" (e.g., if you wrote the notebook on numpy v1.14.0, the line should be ``numpy>=1.14.0``).
     - **A note on supplemental files:** 
