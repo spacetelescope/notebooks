@@ -1,5 +1,5 @@
 '''
-This script downloads large queries from the MAST archives. This is
+This script downloads large queries from the MAST Archive. This is
 often necessary when you have many observations. By default, this script
 pulls data from JWST program 1173 and generates a separate bash script to
 download the files.
@@ -21,14 +21,14 @@ def fetch_files(progID, chunk_size):
             , filters = 'OPAQUE'
             )
 
-    # Make sure the search returned results If not, exit the program.
+    # Make sure the search returned results. If not, exit the program.
     if len(matched_obs) == 0:
         print('The program query returned no matching observations. Check your',
         'query criteria and try again.')
         quit()
 
     # Go through the observations in "chunks", five at a time, and request the
-    # associated data products. This is faster than using one at a time.
+    # associated data products. This is faster than doing one at a time.
     # After getting products, keep only the unique set to remove any duplicate files.
     chunks = [matched_obs[i:i+sz_chunk] for i in range(0,len(matched_obs), chunk_size)]
     t = [Observations.get_product_list(obs) for obs in chunks]
@@ -38,7 +38,8 @@ def fetch_files(progID, chunk_size):
     # token for retrieval (see: https://auth.mast.stsci.edu/info). Specify
     # the token as an argument to the login() method respond to the terminal
     # prompt, or put it in the environment variable $MAST_API_TOKEN.
-    Observations.login(store_token=True)
+
+    #Observations.login(store_token=True)
 
     # This generates a curl script, which can be used to download the files.
     # You can download directly by setting 'curl_flag = False'
@@ -52,7 +53,8 @@ def fetch_files(progID, chunk_size):
 
 if __name__ == '__main__':
     '''
-    Generate report of DADS JWST holdings from the command-line.
+    Input the JWST program ID and "chunk" size (default is five; this is fastest.)
+    Script will return a separate bash file that uses curl to download your data.
     '''
     descr_text = 'Fetch a script for downloading data products from a JWST Program'
     parser = argparse.ArgumentParser(description=descr_text)
