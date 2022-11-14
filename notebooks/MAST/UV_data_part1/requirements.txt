@@ -1,3 +1,0 @@
-astroquery >= 0.4.6
-astropy >= 5.0.4
-numpy >= 1.20.1
