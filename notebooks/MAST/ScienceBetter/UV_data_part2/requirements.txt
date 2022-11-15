@@ -1,0 +1,4 @@
+matplotlib >= 3.3.4 
+numpy >= 1.20.1
+astroquery >= 0.4.6
+scipy >= 1.6.2
