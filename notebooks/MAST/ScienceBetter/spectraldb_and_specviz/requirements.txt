@@ -1,0 +1,7 @@
+astropy >= 5.0.4
+astroquery >= 0.4.6
+matplotlib >= 3.5.1
+numpy >= 1.21.5
+requests >= 2.27.1
+jdaviz >= 2.8.1.dev25+gc523cf68
+specutils >= 1.7.0
