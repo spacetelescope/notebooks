@@ -1,0 +1,4 @@
+astroquery >= 0.4.6
+lightkurve >= 2.2.0
+numpy >= 1.22.3
+matplotlib >= 3.5.1
