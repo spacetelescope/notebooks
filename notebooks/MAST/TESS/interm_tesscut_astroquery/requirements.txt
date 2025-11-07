@@ -1,4 +1,0 @@
-astropy>=3.0.4
-astroquery>=0.3.9.dev0
-numpy>=1.15.1
-matplotlib>=2.2.2

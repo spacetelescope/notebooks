@@ -1,2 +1,0 @@
-astroquery>=0.3.82
-numpy>=1.15.0
