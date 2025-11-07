@@ -1,2 +1,0 @@
-astroquery >= 0.3.7
-drizzlepac >=2.2.4

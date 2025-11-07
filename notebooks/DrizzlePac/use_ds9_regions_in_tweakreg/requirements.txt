@@ -1,2 +1,0 @@
-regions==0.3
-astroquery

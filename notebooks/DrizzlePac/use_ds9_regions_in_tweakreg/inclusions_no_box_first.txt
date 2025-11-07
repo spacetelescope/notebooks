@@ -1,2 +1,0 @@
-jcdua3f4q_flc.fits jcdua3f4q_sci1_include_no_box_first.reg
-jcdua3f8q_flc.fits
