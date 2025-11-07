@@ -1,2 +1,0 @@
-astropy>=3.1.2
-synphot>=1.0.1
