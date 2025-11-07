@@ -1,6 +1,0 @@
-numpy>=1.15
-matplotlib>=2.2
-astropy>=3.1.2
-photutils>=0.6
-webbpsf>=0.8
-scikit-learn>=0.20
